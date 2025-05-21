@@ -127,6 +127,11 @@ def cargar_y_preparar_datos(ruta_excel='C:\\Users\\Sebas 2\\Desktop\\plataforma-
     print("Variables enteras reales:", int_cols.tolist())
     float_cols = df.select_dtypes(include='float').columns
     print("Variables float reales:", float_cols.tolist())
+
+    df.to_csv("C:\\Users\\Sebas 2\\Desktop\\plataforma-web-rendimiento\\modelo-predictivo\\dataset\\dataset_preprocesado.csv", index=False)
+
+
     return X_train_res, X_test, y_train_res, y_test
 
-    
+if __name__ == "__main__":
+    cargar_y_preparar_datos()

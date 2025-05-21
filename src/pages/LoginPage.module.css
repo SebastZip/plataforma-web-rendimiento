@@ -1,0 +1,130 @@
+/* General Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo con blur */
+.backgroundBlur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  filter: blur(20px) brightness(1.05);
+  z-index: -1;
+  transition: transform 0.1s ease-out;
+}
+
+/* Contenedor principal */
+.loginContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Texto de bienvenida */
+.welcomeText {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: -40px;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Caja de login */
+.loginBox {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+}
+
+/* Logo */
+.logoUnmsm {
+  width: 300px;
+  margin-bottom: 24px;
+}
+
+/* Grupo de input */
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  height: 48px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding-left: 0;
+}
+
+/* Icono */
+.iconWrapper {
+  background-color: #142B6B;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-left: 0;
+  padding-left: 0;
+  flex-shrink: 0;
+}
+
+/* Imagen del icono */
+.inputIcon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+/* Input */
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #1a1a1a;
+  flex: 1;
+  padding-left: 12px;
+}
+
+/* Botón de ingresar */
+.submitButton {
+  background-color: #142B6B;
+  color: white;
+  border: none;
+  padding: 16px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0d1e52;
+}
+
+/* Mensaje de error */
+.errorMessage {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 12px;
+}

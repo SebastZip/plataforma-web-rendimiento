@@ -49,6 +49,10 @@ from lightgbm import LGBMClassifier
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import seaborn as sns
+import joblib
+import os
+ruta_modelo = 'modelo-predictivo/modelos/xgboost_model.joblib'
+ruta_scaler = 'modelo-predictivo/modelos/xgboost_scaler.joblib'
 
 # 1. Cargar los datos ya preprocesados y balanceados
 X_train, X_test, y_train, y_test = cargar_y_preparar_datos()
@@ -130,3 +134,8 @@ plt.xlabel('Predicción')
 plt.ylabel('Real')
 plt.tight_layout()
 plt.show()
+
+joblib.dump(modelo_final, ruta_modelo)
+joblib.dump(scaler, ruta_scaler)
+
+print("✅ Modelo y scaler exportados correctamente.")

@@ -1,15 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { FormularioPrediccion } from './pages/PrediccionForm.jsx';
+import { useState } from 'react'
+import LoginPage from './pages/LoginPage.jsx'
+import PrediccionForm from './pages/PrediccionForm.jsx'
 
 function App() {
+  const [userSession, setUserSession] = useState(null)
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<FormularioPrediccion />} />
-      </Routes>
-    </Router>
-  );
+    <>
+      {userSession
+        ? <PrediccionForm usuario={userSession} />
+        : <LoginPage onLogin={setUserSession} />}
+    </>
+  )
 }
 
-export default App;
-
+export default App
