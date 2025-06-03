@@ -15,9 +15,12 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY") or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # 2. Cargar modelo y preprocesamiento
-modelo = joblib.load("modelos/catboost_modelo.pkl")
-scaler = joblib.load("modelos/escalador.pkl")
-columnas_modelo = joblib.load("modelos/columnas_seleccionadas.pkl")
+modelo_path = os.path.join(os.path.dirname(__file__), "modelos", "catboost_modelo.pkl")
+modelo = joblib.load(modelo_path)
+scaler_path = os.path.join(os.path.dirname(__file__), "modelos", "escalador.pkl")
+scaler = joblib.load(scaler_path)
+columnas_modelo_path = os.path.join(os.path.dirname(__file__), "modelos", "columnas_seleccionadas.pkl")
+columnas_modelo = joblib.load(columnas_modelo_path)
 
 # 3. Diccionario de mapeo: nombres en Supabase → nombres originales del modelo
 supabase_to_model = {
