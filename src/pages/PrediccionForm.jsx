@@ -17,34 +17,22 @@ const enviarPrediccionSupabase = async (datos) => {
 
 const camposTexto = [
   ['codigo_estudiante', '📘 Código del estudiante'],
-  ['Age', '🎂 Edad'],
-  ['What was your previous SGPA?', '📊 SGPA previo'],
-  ['H.S.C passing year', '📅 Año de egreso de secundaria'],
-  ['Current Semester', '📚 Semestre actual'],
+   ['What was your previous SGPA?', '📊 SGPA previo'],
+    ['Current Semester', '📚 Semestre actual'],
   ['How many hour do you study daily?', '🕓 Horas de estudio diario'],
   ['How many hour do you spent daily in social media?', '📱 Horas en redes sociales'],
   ['Average attendance on class', '🧑‍🏫 Asistencia promedio (0% - 100%)'],
-  ['How many times do you seat for study in a day?', '📖 Sesiones de estudio por día'],
-  ['How many hour do you spent daily on your skill development?', '🛠️ Horas en desarrollo de habilidades'],
   ['How many Credit did you have completed?', '✅ Créditos completados'],
   ['What is your monthly family income?', '💰 Ingreso familiar mensual']
 ];
 
 const camposSelect = [
-  ['Gender', 'Sexo', ['Masculino', 'Femenino']],
-  ['Do you have meritorious scholarship ?', '¿Tiene beca?', ['Sí', 'No']],
-  ['Do you use University transportation?', '¿Usa transporte universitario?', ['Sí', 'No']],
-  ['What is your preferable learning mode?', 'Modo de aprendizaje preferido', ['Online', 'Offline']],
-  ['Do you use smart phone?', '¿Tiene smartphone?', ['Sí', 'No']],
   ['Do you have personal Computer?', '¿Tiene computadora?', ['Sí', 'No']],
   ['Did you ever fall in probation?', '¿Ha estado en periodo de prueba académica (probation)?', ['Sí', 'No']],
-  ['Did you ever got suspension?', '¿Tuvo suspensión?', ['Sí', 'No']],
   ['Do you attend in teacher consultancy for any kind of academical', '¿Consulta académica con docentes?', ['Sí', 'No']],
   ['Are you engaged with any co-curriculum activities?', '¿Actividades extracurriculares?', ['Sí', 'No']],
   ['With whom you are living with?', '¿Con quién vive?', ['Solo', 'Familia']],
-  ['Do you have any health issues?', '¿Problemas de salud?', ['Sí', 'No']],
-  ['Do you have any physical disabilities?', '¿Discapacidad física?', ['Sí', 'No']]
-];
+   ];
 
 const PrediccionForm = ({ usuario }) => {
   const [paginaActual, setPaginaActual] = useState(0);
@@ -134,7 +122,7 @@ const PrediccionForm = ({ usuario }) => {
     try {
       await enviarPrediccionSupabase(datosFinales);
 
-      const response = await fetch(`http://localhost:8000/predecir/${usuario.codigo}`);
+      const response = await fetch(`https://plataforma-web-rendimiento.onrender.com/predecir/${usuario.codigo}`);
       const data = await response.json();
 
       if (!response.ok) throw new Error(data.detail || 'Error en predicción');
