@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background-color: #142B6B;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  gap: 1.5rem;
+  font-weight: 600;
+}
+
+.sidebar h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1.2rem;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  opacity: 0.95;
+}
+
+/* BOTÓN CERRAR SESIÓN */
+.sidebar button {
+  margin-top: auto;
+  background-color: #b91c1c;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar button:hover {
+  background-color: #991b1b;
+}
+
+/* MAIN CONTENT + CABECERA */
+.mainContent {
+  flex: 1;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #f3f4f6;
+}
+
+.saludo span {
+  font-weight: 600;
+  color: #142B6B;
+  font-size: 1.2rem;
+}
+
+/* TÍTULO CENTRAL CON BRILLO */
+.tituloCentrado {
+  background-color: #142B6B;
+  padding: 0.6rem 1.8rem;
+  border-radius: 12px;
+}
+
+.glowText {
+  color: white;
+  font-weight: 700;
+  font-size: 1.7rem;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.logoutButton {
+  background-color: #b91c1c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background-color: #991b1b;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4),
+                 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+                 0 0 15px rgba(255, 255, 255, 0.6);
+  }
+}
