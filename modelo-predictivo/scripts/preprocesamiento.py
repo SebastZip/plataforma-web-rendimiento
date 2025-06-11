@@ -7,8 +7,6 @@ import seaborn as sns
 def cargar_y_preparar_datos(ruta_excel='C:\\Users\\Sebas 2\\Desktop\\plataforma-web-rendimiento\\modelo-predictivo\\dataset\\Students_Performance_data_set.xlsx'):
     df = pd.read_excel(ruta_excel)
     
-    df = df[df['What is your current CGPA?'] > 0]
-    df = df[df['What was your previous SGPA?'] > 0]
     df['What is your current CGPA?'] *= 5
     df['What was your previous SGPA?'] *= 5
 
