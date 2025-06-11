@@ -1,6 +1,3 @@
-#Paso 1: Instalar las dependencias necesarias
-#pip install fastapi uvicorn supabase
-
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
@@ -15,23 +12,31 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY") or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # 2. Cargar modelo y preprocesamiento
-modelo_path = os.path.join(os.path.dirname(__file__), "modelos", "catboost_modelo.pkl")
-modelo = joblib.load(modelo_path)
-scaler_path = os.path.join(os.path.dirname(__file__), "modelos", "escalador.pkl")
-scaler = joblib.load(scaler_path)
-columnas_modelo_path = os.path.join(os.path.dirname(__file__), "modelos", "columnas_seleccionadas.pkl")
-columnas_modelo = joblib.load(columnas_modelo_path)
+base_path = os.path.join(os.path.dirname(__file__), "modelos")
+modelo = joblib.load(os.path.join(base_path, "modelo_entrenado.pkl"))
+scaler = joblib.load(os.path.join(base_path, "scaler.pkl"))
+columnas_seleccionadas = joblib.load(os.path.join(base_path, "top_12_features.pkl"))
 
-# 3. Diccionario de mapeo: nombres en Supabase → nombres originales del modelo
+print("Columnas utilizadas por el modelo:")
+print(columnas_seleccionadas)
+
+# 3. Mapeo de columnas de Supabase → nombres del modelo
 supabase_to_model = {
-    "teacher_consultancy": "Do you attend in teacher consultancy for any kind of academical problems?",
-    "study_with_peers": "Do you study with your classmates?",
-    "study_duration": "How long do you study on average per day?",
-    "ask_questions": "Do you ask the teacher questions when you don't understand?",
-    # Añade todos los necesarios aquí
+    "previous_sgpa": "What was your previous SGPA?",
+    "credit_completed": "How many Credit did you have completed?",
+    "current_semester": "Current Semester",
+    "monthly_income": "What is your monthly family income?",
+    "average_attendance": "Average attendance on class",
+    "social_media_time": "How many hour do you spent daily in social media?",
+    "hsc_year": "H.S.C passing year",
+    "ever_probation": "Did you ever fall in probation?",
+    "skill_time": "How many hour do you spent daily on your skill development?",
+    "age": "Age",
+    "study_time": "How many hour do you study daily?",
+    "scholarship": "Do you have meritorious scholarship ?"
 }
 
-# Invertir el diccionario para usarlo en orden
+# Invertir el diccionario
 model_to_supabase = {v: k for k, v in supabase_to_model.items()}
 
 # 4. Inicializar FastAPI
@@ -40,66 +45,51 @@ app = FastAPI()
 # 5. CORS para desarrollo
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # En producción, especifica tu frontend
+    allow_origins=["*"],  # En producción: restringe al dominio del frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# 6. Ruta de predicción
-# Diccionario de mapeo: columnas del modelo -> columnas en Supabase
-model_to_supabase = {
-    'Current Semester': 'Current Semester',
-    'How many hour do you study daily?': 'How many hour do you study daily?',
-    'Do you have personal Computer?': 'Do you have personal Computer?',
-    'How many hour do you spent daily in social media?': 'How many hour do you spent daily in social media?',
-    'Average attendance on class': 'Average attendance on class',
-    'Did you ever fall in probation?': 'Did you ever fall in probation?',
-    'Do you attend in teacher consultancy for any kind of academical problems?': 'Do you attend in teacher consultancy for any kind of academical',
-    'Are you engaged with any co-curriculum activities?': 'Are you engaged with any co-curriculum activities?',
-    'With whom you are living with?': 'With whom you are living with?',
-    'What was your previous SGPA?': 'What was your previous SGPA?',
-    'How many Credit did you have completed?': 'How many Credit did you have completed?',
-    'What is your monthly family income?': 'What is your monthly family income?',
-    'What is your relationship status?_Married': 'What is your relationship status?_Married'
-}
-
-# Cargar nombres de columnas del modelo
-columnas_modelo = list(model_to_supabase.keys())
-
+# 6. Ruta de predicción por código de estudiante
 @app.get("/predecir/{codigo_estudiante}")
-def predecir_desde_supabase(codigo_estudiante: str):
+def predecir_cgpa(codigo_estudiante: str):
     response = supabase.table("predicciones_estudiantes").select("*").eq("codigo_estudiante", codigo_estudiante).execute()
 
     if not response.data:
         raise HTTPException(status_code=404, detail="Estudiante no encontrado")
 
-    fila = response.data[0]  # Se espera una sola fila por código
-
+    fila = response.data[0]  # Se espera una fila
+    
+    print("Columnas esperadas por el modelo:")
+    print(columnas_seleccionadas)
+    print("Datos recibidos desde Supabase:")
+    print(fila)
+    
     try:
-        # Extraer los valores usando el diccionario sin importar el orden
+        # Extraer valores en el orden de las columnas del modelo
         valores_modelo = []
-        for columna_modelo in columnas_modelo:
-            columna_supabase = model_to_supabase[columna_modelo]
-            if columna_supabase not in fila:
-                raise HTTPException(status_code=400, detail=f"Falta la columna en Supabase: '{columna_supabase}'")
-            valores_modelo.append(fila[columna_supabase])
+        for col_model in columnas_seleccionadas:
+            if col_model not in model_to_supabase:
+                raise HTTPException(status_code=400, detail=f"Columna no mapeada: {col_model}")
+            col_supabase = model_to_supabase[col_model]
+            if col_supabase not in fila:
+                raise HTTPException(status_code=400, detail=f"Falta columna en Supabase: {col_supabase}")
+            valores_modelo.append(fila[col_supabase])
 
     except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Error al recolectar características: {str(e)}")
+        raise HTTPException(status_code=400, detail=f"Error recolectando características: {str(e)}")
 
     try:
-        # Predecir
+        # Escalar y predecir CGPA
         vector = np.array(valores_modelo).reshape(1, -1)
         vector_esc = scaler.transform(vector)
         pred = modelo.predict(vector_esc)
-        pred = int(pred.flatten()[0])
+        pred_float = float(pred.flatten()[0])
 
-        mapa = {0: "Empeoró", 1: "Igual", 2: "Mejoró"}
         return {
             "codigo_estudiante": codigo_estudiante,
-            "prediccion": int(pred),
-            "resultado": mapa.get(pred, "Desconocido")
+            "cgpa_predicho": round(pred_float, 2)
         }
 
     except Exception as e:
