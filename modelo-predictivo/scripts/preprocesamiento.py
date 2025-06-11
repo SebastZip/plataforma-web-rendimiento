@@ -6,6 +6,11 @@ import seaborn as sns
 
 def cargar_y_preparar_datos(ruta_excel='C:\\Users\\Sebas 2\\Desktop\\plataforma-web-rendimiento\\modelo-predictivo\\dataset\\Students_Performance_data_set.xlsx'):
     df = pd.read_excel(ruta_excel)
+    
+    df = df[df['What is your current CGPA?'] > 0]
+    df = df[df['What was your previous SGPA?'] > 0]
+    df['What is your current CGPA?'] *= 5
+    df['What was your previous SGPA?'] *= 5
 
     columnas_a_eliminar = [
         'University Admission year',  
@@ -65,7 +70,7 @@ def cargar_y_preparar_datos(ruta_excel='C:\\Users\\Sebas 2\\Desktop\\plataforma-
     print("📁 y_train:", y_train.shape)
     print("📁 y_test:", y_test.shape)
 
-    df.to_csv("C:\\Users\\Sebas 2\\Desktop\\plataforma-web-rendimiento\\modelo-predictivo\\dataset\\dataset_regresion.csv", index=False)
+    df.to_csv("C:\\Users\\Sebas 2\\Desktop\\plataforma-web-rendimiento\\modelo-predictivo\\dataset\\dataset_regresion.csv", index=False, float_format='%.3f')
 
     # --- NUEVO: Análisis del target (CGPA) ---
     print("\n📊 Estadísticas del CGPA (target):")
