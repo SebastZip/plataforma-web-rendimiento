@@ -98,7 +98,7 @@ const PrediccionForm = ({ usuario }) => {
 
       const cgpa = json.cgpa_predicho;
       setResultado(cgpa);
-      setCicloObjetivo(datosFinales.current_semester + 1);
+      setCicloObjetivo(parseInt(datosFinales.current_semester) + 1);
       setMostrarModal(true);
 
       // 5. Actualizar
