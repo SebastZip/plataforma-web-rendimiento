@@ -17,9 +17,6 @@ modelo = joblib.load(os.path.join(base_path, "modelo_entrenado.pkl"))
 scaler = joblib.load(os.path.join(base_path, "scaler.pkl"))
 columnas_seleccionadas = joblib.load(os.path.join(base_path, "top_12_features.pkl"))
 
-print("Columnas utilizadas por el modelo:")
-print(columnas_seleccionadas)
-
 # 3. Mapeo de columnas de Supabase → nombres del modelo
 supabase_to_model = {
     "previous_sgpa": "What was your previous SGPA?",
@@ -54,17 +51,19 @@ app.add_middleware(
 # 6. Ruta de predicción por código de estudiante
 @app.get("/predecir/{codigo_estudiante}")
 def predecir_cgpa(codigo_estudiante: str):
-    response = supabase.table("predicciones_estudiantes").select("*").eq("codigo_estudiante", codigo_estudiante).execute()
+    response = (
+    supabase.table("predicciones_estudiantes")
+    .select("*")
+    .eq("codigo_estudiante", codigo_estudiante)
+    .order("fecha_insercion", desc=True)
+    .limit(1)
+    .execute()
+)
 
     if not response.data:
         raise HTTPException(status_code=404, detail="Estudiante no encontrado")
 
     fila = response.data[0]  # Se espera una fila
-    
-    print("Columnas esperadas por el modelo:")
-    print(columnas_seleccionadas)
-    print("Datos recibidos desde Supabase:")
-    print(fila)
     
     try:
         # Extraer valores en el orden de las columnas del modelo
