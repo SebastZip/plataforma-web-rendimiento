@@ -46,7 +46,7 @@ const LoginPage = ({ onLogin }) => {
       return
     }
 
-    onLogin(data)
+    onLogin({ ...data, codigo_estudiante: data.codigo })
   }
 
   return (

@@ -62,7 +62,7 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-# 3. Definir modelos con hiperparámetros optimizados
+
 modelos = {
     'XGBoost': XGBClassifier(
         n_estimators=200,

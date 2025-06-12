@@ -1,0 +1,134 @@
+.container {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1900px; /* Puedes subir a 1200px si quieres más expansión */
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.titulo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.mensajeVacio {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tabla th {
+  padding: 0.8rem;
+  background-color: #f8fafc;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tabla td {
+  padding: 0.7rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
+
+.nota {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  min-width: 60px;
+}
+
+.verde {
+  background-color: #16a34a;
+}
+
+.ambar {
+  background-color: #eab308;
+}
+
+.rojo {
+  background-color: #dc2626;
+}
+
+.fadeIn {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.inputNota {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 80px;
+  text-align: center;
+  outline: none;
+  background-color: #f3f4f6; /* gris claro */
+  transition: all 0.3s ease;
+}
+
+.inputNota:focus {
+  background-color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* Elimina flechitas de tipo number */
+.inputNota::-webkit-outer-spin-button,
+.inputNota::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputNota[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.botonesAccion {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+  justify-content: center;
+}
+
+.botonCheck,
+.botonCancel {
+  padding: 4px 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.botonCheck {
+  background-color: #22c55e; /* verde */
+}
+
+.botonCancel {
+  background-color: #ef4444; /* rojo */
+}
