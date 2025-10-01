@@ -1,0 +1,1801 @@
+﻿codigo_anonimo,escuela_profesional,semestre_actual,sgpa_previo,cgpa_actual,creditos_completados,asistencia_promedio_pct,estado_observado,desaprobo_alguna_asignatura,horas_estudio_diarias,horas_redes_diarias,horas_habilidades_diarias,edad,ingreso_familiar_mensual_soles,beca_subvencion_economica,anio_egreso_secundaria,planea_matricularse_prox_ciclo,probabilidad_matricula_pct,motivo_no_matricula,promedio_final_ciclo_actual
+P0001,Ingeniería de Software,10,8.79,13.51,137,91.0,No,Sí,5.0,2.0,2.0,23,4205,No,2019,Sí,58,,3.48
+P0002,Ingeniería de Sistemas,9,7.13,12.75,121,87.0,No,Sí,3.0,2.0,4.0,25,8673,No,2018,Sí,91,,5.59
+P0003,Ingeniería de Sistemas,4,17.57,19.65,27,90.0,No,No,4.0,1.0,2.0,21,2363,No,2019,Sí,45,,13.42
+P0004,Ingeniería de Software,10,9.39,15.05,143,89.0,Sí,Sí,5.0,3.0,4.0,24,5173,No,2018,Sí,52,,5.86
+P0005,Ingeniería de Software,4,13.72,15.88,36,82.0,No,No,2.0,2.0,4.0,20,2598,No,2020,Sí,37,,13.91
+P0006,Ingeniería de Sistemas,4,18.33,19.7,35,90.0,No,No,7.0,3.0,1.0,19,3582,No,2020,Sí,61,,12.98
+P0007,Ciencia de la Computación,3,17.18,17.84,23,70.0,No,Sí,3.0,4.0,2.0,22,1054,No,2019,Sí,21,,10.63
+P0008,Ingeniería de Software,2,13.19,16.4,11,90.0,No,Sí,1.0,1.0,2.0,19,1450,No,2020,Sí,32,,7.55
+P0009,Ingeniería de Software,8,14.02,15.27,88,95.0,No,Sí,1.0,2.0,2.0,21,2634,No,2019,Sí,42,,8.61
+P0010,Ingeniería de Sistemas,10,13.25,18.91,134,100.0,No,Sí,1.0,2.0,2.0,20,3432,No,2020,Sí,53,,9.84
+P0011,Ingeniería de Sistemas,8,18.24,18.97,88,100.0,No,No,5.0,15.0,4.0,22,1782,No,2018,Sí,49,,13.09
+P0012,Ingeniería de Software,4,12.0,15.33,36,80.0,No,Sí,3.0,3.0,3.0,22,1801,No,2018,Sí,48,,8.76
+P0013,Ingeniería de Sistemas,8,11.66,17.77,100,100.0,No,Sí,4.0,6.0,2.0,21,5200,No,2020,Sí,83,,10.23
+P0014,Ingeniería de Sistemas,9,15.12,16.59,101,99.0,No,No,3.0,1.0,4.0,20,2191,No,2019,Sí,40,,11.15
+P0015,Ingeniería de Sistemas,8,16.05,16.46,122,100.0,No,Sí,5.0,3.0,2.0,22,2192,No,2017,Sí,39,,9.15
+P0016,Ingeniería de Software,4,8.21,16.11,67,85.0,Sí,Sí,3.0,2.0,2.0,20,2966,No,2021,Sí,18,,6.25
+P0017,Ingeniería de Sistemas,4,19.07,18.39,49,80.0,No,No,1.0,2.0,4.0,21,2330,No,2019,Sí,44,,13.79
+P0018,Ingeniería de Sistemas,5,13.05,15.62,50,80.0,No,Sí,3.0,3.0,1.0,21,3160,No,2019,Sí,50,,8.72
+P0019,Ingeniería de Software,3,14.46,15.39,23,100.0,No,No,3.0,1.0,1.0,21,3858,No,2020,Sí,57,,12.58
+P0020,Ingeniería de Software,2,15.22,15.07,11,98.0,No,No,5.0,3.0,2.0,22,2270,No,2019,Sí,53,,12.3
+P0021,Ingeniería de Software,2,19.84,19.9,12,100.0,No,Sí,0.0,4.0,1.0,20,831,No,2020,Sí,29,,8.8
+P0022,Ciencia de la Computación,2,15.74,16.08,11,92.0,No,Sí,2.0,1.0,4.0,20,1370,No,2020,Sí,40,,10.99
+P0023,Ingeniería de Software,5,9.82,14.77,60,100.0,Sí,Sí,2.0,3.0,2.0,20,5519,No,2021,Sí,51,,3.35
+P0024,Ingeniería de Software,8,13.47,16.24,126,85.0,No,Sí,3.0,1.0,2.0,23,2331,No,2017,Sí,40,,8.89
+P0025,Ingeniería de Software,2,13.54,13.41,11,100.0,No,Sí,2.0,4.0,0.0,22,2509,No,2020,Sí,47,,12.889501997621352
+P0026,Ingeniería de Sistemas,10,14.27,15.8,104,70.0,No,No,4.0,1.0,2.0,26,1061,No,2014,Sí,0,,12.34
+P0027,Ingeniería de Sistemas,2,13.91,13.35,12,100.0,No,No,2.0,2.0,3.0,20,6030,No,2021,Sí,84,,12.54
+P0028,Ingeniería de Sistemas,2,18.35,17.15,14,90.0,No,Sí,5.0,3.0,1.0,20,600,No,2020,Sí,21,,10.6
+P0029,Ingeniería de Sistemas,8,17.82,17.72,88,100.0,No,No,2.0,2.0,3.0,21,4917,No,2019,Sí,75,,12.22
+P0030,Ingeniería de Software,4,16.87,18.23,27,90.0,No,No,4.0,1.0,2.0,21,2215,No,2019,Sí,33,,12.92
+P0031,Ingeniería de Sistemas,6,10.68,16.86,86,70.0,No,Sí,6.0,5.0,5.0,21,5004,No,2021,Sí,61,,9.59
+P0032,Ingeniería de Sistemas,9,15.78,17.69,117,100.0,No,No,1.0,1.0,2.0,26,2191,No,2013,Sí,59,,11.63
+P0033,Ingeniería de Sistemas,9,12.73,17.95,117,88.0,No,No,2.0,2.0,1.0,20,5619,No,2020,Sí,80,,11.28
+P0034,Ingeniería de Software,9,13.07,19.55,143,78.0,No,Sí,5.0,1.0,4.0,25,4793,No,2018,No,72,Exceso de carga laboral,7.68
+P0035,Ingeniería de Sistemas,9,13.98,16.23,136,75.0,No,No,2.0,1.0,3.0,23,1980,No,2017,No,23,Exceso de carga laboral,11.04
+P0036,Ingeniería de Sistemas,2,16.05,15.89,12,95.0,No,No,2.0,1.0,2.0,20,1732,No,2020,Sí,28,,11.46
+P0037,Ingeniería de Sistemas,8,9.64,13.8,117,60.0,Sí,Sí,3.0,6.0,2.0,20,5779,No,2019,Sí,51,,5.39
+P0038,Ciencia de la Computación,8,16.92,17.16,85,100.0,No,No,6.0,2.0,3.0,21,3659,No,2019,Sí,61,,12.56
+P0039,Ciencia de la Computación,2,13.8,15.3,11,90.0,No,Sí,3.0,3.0,1.0,19,2648,No,2020,Sí,38,,8.49
+P0040,Ingeniería de Software,2,16.33,16.68,12,100.0,No,Sí,8.0,2.0,1.0,21,2821,No,2020,Sí,54,,7.67
+P0041,Ingeniería de Software,8,9.97,15.09,143,100.0,Sí,Sí,2.0,3.0,4.0,22,7265,No,2019,Sí,84,,5.43
+P0042,Ingeniería de Sistemas,10,14.17,14.71,112,100.0,No,Sí,3.0,3.0,2.0,22,2810,No,2018,No,46,Falta de motivación,8.57
+P0043,Ingeniería de Sistemas,8,14.07,11.24,62,80.0,No,Sí,3.0,5.0,1.0,21,3302,No,2019,No,47,Exceso de carga laboral,10.43
+P0044,Ingeniería de Sistemas,9,15.48,14.55,120,70.0,No,No,4.0,5.0,2.0,23,5331,No,2018,Sí,87,,12.9
+P0045,Ciencia de la Computación,2,17.43,17.89,11,99.0,No,No,3.0,3.0,1.0,20,1067,No,2020,No,20,Falta de motivación,12.67
+P0046,Ingeniería de Sistemas,10,13.49,19.09,136,100.0,No,Sí,1.0,10.0,1.0,21,3339,No,2019,Sí,44,,6.2
+P0047,Ingeniería de Software,4,13.41,19.9,29,100.0,No,No,5.0,4.0,2.0,19,5181,No,2021,Sí,69,,14.64
+P0048,Ciencia de la Computación,8,17.28,19.18,110,95.0,No,No,4.0,2.0,1.0,21,10000,No,2019,Sí,96,,14.77
+P0049,Ingeniería de Software,1,0.62,1.25,0,85.0,No,Sí,4.0,2.0,2.0,20,1540,No,2018,Sí,17,,5.49
+P0050,Ingeniería de Software,3,19.6,17.73,23,50.0,No,No,5.0,3.0,2.0,26,4978,No,2014,No,57,Salud u otros,12.67
+P0051,Ingeniería de Sistemas,2,20.0,19.82,12,90.0,No,No,2.0,8.0,3.0,22,600,No,2020,Sí,32,,14.95
+P0052,Ciencia de la Computación,3,19.11,19.83,23,90.0,No,No,3.0,1.0,2.0,24,841,No,2020,No,17,Problemas económicos,14.93
+P0053,Ingeniería de Software,2,20.0,20.0,11,88.0,No,No,2.0,2.0,2.0,21,1155,No,2020,Sí,22,,12.23
+P0054,Ingeniería de Software,10,7.0,13.8,143,16.05318414738774,No,Sí,1.0,4.0,4.0,25,3384,No,2018,Sí,38,,5.84
+P0055,Ingeniería de Sistemas,9,10.54,15.74,131,70.0,No,Sí,3.0,7.0,1.0,20,3106,No,2020,Sí,39,,7.49
+P0056,Ingeniería de Sistemas,3,18.59,19.21,24,85.0,No,No,1.0,2.0,2.0,21,3142,No,2019,Sí,52,,11.81
+P0057,Ingeniería de Sistemas,2,17.6,17.48,11,88.0,No,No,1.0,4.0,3.0,20,3850,No,2020,Sí,40,,12.64
+P0058,Ingeniería de Software,10,14.39,18.75,136,100.0,No,Sí,1.0,2.0,2.0,22,3090,No,2020,Sí,48,,10.95
+P0059,Ciencia de la Computación,5,10.1,12.06,39,87.0,No,Sí,2.0,1.0,1.0,21,3528,No,2019,No,44,Problemas económicos,4.6
+P0060,Ingeniería de Software,8,18.66,17.31,87,80.0,No,No,2.0,1.0,3.0,21,2209,No,2019,Sí,64,,14.9
+P0061,Ingeniería de Software,2,19.57,19.73,11,90.0,No,No,1.0,3.0,0.0,23,1511,No,2021,Sí,36,,11.12
+P0062,Ingeniería de Software,4,14.43,15.65,36,88.0,No,Sí,1.0,2.0,1.0,20,3785,No,2020,Sí,71,,9.45
+P0063,Ingeniería de Software,7,10.35,17.89,103,100.0,Sí,Sí,6.0,2.0,2.0,21,2457,No,2019,Sí,34,,9.31
+P0064,Ingeniería de Software,7,13.24,19.88,109,100.0,No,Sí,4.0,6.0,1.0,20,5455,No,2019,Sí,74,,7.18
+P0065,Ciencia de la Computación,5,18.0,18.96,49,90.0,No,No,3.0,2.0,1.0,22,1185,No,2017,Sí,21,,12.45
+P0066,Ingeniería de Sistemas,3,18.03,16.25,23,75.0,No,No,2.0,2.0,1.0,21,2253,No,2019,Sí,46,,13.11
+P0067,Ingeniería de Software,4,9.33,13.97,43,80.0,Sí,Sí,1.0,7.0,1.0,21,4325,No,2021,Sí,37,,9.17
+P0068,Ingeniería de Sistemas,4,11.78,17.07,59,79.0,No,Sí,4.0,7.0,3.0,21,7993,No,2020,Sí,92,,7.33
+P0069,Ingeniería de Sistemas,2,19.08,19.68,11,100.0,No,Sí,2.0,1.0,2.0,21,3102,No,2019,No,53,Exceso de carga laboral,10.11
+P0070,Ingeniería de Software,5,7.87,13.07,64,67.0,Sí,Sí,3.0,8.0,2.0,21,9854,No,2021,No,97,Salud u otros,5.93
+P0071,Ingeniería de Sistemas,4,13.68,16.06,36,80.0,No,Sí,2.0,2.0,4.0,20,1703,No,2020,Sí,21,,9.85
+P0072,Ciencia de la Computación,3,20.0,19.3,25,75.0,No,No,3.0,1.0,2.0,22,6032,No,2020,Sí,79,,14.26
+P0073,Ingeniería de Software,2,18.63,19.17,11,99.0,No,Sí,5.0,2.0,1.0,20,967,No,2020,Sí,20,,10.49
+P0074,Ingeniería de Software,6,9.41,14.14,80,56.0,No,Sí,2.0,2.0,2.0,20,4515,No,2020,Sí,43,,5.91
+P0075,Ingeniería de Sistemas,6,7.45,12.17,77,62.0,Sí,Sí,3.0,3.0,1.0,20,6868,No,2021,No,59,Falta de motivación,4.37
+P0076,Ingeniería de Software,10,13.22,16.0,126,85.0,No,Sí,3.0,1.0,2.0,23,2839,No,2017,No,57,Bajo rendimiento,9.44
+P0077,Ingeniería de Software,9,19.04,17.44,105,95.0,No,No,2.0,5.0,1.0,21,2771,No,2018,No,34,Exceso de carga laboral,15.0
+P0078,Ingeniería de Sistemas,10,11.82,17.72,116,100.0,No,Sí,3.0,2.0,2.0,24,4509,No,2019,Sí,68,,10.59
+P0079,Ingeniería de Sistemas,1,1.9,0.74,0,100.0,Sí,Sí,2.0,7.0,1.0,20,889,No,2020,Sí,0,,3.85
+P0080,Ingeniería de Software,4,13.31,16.12,36,95.0,No,No,5.0,1.0,2.0,22,2314,No,2019,Sí,33,,11.98
+P0081,Ingeniería de Sistemas,7,19.86,19.01,76,99.0,No,No,5.0,6.0,2.0,23,600,No,2019,Sí,15,,16.19
+P0082,Ingeniería de Software,8,10.69,16.79,103,100.0,No,Sí,5.0,12.0,2.0,25,4722,No,2018,Sí,65,,8.33
+P0083,Ingeniería de Software,5,9.75,16.32,87,88.0,No,Sí,3.0,8.0,3.0,20,4180,No,2021,Sí,49,,9.85
+P0084,Ingeniería de Sistemas,2,13.19,15.68,11,95.0,No,Sí,5.0,3.0,1.0,20,902,No,2020,No,29,Falta de motivación,10.97
+P0085,Ciencia de la Computación,1,0.19,0.0,0,100.0,No,Sí,6.0,4.0,3.0,21,2463,No,2020,Sí,2,,4.02
+P0086,Ciencia de la Computación,4,16.1,17.75,25,100.0,No,No,4.0,4.0,2.0,20,3423,No,2020,Sí,52,,11.89
+P0087,Ingeniería de Sistemas,9,12.64,17.91,123,87.0,No,Sí,1.0,3.0,4.0,20,4428,No,2021,Sí,60,,10.52
+P0088,Ingeniería de Sistemas,10,7.65,13.49,133,70.0,Sí,Sí,3.0,3.0,3.0,21,5242,No,2018,Sí,45,,3.31
+P0089,Ingeniería de Sistemas,8,13.35,19.09,135,68.0,No,Sí,5.0,3.0,2.0,20,2670,No,2020,Sí,44,,6.7
+P0090,Ingeniería de Sistemas,2,13.66,17.08,11,75.0,No,Sí,1.0,4.0,1.0,20,2292,No,2020,Sí,35,,9.42
+P0091,Ingeniería de Software,2,18.6,15.66,90,100.0,No,Sí,3.0,2.0,2.0,21,2240,No,2020,No,45,Bajo rendimiento,9.06
+P0092,Ciencia de la Computación,9,13.8,18.45,136,68.0,No,Sí,1.0,3.0,2.0,25,3417,No,2019,Sí,55,,6.88
+P0093,Ingeniería de Sistemas,3,16.0,15.11,24,90.0,No,Sí,2.0,12.0,0.0,20,2453,No,2020,Sí,44,,8.72
+P0094,Ingeniería de Software,5,7.51,13.69,71,100.0,No,Sí,3.0,3.0,3.0,20,4469,No,2021,Sí,44,,7.12
+P0095,Ingeniería de Software,6,10.37,14.7,74,100.0,Sí,Sí,3.0,2.0,2.0,21,4889,No,2021,Sí,59,,9.03
+P0096,Ingeniería de Software,8,14.1,16.24,88,100.0,No,Sí,1.0,15.0,1.0,22,5427,No,2019,Sí,72,,9.38
+P0097,Ingeniería de Sistemas,5,8.13,12.71,68,54.0,Sí,Sí,2.0,2.0,2.0,21,5621,No,2021,No,54,Salud u otros,7.46
+P0098,Ingeniería de Sistemas,1,17.24,17.59,14,90.0,No,No,4.0,2.0,1.0,19,1415,No,2020,Sí,28,,13.34
+P0099,Ingeniería de Sistemas,3,14.97,14.44,23,100.0,No,No,3.0,1.0,1.0,21,4022,No,2020,Sí,66,,14.36
+P0100,Ingeniería de Sistemas,1,0.0,0.3,0,100.0,No,Sí,1.0,3.0,2.0,19,985,No,2020,Sí,8,,3.98
+P0101,Ingeniería de Software,2,20.0,19.52,11,90.0,No,No,3.0,3.0,2.0,20,2610,No,2020,Sí,37,,16.11
+P0102,Ingeniería de Software,2,18.18,18.77,11,98.0,No,Sí,4.0,3.0,3.0,20,3586,No,2020,Sí,76,,9.68
+P0103,Ingeniería de Sistemas,9,8.61,12.46,143,100.0,Sí,Sí,3.0,2.0,1.0,25,8707,No,2018,Sí,80,,8.26
+P0104,Ingeniería de Sistemas,6,12.19,16.01,63,70.0,No,Sí,5.0,7.0,3.0,22,2905,No,2020,Sí,46,,6.81
+P0105,Ingeniería de Sistemas,9,11.99,17.54,103,67.0,No,Sí,1.0,2.0,2.0,20,3651,No,2020,Sí,50,,7.11
+P0106,Ingeniería de Software,2,14.33,14.83,11,85.0,No,No,4.0,3.0,2.0,20,1888,No,2020,No,42,Falta de motivación,12.16
+P0107,Ciencia de la Computación,2,13.52,16.79,11,99.0,No,Sí,5.0,2.0,2.0,20,10000,No,2020,Sí,92,,6.12
+P0108,Ingeniería de Software,4,13.45,16.12,36,90.0,No,Sí,3.0,2.0,3.0,20,1240,No,2020,Sí,37,,9.39
+P0109,Ciencia de la Computación,8,13.54,10.6,62,80.0,No,Sí,3.0,5.0,1.0,21,3560,No,2019,Sí,52,,10.59
+P0110,Ingeniería de Sistemas,9,6.51,12.65,143,100.0,Sí,Sí,3.0,1.0,1.0,23,3328,No,2019,Sí,35,,2.82
+P0111,Ingeniería de Sistemas,9,17.19,11.35,90,50.0,No,No,5.0,10.0,2.0,20,3362,No,2019,No,46,Problemas económicos,13.37
+P0112,Ingeniería de Sistemas,3,15.2,19.51,51,100.0,No,No,4.0,3.0,2.0,22,3566,No,2022,Sí,48,,11.07
+P0113,Ingeniería de Sistemas,2,17.19,17.69,11,88.0,No,No,5.0,1.0,2.0,20,1814,No,2020,Sí,45,,11.81
+P0114,Ciencia de la Computación,8,16.43,16.95,84,95.0,No,No,3.0,2.0,2.0,22,2948,No,2019,Sí,47,,12.44
+P0115,Ingeniería de Sistemas,9,13.33,16.77,126,90.0,No,Sí,2.0,3.0,3.0,25,4031,No,2014,No,65,Bajo rendimiento,10.08
+P0116,Ingeniería de Software,7,10.78,16.12,32,90.0,No,Sí,2.0,3.0,1.0,23,3917,No,2019,Sí,47,,3.64
+P0117,Ingeniería de Software,8,10.7,15.63,119,86.0,No,Sí,3.0,9.0,2.0,20,2629,No,2020,Sí,52,,7.76
+P0118,Ingeniería de Software,1,18.35,18.9,11,100.0,No,No,2.0,1.0,1.0,21,3586,No,2020,Sí,55,,14.58
+P0119,Ingeniería de Sistemas,2,19.36,20.0,12,95.0,No,No,1.0,2.0,1.0,20,2236,No,2020,Sí,34,,16.45
+P0120,Ciencia de la Computación,1,0.17,0.52,0,95.0,No,Sí,2.0,2.0,2.0,22,4251,No,2019,Sí,51,,0.0
+P0121,Ciencia de la Computación,2,16.55,18.39,11,88.0,No,Sí,1.0,4.0,3.0,20,3763,No,2020,Sí,60,,10.835214462101263
+P0122,Ingeniería de Sistemas,4,13.37,16.47,36,97.0,No,Sí,5.0,2.0,2.0,21,3178,No,2020,Sí,71,,5.82
+P0123,Ingeniería de Sistemas,6,14.24,17.85,56,100.0,No,Sí,2.0,1.0,1.0,22,4207,No,2018,Sí,73,,7.74
+P0124,Ingeniería de Software,9,15.85,20.0,140,100.0,No,Sí,1.0,8.0,2.0,24,1978,No,2018,Sí,40,,9.15
+P0125,Ciencia de la Computación,2,14.6,13.27,12,90.0,No,Sí,2.0,6.0,0.0,20,2299,No,2020,No,49,Exceso de carga laboral,8.44
+P0126,Ciencia de la Computación,8,16.81,15.62,118,99.0,No,Sí,5.0,3.0,2.0,22,2101,No,2017,Sí,46,,10.4
+P0127,Ingeniería de Sistemas,8,12.88,13.85,115,99.0,No,Sí,5.0,5.0,2.0,24,3226,No,2014,Sí,41,,10.57
+P0128,Ingeniería de Software,8,14.15,19.92,143,100.0,No,Sí,6.0,2.0,1.0,24,5517,No,2019,Sí,84,,10.17
+P0129,Ciencia de la Computación,8,9.32,11.77,87,90.0,No,Sí,5.0,3.0,2.0,21,2586,No,2019,Sí,31,,10.27
+P0130,Ingeniería de Sistemas,8,18.03,17.0,90,98.0,No,No,5.0,4.0,3.0,23,1705,No,2019,No,14,Problemas económicos,12.45
+P0131,Ingeniería de Software,7,11.34,16.43,66,70.0,No,Sí,1.0,5.0,5.0,23,2828,No,2019,Sí,37,,4.84
+P0132,Ingeniería de Sistemas,3,13.69,14.46,23,70.0,No,Sí,3.0,3.0,5.0,21,1197,No,2020,Sí,16,,8.16
+P0133,Ingeniería de Software,8,18.64,19.19,90,90.0,No,No,3.0,3.0,2.0,23,4030,No,2019,Sí,56,,13.04
+P0134,Ciencia de la Computación,2,17.77,19.05,11,98.0,No,No,2.0,4.0,2.0,20,2167,No,2020,Sí,48,,14.24
+P0135,Ciencia de la Computación,8,13.12,16.28,88,95.0,No,Sí,1.0,2.0,2.0,21,2247,No,2019,Sí,50,,6.93
+P0136,Ingeniería de Sistemas,3,6.8,14.35,34,30.0,No,Sí,3.0,10.0,1.0,21,4129,No,2020,Sí,27,,5.07
+P0137,Ingeniería de Sistemas,6,17.2,16.51,70,99.0,No,No,3.0,3.0,2.0,22,2087,No,2018,Sí,28,,13.92
+P0138,Ingeniería de Sistemas,8,19.43,14.98,73,100.0,No,Sí,6.0,3.0,2.0,23,1868,No,2018,No,40,Problemas económicos,10.06
+P0139,Ingeniería de Software,3,18.35,19.04,25,99.0,No,No,4.0,1.0,2.0,21,2304,No,2019,No,39,Bajo rendimiento,11.58
+P0140,Ingeniería de Software,8,11.92,16.98,128,95.0,No,Sí,2.0,3.0,1.0,22,909,No,2019,Sí,36,,8.26
+P0141,Ingeniería de Sistemas,8,17.53,17.25,90,98.0,No,No,5.0,4.0,3.0,23,1398,No,2019,Sí,37,,13.63
+P0142,Ingeniería de Sistemas,2,16.49,17.02,11,90.0,No,Sí,4.0,1.0,1.0,19,2270,No,2020,No,35,Falta de motivación,8.55
+P0143,Ciencia de la Computación,1,0.18,0.0,0,100.0,Sí,Sí,4.0,3.0,1.0,19,2502,No,2021,No,16,Falta de motivación,3.47
+P0144,Ingeniería de Software,8,19.67,18.29,90,99.0,No,No,3.0,2.0,1.0,20,2851,No,2019,Sí,51,,11.38
+P0145,Ingeniería de Software,7,11.55,12.87,65,80.0,No,Sí,2.0,1.0,1.0,20,2060,No,2019,Sí,34,,7.49
+P0146,Ingeniería de Software,5,13.68,18.13,58,100.0,No,Sí,3.0,3.0,4.0,20,3896,No,2021,Sí,67,,10.81
+P0147,Ingeniería de Software,8,18.35,16.76,124,90.0,No,Sí,1.0,1.0,4.0,25,3084,No,2017,Sí,52,,9.14
+P0148,Ingeniería de Sistemas,8,16.92,19.45,87,96.0,No,No,3.0,1.0,2.0,21,1245,No,2018,No,20,Bajo rendimiento,12.35
+P0149,Ingeniería de Software,3,16.85,18.07,23,90.0,No,No,2.0,3.0,1.0,21,3089,No,2020,No,67,Salud u otros,12.52
+P0150,Ciencia de la Computación,7,18.1,18.0,89,95.0,No,Sí,3.0,2.0,1.0,21,3244,No,2019,Sí,48,,10.17
+P0151,Ingeniería de Sistemas,5,14.59,19.7,61,100.0,No,Sí,3.0,3.0,4.0,20,3906,No,2021,Sí,70,,10.7
+P0152,Ingeniería de Software,1,16.11,16.78,11,98.0,No,Sí,3.0,8.0,1.0,21,5914,No,2020,Sí,82,,10.35
+P0153,Ingeniería de Sistemas,4,10.25,17.79,46,70.0,No,Sí,3.0,9.0,3.0,19,5165,No,2020,Sí,73,,10.95
+P0154,Ingeniería de Sistemas,9,7.27,11.66,130,56.0,Sí,Sí,2.0,3.0,4.0,20,5789,No,2020,Sí,47,,1.34
+P0155,Ingeniería de Software,1,19.48,19.14,12,100.0,No,No,3.0,3.0,2.0,22,3323,No,2017,Sí,50,,11.53
+P0156,Ingeniería de Sistemas,2,14.79,19.88,28,100.0,No,Sí,5.0,5.0,3.0,21,1461,No,2022,Sí,26,,10.49
+P0157,Ingeniería de Software,2,19.42,18.06,11,50.343883400021504,No,No,3.0,5.0,2.0,21,2120,No,2021,Sí,47,,13.33
+P0158,Ciencia de la Computación,7,12.75,19.44,100,100.0,No,No,3.0,5.0,2.0,19,4439,No,2021,Sí,68,,11.55
+P0159,Ingeniería de Software,6,13.17,16.4,50,80.0,No,Sí,1.0,3.0,1.0,22,2107,No,2018,Sí,33,,7.41
+P0160,Ingeniería de Sistemas,8,17.08,16.46,88,85.0,No,No,1.0,3.0,1.0,21,3117,No,2019,Sí,37,,13.28
+P0161,Ingeniería de Sistemas,8,18.11,17.63,88,100.0,No,No,13.0,1.0,2.0,21,600,No,2019,Sí,37,,15.74
+P0162,Ingeniería de Software,5,9.71,13.58,71,78.0,Sí,Sí,2.0,5.0,2.0,21,5101,No,2021,No,33,Problemas económicos,8.55
+P0163,Ingeniería de Software,7,17.04,15.99,80,97.0,No,Sí,3.0,4.0,3.0,22,3147,No,2019,Sí,48,,10.67
+P0164,Ingeniería de Sistemas,10,6.43,11.67,137,57.0,Sí,Sí,1.0,9.0,1.0,21,3092,No,2018,Sí,26,,5.22
+P0165,Ingeniería de Software,2,14.0,15.63,14,80.0,No,No,4.0,1.0,1.0,21,1114,No,2020,No,23,Bajo rendimiento,12.84
+P0166,Ciencia de la Computación,8,11.72,17.39,90,70.0,No,Sí,1.0,4.0,3.0,24,1952,No,2017,Sí,43,,6.71
+P0167,Ingeniería de Sistemas,10,11.92,16.38,137,100.0,No,Sí,3.0,7.0,1.0,20,7100,No,2019,Sí,85,,10.6
+P0168,Ciencia de la Computación,6,10.9,16.44,84,100.0,No,Sí,4.0,8.0,2.0,20,3664,No,2020,Sí,50,,8.61
+P0169,Ingeniería de Software,4,9.03,12.54,24,80.0,No,Sí,4.0,2.0,1.0,22,1614,No,2021,Sí,38,,7.06
+P0170,Ingeniería de Software,2,19.03,17.92,14,90.0,No,No,5.0,3.0,1.0,20,600,No,2020,Sí,30,,11.01
+P0171,Ingeniería de Software,9,6.93,13.18,130,56.0,No,Sí,2.0,3.0,4.0,20,5517,No,2020,Sí,54,,5.33
+P0172,Ingeniería de Sistemas,7,17.02,19.08,75,98.0,No,Sí,0.0,2.0,0.0,22,2988,No,2019,Sí,50,,9.43
+P0173,Ciencia de la Computación,2,14.77,16.38,12,100.0,No,No,3.0,3.0,1.0,20,5252,No,2020,Sí,79,,12.61
+P0174,Ciencia de la Computación,8,18.36,18.25,78,100.0,No,No,3.0,3.0,2.0,22,1878,No,2018,No,36,Problemas económicos,13.18
+P0175,Ciencia de la Computación,10,11.98,15.85,137,100.0,No,No,3.0,7.0,1.0,20,7118,No,2019,Sí,92,,12.47
+P0176,Ingeniería de Sistemas,2,15.2,19.89,30,100.0,No,Sí,4.0,3.0,2.0,19,6012,No,2021,Sí,99,,8.41
+P0177,Ingeniería de Sistemas,9,13.89,20.0,116,87.0,No,Sí,3.0,3.0,2.0,23,2369,No,2019,No,48,Salud u otros,10.5
+P0178,Ingeniería de Sistemas,9,15.02,18.55,124,100.0,No,No,2.0,3.0,4.0,21,4796,No,2020,Sí,74,,11.93
+P0179,Ingeniería de Sistemas,6,11.03,15.45,60,100.0,No,Sí,3.0,1.0,2.0,22,1043,No,2019,Sí,26,,9.75
+P0180,Ingeniería de Sistemas,2,18.84,18.68,12,85.0,No,No,1.0,4.0,0.0,21,3045,No,2020,Sí,52,,12.66
+P0181,Ingeniería de Software,8,19.91,18.51,85,85.0,No,No,1.0,1.0,1.0,21,1321,No,2019,Sí,30,,12.51
+P0182,Ingeniería de Sistemas,5,11.82,17.54,72,90.0,No,Sí,5.0,9.0,1.0,20,4171,No,2020,Sí,58,,8.2
+P0183,Ingeniería de Sistemas,1,16.9,15.67,11,95.0,No,No,5.0,2.0,2.0,21,3512,No,2020,Sí,61,,13.15
+P0184,Ciencia de la Computación,2,15.82,15.62,11,98.0,No,No,4.0,2.0,2.0,22,1298,No,2020,Sí,38,,12.62
+P0185,Ingeniería de Software,9,10.86,17.42,60,90.0,No,Sí,5.0,6.0,2.0,24,1780,No,2019,Sí,31,,6.54
+P0186,Ciencia de la Computación,6,12.05,16.43,65,90.0,No,No,2.0,5.0,2.0,20,2093,No,2019,Sí,37,,11.7
+P0187,Ingeniería de Sistemas,7,12.29,12.33,70,40.0,No,Sí,3.0,4.0,2.0,23,3762,No,2018,Sí,41,,7.35
+P0188,Ingeniería de Software,2,18.79,0.61,11,90.0,No,No,5.0,6.0,5.0,20,3075,No,2020,Sí,39,,11.29
+P0189,Ciencia de la Computación,4,8.35,12.84,23,90.0,Sí,Sí,4.0,2.0,1.0,22,1372,No,2020,No,2,Bajo rendimiento,10.83
+P0190,Ingeniería de Software,8,20.0,20.0,87,98.0,No,No,5.0,2.0,3.0,22,1840,No,2018,No,40,Problemas económicos,12.56
+P0191,Ingeniería de Sistemas,9,13.73,19.21,100,100.0,No,Sí,2.0,2.0,4.0,22,4957,No,2020,Sí,64,,8.16
+P0192,Ingeniería de Software,8,14.05,19.85,139,100.0,No,Sí,4.0,7.0,2.0,21,2460,No,2019,Sí,57,,8.28
+P0193,Ingeniería de Sistemas,9,17.82,20.0,130,99.0,No,No,8.0,2.0,3.0,23,1450,No,2018,Sí,22,,15.72
+P0194,Ingeniería de Software,2,15.95,18.05,11,88.0,No,Sí,8.0,2.0,2.0,20,1878,No,2020,Sí,41,,10.47
+P0195,Ingeniería de Sistemas,9,15.13,15.27,105,80.0,No,No,4.0,2.0,2.0,22,10000,No,2018,Sí,97,,11.72
+P0196,Ingeniería de Software,8,12.37,17.81,109,71.0,No,Sí,3.0,7.0,1.0,21,4792,No,2020,Sí,74,,7.68
+P0197,Ingeniería de Sistemas,9,19.61,18.88,120,85.0,No,No,3.0,2.0,2.0,23,2042,No,2017,Sí,36,,17.12
+P0198,Ingeniería de Software,10,6.61,11.62,134,100.0,Sí,Sí,2.0,1.0,2.0,22,4644,No,2021,Sí,27,,5.31
+P0199,Ingeniería de Software,2,13.95,13.79,11,90.0,No,No,2.0,5.0,2.0,22,2035,No,2020,Sí,39,,12.52
+P0200,Ingeniería de Sistemas,6,6.6,13.7,71,100.0,No,Sí,3.0,2.0,2.0,22,5231,No,2021,Sí,70,,6.65
+P0201,Ingeniería de Software,2,18.42,16.68,11,98.0,No,Sí,3.0,2.0,2.0,19,3500,No,2020,Sí,58,,9.41
+P0202,Ingeniería de Sistemas,4,12.3,16.66,59,79.0,No,Sí,4.0,7.0,3.0,21,7920,No,2020,Sí,92,,8.48
+P0203,Ingeniería de Software,8,13.92,18.22,125,99.0,No,Sí,2.0,4.0,1.0,22,4664,No,2019,No,68,Salud u otros,9.48
+P0204,Ciencia de la Computación,9,10.25,16.12,132,100.0,Sí,No,5.0,5.0,1.0,20,2721,No,2019,No,31,Problemas económicos,11.17
+P0205,Ingeniería de Software,2,16.91,19.3,11,90.0,No,No,2.0,1.0,1.0,20,2111,No,2021,Sí,27,,11.19
+P0206,Ingeniería de Software,9,20.0,17.88,130,90.0,No,No,6.0,1.0,3.0,24,2408,No,2017,Sí,47,,13.4
+P0207,Ingeniería de Sistemas,7,9.8,14.62,101,60.0,No,Sí,3.0,7.0,2.0,20,2106,No,2020,Sí,35,,7.63
+P0208,Ingeniería de Software,7,8.25,10.92,70,90.0,Sí,Sí,1.0,1.0,2.0,23,2350,No,2019,Sí,19,,4.91
+P0209,Ingeniería de Software,6,8.53,13.95,78,63.0,No,Sí,3.0,2.0,2.0,21,7436,No,2021,Sí,78,,9.49
+P0210,Ingeniería de Sistemas,7,12.47,19.38,145,100.0,No,Sí,2.0,4.0,2.0,21,4922,No,2018,Sí,86,,9.3
+P0211,Ingeniería de Software,2,12.41,15.95,11,99.0,No,Sí,3.0,1.0,1.0,20,1046,No,2020,No,32,Problemas económicos,8.43
+P0212,Ingeniería de Software,8,15.62,18.96,87,97.0,No,No,3.0,3.0,1.0,21,9113,No,2019,Sí,89,,11.16
+P0213,Ingeniería de Sistemas,3,17.2,16.46,23,85.0,No,No,2.0,2.0,1.0,20,4683,No,2020,Sí,80,,11.46
+P0214,Ingeniería de Software,3,20.0,16.79,23,50.0,No,No,4.0,3.0,1.0,26,4419,No,2014,Sí,66,,12.32
+P0215,Ingeniería de Sistemas,9,8.15,13.45,143,100.0,Sí,Sí,3.0,3.0,2.0,25,5532,No,2019,Sí,53,,4.34
+P0216,Ingeniería de Software,10,14.14,18.47,116,70.0,No,Sí,2.0,8.0,1.0,20,2214,No,2019,No,33,Bajo rendimiento,9.55
+P0217,Ingeniería de Sistemas,9,6.46,12.04,119,35.0,No,Sí,2.0,2.0,2.0,21,8354,No,2020,Sí,88,,5.14
+P0218,Ingeniería de Sistemas,2,9.94,11.01,12,95.0,No,Sí,3.0,4.0,6.0,19,603,No,2020,Sí,27,,6.17
+P0219,Ciencia de la Computación,2,13.77,15.06,11,88.0,No,No,4.0,2.0,3.0,20,3810,No,2020,Sí,46,,13.22
+P0220,Ingeniería de Sistemas,3,18.42,18.76,26,95.0,No,No,4.0,2.0,3.0,21,1828,No,2019,Sí,40,,17.76505311833574
+P0221,Ingeniería de Sistemas,4,18.21,18.98,27,90.0,No,Sí,4.0,1.0,2.0,21,2225,No,2019,Sí,47,,10.3
+P0222,Ciencia de la Computación,2,18.02,16.9,11,99.0,No,Sí,3.0,3.0,1.0,20,1057,No,2020,No,13,Salud u otros,8.73
+P0223,Ingeniería de Sistemas,10,13.62,19.45,136,100.0,No,Sí,2.0,3.0,4.0,25,2880,No,2019,No,51,Exceso de carga laboral,8.72
+P0224,Ciencia de la Computación,8,15.03,16.74,132,80.0,No,Sí,1.0,2.0,3.0,22,2060,No,2018,Sí,38,,8.46
+P0225,Ciencia de la Computación,10,7.61,13.78,123,90.0,No,Sí,3.0,8.0,2.0,22,2615,No,2017,Sí,32,,3.44
+P0226,Ingeniería de Sistemas,7,13.35,18.04,136,100.0,No,No,2.0,2.0,2.0,20,3724,No,2020,Sí,57,,12.68
+P0227,Ingeniería de Software,2,19.08,19.24,12,100.0,No,Sí,3.0,2.0,1.0,20,3254,No,2020,Sí,56,,10.12
+P0228,Ingeniería de Software,3,17.29,15.31,23,50.0,No,No,3.0,12.0,0.0,21,3688,No,2019,No,58,Problemas económicos,11.22
+P0229,Ingeniería de Sistemas,2,17.95,17.15,14,10.0,No,Sí,3.0,2.0,1.0,20,1198,No,2020,Sí,6,,8.12
+P0230,Ingeniería de Sistemas,8,7.42,12.97,143,100.0,No,Sí,3.0,2.0,1.0,25,10000,No,2018,Sí,88,,9.82
+P0231,Ingeniería de Sistemas,7,13.12,18.59,143,100.0,No,Sí,2.0,3.0,2.0,20,8138,No,2020,Sí,96,,5.77
+P0232,Ingeniería de Sistemas,5,14.09,18.26,58,100.0,No,No,5.0,3.0,2.0,20,3902,No,2021,No,48,Exceso de carga laboral,12.24
+P0233,Ingeniería de Sistemas,4,18.1,13.94,20,97.0,No,No,6.0,2.0,3.0,21,2660,No,2020,Sí,47,,11.91
+P0234,Ciencia de la Computación,2,20.0,18.77,11,90.0,No,No,3.0,2.0,1.0,21,1040,No,2020,Sí,19,,11.79
+P0235,Ciencia de la Computación,5,11.83,11.74,40,90.0,No,Sí,6.0,4.0,5.0,23,2074,No,2020,Sí,30,,7.06
+P0236,Ingeniería de Sistemas,8,14.43,19.47,141,100.0,No,Sí,6.0,7.0,4.0,22,9270,No,2019,Sí,98,,10.03
+P0237,Ingeniería de Sistemas,9,7.56,15.81,95,50.0,No,Sí,3.0,8.0,1.0,22,10000,No,2019,Sí,100,,5.15
+P0238,Ciencia de la Computación,10,10.31,16.23,139,80.0,Sí,Sí,2.0,3.0,4.0,21,8961,No,2018,Sí,78,,6.98
+P0239,Ingeniería de Software,4,13.42,12.33,23,90.0,No,Sí,3.0,2.0,2.0,20,5976,No,2019,Sí,66,,7.29
+P0240,Ingeniería de Software,4,13.08,15.54,36,96.0,No,Sí,3.0,3.0,2.0,22,5893,No,2020,Sí,87,,9.27
+P0241,Ingeniería de Sistemas,9,17.2,14.33,100,99.0,No,No,3.0,2.0,7.0,22,874,No,2019,No,39,Bajo rendimiento,11.13
+P0242,Ingeniería de Software,7,15.13,17.48,125,90.0,No,No,7.0,2.0,4.0,23,825,No,2017,No,25,Problemas económicos,11.86
+P0243,Ciencia de la Computación,9,7.98,12.2,117,45.0,Sí,Sí,2.0,3.0,2.0,20,3992,No,2020,Sí,29,,6.53
+P0244,Ingeniería de Sistemas,8,16.92,16.74,85,63.274117839780956,No,Sí,1.0,3.0,0.0,22,2248,No,2019,No,41,Exceso de carga laboral,10.51
+P0245,Ingeniería de Sistemas,4,17.93,19.4,39,97.0,No,No,3.0,1.0,2.0,20,3236,No,2020,Sí,68,,14.71
+P0246,Ingeniería de Software,9,15.66,16.39,118,99.0,No,No,5.0,3.0,2.0,22,2488,No,2017,Sí,38,,11.39
+P0247,Ciencia de la Computación,2,18.94,19.42,11,90.0,No,No,2.0,1.0,1.0,20,2037,No,2021,Sí,25,,14.73
+P0248,Ingeniería de Sistemas,3,18.75,17.48,25,75.0,No,No,2.0,1.0,1.0,20,1269,No,2016,Sí,37,,12.19
+P0249,Ingeniería de Software,8,18.36,17.95,85,85.0,No,Sí,1.0,1.0,1.0,21,1325,No,2019,Sí,28,,10.37
+P0250,Ingeniería de Software,1,0.0,0.33,0,100.0,No,Sí,4.0,3.0,1.0,19,2492,No,2021,Sí,26,,2.83
+P0251,Ingeniería de Sistemas,3,13.88,11.02,24,56.1857114979815,No,Sí,4.0,3.0,2.0,22,10000,No,2021,Sí,89,,10.97
+P0252,Ingeniería de Sistemas,2,17.63,19.44,11,85.0,No,No,1.0,4.0,1.0,20,2487,No,2021,Sí,54,,11.43
+P0253,Ingeniería de Software,9,14.12,17.65,116,56.0,No,No,3.0,3.0,4.0,21,6131,No,2019,Sí,79,,12.35
+P0254,Ingeniería de Sistemas,8,12.92,14.07,111,90.0,No,Sí,6.0,2.0,2.0,22,3402,No,2018,Sí,53,,10.7
+P0255,Ingeniería de Sistemas,8,14.83,18.58,87,97.0,No,No,3.0,3.0,1.0,21,9070,No,2019,Sí,97,,12.72
+P0256,Ciencia de la Computación,5,9.58,14.16,59,100.0,No,Sí,3.0,1.0,2.0,20,8010,No,2021,Sí,87,,8.21
+P0257,Ingeniería de Software,10,14.13,18.62,136,64.0,No,Sí,2.0,2.0,4.0,20,7517,No,2020,Sí,72,,10.3
+P0258,Ciencia de la Computación,8,18.76,16.37,73,100.0,No,No,6.0,3.0,2.0,23,2022,No,2018,Sí,53,,16.57
+P0259,Ingeniería de Sistemas,8,11.46,12.1,86,90.0,No,Sí,2.0,3.0,2.0,25,2758,No,2016,No,54,Bajo rendimiento,6.39
+P0260,Ingeniería de Sistemas,2,13.68,16.4,11,90.0,No,Sí,4.0,6.0,2.0,20,3124,No,2020,Sí,45,,10.74
+P0261,Ingeniería de Software,4,13.52,15.5,36,97.0,No,No,2.0,1.0,2.0,21,4402,No,2018,Sí,66,,12.61
+P0262,Ingeniería de Sistemas,1,0.06,0.63,0,100.0,Sí,Sí,2.0,5.0,1.0,21,2573,No,2019,No,13,Salud u otros,0.59
+P0263,Ciencia de la Computación,9,16.66,19.89,126,90.0,No,No,10.0,2.0,4.0,23,1699,No,2017,Sí,23,,12.5
+P0264,Ingeniería de Sistemas,2,19.1,19.03,11,90.0,No,No,3.0,3.0,2.0,20,3156,No,2020,Sí,39,,11.89
+P0265,Ingeniería de Sistemas,6,6.66,11.97,88,100.0,No,No,7.0,3.0,2.0,21,1902,No,2021,No,21,Salud u otros,11.22
+P0266,Ingeniería de Sistemas,8,8.61,12.93,99,88.0,Sí,Sí,4.0,7.0,1.0,25,3702,No,2018,Sí,41,,5.38
+P0267,Ingeniería de Sistemas,9,8.75,14.85,105,70.0,Sí,Sí,3.0,6.0,2.0,21,3111,No,2021,Sí,33,,7.07
+P0268,Ingeniería de Sistemas,4,11.56,14.39,23,88.0,No,Sí,5.0,2.0,3.0,22,2044,No,2020,Sí,38,,8.65
+P0269,Ingeniería de Sistemas,3,16.08,17.94,27,37.0,No,No,3.0,4.0,1.0,22,1485,No,2020,Sí,23,,12.21
+P0270,Ingeniería de Software,10,9.07,14.88,134,100.0,Sí,Sí,6.0,3.0,1.0,24,3017,No,2019,Sí,16,,10.54
+P0271,Ingeniería de Sistemas,8,14.76,18.94,100,100.0,No,Sí,3.0,3.0,4.0,20,10000,No,2020,Sí,100,,10.04
+P0272,Ingeniería de Sistemas,7,13.99,16.24,125,90.0,No,No,7.0,2.0,4.0,23,889,No,2017,Sí,16,,13.23
+P0273,Ingeniería de Sistemas,9,8.72,12.75,117,45.0,Sí,Sí,2.0,3.0,2.0,20,4086,No,2020,Sí,22,,6.98
+P0274,Ingeniería de Sistemas,7,12.9,15.33,77,93.0,No,No,1.0,2.0,1.0,21,2445,No,2019,No,50,Bajo rendimiento,11.34
+P0275,Ingeniería de Software,10,19.54,19.21,120,90.0,No,No,2.0,3.0,5.0,21,2901,No,2018,No,53,Exceso de carga laboral,13.36
+P0276,Ingeniería de Sistemas,1,0.64,0.0,0,100.0,No,Sí,4.0,3.0,1.0,19,2551,No,2021,Sí,15,,3.13
+P0277,Ingeniería de Software,5,5.23,11.5,75,45.0,Sí,Sí,1.0,10.0,1.0,20,6840,No,2021,Sí,50,,3.53
+P0278,Ingeniería de Sistemas,9,11.41,16.3,100,80.0,No,Sí,6.0,4.0,1.0,21,5401,No,2019,Sí,80,,8.61
+P0279,Ingeniería de Software,8,11.64,12.81,103,85.0,No,Sí,4.0,1.0,1.0,24,1538,No,2018,No,20,Falta de motivación,7.66
+P0280,Ingeniería de Sistemas,8,14.96,13.48,85,90.0,No,Sí,2.0,3.0,1.0,21,6030,No,2019,Sí,93,,4.87
+P0281,Ciencia de la Computación,10,12.62,18.94,135,100.0,No,Sí,3.0,1.0,2.0,20,5367,No,2020,Sí,72,,10.36
+P0282,Ingeniería de Sistemas,7,12.93,15.22,98,86.0,No,Sí,3.0,6.0,3.0,21,4524,No,2019,Sí,55,,8.91
+P0283,Ingeniería de Sistemas,9,13.24,18.41,145,100.0,No,Sí,2.0,4.0,2.0,21,5420,No,2018,Sí,75,,7.3
+P0284,Ingeniería de Software,3,11.42,12.05,20,100.0,No,Sí,2.0,5.0,1.0,20,2430,No,2020,No,40,Exceso de carga laboral,5.55
+P0285,Ingeniería de Sistemas,2,13.59,13.86,23,90.0,No,Sí,3.0,6.0,2.0,20,1247,No,2020,Sí,42,,9.09
+P0286,Ingeniería de Software,2,14.23,15.41,11,90.0,No,No,4.0,6.0,2.0,20,2977,No,2020,Sí,48,,12.46
+P0287,Ciencia de la Computación,9,11.34,18.66,130,100.0,No,No,3.0,10.0,3.0,20,5857,No,2020,Sí,80,,13.31
+P0288,Ciencia de la Computación,2,17.56,17.46,11,100.0,No,No,2.0,1.0,1.0,18,600,No,2020,Sí,18,,13.43
+P0289,Ingeniería de Software,8,12.28,19.68,119,100.0,No,Sí,5.0,4.0,3.0,21,5638,No,2019,Sí,82,,6.94
+P0290,Ciencia de la Computación,4,10.72,18.36,45,100.0,No,Sí,4.0,8.0,2.0,19,4452,No,2021,Sí,72,,10.11
+P0291,Ingeniería de Sistemas,10,14.68,17.12,120,95.0,No,Sí,5.0,2.0,1.0,22,4041,No,2018,Sí,56,,10.47
+P0292,Ciencia de la Computación,2,20.0,20.0,12,95.0,No,Sí,3.0,2.0,3.0,21,2466,No,2020,No,47,Falta de motivación,10.73
+P0293,Ingeniería de Sistemas,6,7.48,15.57,61,95.0,Sí,Sí,2.0,8.0,1.0,22,3582,No,2020,Sí,27,,3.03
+P0294,Ciencia de la Computación,7,8.66,12.77,79,75.0,Sí,Sí,1.0,1.0,1.0,20,3371,No,2019,Sí,28,,9.45
+P0295,Ingeniería de Sistemas,5,12.03,18.92,80,78.0,No,No,1.0,4.0,2.0,19,3026,No,2021,Sí,48,,11.83
+P0296,Ciencia de la Computación,10,13.86,19.32,139,100.0,No,Sí,4.0,4.0,2.0,25,8461,No,2019,Sí,87,,8.77
+P0297,Ciencia de la Computación,9,15.53,18.7,143,100.0,No,Sí,3.0,3.0,4.0,20,4856,No,2020,Sí,88,,6.29
+P0298,Ciencia de la Computación,4,12.98,15.55,36,80.0,No,Sí,3.0,3.0,3.0,22,2029,No,2018,Sí,49,,8.9
+P0299,Ingeniería de Sistemas,2,13.29,15.95,11,90.0,No,Sí,3.0,3.0,1.0,19,2212,No,2020,Sí,52,,8.33
+P0300,Ingeniería de Software,1,0.0,0.07,0,95.0,Sí,Sí,2.0,1.0,2.0,20,2592,No,2021,Sí,0,,4.73
+P0301,Ingeniería de Sistemas,5,9.9,17.51,107,100.0,Sí,Sí,4.0,8.0,3.0,21,5405,No,2021,Sí,75,,6.39
+P0302,Ingeniería de Software,9,12.17,17.97,136,51.0,No,Sí,1.0,2.0,4.0,25,4299,No,2019,Sí,69,,6.41
+P0303,Ingeniería de Sistemas,2,12.87,15.16,11,100.0,No,Sí,8.0,1.0,2.0,21,1923,No,2020,Sí,34,,4.15
+P0304,Ingeniería de Sistemas,8,17.37,15.54,85,99.0,No,Sí,1.0,3.0,0.0,22,2348,No,2019,Sí,44,,8.2
+P0305,Ingeniería de Sistemas,1,15.92,15.26,11,88.0,No,No,3.0,3.0,1.0,21,3763,No,2021,Sí,70,,14.19
+P0306,Ciencia de la Computación,9,7.57,12.94,105,50.0,No,Sí,2.0,10.0,2.0,21,10000,No,2018,Sí,91,,8.06
+P0307,Ingeniería de Sistemas,4,12.29,15.7,36,52.16919401001602,No,Sí,5.0,1.0,2.0,22,2818,No,2019,No,49,Falta de motivación,9.05
+P0308,Ingeniería de Software,7,10.88,14.91,145,86.0,No,Sí,2.0,5.0,3.0,25,10000,No,2017,Sí,89,,6.71
+P0309,Ingeniería de Software,5,9.32,15.07,60,100.0,No,Sí,2.0,3.0,2.0,20,5371,No,2021,Sí,66,,4.75
+P0310,Ingeniería de Sistemas,4,14.87,12.85,23,90.0,No,No,3.0,2.0,2.0,20,6250,No,2019,No,77,Bajo rendimiento,12.64
+P0311,Ingeniería de Software,10,14.36,19.75,139,100.0,No,Sí,4.0,4.0,2.0,25,8216,No,2019,Sí,100,,6.73
+P0312,Ingeniería de Software,2,15.11,16.26,11,90.0,No,Sí,2.0,3.0,2.0,21,1523,No,2020,Sí,33,,10.97
+P0313,Ingeniería de Sistemas,8,14.93,18.79,89,100.0,No,Sí,5.0,3.0,4.0,20,9542,No,2020,Sí,93,,9.62
+P0314,Ingeniería de Sistemas,8,13.29,15.35,88,80.0,No,No,2.0,2.0,1.0,21,2290,No,2019,Sí,26,,11.69
+P0315,Ingeniería de Software,6,8.78,16.41,86,70.0,No,Sí,6.0,5.0,5.0,21,4820,No,2021,Sí,60,,9.76
+P0316,Ciencia de la Computación,4,18.62,18.53,35,90.0,No,No,7.0,3.0,1.0,19,3853,No,2020,Sí,74,,15.19
+P0317,Ingeniería de Software,1,15.93,16.38,11,92.0,No,No,3.0,2.0,1.0,19,3279,No,2021,Sí,68,,11.85
+P0318,Ciencia de la Computación,8,14.26,16.31,88,80.0,No,No,2.0,2.0,1.0,21,2018,No,2019,Sí,28,,12.01
+P0319,Ingeniería de Software,7,11.48,20.0,136,100.0,No,Sí,4.0,2.0,3.0,21,4360,No,2018,Sí,65,,8.5
+P0320,Ingeniería de Software,7,17.47,13.14,70,88.0,No,No,2.0,2.0,1.0,21,1212,No,2019,No,23,Problemas económicos,12.24
+P0321,Ingeniería de Sistemas,2,16.97,18.1,12,95.0,No,Sí,3.0,3.0,1.0,20,1793,No,2020,No,48,Problemas económicos,10.92
+P0322,Ingeniería de Software,7,11.49,14.88,88,100.0,No,Sí,3.0,3.0,3.0,20,7275,No,2020,Sí,88,,3.98
+P0323,Ciencia de la Computación,6,9.78,17.47,98,100.0,Sí,Sí,1.0,4.0,2.0,24,4146,No,2021,No,45,Problemas económicos,10.14
+P0324,Ingeniería de Sistemas,8,13.29,18.05,144,100.0,No,No,5.0,2.0,1.0,24,8717,No,2019,Sí,92,,12.65
+P0325,Ingeniería de Sistemas,3,19.28,18.56,25,75.0,No,No,3.0,1.0,2.0,22,5777,No,2020,Sí,62,,11.15
+P0326,Ingeniería de Sistemas,3,6.71,13.55,25,50.0,No,Sí,5.0,3.0,3.0,20,600,No,2019,Sí,9,,7.56
+P0327,Ingeniería de Sistemas,10,11.63,18.31,116,100.0,No,Sí,5.0,2.0,2.0,25,2035,No,2018,Sí,38,,9.7
+P0328,Ciencia de la Computación,8,18.1,18.09,84,90.0,No,Sí,4.0,1.0,2.0,22,3801,No,2019,Sí,66,,10.64
+P0329,Ingeniería de Sistemas,7,11.52,12.32,65,80.0,No,Sí,2.0,1.0,1.0,20,1781,No,2019,Sí,36,,7.39
+P0330,Ciencia de la Computación,8,16.2,17.57,125,86.0,No,Sí,1.0,6.0,2.0,22,10000,No,2018,Sí,100,,9.38
+P0331,Ingeniería de Software,9,14.19,15.87,100,99.0,No,Sí,3.0,1.0,3.0,22,2864,No,2019,Sí,34,,9.7
+P0332,Ciencia de la Computación,8,17.23,17.57,85,94.0,No,No,3.0,4.0,2.0,21,1527,No,2019,No,28,Salud u otros,18.01499025585663
+P0333,Ingeniería de Software,3,19.47,18.37,26,95.0,No,Sí,4.0,2.0,3.0,21,1911,No,2019,Sí,30,,10.93
+P0334,Ciencia de la Computación,3,12.62,19.44,51,100.0,No,Sí,4.0,3.0,2.0,22,3666,No,2022,Sí,53,,7.32
+P0335,Ingeniería de Sistemas,3,13.21,19.25,32,100.0,No,No,1.0,5.0,3.0,19,7063,No,2022,Sí,100,,11.16
+P0336,Ingeniería de Sistemas,8,16.37,17.11,90,0.0,No,Sí,6.0,2.0,1.0,22,2599,No,2019,Sí,30,,10.76
+P0337,Ingeniería de Sistemas,4,14.99,13.46,36,85.0,No,No,4.0,2.0,3.0,20,1145,No,2020,Sí,30,,12.16
+P0338,Ingeniería de Software,9,16.47,15.97,101,95.0,No,Sí,2.0,2.0,2.0,23,2330,No,2016,Sí,39,,10.28
+P0339,Ingeniería de Sistemas,10,7.14,13.0,139,79.0,No,Sí,2.0,3.0,2.0,21,2815,No,2020,No,29,Salud u otros,6.14
+P0340,Ingeniería de Sistemas,7,17.58,17.63,123,70.0,No,Sí,2.0,4.0,2.0,23,3080,No,2017,Sí,50,,7.29
+P0341,Ciencia de la Computación,8,12.34,17.82,136,100.0,No,Sí,2.0,2.0,2.0,20,3998,No,2020,Sí,55,,9.9
+P0342,Ciencia de la Computación,9,11.28,15.79,137,70.0,No,No,3.0,3.0,2.0,21,2502,No,2019,Sí,27,,6.919640402531083
+P0343,Ingeniería de Sistemas,2,14.69,14.97,11,90.0,No,No,2.0,2.0,4.0,21,2583,No,2019,Sí,55,,11.25
+P0344,Ingeniería de Software,7,12.13,11.61,133,60.0,No,Sí,7.0,5.0,2.0,23,1576,No,2017,No,21,Problemas económicos,5.26
+P0345,Ingeniería de Sistemas,1,0.0,0.0,0,95.0,Sí,Sí,2.0,4.0,0.0,20,3240,No,2018,No,10,Salud u otros,0.57
+P0346,Ingeniería de Sistemas,4,10.42,12.99,27,100.0,No,Sí,2.0,4.0,8.0,20,2675,No,2021,Sí,45,,5.73
+P0347,Ingeniería de Sistemas,8,12.97,19.2,78,85.0,No,No,4.0,3.0,4.0,22,1955,No,2019,Sí,49,,13.22
+P0348,Ingeniería de Sistemas,3,14.34,16.99,25,98.0,No,Sí,2.0,2.0,1.0,21,1627,No,2019,No,39,Exceso de carga laboral,10.09
+P0349,Ciencia de la Computación,9,7.6,13.19,139,50.0,Sí,Sí,1.0,2.0,2.0,21,3968,No,2021,No,24,Exceso de carga laboral,7.91
+P0350,Ciencia de la Computación,4,17.01,18.54,35,95.0,No,Sí,1.0,1.0,1.0,19,1901,No,2020,No,34,Bajo rendimiento,9.71
+P0351,Ingeniería de Software,2,19.57,18.88,14,10.0,No,No,3.0,2.0,1.0,20,1503,No,2020,Sí,20,,12.07
+P0352,Ciencia de la Computación,1,0.0,0.29,0,98.0,No,Sí,3.0,2.0,1.0,20,1794,No,2020,Sí,19,,2.2
+P0353,Ingeniería de Sistemas,8,18.53,15.71,77,57.0,No,Sí,1.0,4.0,3.0,21,2523,No,2019,Sí,36,,8.43
+P0354,Ingeniería de Sistemas,5,10.22,18.64,63,46.0,No,Sí,2.0,2.0,4.0,21,4271,No,2021,Sí,42,,9.38
+P0355,Ingeniería de Sistemas,8,17.12,16.94,128,90.0,No,No,2.0,1.0,2.0,24,600,No,2018,No,37,Falta de motivación,11.81
+P0356,Ingeniería de Sistemas,2,16.08,17.77,11,100.0,No,Sí,5.0,3.0,4.0,21,3180,No,2020,Sí,48,,8.68
+P0357,Ingeniería de Sistemas,7,16.7,16.92,128,90.0,No,Sí,2.0,1.0,2.0,24,600,No,2018,Sí,21,,8.78
+P0358,Ingeniería de Sistemas,9,12.89,14.49,76,70.0,No,Sí,1.0,1.0,1.0,23,810,No,2018,Sí,18,,8.3
+P0359,Ingeniería de Software,5,19.15,17.96,55,90.0,No,No,6.0,2.0,3.0,21,2823,No,2020,Sí,56,,17.17
+P0360,Ingeniería de Sistemas,10,15.56,15.62,112,100.0,No,No,3.0,3.0,2.0,22,3283,No,2018,Sí,62,,12.63
+P0361,Ingeniería de Software,9,12.83,19.32,120,100.0,No,Sí,4.0,2.0,1.0,22,4600,No,2019,No,62,Salud u otros,4.835590756954903
+P0362,Ingeniería de Sistemas,1,12.49,16.67,0,95.0,No,Sí,1.0,6.0,1.0,19,2482,No,2020,Sí,40,,7.48
+P0363,Ingeniería de Software,5,13.55,19.18,80,78.0,No,Sí,1.0,4.0,2.0,19,2962,No,2021,Sí,42,,10.0
+P0364,Ingeniería de Sistemas,8,6.8,12.33,101,100.0,No,Sí,4.0,2.0,2.0,21,5101,No,2020,No,72,Problemas económicos,6.3
+P0365,Ingeniería de Sistemas,2,19.73,18.61,11,100.0,No,No,4.0,2.0,2.0,20,2588,No,2020,Sí,52,,15.32
+P0366,Ingeniería de Software,4,13.02,16.14,36,100.0,No,Sí,3.0,2.0,3.0,25,2645,No,2020,Sí,43,,7.92
+P0367,Ingeniería de Software,4,18.26,19.18,35,85.0,No,No,1.0,1.0,2.0,21,2113,No,2020,Sí,49,,12.83
+P0368,Ingeniería de Sistemas,2,13.55,14.66,11,100.0,No,Sí,4.0,4.0,1.0,20,5024,No,2020,Sí,77,,8.26
+P0369,Ingeniería de Software,3,16.21,15.76,23,50.0,No,Sí,3.0,12.0,0.0,21,3920,No,2019,Sí,52,,9.03
+P0370,Ingeniería de Software,6,8.11,13.77,78,63.0,No,Sí,3.0,2.0,2.0,21,7302,No,2021,Sí,75,,8.69
+P0371,Ciencia de la Computación,2,14.53,15.5,11,90.0,No,No,5.0,2.0,1.0,21,1865,No,2021,Sí,42,,12.78
+P0372,Ingeniería de Software,2,18.49,17.18,11,95.0,No,Sí,3.0,4.0,3.0,20,1276,No,2020,Sí,40,,2.975757996551458
+P0373,Ingeniería de Sistemas,8,7.47,15.18,133,80.0,No,Sí,6.0,6.0,3.0,25,4678,No,2018,Sí,55,,8.2
+P0374,Ingeniería de Software,2,19.39,19.99,12,90.0,No,No,2.0,8.0,3.0,22,675,No,2020,Sí,36,,13.99
+P0375,Ingeniería de Software,8,13.33,15.25,88,88.0,No,No,2.0,4.0,3.0,21,2141,No,2019,Sí,31,,12.31
+P0376,Ingeniería de Sistemas,2,15.13,14.87,12,90.0,No,No,2.0,10.0,3.0,20,1764,No,2020,Sí,35,,12.37
+P0377,Ciencia de la Computación,2,12.43,13.53,11,95.0,No,No,4.0,2.0,2.0,21,1154,No,2019,No,31,Bajo rendimiento,13.34
+P0378,Ingeniería de Software,6,5.48,13.77,61,95.0,Sí,Sí,2.0,8.0,1.0,22,3597,No,2020,Sí,26,,4.28
+P0379,Ingeniería de Software,8,13.77,20.0,97,100.0,No,Sí,8.0,2.0,4.0,21,6151,No,2020,Sí,89,,9.79
+P0380,Ingeniería de Sistemas,2,17.37,18.12,11,95.0,No,Sí,6.0,1.0,2.0,19,713,No,2020,Sí,16,,10.51
+P0381,Ingeniería de Sistemas,10,14.52,19.94,125,88.0,No,No,3.0,7.0,5.0,22,10000,No,2019,Sí,99,,13.27
+P0382,Ciencia de la Computación,6,6.88,12.95,92,100.0,No,Sí,3.0,5.0,1.0,21,9995,No,2020,Sí,88,,2.472782389618887
+P0383,Ingeniería de Software,3,19.1,19.66,23,90.0,No,Sí,3.0,1.0,2.0,24,757,No,2020,Sí,16,,10.05
+P0384,Ingeniería de Software,8,9.04,15.82,117,24.0,No,Sí,3.0,3.0,4.0,20,3072,No,2020,Sí,30,,4.26
+P0385,Ingeniería de Software,4,12.79,15.82,36,80.0,No,Sí,3.0,3.0,3.0,22,1774,No,2018,Sí,30,,7.72
+P0386,Ingeniería de Sistemas,3,16.78,17.89,23,85.0,No,Sí,2.0,2.0,1.0,21,1179,No,2019,No,20,Problemas económicos,9.6
+P0387,Ingeniería de Software,8,16.11,17.94,84,95.0,No,Sí,3.0,2.0,2.0,22,2880,No,2019,Sí,65,,9.6
+P0388,Ciencia de la Computación,5,9.39,15.03,72,23.0,No,Sí,2.0,3.0,4.0,22,2937,No,2021,No,22,Exceso de carga laboral,7.75
+P0389,Ingeniería de Software,9,15.09,19.62,102,100.0,No,Sí,1.0,5.0,1.0,23,4741,No,2019,No,66,Bajo rendimiento,8.55
+P0390,Ingeniería de Sistemas,10,13.84,15.89,126,100.0,No,No,3.0,3.0,3.0,22,3439,No,2018,Sí,60,,11.99
+P0391,Ingeniería de Sistemas,9,14.0,14.27,76,70.0,No,Sí,1.0,1.0,1.0,23,778,No,2018,Sí,26,,10.18
+P0392,Ingeniería de Sistemas,7,16.86,19.65,139,90.0,No,No,7.0,1.0,5.0,24,1680,No,2017,Sí,27,,11.56
+P0393,Ciencia de la Computación,9,6.64,12.28,40,70.0,Sí,Sí,1.0,3.0,1.0,24,1533,No,2018,Sí,10,,5.99
+P0394,Ingeniería de Software,7,8.83,13.97,144,56.0,Sí,No,2.0,3.0,2.0,20,5152,No,2020,Sí,30,,12.39
+P0395,Ingeniería de Sistemas,9,7.1,12.45,139,50.0,No,Sí,1.0,2.0,2.0,21,3754,No,2021,Sí,28,,7.94
+P0396,Ingeniería de Sistemas,2,14.5,15.02,11,80.0,No,Sí,2.0,6.0,2.0,20,4475,No,2020,Sí,76,,8.6
+P0397,Ingeniería de Sistemas,1,15.74,15.99,11,88.0,No,Sí,3.0,3.0,1.0,21,3682,No,2021,Sí,55,,6.98
+P0398,Ingeniería de Sistemas,2,20.0,19.22,12,98.0,No,No,2.0,1.0,1.0,20,3091,No,2020,Sí,57,,11.67
+P0399,Ingeniería de Sistemas,2,18.68,18.28,11,90.0,No,No,3.0,2.0,1.0,21,1331,No,2020,Sí,25,,11.48
+P0400,Ciencia de la Computación,5,8.68,12.05,50,80.0,Sí,Sí,2.0,3.0,3.0,20,2628,No,2020,No,17,Problemas económicos,4.295001722785423
+P0401,Ingeniería de Software,2,16.51,16.21,11,90.0,No,Sí,2.0,3.0,2.0,21,1335,No,2020,No,29,Falta de motivación,9.8
+P0402,Ingeniería de Sistemas,2,18.24,18.86,11,100.0,No,No,4.0,2.0,12.0,21,1564,No,2020,No,36,Bajo rendimiento,13.72
+P0403,Ciencia de la Computación,7,11.15,11.78,110,50.0,No,Sí,2.0,4.0,5.0,24,3479,No,2017,Sí,41,,7.14
+P0404,Ingeniería de Sistemas,3,15.89,15.12,23,100.0,No,No,3.0,1.0,1.0,21,4222,No,2020,Sí,57,,13.12
+P0405,Ciencia de la Computación,8,9.67,16.54,137,70.0,No,Sí,3.0,3.0,2.0,21,2821,No,2019,Sí,44,,10.17
+P0406,Ingeniería de Sistemas,2,16.14,17.73,11,95.0,No,Sí,3.0,1.0,2.0,22,1307,No,2020,Sí,35,,8.72
+P0407,Ingeniería de Software,9,10.63,13.75,139,100.0,No,Sí,3.0,9.0,2.0,21,2575,No,2019,Sí,41,,9.69
+P0408,Ingeniería de Software,9,12.17,19.07,132,100.0,No,Sí,4.0,5.0,1.0,21,3118,No,2019,Sí,46,,7.86
+P0409,Ingeniería de Sistemas,2,20.0,19.4,11,80.0,No,No,3.0,3.0,1.0,22,2360,No,2019,No,46,Problemas económicos,14.72
+P0410,Ingeniería de Sistemas,8,13.17,17.55,143,100.0,No,No,3.0,1.0,4.0,24,7646,No,2019,Sí,79,,11.17
+P0411,Ingeniería de Sistemas,2,19.48,19.58,12,90.0,No,No,2.0,2.0,3.0,22,3572,No,2020,Sí,64,,15.36
+P0412,Ingeniería de Sistemas,3,18.2,18.91,25,88.0,No,No,3.0,2.0,2.0,21,2430,No,2020,Sí,48,,12.3
+P0413,Ciencia de la Computación,9,6.89,13.44,143,34.0,No,Sí,3.0,2.0,1.0,24,3252,No,2019,Sí,39,,3.67
+P0414,Ingeniería de Software,9,10.42,16.41,132,100.0,Sí,Sí,5.0,5.0,1.0,20,2797,No,2019,Sí,41,,8.1
+P0415,Ingeniería de Sistemas,3,18.08,18.25,23,95.0,No,No,5.0,2.0,1.0,21,3753,No,2019,Sí,59,,11.97
+P0416,Ingeniería de Software,1,12.78,15.9,0,95.0,No,Sí,1.0,6.0,1.0,19,3155,No,2020,Sí,49,,7.86
+P0417,Ingeniería de Sistemas,8,18.3,16.73,90,98.0,No,Sí,5.0,4.0,3.0,23,1399,No,2019,No,28,Bajo rendimiento,10.48
+P0418,Ingeniería de Sistemas,5,8.05,11.89,65,85.0,No,Sí,4.0,2.0,4.0,21,3842,No,2021,Sí,52,,7.67
+P0419,Ingeniería de Sistemas,10,10.61,14.96,123,99.0,No,Sí,3.0,6.0,1.0,23,4144,No,2018,Sí,69,,7.31
+P0420,Ciencia de la Computación,5,14.35,19.26,61,100.0,No,Sí,3.0,3.0,4.0,20,4047,No,2021,Sí,48,,10.71
+P0421,Ingeniería de Software,2,12.41,12.26,11,60.32559284891923,No,Sí,4.0,2.0,2.0,21,1535,No,2019,No,45,Bajo rendimiento,6.46
+P0422,Ingeniería de Sistemas,9,8.78,13.47,143,87.0,Sí,Sí,3.0,3.0,4.0,25,6002,No,2018,Sí,63,,10.96
+P0423,Ciencia de la Computación,10,14.18,19.59,138,100.0,No,Sí,2.0,2.0,4.0,20,2488,No,2020,No,51,Problemas económicos,7.79
+P0424,Ciencia de la Computación,4,12.89,15.25,36,90.0,No,Sí,3.0,2.0,3.0,20,1116,No,2020,Sí,38,,9.91
+P0425,Ingeniería de Sistemas,8,13.06,18.38,98,100.0,No,No,3.0,3.0,2.0,20,4967,No,2021,Sí,69,,11.93
+P0426,Ciencia de la Computación,9,13.24,19.35,116,87.0,No,Sí,3.0,3.0,2.0,23,2669,No,2019,Sí,38,,9.58
+P0427,Ciencia de la Computación,3,16.24,15.26,25,95.0,No,Sí,4.0,5.0,2.0,21,4350,No,2020,Sí,62,,10.26
+P0428,Ingeniería de Sistemas,5,8.97,13.76,58,100.0,No,Sí,3.0,2.0,1.0,20,4263,No,2021,Sí,54,,7.56
+P0429,Ingeniería de Software,5,9.08,12.27,64,67.0,No,Sí,3.0,8.0,2.0,21,9991,No,2021,Sí,95,,5.34
+P0430,Ingeniería de Sistemas,7,6.55,13.36,143,75.0,No,Sí,3.0,3.0,1.0,24,4025,No,2019,No,50,Problemas económicos,4.38
+P0431,Ingeniería de Sistemas,9,17.24,17.53,100,100.0,No,No,5.0,4.0,2.0,21,2453,No,2018,Sí,40,,11.22
+P0432,Ingeniería de Sistemas,2,12.69,15.67,11,75.0,No,Sí,1.0,4.0,1.0,20,2118,No,2020,Sí,38,,7.83
+P0433,Ingeniería de Sistemas,2,13.87,15.23,11,90.0,No,Sí,2.0,5.0,1.0,20,3091,No,2020,Sí,41,,10.44
+P0434,Ingeniería de Sistemas,2,17.24,16.25,11,80.0,No,Sí,1.0,5.0,0.0,20,2171,No,2020,Sí,49,,9.22
+P0435,Ingeniería de Sistemas,10,18.9,14.15,140,90.0,No,No,2.0,1.0,2.0,24,3948,No,2016,Sí,60,,11.5
+P0436,Ingeniería de Sistemas,10,8.73,13.82,140,45.0,No,Sí,4.0,7.0,2.0,25,3087,No,2019,Sí,32,,5.26
+P0437,Ciencia de la Computación,2,18.67,18.17,11,85.0,No,No,1.0,4.0,1.0,20,2541,No,2021,No,54,Exceso de carga laboral,12.06
+P0438,Ingeniería de Sistemas,2,19.25,20.0,12,100.0,No,No,0.0,4.0,1.0,20,1447,No,2020,No,35,Falta de motivación,12.59
+P0439,Ingeniería de Software,6,12.25,19.2,89,100.0,No,No,3.0,2.0,1.0,20,7189,No,2021,Sí,78,,13.28
+P0440,Ingeniería de Sistemas,2,18.87,17.51,13,48.557949973540744,No,No,3.0,2.0,2.0,20,2247,No,2020,Sí,46,,11.52
+P0441,Ingeniería de Sistemas,7,17.57,18.34,76,97.0,No,Sí,1.0,3.0,0.0,21,3813,No,2018,Sí,66,,10.25
+P0442,Ingeniería de Sistemas,3,10.71,14.94,26,60.0,No,Sí,2.0,2.0,1.0,21,3115,No,2021,Sí,33,,9.82
+P0443,Ciencia de la Computación,6,10.85,18.09,98,100.0,No,Sí,1.0,4.0,2.0,24,4295,No,2021,Sí,77,,8.27
+P0444,Ingeniería de Sistemas,8,12.64,18.9,143,100.0,No,Sí,2.0,1.0,4.0,22,5329,No,2020,Sí,70,,10.75
+P0445,Ingeniería de Sistemas,9,15.42,16.41,123,90.0,No,No,6.0,6.0,5.0,23,2029,No,2018,No,51,Exceso de carga laboral,11.97
+P0446,Ciencia de la Computación,10,16.98,16.95,125,86.0,No,No,1.0,6.0,2.0,22,10000,No,2018,Sí,88,,12.02
+P0447,Ciencia de la Computación,2,17.25,17.35,12,90.0,No,Sí,3.0,5.0,0.0,21,1636,No,2020,Sí,19,,6.17
+P0448,Ingeniería de Sistemas,2,17.0,17.43,11,100.0,No,No,5.0,2.0,5.0,20,1460,No,2020,Sí,33,,13.81
+P0449,Ingeniería de Software,8,11.54,13.36,75,98.0,No,Sí,3.0,2.0,2.0,20,10000,No,2018,Sí,94,,5.87
+P0450,Ingeniería de Sistemas,2,19.65,19.21,12,70.0,No,No,2.0,2.0,1.0,21,1503,No,2020,Sí,33,,14.17
+P0451,Ingeniería de Sistemas,2,12.95,12.01,12,90.0,No,Sí,1.0,2.0,1.0,20,2909,No,2020,Sí,42,,4.85
+P0452,Ciencia de la Computación,7,18.11,18.88,75,98.0,No,No,0.0,2.0,0.0,22,2833,No,2019,Sí,44,,11.2
+P0453,Ingeniería de Sistemas,2,13.29,15.62,11,90.0,No,Sí,5.0,2.0,1.0,21,2285,No,2021,Sí,36,,9.16
+P0454,Ingeniería de Software,5,11.68,15.84,54,99.0,No,Sí,2.0,4.0,2.0,22,1552,No,2020,No,26,Salud u otros,6.72
+P0455,Ciencia de la Computación,8,10.5,16.91,132,100.0,No,Sí,3.0,5.0,2.0,24,3988,No,2018,Sí,74,,8.33
+P0456,Ingeniería de Sistemas,7,19.78,18.43,86,95.0,No,No,4.0,1.0,3.0,21,616,No,2019,No,20,Falta de motivación,11.83
+P0457,Ingeniería de Sistemas,9,13.13,19.6,129,100.0,No,Sí,2.0,2.0,4.0,20,3381,No,2020,Sí,66,,9.33
+P0458,Ingeniería de Sistemas,4,13.62,16.27,36,80.0,No,Sí,2.0,2.0,6.0,22,1613,No,2018,Sí,29,,7.24
+P0459,Ingeniería de Software,8,7.22,13.21,143,81.0,No,Sí,4.0,3.0,2.0,25,4942,No,2018,Sí,57,,3.48
+P0460,Ciencia de la Computación,5,7.25,12.48,75,45.0,Sí,Sí,1.0,10.0,1.0,20,6820,No,2021,No,61,Bajo rendimiento,4.76
+P0461,Ingeniería de Software,1,20.0,19.0,28,90.0,No,No,4.0,1.0,3.0,20,1662,No,2020,Sí,56,,14.72
+P0462,Ingeniería de Sistemas,10,12.0,17.77,143,100.0,No,Sí,5.0,5.0,1.0,22,8074,No,2018,Sí,87,,10.54
+P0463,Ingeniería de Software,4,19.23,19.1,35,90.0,No,No,7.0,3.0,1.0,19,3583,No,2020,Sí,66,,11.29
+P0464,Ciencia de la Computación,6,14.29,20.0,83,53.0,No,Sí,1.0,3.0,1.0,21,5907,No,2021,Sí,77,,6.91
+P0465,Ingeniería de Software,10,15.06,16.43,112,100.0,No,No,3.0,3.0,2.0,22,2848,No,2018,Sí,51,,11.4
+P0466,Ingeniería de Sistemas,8,18.51,19.08,90,90.0,No,No,3.0,3.0,2.0,23,3460,No,2019,Sí,50,,13.71
+P0467,Ingeniería de Software,2,17.05,15.46,11,90.0,No,No,5.0,2.0,1.0,20,3877,No,2021,Sí,68,,12.57
+P0468,Ingeniería de Sistemas,8,14.93,17.31,120,95.0,No,No,5.0,2.0,1.0,22,4046,No,2018,Sí,61,,12.35
+P0469,Ingeniería de Sistemas,4,18.83,20.0,34,90.0,No,No,3.0,2.0,2.0,24,2424,No,2017,Sí,52,,11.54
+P0470,Ingeniería de Software,10,16.61,16.3,107,98.0,No,No,6.0,2.0,2.0,22,3355,No,2018,Sí,56,,13.23
+P0471,Ingeniería de Sistemas,5,8.82,14.7,63,78.0,Sí,Sí,4.0,3.0,4.0,20,8276,No,2021,Sí,79,,7.57
+P0472,Ingeniería de Software,9,16.22,14.87,120,95.0,No,Sí,3.0,4.0,1.0,22,2442,No,2017,Sí,43,,8.78
+P0473,Ingeniería de Sistemas,8,8.17,14.21,104,89.0,Sí,Sí,3.0,7.0,1.0,23,4603,No,2019,Sí,43,,4.74
+P0474,Ingeniería de Sistemas,2,14.16,16.52,11,95.0,No,Sí,1.0,2.0,1.0,20,2067,No,2020,Sí,49,,9.32
+P0475,Ciencia de la Computación,4,13.72,16.78,36,98.0,No,Sí,2.0,2.0,2.0,22,1392,No,2020,Sí,23,,9.44
+P0476,Ingeniería de Sistemas,3,19.2,18.8,23,98.0,No,Sí,8.0,2.0,2.0,20,1246,No,2020,No,23,Exceso de carga laboral,9.63
+P0477,Ingeniería de Software,1,0.0,0.0,11,90.0,No,Sí,6.0,4.0,1.0,21,3794,No,2022,Sí,30,,1.54
+P0478,Ingeniería de Sistemas,10,7.49,14.74,133,70.0,Sí,Sí,3.0,3.0,3.0,21,4905,No,2018,Sí,48,,6.31
+P0479,Ingeniería de Software,6,10.54,15.7,63,70.0,No,Sí,5.0,7.0,3.0,22,2632,No,2020,Sí,39,,3.82
+P0480,Ingeniería de Sistemas,2,17.07,16.5,12,90.0,No,Sí,3.0,2.0,4.0,22,959,No,2019,Sí,21,,10.72
+P0481,Ingeniería de Sistemas,2,10.8,11.05,14,95.0,No,Sí,2.0,1.0,1.0,22,1335,No,2015,Sí,17,,7.22
+P0482,Ingeniería de Software,9,17.99,18.11,89,90.0,No,No,4.0,6.0,1.0,23,2897,No,2017,Sí,63,,12.48
+P0483,Ingeniería de Software,2,13.17,15.19,11,90.0,No,No,1.0,2.0,1.0,19,3847,No,2020,Sí,60,,11.88
+P0484,Ingeniería de Software,9,13.28,19.8,125,55.0,No,Sí,2.0,3.0,1.0,20,2570,No,2020,Sí,35,,5.36
+P0485,Ingeniería de Sistemas,9,16.2,15.19,122,100.0,No,Sí,2.0,2.0,5.0,22,1135,No,2017,No,23,Salud u otros,10.18
+P0486,Ingeniería de Sistemas,8,12.5,18.52,98,100.0,No,Sí,3.0,3.0,2.0,20,5035,No,2021,Sí,69,,9.33
+P0487,Ingeniería de Software,10,13.94,18.46,136,100.0,No,Sí,1.0,10.0,1.0,21,3695,No,2019,Sí,62,,8.85
+P0488,Ingeniería de Sistemas,5,8.49,14.55,66,90.0,Sí,Sí,4.0,6.0,2.0,20,2719,No,2020,Sí,35,,6.61
+P0489,Ciencia de la Computación,2,13.62,13.65,12,100.0,No,Sí,2.0,2.0,3.0,20,6091,No,2021,Sí,88,,10.15
+P0490,Ingeniería de Sistemas,7,14.39,19.5,145,100.0,No,No,2.0,4.0,2.0,21,5053,No,2018,Sí,75,,11.04
+P0491,Ingeniería de Software,10,12.99,17.33,104,70.0,No,Sí,4.0,1.0,2.0,26,910,No,2014,No,27,Problemas económicos,14.92000991919055
+P0492,Ciencia de la Computación,8,12.64,12.36,90,90.0,No,Sí,8.0,2.0,5.0,26,1925,No,2018,Sí,48,,10.26
+P0493,Ciencia de la Computación,8,16.72,16.0,90,0.0,No,No,6.0,2.0,1.0,22,2044,No,2019,Sí,35,,12.14
+P0494,Ingeniería de Sistemas,5,8.63,7.08,14,100.0,No,Sí,2.0,1.0,3.0,23,2135,No,2020,Sí,32,,5.75
+P0495,Ingeniería de Sistemas,7,14.25,15.41,120,90.0,No,Sí,2.0,1.0,2.0,23,2140,No,2017,No,43,Problemas económicos,8.79
+P0496,Ciencia de la Computación,7,7.82,11.75,70,90.0,No,Sí,1.0,1.0,2.0,23,2124,No,2019,Sí,32,,3.82
+P0497,Ciencia de la Computación,4,12.65,17.1,46,100.0,No,No,3.0,4.0,1.0,24,2631,No,2019,Sí,45,,13.33
+P0498,Ciencia de la Computación,3,16.31,17.86,22,70.0,No,No,2.0,6.0,2.0,21,2473,No,2020,Sí,36,,12.12
+P0499,Ingeniería de Sistemas,8,13.23,18.69,78,85.0,No,Sí,4.0,3.0,4.0,22,1884,No,2019,No,27,Bajo rendimiento,10.36
+P0500,Ingeniería de Software,8,17.55,19.35,87,96.0,No,No,3.0,1.0,2.0,21,1303,No,2018,Sí,31,,11.67
+P0501,Ingeniería de Sistemas,2,9.4,8.7,11,95.0,Sí,Sí,2.0,10.0,2.0,20,1839,No,2020,No,10,Exceso de carga laboral,7.01
+P0502,Ingeniería de Sistemas,7,8.73,14.84,99,100.0,No,Sí,5.0,8.0,2.0,22,5578,No,2020,Sí,81,,8.08
+P0503,Ciencia de la Computación,8,8.45,12.84,133,80.0,No,Sí,6.0,6.0,3.0,25,5068,No,2018,Sí,67,,6.28
+P0504,Ingeniería de Sistemas,6,6.89,12.12,78,100.0,Sí,Sí,4.0,2.0,1.0,20,4153,No,2021,Sí,42,,9.39
+P0505,Ciencia de la Computación,2,16.31,17.48,11,98.0,No,No,2.0,2.0,3.0,20,2176,No,2020,Sí,43,,11.46
+P0506,Ingeniería de Software,9,12.53,12.65,90,90.0,No,Sí,8.0,2.0,5.0,26,1368,No,2018,Sí,23,,9.62
+P0507,Ingeniería de Sistemas,9,16.44,16.67,117,91.0,No,Sí,3.0,1.0,6.0,24,1335,No,2018,Sí,28,,9.81
+P0508,Ingeniería de Sistemas,9,15.48,12.54,96,80.0,No,Sí,4.0,3.0,1.0,21,5646,No,2018,Sí,82,,7.43
+P0509,Ciencia de la Computación,8,7.47,12.72,136,54.45482752970044,No,Sí,3.0,2.0,1.0,23,2982,No,2019,No,45,Exceso de carga laboral,5.29
+P0510,Ingeniería de Software,8,19.61,17.95,83,95.0,No,No,3.0,1.0,1.0,21,5439,No,2019,Sí,68,,12.26
+P0511,Ciencia de la Computación,4,15.1,12.79,23,90.0,No,No,3.0,2.0,2.0,20,5965,No,2019,Sí,81,,11.68
+P0512,Ciencia de la Computación,9,7.1,13.75,107,35.0,Sí,Sí,5.0,11.0,2.0,23,2670,No,2018,Sí,27,,3.07
+P0513,Ciencia de la Computación,3,19.16,19.37,35,90.0,No,No,1.0,2.0,1.0,21,1970,No,2020,Sí,40,,14.71
+P0514,Ingeniería de Sistemas,6,7.56,14.15,98,90.0,No,Sí,1.0,10.0,1.0,24,5584,No,2019,Sí,58,,8.73
+P0515,Ingeniería de Sistemas,8,13.1,19.23,144,65.0,No,Sí,3.0,3.0,2.0,24,2448,No,2018,No,34,Exceso de carga laboral,10.06
+P0516,Ingeniería de Software,3,20.0,19.6,25,100.0,No,No,8.0,1.0,4.0,21,2705,No,2019,Sí,43,,16.36
+P0517,Ingeniería de Sistemas,2,18.41,18.18,11,95.0,No,No,3.0,1.0,2.0,22,1514,No,2020,Sí,41,,14.3
+P0518,Ciencia de la Computación,4,12.44,15.92,24,100.0,No,Sí,1.0,1.0,1.0,20,2296,No,2020,Sí,44,,6.68
+P0519,Ingeniería de Sistemas,8,18.46,16.12,125,95.0,No,No,4.0,4.0,1.0,23,2050,No,2018,Sí,37,,16.25
+P0520,Ingeniería de Software,3,14.2,14.21,23,100.0,No,No,3.0,1.0,1.0,21,4076,No,2020,No,59,Falta de motivación,13.01
+P0521,Ingeniería de Software,8,6.89,12.94,98,50.0,Sí,Sí,2.0,2.0,2.0,22,3115,No,2020,Sí,21,,6.69
+P0522,Ingeniería de Sistemas,9,7.11,13.53,120,86.0,Sí,Sí,5.0,2.0,2.0,20,3653,No,2020,No,24,Salud u otros,6.2
+P0523,Ciencia de la Computación,9,15.07,18.92,100,100.0,No,Sí,2.0,2.0,4.0,22,4309,No,2020,Sí,63,,10.92
+P0524,Ingeniería de Sistemas,10,13.26,19.26,78,78.0,No,Sí,2.0,3.0,2.0,25,4258,No,2019,Sí,62,,7.06
+P0525,Ingeniería de Sistemas,9,13.36,15.73,121,90.0,No,Sí,3.0,16.0,1.0,22,3189,No,2018,Sí,50,,13.140129135717258
+P0526,Ingeniería de Sistemas,1,17.77,17.39,11,98.0,No,No,3.0,8.0,1.0,21,5904,No,2020,Sí,84,,16.84
+P0527,Ingeniería de Sistemas,3,14.99,14.59,25,96.0,No,No,2.0,1.0,1.0,22,3045,No,2019,Sí,61,,12.75
+P0528,Ingeniería de Sistemas,7,11.6,17.43,103,100.0,No,Sí,6.0,2.0,2.0,21,2213,No,2019,No,49,Falta de motivación,9.37
+P0529,Ingeniería de Software,2,18.1,16.9,12,100.0,No,No,3.0,6.0,3.0,20,1273,No,2020,Sí,18,,6.213647770327622
+P0530,Ingeniería de Software,2,19.62,19.44,11,99.0,No,No,5.0,2.0,1.0,20,911,No,2020,No,19,Problemas económicos,14.41
+P0531,Ingeniería de Sistemas,10,6.51,13.66,136,83.0,No,Sí,1.0,3.0,2.0,24,7559,No,2019,Sí,87,,3.96
+P0532,Ciencia de la Computación,3,12.41,18.78,32,100.0,No,Sí,1.0,5.0,3.0,19,6870,No,2022,Sí,81,,9.73
+P0533,Ingeniería de Software,7,19.13,16.51,124,80.0,No,No,2.0,2.0,3.0,24,827,No,2018,Sí,22,,11.92
+P0534,Ingeniería de Sistemas,1,15.99,17.02,11,95.0,No,Sí,5.0,2.0,2.0,21,3024,No,2020,Sí,63,,8.76
+P0535,Ingeniería de Software,1,0.38,0.61,0,100.0,Sí,Sí,1.0,3.0,2.0,19,1384,No,2020,Sí,21,,4.1
+P0536,Ingeniería de Sistemas,9,13.04,17.96,101,87.0,No,Sí,2.0,2.0,4.0,20,4383,No,2020,No,57,Bajo rendimiento,8.84
+P0537,Ingeniería de Sistemas,10,18.72,14.14,140,90.0,No,No,2.0,1.0,2.0,24,3493,No,2016,Sí,43,,14.01
+P0538,Ingeniería de Software,3,18.77,18.54,25,98.0,No,No,4.0,2.0,3.0,21,3346,No,2019,Sí,50,,15.16
+P0539,Ingeniería de Software,9,13.6,20.0,132,100.0,No,Sí,4.0,5.0,1.0,21,3036,No,2019,Sí,50,,10.72
+P0540,Ingeniería de Software,1,11.61,16.48,11,100.0,No,Sí,4.0,2.0,2.0,22,1181,No,2020,Sí,34,,8.54
+P0541,Ingeniería de Sistemas,5,8.62,14.65,58,100.0,No,Sí,3.0,2.0,1.0,20,4284,No,2021,Sí,59,,10.01
+P0542,Ingeniería de Software,10,15.57,19.8,134,100.0,No,No,1.0,2.0,2.0,20,3298,No,2020,Sí,61,,13.16
+P0543,Ingeniería de Software,10,8.25,16.58,85,100.0,Sí,Sí,3.0,5.0,2.0,24,5223,No,2019,No,57,Exceso de carga laboral,5.9
+P0544,Ingeniería de Software,3,16.87,16.64,27,37.0,No,Sí,3.0,4.0,1.0,22,1220,No,2020,Sí,28,,9.24
+P0545,Ingeniería de Sistemas,2,13.73,16.53,11,90.0,No,No,4.0,6.0,2.0,20,2741,No,2020,Sí,42,,11.09
+P0546,Ingeniería de Software,6,15.03,19.19,77,100.0,No,Sí,2.0,5.0,4.0,20,6467,No,2020,No,91,Exceso de carga laboral,10.91
+P0547,Ingeniería de Software,2,18.46,18.12,11,100.0,No,No,4.0,2.0,2.0,20,2176,No,2020,Sí,34,,13.96
+P0548,Ingeniería de Sistemas,8,19.35,19.02,84,90.0,No,No,4.0,1.0,2.0,22,3612,No,2019,Sí,58,,11.76
+P0549,Ingeniería de Software,9,15.52,19.7,139,100.0,No,No,7.0,2.0,3.0,20,4223,No,2020,Sí,75,,12.36
+P0550,Ciencia de la Computación,1,17.66,17.43,0,98.0,No,No,5.0,3.0,1.0,20,1126,No,2020,Sí,34,,14.3
+P0551,Ingeniería de Software,8,8.37,14.76,88,34.0,No,Sí,2.0,2.0,3.0,20,4144,No,2020,No,32,Salud u otros,3.05
+P0552,Ingeniería de Sistemas,7,11.38,15.25,107,100.0,No,No,3.0,7.0,3.0,22,10000,No,2020,Sí,100,,6.578788906556868
+P0553,Ingeniería de Software,1,12.87,12.67,12,96.0,No,Sí,4.0,3.0,2.0,20,1341,No,2020,Sí,32,,9.37
+P0554,Ingeniería de Software,1,0.0,0.0,0,100.0,Sí,Sí,2.0,5.0,1.0,21,2277,No,2019,No,9,Salud u otros,2.98
+P0555,Ingeniería de Sistemas,10,12.51,17.83,135,55.0,No,Sí,2.0,3.0,4.0,22,6639,No,2020,Sí,91,,10.17
+P0556,Ciencia de la Computación,3,15.67,16.49,25,100.0,No,Sí,2.0,1.0,1.0,20,1421,No,2020,No,33,Falta de motivación,10.52
+P0557,Ingeniería de Sistemas,2,17.72,17.81,11,100.0,No,No,4.0,1.0,1.0,21,2563,No,2020,Sí,34,,12.84
+P0558,Ingeniería de Software,7,12.3,12.63,65,80.0,No,Sí,2.0,1.0,1.0,20,2101,No,2019,Sí,27,,9.96
+P0559,Ingeniería de Sistemas,4,12.17,14.22,36,97.0,No,Sí,5.0,2.0,2.0,21,3151,No,2020,Sí,53,,8.82
+P0560,Ingeniería de Sistemas,9,8.12,15.06,95,50.0,Sí,Sí,3.0,8.0,1.0,22,10000,No,2019,Sí,88,,5.84
+P0561,Ingeniería de Software,2,14.53,12.98,12,90.0,No,Sí,2.0,3.0,2.0,20,1398,No,2020,Sí,34,,9.46
+P0562,Ingeniería de Sistemas,4,14.47,16.1,36,98.0,No,Sí,2.0,2.0,2.0,22,1323,No,2020,Sí,28,,6.93
+P0563,Ingeniería de Software,9,14.39,19.96,129,100.0,No,No,5.0,3.0,3.0,20,2396,No,2020,Sí,36,,14.86
+P0564,Ingeniería de Software,3,18.84,17.97,25,75.0,No,No,3.0,1.0,2.0,22,6108,No,2020,Sí,87,,12.15
+P0565,Ciencia de la Computación,4,11.68,11.28,30,88.0,No,Sí,3.0,4.0,2.0,21,3942,No,2019,Sí,61,,5.87
+P0566,Ingeniería de Software,8,17.48,18.21,100,99.0,No,Sí,5.0,4.0,1.0,22,1881,No,2017,No,21,Problemas económicos,10.79
+P0567,Ingeniería de Sistemas,4,13.53,15.34,36,98.0,No,No,2.0,2.0,2.0,22,1217,No,2020,Sí,38,,11.1
+P0568,Ingeniería de Sistemas,8,18.47,17.77,84,90.0,No,No,4.0,1.0,2.0,22,3695,No,2019,No,65,Bajo rendimiento,15.09
+P0569,Ingeniería de Software,2,19.38,20.0,12,95.0,No,No,1.0,2.0,1.0,20,2153,No,2020,No,36,Exceso de carga laboral,15.41
+P0570,Ingeniería de Software,8,13.98,15.66,88,90.0,No,Sí,2.0,1.0,1.0,23,2329,No,2018,Sí,37,,10.71
+P0571,Ingeniería de Sistemas,2,19.04,19.59,11,90.0,No,No,4.0,3.0,1.0,20,1601,No,2020,Sí,36,,11.41
+P0572,Ingeniería de Sistemas,6,9.02,12.71,88,100.0,No,Sí,1.0,2.0,4.0,21,7491,No,2021,Sí,98,,3.66
+P0573,Ingeniería de Sistemas,10,12.88,19.71,135,100.0,No,Sí,2.0,1.0,1.0,21,3413,No,2020,Sí,47,,7.29
+P0574,Ciencia de la Computación,6,12.77,18.68,78,54.0,No,Sí,1.0,2.0,4.0,20,5848,No,2021,Sí,85,,9.69
+P0575,Ingeniería de Sistemas,4,11.13,15.95,36,88.0,No,Sí,1.0,2.0,1.0,20,3517,No,2020,No,60,Problemas económicos,8.03
+P0576,Ciencia de la Computación,8,18.48,19.08,127,99.0,No,No,4.0,10.0,2.0,22,3716,No,2018,Sí,49,,12.35
+P0577,Ingeniería de Software,9,17.65,16.33,126,90.0,No,No,1.0,1.0,1.0,22,5879,No,2018,No,68,Salud u otros,12.93
+P0578,Ciencia de la Computación,2,18.91,18.66,11,85.0,No,No,3.0,3.0,2.0,19,3718,No,2020,Sí,56,,12.0
+P0579,Ciencia de la Computación,10,17.55,16.05,105,80.0,No,No,5.0,3.0,2.0,21,5010,No,2018,Sí,74,,16.02
+P0580,Ciencia de la Computación,4,12.21,15.63,36,95.0,No,Sí,4.0,3.0,2.0,20,600,No,2020,No,14,Bajo rendimiento,10.28
+P0581,Ingeniería de Software,4,11.89,15.89,59,79.0,No,Sí,4.0,7.0,3.0,21,8194,No,2020,Sí,88,,7.79
+P0582,Ciencia de la Computación,3,14.33,16.24,24,90.0,No,Sí,2.0,12.0,0.0,20,2968,No,2020,Sí,47,,7.67
+P0583,Ingeniería de Software,2,12.64,12.76,11,46.3165577526882,No,Sí,3.0,5.0,2.0,20,2465,No,2020,Sí,31,,9.41
+P0584,Ingeniería de Software,4,11.02,16.92,59,79.0,No,Sí,4.0,7.0,3.0,21,8124,No,2020,Sí,80,,8.15
+P0585,Ingeniería de Software,4,16.64,17.23,35,90.0,No,Sí,3.0,2.0,2.0,22,1192,No,2019,Sí,38,,10.56
+P0586,Ingeniería de Software,2,12.69,15.71,11,100.0,No,No,8.0,1.0,2.0,21,1703,No,2020,Sí,41,,13.88
+P0587,Ingeniería de Sistemas,1,17.72,17.63,11,90.0,No,Sí,1.0,1.0,1.0,19,619,No,2020,Sí,36,,8.41
+P0588,Ingeniería de Software,4,14.05,15.7,36,80.0,No,No,3.0,3.0,3.0,22,2030,No,2018,Sí,45,,12.74
+P0589,Ingeniería de Software,10,5.99,12.88,136,100.0,Sí,Sí,5.0,3.0,4.0,25,10000,No,2018,Sí,78,,4.34
+P0590,Ingeniería de Sistemas,10,14.98,13.59,90,80.0,No,Sí,3.0,1.0,0.0,24,2772,No,2016,Sí,45,,8.54
+P0591,Ingeniería de Software,2,18.95,18.35,11,100.0,No,Sí,2.0,1.0,1.0,19,4319,No,2020,Sí,77,,9.75
+P0592,Ingeniería de Sistemas,3,18.13,16.01,25,99.0,No,No,5.0,4.0,3.0,19,1600,No,2020,Sí,40,,13.49
+P0593,Ingeniería de Sistemas,2,13.79,15.53,11,99.0,No,Sí,2.0,4.0,2.0,20,2396,No,2020,Sí,37,,8.86
+P0594,Ingeniería de Sistemas,8,14.61,15.13,136,80.0,No,Sí,2.0,3.0,1.0,24,1937,No,2017,Sí,28,,7.26
+P0595,Ingeniería de Software,8,12.91,14.06,65,98.0,No,No,4.0,2.0,2.0,22,1314,No,2018,Sí,33,,11.38
+P0596,Ingeniería de Sistemas,9,13.88,18.34,144,76.0,No,Sí,1.0,2.0,2.0,20,4704,No,2020,No,74,Exceso de carga laboral,8.15
+P0597,Ingeniería de Software,1,0.13,0.0,0,80.0,Sí,Sí,1.0,7.0,0.0,20,3762,No,2021,No,6,Exceso de carga laboral,0.35
+P0598,Ingeniería de Software,9,14.42,15.89,105,80.0,No,Sí,4.0,2.0,2.0,22,10000,No,2018,Sí,92,,7.34
+P0599,Ingeniería de Sistemas,1,0.39,0.0,0,80.0,Sí,Sí,1.0,7.0,0.0,20,3434,No,2021,Sí,17,,1.55
+P0600,Ingeniería de Sistemas,1,1.25,0.0,0,100.0,Sí,Sí,7.0,2.0,2.0,19,4152,No,2020,Sí,33,,1.57
+P0601,Ingeniería de Software,8,11.38,11.09,71,90.0,No,Sí,4.0,1.0,2.0,21,2080,No,2018,Sí,45,,10.9
+P0602,Ingeniería de Software,8,14.06,17.12,88,90.0,No,Sí,2.0,1.0,1.0,21,1646,No,2019,Sí,30,,8.66
+P0603,Ciencia de la Computación,4,8.96,14.1,43,80.0,Sí,Sí,1.0,7.0,1.0,21,3906,No,2021,Sí,32,,7.58
+P0604,Ciencia de la Computación,4,13.65,14.47,36,97.0,No,Sí,5.0,2.0,2.0,21,3005,No,2020,No,51,Exceso de carga laboral,9.26
+P0605,Ingeniería de Software,2,13.67,14.88,11,100.0,No,Sí,1.0,2.0,1.0,20,1986,No,2020,Sí,17,,4.87
+P0606,Ingeniería de Software,8,8.79,13.2,143,67.0,No,Sí,5.0,3.0,4.0,25,5630,No,2018,Sí,74,,4.91
+P0607,Ingeniería de Software,1,0.0,0.0,0,95.0,Sí,Sí,2.0,4.0,0.0,20,3140,No,2018,No,17,Falta de motivación,5.25
+P0608,Ingeniería de Sistemas,3,11.81,14.25,23,77.0,No,Sí,3.0,4.0,3.0,19,4980,No,2020,Sí,76,,7.24
+P0609,Ingeniería de Sistemas,8,18.28,17.47,83,95.0,No,No,3.0,1.0,1.0,21,5700,No,2019,Sí,76,,12.01
+P0610,Ingeniería de Sistemas,9,13.33,18.13,106,100.0,No,Sí,2.0,3.0,2.0,20,3511,No,2020,Sí,64,,10.12
+P0611,Ingeniería de Software,5,6.53,12.63,96,100.0,Sí,Sí,6.0,4.0,2.0,21,5840,No,2019,No,60,Salud u otros,6.83
+P0612,Ingeniería de Sistemas,3,18.55,18.14,24,95.0,No,Sí,1.0,1.0,2.0,20,3043,No,2020,Sí,48,,10.52
+P0613,Ingeniería de Software,4,10.42,14.72,35,90.0,Sí,Sí,4.0,2.0,2.0,22,2609,No,2020,Sí,12,,9.06
+P0614,Ciencia de la Computación,7,6.79,13.03,105,30.0,Sí,Sí,6.0,4.0,1.0,22,3878,No,2020,Sí,7,,3.6
+P0615,Ingeniería de Sistemas,5,11.39,12.61,40,90.0,No,Sí,6.0,4.0,5.0,23,2048,No,2020,No,37,Falta de motivación,7.33
+P0616,Ingeniería de Sistemas,8,16.63,15.87,90,0.0,No,Sí,6.0,2.0,1.0,22,1853,No,2019,Sí,20,,6.38
+P0617,Ingeniería de Sistemas,7,19.32,20.0,76,99.0,No,No,5.0,6.0,2.0,23,1053,No,2019,Sí,14,,12.74
+P0618,Ciencia de la Computación,10,7.81,12.94,135,73.0,Sí,Sí,2.0,3.0,2.0,20,8516,No,2020,Sí,84,,4.28
+P0619,Ciencia de la Computación,3,15.93,17.53,24,100.0,No,Sí,2.0,3.0,1.0,22,3099,No,2020,Sí,48,,10.33
+P0620,Ingeniería de Sistemas,7,18.48,19.97,87,60.0,No,No,0.0,6.0,0.0,22,2174,No,2019,Sí,35,,13.6
+P0621,Ciencia de la Computación,2,17.6,18.45,11,97.0,No,Sí,3.0,2.0,2.0,20,1982,No,2020,No,26,Salud u otros,10.12
+P0622,Ingeniería de Software,8,17.16,18.62,71,80.0,No,Sí,1.0,5.0,2.0,20,2528,No,2019,Sí,45,,10.28
+P0623,Ingeniería de Software,10,8.76,16.54,126,75.0,No,Sí,3.0,9.0,2.0,22,10000,No,2019,Sí,92,,6.19
+P0624,Ciencia de la Computación,9,8.86,13.44,133,77.0,No,Sí,6.0,11.0,6.0,22,2927,No,2018,No,48,Exceso de carga laboral,9.85
+P0625,Ciencia de la Computación,8,13.13,18.41,97,100.0,No,Sí,8.0,2.0,4.0,21,5997,No,2020,Sí,84,,8.68
+P0626,Ingeniería de Sistemas,8,6.54,12.88,143,81.0,No,Sí,4.0,3.0,2.0,25,5238,No,2018,Sí,59,,4.76
+P0627,Ingeniería de Software,7,14.28,15.53,77,70.0,No,Sí,1.0,5.0,1.0,22,1173,No,2018,Sí,41,,8.56
+P0628,Ingeniería de Software,3,14.74,14.13,35,80.0,No,Sí,4.0,1.0,2.0,20,2414,No,2020,Sí,33,,10.08
+P0629,Ingeniería de Sistemas,7,15.98,17.01,124,90.0,No,Sí,1.0,1.0,4.0,25,3093,No,2017,Sí,48,,8.89
+P0630,Ingeniería de Sistemas,9,13.44,19.19,123,68.0,No,Sí,3.0,3.0,4.0,24,6359,No,2018,No,97,Falta de motivación,9.98
+P0631,Ingeniería de Software,1,0.37,1.31,0,98.0,Sí,Sí,2.0,3.0,0.0,20,3435,No,2021,Sí,15,,2.65
+P0632,Ingeniería de Sistemas,2,20.0,19.02,11,99.0,No,No,5.0,1.0,1.0,19,2022,No,2020,Sí,51,,12.23
+P0633,Ingeniería de Sistemas,8,14.05,16.55,75,90.0,No,Sí,5.0,2.0,1.0,22,10000,No,2019,Sí,96,,9.14
+P0634,Ciencia de la Computación,5,10.76,16.93,87,100.0,No,Sí,6.0,3.0,2.0,20,4124,No,2021,Sí,64,,10.69
+P0635,Ingeniería de Software,2,15.81,15.81,11,90.0,No,No,2.0,3.0,2.0,21,1568,No,2020,No,31,Problemas económicos,13.89
+P0636,Ingeniería de Software,8,17.76,17.1,87,100.0,No,Sí,4.0,3.0,4.0,22,4923,No,2019,Sí,81,,9.21
+P0637,Ingeniería de Sistemas,8,18.74,18.38,87,97.0,No,No,2.0,3.0,1.0,21,600,No,2019,Sí,12,,11.28
+P0638,Ciencia de la Computación,8,13.69,16.6,88,90.0,No,Sí,4.0,3.0,1.0,21,2700,No,2019,No,20,Bajo rendimiento,9.87
+P0639,Ingeniería de Software,9,12.16,17.51,103,67.0,No,Sí,1.0,2.0,2.0,20,4011,No,2020,Sí,58,,9.67
+P0640,Ingeniería de Sistemas,7,12.53,12.75,70,40.0,No,Sí,3.0,4.0,2.0,23,3442,No,2018,Sí,42,,10.26
+P0641,Ingeniería de Sistemas,9,12.14,17.95,143,100.0,No,Sí,5.0,5.0,1.0,22,8174,No,2018,Sí,85,,8.97
+P0642,Ciencia de la Computación,8,14.78,20.0,100,100.0,No,No,3.0,3.0,4.0,20,10000,No,2020,Sí,90,,12.39
+P0643,Ciencia de la Computación,2,14.27,13.14,12,100.0,No,Sí,2.0,2.0,3.0,20,5777,No,2021,Sí,74,,8.89
+P0644,Ingeniería de Software,9,9.47,13.52,136,100.0,No,Sí,2.0,3.0,2.0,20,3621,No,2020,Sí,37,,10.05
+P0645,Ingeniería de Sistemas,8,7.52,12.59,101,100.0,No,Sí,4.0,2.0,2.0,21,4929,No,2020,Sí,71,,5.63
+P0646,Ingeniería de Sistemas,7,13.62,19.34,143,35.0,No,Sí,5.0,3.0,2.0,25,8676,No,2018,Sí,100,,7.95
+P0647,Ciencia de la Computación,3,9.81,17.45,32,98.0,No,Sí,4.0,2.0,5.0,20,1060,No,2020,Sí,33,,6.37
+P0648,Ciencia de la Computación,2,19.15,18.65,12,90.0,No,No,2.0,2.0,1.0,20,1775,No,2019,No,39,Bajo rendimiento,12.61
+P0649,Ingeniería de Software,8,13.22,13.72,120,75.0,No,Sí,2.0,5.0,1.0,23,1380,No,2016,Sí,23,,10.05
+P0650,Ingeniería de Sistemas,4,14.0,15.18,36,90.0,No,No,3.0,3.0,1.0,22,2986,No,2019,Sí,47,,11.67
+P0651,Ingeniería de Sistemas,5,14.69,18.76,61,100.0,No,Sí,3.0,3.0,4.0,20,3383,No,2021,No,64,Falta de motivación,10.08
+P0652,Ingeniería de Sistemas,9,12.96,16.51,100,70.0,No,Sí,2.0,4.0,4.0,23,10000,No,2017,Sí,100,,8.0
+P0653,Ingeniería de Sistemas,9,8.57,14.77,101,100.0,Sí,Sí,2.0,3.0,4.0,20,4816,No,2020,Sí,51,,6.0
+P0654,Ciencia de la Computación,7,13.33,19.63,132,100.0,No,No,1.0,2.0,3.0,23,2643,No,2018,Sí,41,,12.73
+P0655,Ciencia de la Computación,1,0.37,0.79,0,100.0,No,Sí,4.0,3.0,1.0,19,2521,No,2021,Sí,23,,0.0
+P0656,Ingeniería de Sistemas,3,15.07,13.43,24,90.0,No,No,2.0,1.0,1.0,20,2691,No,2020,Sí,49,,11.38
+P0657,Ingeniería de Sistemas,8,7.55,13.77,143,75.0,Sí,Sí,3.0,3.0,1.0,24,3697,No,2019,Sí,24,,6.25
+P0658,Ingeniería de Software,8,11.37,17.36,143,100.0,No,Sí,3.0,3.0,2.0,25,5470,No,2018,Sí,72,,4.75
+P0659,Ingeniería de Software,10,10.09,17.35,85,100.0,No,Sí,3.0,5.0,2.0,24,5127,No,2019,Sí,80,,6.11
+P0660,Ciencia de la Computación,8,12.63,10.59,18,100.0,No,No,4.0,4.0,2.0,23,10000,No,2020,Sí,100,,11.03
+P0661,Ingeniería de Sistemas,9,8.57,13.78,100,50.0,No,Sí,1.0,8.0,1.0,22,3958,No,2021,No,41,Falta de motivación,7.07
+P0662,Ciencia de la Computación,2,17.99,18.1,12,95.0,No,No,3.0,3.0,1.0,20,1913,No,2020,Sí,34,,13.31
+P0663,Ingeniería de Sistemas,2,16.41,18.37,14,100.0,No,No,3.0,2.0,3.0,20,2589,No,2020,Sí,44,,12.85
+P0664,Ingeniería de Software,10,8.37,12.7,132,77.0,No,Sí,3.0,5.0,1.0,24,4625,No,2019,Sí,63,,4.48
+P0665,Ingeniería de Software,10,14.26,19.26,136,100.0,No,No,1.0,10.0,1.0,21,3562,No,2019,No,46,Salud u otros,11.46
+P0666,Ciencia de la Computación,8,13.92,15.48,88,90.0,No,Sí,4.0,4.0,2.0,22,657,No,2019,Sí,19,,7.96
+P0667,Ingeniería de Software,4,15.3,17.96,35,70.0,No,Sí,2.0,4.0,4.0,19,2351,No,2020,Sí,19,,6.28
+P0668,Ingeniería de Software,10,6.62,13.52,137,100.0,Sí,Sí,2.0,2.0,4.0,20,5076,No,2020,Sí,45,,6.1
+P0669,Ingeniería de Software,2,14.02,15.23,15,80.0,No,No,4.0,3.0,3.0,22,2757,No,2018,No,45,Bajo rendimiento,14.49
+P0670,Ingeniería de Software,2,20.0,20.0,11,90.0,No,Sí,3.0,3.0,2.0,20,2917,No,2020,Sí,51,,10.8
+P0671,Ingeniería de Sistemas,9,9.78,15.45,136,100.0,No,Sí,1.0,7.0,3.0,21,3606,No,2018,Sí,61,,7.56
+P0672,Ingeniería de Sistemas,2,18.85,19.53,11,100.0,No,No,2.0,1.0,2.0,21,2996,No,2019,No,43,Salud u otros,13.95
+P0673,Ciencia de la Computación,7,15.28,20.0,66,100.0,No,Sí,1.0,2.0,2.0,23,3423,No,2019,Sí,65,,10.97
+P0674,Ingeniería de Software,2,13.66,16.16,11,90.0,No,Sí,7.0,5.0,2.0,20,2494,No,2020,No,30,Salud u otros,8.78
+P0675,Ingeniería de Sistemas,9,11.93,17.87,123,87.0,No,Sí,1.0,3.0,4.0,20,4420,No,2021,Sí,66,,10.86
+P0676,Ingeniería de Sistemas,8,15.46,15.29,130,80.0,No,Sí,1.0,2.0,2.0,23,2509,No,2017,Sí,38,,7.07
+P0677,Ciencia de la Computación,3,17.9,18.21,23,90.0,No,No,4.0,3.0,4.0,21,2130,No,2020,Sí,44,,11.78
+P0678,Ingeniería de Sistemas,4,14.41,15.96,36,95.0,No,No,6.0,3.0,3.0,21,1492,No,2019,No,36,Falta de motivación,13.24
+P0679,Ingeniería de Software,10,12.28,17.31,122,60.0,No,Sí,1.0,3.0,3.0,25,4424,No,2017,Sí,55,,3.2
+P0680,Ingeniería de Sistemas,4,13.37,14.2,36,80.0,No,Sí,3.0,2.0,1.0,22,3014,No,2019,Sí,36,,8.84
+P0681,Ciencia de la Computación,5,9.95,14.06,66,90.0,Sí,Sí,4.0,6.0,2.0,20,3021,No,2020,No,16,Exceso de carga laboral,7.98
+P0682,Ingeniería de Sistemas,9,13.5,15.0,126,100.0,No,No,3.0,3.0,3.0,22,3709,No,2018,Sí,65,,11.35
+P0683,Ingeniería de Software,9,15.51,15.5,101,95.0,No,No,2.0,2.0,2.0,23,2611,No,2016,Sí,49,,11.06
+P0684,Ingeniería de Software,8,7.47,13.19,143,75.0,No,Sí,3.0,3.0,1.0,24,4074,No,2019,Sí,49,,5.6
+P0685,Ingeniería de Sistemas,1,1.22,0.27,0,100.0,Sí,Sí,2.0,7.0,0.0,21,3176,No,2019,No,29,Falta de motivación,0.0
+P0686,Ciencia de la Computación,8,18.91,19.05,84,90.0,No,Sí,4.0,1.0,2.0,22,4230,No,2019,Sí,76,,10.09
+P0687,Ciencia de la Computación,3,9.94,15.23,35,63.0,No,Sí,4.0,4.0,2.0,19,4472,No,2022,Sí,63,,9.83
+P0688,Ingeniería de Sistemas,7,20.0,19.36,75,97.0,No,No,6.0,1.0,1.0,22,2101,No,2019,Sí,40,,18.17
+P0689,Ingeniería de Sistemas,8,14.11,16.86,87,90.0,No,Sí,3.0,5.0,2.0,22,3313,No,2018,No,41,Bajo rendimiento,10.84
+P0690,Ingeniería de Sistemas,5,7.99,12.27,50,80.0,Sí,Sí,2.0,3.0,3.0,20,2875,No,2020,Sí,24,,7.97
+P0691,Ingeniería de Sistemas,9,13.54,17.26,123,68.0,No,No,3.0,3.0,4.0,24,6933,No,2018,Sí,83,,11.56
+P0692,Ingeniería de Software,3,17.83,18.62,24,90.0,No,No,3.0,1.0,2.0,21,3061,No,2019,No,70,Problemas económicos,15.12
+P0693,Ingeniería de Sistemas,7,9.83,12.32,79,75.0,No,Sí,1.0,1.0,1.0,20,3608,No,2019,Sí,56,,4.75
+P0694,Ingeniería de Software,2,13.39,16.44,11,90.0,No,Sí,5.0,2.0,1.0,21,2100,No,2021,Sí,39,,10.24
+P0695,Ingeniería de Software,2,13.98,13.51,12,90.0,No,Sí,2.0,3.0,2.0,20,1353,No,2020,No,34,Salud u otros,4.68
+P0696,Ciencia de la Computación,3,20.0,19.69,24,85.0,No,No,1.0,2.0,2.0,21,3107,No,2019,Sí,58,,12.25
+P0697,Ciencia de la Computación,10,13.56,19.77,126,80.0,No,Sí,6.0,3.0,2.0,21,5059,No,2018,Sí,67,,10.3
+P0698,Ingeniería de Sistemas,2,19.79,16.39,11,88.0,No,No,5.0,1.0,2.0,20,1979,No,2020,No,36,Falta de motivación,13.6
+P0699,Ingeniería de Software,2,18.32,0.0,11,90.0,No,No,4.0,5.0,3.0,21,1673,No,2019,No,33,Salud u otros,12.19
+P0700,Ciencia de la Computación,10,13.2,18.14,135,100.0,No,Sí,2.0,2.0,1.0,20,3579,No,2020,No,63,Falta de motivación,10.47
+P0701,Ciencia de la Computación,9,9.18,15.03,137,100.0,Sí,Sí,3.0,6.0,3.0,22,4442,No,2019,Sí,54,,6.2
+P0702,Ingeniería de Sistemas,10,16.1,16.86,88,90.0,No,No,4.0,1.0,1.0,20,2619,No,2019,Sí,43,,14.49
+P0703,Ingeniería de Software,4,13.54,16.01,36,95.0,No,No,5.0,1.0,2.0,22,1932,No,2019,Sí,40,,13.76
+P0704,Ingeniería de Sistemas,4,9.78,13.03,24,80.0,Sí,Sí,4.0,2.0,1.0,22,1252,No,2021,No,9,Salud u otros,12.68
+P0705,Ciencia de la Computación,9,13.23,19.2,127,100.0,No,Sí,5.0,3.0,4.0,20,2732,No,2020,Sí,45,,7.45
+P0706,Ingeniería de Sistemas,10,12.73,19.06,135,100.0,No,Sí,2.0,2.0,1.0,20,3495,No,2020,Sí,36,,5.6
+P0707,Ingeniería de Software,8,17.02,17.37,87,100.0,No,Sí,4.0,3.0,4.0,22,4780,No,2019,Sí,66,,10.23
+P0708,Ciencia de la Computación,2,16.6,18.42,11,100.0,No,No,5.0,2.0,5.0,20,1031,No,2020,No,20,Bajo rendimiento,13.37
+P0709,Ingeniería de Software,6,6.35,12.85,70,68.0,No,Sí,4.0,3.0,4.0,20,4684,No,2021,Sí,34,,4.26
+P0710,Ingeniería de Sistemas,2,13.49,16.85,11,97.0,No,Sí,3.0,2.0,2.0,21,600,No,2020,No,27,Problemas económicos,10.34
+P0711,Ingeniería de Software,7,13.73,17.29,143,100.0,No,Sí,4.0,2.0,1.0,20,7212,No,2020,Sí,93,,7.68
+P0712,Ingeniería de Software,8,17.53,17.66,87,80.0,No,No,2.0,1.0,3.0,21,2449,No,2019,Sí,39,,17.03
+P0713,Ingeniería de Software,2,13.39,15.8,11,95.0,No,No,5.0,1.0,2.0,21,1703,No,2020,No,23,Problemas económicos,12.48
+P0714,Ingeniería de Sistemas,3,11.62,11.13,20,100.0,No,Sí,2.0,5.0,1.0,20,2130,No,2020,Sí,28,,10.23
+P0715,Ciencia de la Computación,9,11.48,17.19,143,100.0,No,Sí,4.0,2.0,1.0,20,7029,No,2020,Sí,99,,7.27
+P0716,Ingeniería de Software,5,8.5,14.96,72,23.0,Sí,Sí,2.0,3.0,4.0,22,3109,No,2021,No,15,Problemas económicos,9.63
+P0717,Ingeniería de Sistemas,7,14.74,15.75,77,70.0,No,Sí,1.0,5.0,1.0,22,1333,No,2018,Sí,23,,8.8
+P0718,Ingeniería de Software,5,14.35,16.32,50,95.0,No,Sí,4.0,1.0,4.0,20,1488,No,2019,Sí,32,,9.96
+P0719,Ingeniería de Sistemas,9,12.48,19.92,123,100.0,No,No,3.0,2.0,2.0,21,4849,No,2021,Sí,86,,12.57
+P0720,Ingeniería de Sistemas,6,9.8,14.06,88,100.0,No,Sí,1.0,2.0,4.0,21,8087,No,2021,Sí,100,,4.62
+P0721,Ingeniería de Software,6,11.63,17.78,56,100.0,No,Sí,2.0,3.0,1.0,21,3481,No,2019,Sí,52,,5.35
+P0722,Ciencia de la Computación,2,17.24,17.67,14,100.0,No,No,3.0,2.0,3.0,20,2273,No,2020,No,54,Problemas económicos,11.66
+P0723,Ciencia de la Computación,8,15.23,13.36,115,80.0,No,Sí,1.0,12.0,4.0,25,1460,No,2013,Sí,32,,10.5
+P0724,Ingeniería de Sistemas,2,19.3,19.17,11,95.0,No,No,3.0,1.0,2.0,22,1108,No,2020,No,26,Salud u otros,12.37
+P0725,Ingeniería de Software,7,7.23,13.64,136,100.0,Sí,Sí,3.0,2.0,1.0,23,3103,No,2019,Sí,28,,3.1465850619056805
+P0726,Ingeniería de Software,8,17.36,18.57,87,96.0,No,No,3.0,1.0,2.0,21,1023,No,2018,Sí,38,,11.24
+P0727,Ingeniería de Sistemas,1,0.0,0.03,0,100.0,Sí,Sí,4.0,3.0,1.0,19,2433,No,2021,No,18,Exceso de carga laboral,0.78
+P0728,Ciencia de la Computación,4,12.6,18.04,68,100.0,No,Sí,2.0,4.0,1.0,19,9244,No,2021,Sí,87,,5.22
+P0729,Ingeniería de Sistemas,2,17.9,16.93,12,90.0,No,No,3.0,2.0,4.0,22,1009,No,2019,No,36,Problemas económicos,14.17
+P0730,Ingeniería de Sistemas,3,17.33,16.0,23,100.0,No,No,2.0,4.0,2.0,21,2918,No,2020,No,49,Exceso de carga laboral,14.11
+P0731,Ingeniería de Software,8,13.31,15.58,126,85.0,No,Sí,3.0,1.0,2.0,23,2844,No,2017,Sí,34,,7.8
+P0732,Ingeniería de Software,10,13.32,18.65,116,70.0,No,Sí,2.0,8.0,1.0,20,2171,No,2019,No,37,Falta de motivación,9.06
+P0733,Ingeniería de Sistemas,9,14.47,19.0,129,76.0,No,Sí,3.0,3.0,3.0,20,2742,No,2020,No,53,Falta de motivación,10.76
+P0734,Ingeniería de Sistemas,7,12.42,16.49,126,100.0,No,Sí,1.0,2.0,2.0,23,829,No,2017,Sí,35,,3.72
+P0735,Ingeniería de Software,2,14.1,17.69,28,100.0,No,No,5.0,5.0,3.0,21,2040,No,2022,Sí,47,,12.8
+P0736,Ciencia de la Computación,8,14.17,14.59,88,95.0,No,Sí,2.0,3.0,3.0,20,1163,No,2019,Sí,32,,8.22
+P0737,Ingeniería de Software,2,20.0,19.09,11,95.0,No,No,4.0,1.0,2.0,20,2372,No,2020,Sí,39,,12.38
+P0738,Ingeniería de Sistemas,7,11.22,16.19,102,90.0,No,Sí,3.0,5.0,2.0,20,3379,No,2020,No,57,Bajo rendimiento,6.21
+P0739,Ingeniería de Sistemas,10,16.11,15.17,105,99.0,No,No,3.0,2.0,1.0,21,3514,No,2018,Sí,62,,11.26
+P0740,Ingeniería de Software,7,19.32,16.2,73,100.0,No,No,6.0,3.0,2.0,23,2086,No,2018,Sí,42,,15.18
+P0741,Ingeniería de Software,8,19.94,20.0,130,90.0,No,No,6.0,1.0,3.0,24,2521,No,2017,Sí,38,,12.97
+P0742,Ingeniería de Software,2,15.57,15.4,14,80.0,No,Sí,4.0,1.0,1.0,21,1326,No,2020,Sí,26,,8.74
+P0743,Ingeniería de Software,6,7.74,13.34,88,100.0,No,Sí,7.0,3.0,2.0,21,1866,No,2021,Sí,39,,10.73
+P0744,Ingeniería de Software,7,13.18,18.65,112,100.0,No,Sí,2.0,6.0,1.0,21,2735,No,2020,Sí,53,,9.33
+P0745,Ingeniería de Software,5,14.56,14.66,65,80.0,No,Sí,3.0,5.0,2.0,21,1221,No,2020,Sí,24,,10.37
+P0746,Ingeniería de Software,10,14.41,18.42,126,90.0,No,No,4.0,2.0,1.0,22,2334,No,2019,No,43,Exceso de carga laboral,12.53
+P0747,Ciencia de la Computación,9,13.2,18.38,103,100.0,No,Sí,3.0,3.0,4.0,20,7769,No,2020,Sí,100,,10.31
+P0748,Ciencia de la Computación,2,17.15,17.6,12,95.0,No,Sí,6.0,2.0,2.0,18,1965,No,2020,No,32,Falta de motivación,10.1
+P0749,Ciencia de la Computación,2,7.28,7.42,5,90.0,Sí,Sí,3.0,2.0,2.0,21,3043,No,2019,Sí,8,,8.82
+P0750,Ingeniería de Software,9,19.14,14.73,100,99.0,No,Sí,3.0,2.0,7.0,22,1078,No,2019,No,40,Bajo rendimiento,9.45
+P0751,Ingeniería de Sistemas,9,13.82,15.59,136,80.0,No,Sí,3.0,2.0,2.0,23,6215,No,2017,Sí,81,,7.45
+P0752,Ingeniería de Sistemas,7,7.69,14.04,88,50.0,Sí,Sí,3.0,2.0,4.0,20,5358,No,2021,Sí,32,,5.71
+P0753,Ingeniería de Sistemas,6,8.42,14.69,80,56.0,Sí,Sí,2.0,2.0,2.0,20,4158,No,2020,Sí,34,,8.68
+P0754,Ingeniería de Software,2,15.15,14.97,11,80.0,No,No,1.0,6.0,1.0,20,1350,No,2020,Sí,35,,12.27
+P0755,Ingeniería de Sistemas,7,12.17,18.39,100,100.0,No,Sí,3.0,5.0,2.0,19,5073,No,2021,Sí,70,,4.48
+P0756,Ingeniería de Software,8,17.96,16.72,126,90.0,No,No,2.0,1.0,2.0,22,1223,No,2018,Sí,31,,14.5
+P0757,Ingeniería de Sistemas,7,12.66,19.3,100,100.0,No,Sí,3.0,5.0,2.0,19,4486,No,2021,Sí,86,,10.37
+P0758,Ingeniería de Software,4,12.4,14.43,23,90.0,No,Sí,3.0,2.0,2.0,20,6096,No,2019,Sí,82,,7.74
+P0759,Ingeniería de Software,7,17.38,14.62,80,80.0,No,Sí,2.0,2.0,1.0,22,2380,No,2019,Sí,17,,9.04
+P0760,Ciencia de la Computación,8,13.77,15.64,88,90.0,No,Sí,4.0,4.0,2.0,22,775,No,2019,Sí,46,,9.35
+P0761,Ingeniería de Sistemas,4,14.04,15.85,36,100.0,No,No,5.0,2.0,1.0,22,948,No,2020,Sí,32,,11.66
+P0762,Ingeniería de Software,1,0.0,0.75,0,95.0,No,Sí,2.0,1.0,2.0,20,2540,No,2021,Sí,23,,3.8
+P0763,Ingeniería de Software,8,16.23,12.93,85,100.0,No,Sí,4.0,2.0,2.0,21,1300,No,2019,Sí,33,,10.94
+P0764,Ciencia de la Computación,7,10.02,14.91,65,100.0,No,Sí,3.0,4.0,3.0,21,4758,No,2020,Sí,68,,9.72
+P0765,Ingeniería de Software,4,11.34,15.03,43,80.0,No,Sí,1.0,7.0,1.0,21,4390,No,2021,Sí,68,,3.33
+P0766,Ingeniería de Software,2,20.0,19.59,11,95.0,No,No,1.0,4.0,2.0,21,1346,No,2020,Sí,17,,14.15
+P0767,Ingeniería de Sistemas,2,12.91,15.19,11,100.0,No,Sí,3.0,2.0,3.0,19,2039,No,2020,Sí,41,,7.34
+P0768,Ciencia de la Computación,2,18.4,19.39,11,100.0,No,Sí,2.0,3.0,1.0,20,1083,No,2020,No,17,Exceso de carga laboral,9.58
+P0769,Ingeniería de Sistemas,2,3.06,2.29,11,60.0,No,Sí,5.0,4.0,1.0,21,600,No,2020,Sí,14,,1.54
+P0770,Ingeniería de Software,10,13.14,19.36,134,100.0,No,Sí,1.0,2.0,2.0,20,3908,No,2020,Sí,79,,7.6
+P0771,Ciencia de la Computación,8,20.0,18.53,126,99.0,No,No,5.0,5.0,2.0,21,5881,No,2018,Sí,73,,13.05
+P0772,Ingeniería de Sistemas,5,6.17,12.22,75,45.0,Sí,Sí,1.0,10.0,1.0,20,6887,No,2021,Sí,41,,0.9025970323220998
+P0773,Ingeniería de Sistemas,3,18.29,17.76,23,50.0,No,No,4.0,3.0,1.0,26,5059,No,2014,Sí,75,,15.37
+P0774,Ciencia de la Computación,10,14.68,16.12,104,70.0,No,Sí,4.0,1.0,2.0,26,660,No,2014,Sí,12,,1.850877917904068
+P0775,Ciencia de la Computación,2,10.61,10.44,12,95.0,No,Sí,3.0,4.0,6.0,19,600,No,2020,Sí,18,,7.1
+P0776,Ingeniería de Sistemas,10,7.23,12.25,134,100.0,No,Sí,2.0,1.0,2.0,22,4846,No,2021,Sí,60,,6.7
+P0777,Ingeniería de Sistemas,8,14.62,15.47,88,90.0,No,No,2.0,4.0,0.0,22,2686,No,2018,Sí,46,,14.21
+P0778,Ingeniería de Sistemas,2,7.0,7.04,5,90.0,No,Sí,3.0,2.0,2.0,21,2951,No,2019,Sí,40,,7.1
+P0779,Ciencia de la Computación,3,12.21,14.62,24,90.0,No,Sí,2.0,3.0,1.0,19,2081,No,2020,No,41,Problemas económicos,9.49
+P0780,Ciencia de la Computación,7,6.67,12.93,143,100.0,Sí,Sí,3.0,2.0,1.0,25,10000,No,2018,Sí,95,,7.43
+P0781,Ciencia de la Computación,9,11.79,16.67,103,67.0,No,Sí,1.0,2.0,2.0,20,3755,No,2020,Sí,45,,8.4
+P0782,Ingeniería de Software,2,19.33,20.0,11,100.0,No,No,2.0,1.0,2.0,21,2926,No,2019,Sí,49,,15.0
+P0783,Ingeniería de Sistemas,8,13.4,18.67,89,100.0,No,Sí,5.0,3.0,4.0,20,9730,No,2020,Sí,100,,9.56
+P0784,Ingeniería de Sistemas,5,5.7,14.53,42,100.0,Sí,Sí,2.0,8.0,8.0,24,3422,No,2019,Sí,30,,6.0
+P0785,Ingeniería de Sistemas,8,7.04,12.15,99,88.0,Sí,Sí,4.0,7.0,1.0,25,3625,No,2018,Sí,32,,9.52
+P0786,Ciencia de la Computación,2,15.91,16.49,12,95.0,No,Sí,2.0,1.0,2.0,20,1474,No,2020,Sí,28,,6.04
+P0787,Ciencia de la Computación,2,16.79,17.79,12,95.0,No,No,6.0,2.0,2.0,18,1116,No,2020,Sí,20,,11.4
+P0788,Ciencia de la Computación,8,8.1,13.29,143,20.699006594456343,No,Sí,5.0,3.0,4.0,25,5912,No,2018,Sí,73,,6.73
+P0789,Ingeniería de Sistemas,4,12.45,15.4,36,97.0,No,Sí,5.0,2.0,2.0,21,2698,No,2020,Sí,60,,9.71
+P0790,Ingeniería de Sistemas,5,15.88,16.01,48,95.0,No,No,2.0,3.0,1.0,22,2983,No,2020,Sí,56,,12.15
+P0791,Ingeniería de Sistemas,2,15.52,16.02,11,98.0,No,Sí,5.0,2.0,2.0,19,1915,No,2020,Sí,41,,10.32
+P0792,Ingeniería de Sistemas,4,13.41,16.27,36,80.0,No,Sí,3.0,2.0,1.0,22,2879,No,2019,Sí,57,,7.11
+P0793,Ingeniería de Software,7,15.24,12.24,115,80.0,No,No,1.0,12.0,4.0,25,772,No,2013,No,28,Problemas económicos,12.35
+P0794,Ingeniería de Software,6,7.69,12.94,70,68.0,No,Sí,4.0,3.0,4.0,20,4318,No,2021,Sí,54,,5.2
+P0795,Ingeniería de Sistemas,7,20.0,19.91,75,97.0,No,No,6.0,1.0,1.0,22,2556,No,2019,Sí,28,,12.76
+P0796,Ingeniería de Sistemas,9,14.26,16.03,105,80.0,No,No,4.0,2.0,2.0,22,10000,No,2018,Sí,86,,13.0
+P0797,Ingeniería de Software,1,0.35,0.0,0,85.0,No,Sí,4.0,2.0,2.0,20,1612,No,2018,No,11,Bajo rendimiento,1.76
+P0798,Ingeniería de Sistemas,8,5.85,12.08,143,76.0,Sí,Sí,2.0,3.0,4.0,24,3232,No,2019,Sí,12,,4.42
+P0799,Ingeniería de Sistemas,2,8.17,9.18,11,95.0,No,Sí,2.0,10.0,2.0,20,2015,No,2020,Sí,40,,5.49
+P0800,Ingeniería de Sistemas,7,11.81,16.86,97,80.0,No,Sí,4.0,6.0,3.0,20,3319,No,2021,No,46,Bajo rendimiento,10.58
+P0801,Ingeniería de Sistemas,4,18.13,16.28,25,98.0,No,No,2.0,3.0,2.0,22,2419,No,2020,Sí,36,,12.65
+P0802,Ingeniería de Software,3,15.06,17.43,25,85.0,No,No,2.0,3.0,1.0,19,1236,No,2020,Sí,20,,12.5
+P0803,Ingeniería de Sistemas,7,17.57,13.76,80,80.0,No,Sí,2.0,2.0,1.0,22,2120,No,2019,No,44,Salud u otros,8.03
+P0804,Ciencia de la Computación,7,19.89,19.29,75,97.0,No,No,6.0,1.0,1.0,22,2527,No,2019,Sí,36,,12.48
+P0805,Ciencia de la Computación,8,6.22,13.1,143,100.0,Sí,Sí,3.0,2.0,1.0,25,8537,No,2018,Sí,92,,5.2
+P0806,Ingeniería de Software,2,17.73,17.6,11,88.0,No,No,8.0,2.0,2.0,20,1920,No,2020,Sí,31,,15.16
+P0807,Ingeniería de Sistemas,2,14.8,15.34,11,99.0,No,Sí,3.0,1.0,3.0,21,3619,No,2020,Sí,55,,8.86
+P0808,Ciencia de la Computación,1,15.4,16.79,11,92.0,No,Sí,3.0,2.0,1.0,19,2783,No,2021,Sí,38,,9.38
+P0809,Ingeniería de Sistemas,2,14.95,14.87,12,100.0,No,No,3.0,3.0,1.0,20,5483,No,2020,Sí,76,,12.71
+P0810,Ingeniería de Software,7,12.01,19.98,136,100.0,No,Sí,4.0,2.0,3.0,21,4196,No,2018,Sí,74,,6.99
+P0811,Ingeniería de Software,3,17.82,18.13,25,88.0,No,No,3.0,2.0,2.0,21,2045,No,2020,Sí,42,,11.42
+P0812,Ingeniería de Sistemas,7,13.93,15.44,126,100.0,No,Sí,2.0,1.0,2.0,22,2244,No,2018,No,46,Salud u otros,8.61
+P0813,Ingeniería de Sistemas,2,2.36,1.29,11,60.0,No,Sí,5.0,4.0,1.0,21,600,No,2020,No,15,Falta de motivación,2.24
+P0814,Ciencia de la Computación,9,13.55,15.73,100,99.0,No,Sí,3.0,2.0,2.0,22,894,No,2019,Sí,45,,10.48
+P0815,Ingeniería de Sistemas,10,17.81,16.04,110,98.0,No,Sí,6.0,6.0,3.0,23,2904,No,2018,Sí,61,,8.53
+P0816,Ingeniería de Software,10,19.3,15.89,117,70.0,No,No,1.0,1.0,6.0,22,1047,No,2018,No,29,Problemas económicos,11.94
+P0817,Ingeniería de Sistemas,2,13.45,15.64,11,90.0,No,No,4.0,2.0,2.0,19,2303,No,2020,Sí,38,,13.72
+P0818,Ingeniería de Sistemas,7,18.62,14.8,70,88.0,No,Sí,2.0,2.0,1.0,21,1385,No,2019,Sí,41,,10.52
+P0819,Ciencia de la Computación,3,16.74,17.29,25,99.0,No,Sí,5.0,4.0,3.0,19,1392,No,2020,Sí,19,,8.21
+P0820,Ingeniería de Sistemas,8,13.82,15.21,88,90.0,No,Sí,4.0,4.0,2.0,22,600,No,2019,Sí,19,,8.15
+P0821,Ingeniería de Sistemas,10,12.14,14.66,113,90.0,No,Sí,3.0,2.0,3.0,23,2163,No,2017,Sí,30,,10.55
+P0822,Ingeniería de Sistemas,8,13.72,15.68,88,90.0,No,Sí,3.0,4.0,2.0,22,3150,No,2019,Sí,58,,7.7
+P0823,Ciencia de la Computación,3,18.86,20.0,23,99.0,No,No,2.0,4.0,2.0,20,3104,No,2020,No,60,Problemas económicos,14.82
+P0824,Ciencia de la Computación,8,18.0,17.56,123,70.0,No,No,2.0,4.0,2.0,23,3065,No,2017,Sí,45,,12.85
+P0825,Ingeniería de Sistemas,1,20.0,19.72,13,99.0,No,No,2.0,2.0,2.0,20,3855,No,2020,No,60,Bajo rendimiento,14.46
+P0826,Ingeniería de Software,1,0.22,0.65,0,98.0,No,Sí,4.0,3.0,2.0,20,2996,No,2020,Sí,28,,0.0
+P0827,Ingeniería de Sistemas,10,6.39,12.37,135,73.0,Sí,Sí,2.0,3.0,2.0,20,8535,No,2020,Sí,82,,4.45
+P0828,Ingeniería de Software,3,18.09,18.03,24,95.0,No,No,1.0,1.0,2.0,20,2675,No,2020,Sí,40,,14.97
+P0829,Ingeniería de Sistemas,9,19.7,18.39,130,90.0,No,Sí,6.0,1.0,3.0,24,2447,No,2017,Sí,45,,8.86
+P0830,Ciencia de la Computación,8,16.26,16.82,75,90.0,No,No,8.0,4.0,5.0,22,2001,No,2018,Sí,31,,11.03
+P0831,Ingeniería de Sistemas,8,18.04,16.74,75,90.0,No,Sí,8.0,4.0,5.0,22,2128,No,2018,Sí,40,,8.46
+P0832,Ciencia de la Computación,2,19.76,18.35,11,85.0,No,No,3.0,3.0,2.0,19,3965,No,2020,Sí,48,,16.24
+P0833,Ingeniería de Software,4,12.09,12.36,31,95.0,No,Sí,3.0,1.0,1.0,19,3443,No,2020,Sí,64,,6.45
+P0834,Ingeniería de Sistemas,10,14.13,18.92,139,100.0,No,Sí,7.0,2.0,3.0,20,4219,No,2020,No,64,Problemas económicos,10.55
+P0835,Ingeniería de Software,2,17.31,19.54,11,99.0,No,No,1.0,4.0,2.0,20,1799,No,2020,No,53,Problemas económicos,12.57
+P0836,Ingeniería de Sistemas,2,18.78,19.16,11,88.0,No,No,2.0,2.0,2.0,21,900,No,2020,No,32,Exceso de carga laboral,11.32
+P0837,Ingeniería de Sistemas,1,0.27,0.0,0,95.0,Sí,Sí,6.0,2.0,2.0,19,4196,No,2021,No,23,Falta de motivación,0.97
+P0838,Ingeniería de Sistemas,6,13.31,18.5,89,100.0,No,Sí,3.0,2.0,1.0,20,6918,No,2021,Sí,100,,10.88
+P0839,Ciencia de la Computación,2,19.32,19.86,11,99.0,No,No,5.0,2.0,1.0,20,966,No,2020,Sí,28,,15.42
+P0840,Ingeniería de Software,5,11.61,19.12,68,100.0,No,Sí,2.0,3.0,4.0,21,6874,No,2021,Sí,88,,10.28
+P0841,Ingeniería de Software,6,14.4,15.71,70,85.0,No,Sí,4.0,4.0,3.0,22,1656,No,2019,Sí,18,,9.12
+P0842,Ingeniería de Software,3,14.69,15.42,23,100.0,No,No,3.0,1.0,2.0,19,1579,No,2020,Sí,36,,13.12
+P0843,Ingeniería de Software,9,10.7,18.51,123,87.0,No,Sí,1.0,3.0,4.0,20,4890,No,2021,Sí,65,,8.22
+P0844,Ingeniería de Software,5,7.55,13.24,65,85.0,Sí,Sí,4.0,2.0,4.0,21,4144,No,2021,Sí,35,,7.42
+P0845,Ciencia de la Computación,6,13.76,20.0,35,100.0,No,Sí,6.0,6.0,6.0,21,4385,No,2020,Sí,67,,8.3
+P0846,Ingeniería de Software,1,17.4,18.2,12,100.0,No,No,3.0,3.0,2.0,22,3197,No,2017,Sí,45,,12.08
+P0847,Ingeniería de Sistemas,10,14.05,20.0,125,88.0,No,Sí,3.0,7.0,5.0,22,10000,No,2019,Sí,100,,8.99
+P0848,Ingeniería de Sistemas,7,11.13,18.68,143,100.0,No,Sí,5.0,5.0,1.0,22,8299,No,2018,Sí,93,,7.17
+P0849,Ingeniería de Sistemas,8,13.84,20.0,135,100.0,No,Sí,4.0,2.0,3.0,22,5206,No,2017,Sí,88,,7.95
+P0850,Ingeniería de Software,9,11.43,17.57,138,100.0,No,No,4.0,6.0,2.0,20,3323,No,2020,Sí,55,,12.08
+P0851,Ingeniería de Sistemas,10,9.87,14.88,144,56.0,Sí,Sí,2.0,3.0,2.0,20,5456,No,2020,No,52,Salud u otros,7.98
+P0852,Ciencia de la Computación,2,13.76,15.86,11,100.0,No,Sí,5.0,6.0,3.0,20,1299,No,2020,Sí,28,,8.26
+P0853,Ingeniería de Software,8,12.95,19.59,89,100.0,No,No,5.0,3.0,4.0,20,9685,No,2020,Sí,100,,13.91
+P0854,Ingeniería de Sistemas,10,12.88,17.92,143,100.0,No,Sí,2.0,3.0,2.0,22,6195,No,2019,Sí,86,,8.59
+P0855,Ciencia de la Computación,8,13.13,16.31,77,85.0,No,Sí,1.0,1.0,1.0,26,3129,No,2012,Sí,55,,6.56
+P0856,Ingeniería de Software,8,12.24,18.88,144,65.0,No,Sí,3.0,3.0,2.0,24,2155,No,2018,Sí,35,,9.48
+P0857,Ingeniería de Software,10,12.69,17.74,144,100.0,No,Sí,5.0,2.0,1.0,24,9111,No,2019,Sí,85,,7.44
+P0858,Ingeniería de Sistemas,8,16.85,16.78,88,85.0,No,Sí,1.0,3.0,1.0,21,2979,No,2019,Sí,47,,8.97
+P0859,Ingeniería de Software,4,7.94,15.12,67,85.0,Sí,Sí,3.0,2.0,2.0,20,3187,No,2021,Sí,24,,8.91
+P0860,Ciencia de la Computación,3,17.19,16.39,23,98.0,No,No,3.0,3.0,4.0,22,3066,No,2020,Sí,68,,11.74
+P0861,Ingeniería de Software,10,17.64,17.87,125,90.0,No,No,2.0,2.0,1.0,21,2371,No,2018,Sí,45,,14.79
+P0862,Ciencia de la Computación,9,20.0,20.0,116,70.0,No,No,2.0,2.0,0.0,23,1525,No,2016,Sí,31,,12.54
+P0863,Ingeniería de Software,2,13.12,13.16,11,80.0,No,Sí,3.0,5.0,2.0,20,2508,No,2020,No,41,Bajo rendimiento,9.71
+P0864,Ciencia de la Computación,10,11.38,15.28,143,80.0,No,Sí,5.0,11.0,2.0,22,2821,No,2018,No,37,Problemas económicos,7.34
+P0865,Ingeniería de Sistemas,10,12.83,17.87,116,100.0,No,Sí,5.0,2.0,2.0,25,1904,No,2018,Sí,48,,8.49
+P0866,Ingeniería de Software,5,10.56,17.04,79,100.0,No,Sí,3.0,5.0,2.0,20,3337,No,2021,Sí,61,,7.26
+P0867,Ingeniería de Software,5,14.39,16.3,50,80.0,No,Sí,3.0,3.0,1.0,21,2898,No,2019,Sí,41,,6.04
+P0868,Ingeniería de Sistemas,10,14.2,18.98,138,100.0,No,Sí,2.0,2.0,4.0,20,2461,No,2020,Sí,41,,9.1
+P0869,Ciencia de la Computación,9,5.55,12.97,100,100.0,Sí,Sí,2.0,3.0,2.0,20,4647,No,2020,No,47,Bajo rendimiento,6.45
+P0870,Ingeniería de Software,9,17.06,19.17,100,99.0,No,No,5.0,4.0,1.0,22,1935,No,2017,No,32,Falta de motivación,12.5
+P0871,Ingeniería de Sistemas,10,13.85,17.41,78,78.0,No,Sí,2.0,3.0,2.0,25,3817,No,2019,Sí,57,,7.82
+P0872,Ingeniería de Software,8,14.34,13.62,80,98.0,No,No,3.0,1.0,2.0,22,2002,No,2019,No,30,Falta de motivación,11.29
+P0873,Ingeniería de Software,1,0.0,0.46,0,100.0,Sí,Sí,4.0,1.0,2.0,21,2078,No,2020,Sí,18,,0.0
+P0874,Ingeniería de Sistemas,6,20.0,20.0,58,99.0,No,No,3.0,2.0,1.0,21,2146,No,2019,Sí,32,,14.0
+P0875,Ingeniería de Sistemas,9,15.48,19.34,136,100.0,No,No,2.0,3.0,4.0,25,3073,No,2019,Sí,66,,11.93
+P0876,Ingeniería de Sistemas,8,8.59,11.77,99,88.0,Sí,Sí,4.0,7.0,1.0,25,3634,No,2018,Sí,19,,8.44
+P0877,Ingeniería de Software,2,15.92,17.65,11,99.0,No,Sí,3.0,3.0,1.0,20,1001,No,2020,No,15,Problemas económicos,8.62
+P0878,Ingeniería de Sistemas,5,11.02,17.4,63,46.0,No,Sí,2.0,2.0,4.0,21,3618,No,2021,Sí,58,,7.13
+P0879,Ingeniería de Sistemas,2,16.52,17.37,11,70.0,No,Sí,3.0,3.0,2.0,20,2211,No,2020,Sí,41,,10.74
+P0880,Ingeniería de Software,2,19.73,20.0,11,90.0,No,Sí,4.0,3.0,1.0,20,1781,No,2020,Sí,55,,10.48
+P0881,Ingeniería de Software,3,16.07,15.27,23,70.0,No,No,2.0,0.0,1.0,22,4319,No,2017,Sí,64,,13.66
+P0882,Ingeniería de Software,10,8.33,13.46,134,100.0,Sí,Sí,2.0,9.0,4.0,22,4335,No,2019,Sí,60,,7.53
+P0883,Ingeniería de Sistemas,2,20.0,18.85,11,100.0,No,No,4.0,6.0,2.0,20,600,No,2018,No,11,Exceso de carga laboral,11.88
+P0884,Ingeniería de Software,8,16.77,16.96,90,98.0,No,No,2.0,2.0,0.0,22,3532,No,2018,Sí,58,,12.88
+P0885,Ingeniería de Software,2,13.84,15.63,11,92.0,No,Sí,3.0,0.0,3.0,22,5746,No,2019,Sí,86,,10.58
+P0886,Ingeniería de Software,10,19.25,18.05,128,87.0,No,Sí,2.0,1.0,3.0,25,2320,No,2017,No,40,Salud u otros,10.23
+P0887,Ciencia de la Computación,8,14.52,15.31,126,85.0,No,Sí,3.0,1.0,2.0,23,2401,No,2017,Sí,33,,8.66
+P0888,Ingeniería de Sistemas,8,6.3,10.9,143,76.0,Sí,Sí,2.0,3.0,4.0,24,3227,No,2019,Sí,21,,6.23
+P0889,Ingeniería de Sistemas,8,12.18,14.3,75,98.0,No,Sí,3.0,2.0,2.0,20,10000,No,2018,Sí,100,,4.67
+P0890,Ingeniería de Software,8,13.29,19.51,100,46.0,No,Sí,1.0,2.0,2.0,20,10000,No,2020,Sí,76,,10.39
+P0891,Ingeniería de Software,9,17.88,18.03,123,70.0,No,No,2.0,4.0,2.0,23,3605,No,2017,Sí,56,,11.96
+P0892,Ingeniería de Software,8,11.86,16.98,76,98.0,No,Sí,2.0,8.0,3.0,24,5935,No,2018,Sí,90,,8.27
+P0893,Ingeniería de Sistemas,7,18.16,17.04,89,95.0,No,No,3.0,2.0,1.0,21,3242,No,2019,No,70,Exceso de carga laboral,11.54
+P0894,Ingeniería de Sistemas,2,13.29,16.27,11,98.0,No,Sí,1.0,1.0,2.0,20,2240,No,2020,Sí,42,,9.04
+P0895,Ingeniería de Sistemas,8,13.82,12.82,80,98.0,No,Sí,3.0,1.0,2.0,22,2343,No,2019,No,49,Exceso de carga laboral,8.94
+P0896,Ingeniería de Sistemas,1,0.0,1.22,0,95.0,Sí,Sí,6.0,2.0,2.0,19,4108,No,2021,Sí,26,,5.29
+P0897,Ingeniería de Sistemas,2,13.27,15.42,11,95.0,No,Sí,3.0,2.0,1.0,21,2435,No,2020,No,43,Salud u otros,10.31
+P0898,Ciencia de la Computación,9,16.02,16.18,89,90.0,No,No,2.0,2.0,3.0,26,2646,No,2012,No,45,Problemas económicos,13.56
+P0899,Ingeniería de Sistemas,2,13.2,15.48,11,90.0,No,Sí,4.0,6.0,2.0,20,2766,No,2020,Sí,41,,7.35
+P0900,Ingeniería de Sistemas,7,12.51,19.81,115,100.0,No,Sí,6.0,3.0,3.0,22,4742,No,2018,Sí,68,,8.75
+P0901,Ciencia de la Computación,7,12.2,16.49,100,90.0,No,Sí,4.0,5.0,2.0,19,2024,No,2021,Sí,46,,5.81
+P0902,Ingeniería de Sistemas,10,17.15,16.8,120,95.0,No,Sí,2.0,1.0,2.0,23,2966,No,2017,Sí,52,,14.884650422316234
+P0903,Ingeniería de Sistemas,2,13.99,16.13,11,80.0,No,Sí,1.0,7.0,2.0,22,1577,No,2020,Sí,26,,6.85
+P0904,Ingeniería de Sistemas,4,15.9,14.76,36,80.0,No,Sí,5.0,1.0,2.0,20,663,No,2020,No,27,Exceso de carga laboral,7.17
+P0905,Ciencia de la Computación,1,0.08,0.0,0,100.0,Sí,Sí,8.0,2.0,1.0,19,600,No,2020,Sí,2,,3.38
+P0906,Ingeniería de Sistemas,9,13.82,15.46,100,70.0,No,No,2.0,4.0,4.0,23,10000,No,2017,Sí,100,,13.42
+P0907,Ingeniería de Software,9,6.47,12.48,117,45.0,Sí,Sí,2.0,3.0,2.0,20,4283,No,2020,Sí,37,,7.61
+P0908,Ciencia de la Computación,9,11.06,14.76,117,100.0,No,Sí,3.0,4.0,3.0,21,2575,No,2020,Sí,58,,7.02
+P0909,Ingeniería de Software,9,19.4,16.34,118,90.0,No,No,5.0,1.0,3.0,24,1019,No,2017,Sí,23,,14.66
+P0910,Ciencia de la Computación,7,14.95,16.91,136,85.0,No,No,5.0,4.0,1.0,23,1294,No,2017,Sí,25,,12.12
+P0911,Ingeniería de Sistemas,10,11.96,16.23,45,80.0,No,Sí,1.0,2.0,1.0,24,5272,No,2019,Sí,73,,7.56
+P0912,Ingeniería de Software,10,17.01,19.3,130,99.0,No,No,8.0,2.0,3.0,23,978,No,2018,Sí,29,,13.4
+P0913,Ingeniería de Software,4,18.57,17.69,35,70.0,No,No,2.0,4.0,4.0,19,2073,No,2020,Sí,32,,11.94
+P0914,Ingeniería de Software,8,16.6,19.25,88,90.0,No,No,2.0,1.0,2.0,19,1516,No,2019,Sí,20,,14.56
+P0915,Ciencia de la Computación,8,7.64,12.83,143,100.0,Sí,Sí,3.0,2.0,1.0,25,10000,No,2018,Sí,98,,4.53
+P0916,Ingeniería de Software,7,9.3,17.21,100,90.0,Sí,Sí,4.0,5.0,2.0,19,1888,No,2021,Sí,28,,6.89
+P0917,Ciencia de la Computación,10,14.31,18.58,136,100.0,No,Sí,1.0,2.0,2.0,22,3527,No,2020,Sí,75,,10.85
+P0918,Ingeniería de Software,9,10.86,17.86,60,90.0,No,Sí,5.0,6.0,2.0,24,1724,No,2019,Sí,32,,9.23
+P0919,Ingeniería de Software,5,13.41,16.53,50,80.0,No,Sí,3.0,3.0,1.0,21,2704,No,2019,Sí,30,,7.26
+P0920,Ingeniería de Software,9,7.87,14.75,116,100.0,No,Sí,3.0,3.0,2.0,20,9205,No,2020,Sí,82,,9.01
+P0921,Ingeniería de Software,8,15.64,16.69,123,90.0,No,Sí,6.0,6.0,5.0,23,2366,No,2018,No,42,Falta de motivación,10.33
+P0922,Ingeniería de Sistemas,2,12.91,15.71,11,100.0,No,Sí,7.0,1.0,3.0,21,2036,No,2020,Sí,39,,6.31
+P0923,Ingeniería de Software,9,17.06,16.4,122,100.0,No,No,5.0,3.0,2.0,22,2368,No,2017,Sí,52,,11.99
+P0924,Ingeniería de Sistemas,2,19.29,17.62,11,98.0,No,No,2.0,4.0,2.0,20,2267,No,2020,Sí,44,,15.53
+P0925,Ingeniería de Sistemas,8,16.93,17.24,87,80.0,No,Sí,2.0,1.0,3.0,21,2449,No,2019,Sí,43,,7.62
+P0926,Ingeniería de Sistemas,2,20.0,19.31,11,100.0,No,No,3.0,5.0,2.0,21,1611,No,2021,Sí,34,,16.2
+P0927,Ingeniería de Sistemas,9,13.13,19.89,139,100.0,No,Sí,6.0,2.0,3.0,21,4636,No,2019,Sí,86,,6.96
+P0928,Ingeniería de Sistemas,10,12.89,19.64,126,80.0,No,Sí,6.0,3.0,2.0,21,4963,No,2018,Sí,63,,6.54
+P0929,Ciencia de la Computación,10,8.13,14.48,133,70.0,Sí,Sí,3.0,3.0,3.0,21,5309,No,2018,Sí,46,,6.2
+P0930,Ingeniería de Sistemas,7,18.48,17.46,129,100.0,No,No,4.0,3.0,2.0,25,3598,No,2016,Sí,64,,11.71
+P0931,Ingeniería de Sistemas,9,7.57,12.36,143,81.0,Sí,Sí,4.0,3.0,2.0,25,5094,No,2018,No,53,Bajo rendimiento,6.14
+P0932,Ingeniería de Sistemas,8,12.09,18.29,124,100.0,No,Sí,5.0,8.0,3.0,20,4989,No,2021,Sí,61,,7.23
+P0933,Ingeniería de Sistemas,3,16.38,16.88,27,37.0,No,No,3.0,4.0,1.0,22,1318,No,2020,Sí,20,,12.33
+P0934,Ingeniería de Sistemas,10,7.66,12.63,139,79.0,No,Sí,2.0,3.0,2.0,21,2446,No,2020,Sí,17,,7.44
+P0935,Ingeniería de Sistemas,3,17.02,16.42,23,85.0,No,No,1.0,2.0,1.0,19,3747,No,2020,No,61,Salud u otros,12.05
+P0936,Ingeniería de Sistemas,8,17.23,16.24,85,100.0,No,No,6.0,2.0,3.0,21,3612,No,2019,No,43,Bajo rendimiento,13.56
+P0937,Ciencia de la Computación,2,18.34,17.52,12,90.0,No,No,1.0,2.0,1.0,21,2261,No,2019,Sí,47,,13.08
+P0938,Ingeniería de Software,6,19.1,18.11,72,90.0,No,No,2.0,4.0,2.0,20,2690,No,2019,No,44,Exceso de carga laboral,11.69
+P0939,Ingeniería de Sistemas,7,11.98,14.15,130,90.0,No,Sí,2.0,2.0,4.0,24,3575,No,2017,No,59,Problemas económicos,8.44
+P0940,Ingeniería de Sistemas,4,13.19,14.74,36,70.0,No,Sí,3.0,2.0,2.0,19,1453,No,2020,No,23,Bajo rendimiento,6.53
+P0941,Ingeniería de Software,2,13.43,16.22,11,98.0,No,Sí,1.0,1.0,2.0,20,2473,No,2020,Sí,43,,8.76
+P0942,Ingeniería de Software,4,12.16,16.65,36,90.0,No,Sí,3.0,2.0,3.0,20,968,No,2020,Sí,26,,6.31
+P0943,Ingeniería de Software,2,13.46,16.21,11,90.0,No,Sí,5.0,2.0,1.0,21,1630,No,2021,Sí,23,,7.95
+P0944,Ingeniería de Sistemas,1,0.0,0.0,0,85.0,Sí,Sí,4.0,5.0,0.0,19,2807,No,2021,No,0,Exceso de carga laboral,2.7
+P0945,Ingeniería de Sistemas,5,9.86,14.03,60,100.0,No,Sí,2.0,3.0,2.0,20,5636,No,2021,Sí,74,,6.39
+P0946,Ciencia de la Computación,9,9.32,15.87,137,70.0,Sí,Sí,3.0,3.0,2.0,21,2507,No,2019,No,32,Salud u otros,5.89
+P0947,Ingeniería de Sistemas,8,13.55,19.61,141,100.0,No,Sí,6.0,7.0,4.0,22,9021,No,2019,Sí,87,,8.83
+P0948,Ingeniería de Software,10,12.47,16.78,116,100.0,No,Sí,3.0,2.0,2.0,24,4468,No,2019,Sí,62,,9.02
+P0949,Ingeniería de Software,9,12.07,15.76,126,100.0,No,Sí,1.0,2.0,2.0,23,741,No,2017,No,30,Problemas económicos,8.88
+P0950,Ingeniería de Sistemas,6,11.04,15.32,74,100.0,No,Sí,3.0,2.0,2.0,21,5077,No,2021,Sí,83,,5.92
+P0951,Ingeniería de Sistemas,8,13.49,16.26,88,100.0,No,Sí,1.0,15.0,1.0,22,5000,No,2019,Sí,72,,9.3
+P0952,Ingeniería de Sistemas,3,18.87,19.76,23,99.0,No,No,2.0,4.0,2.0,20,2792,No,2020,No,33,Bajo rendimiento,13.02
+P0953,Ciencia de la Computación,1,0.96,0.0,0,100.0,Sí,Sí,2.0,8.0,1.0,23,2214,No,2019,No,4,Falta de motivación,0.0
+P0954,Ingeniería de Software,2,18.84,18.31,11,100.0,No,No,5.0,3.0,3.0,19,2460,No,2020,Sí,57,,13.49
+P0955,Ciencia de la Computación,8,18.99,18.15,83,95.0,No,No,3.0,1.0,1.0,21,5454,No,2019,Sí,81,,9.182623294566131
+P0956,Ingeniería de Sistemas,5,18.98,17.64,55,90.0,No,No,6.0,2.0,3.0,21,2844,No,2020,Sí,57,,12.11
+P0957,Ingeniería de Sistemas,2,15.1,14.21,12,90.0,No,No,2.0,3.0,2.0,20,1486,No,2019,Sí,35,,11.1
+P0958,Ingeniería de Sistemas,5,13.35,17.81,130,90.0,No,Sí,3.0,6.0,4.0,23,3627,No,2019,Sí,49,,10.78
+P0959,Ingeniería de Sistemas,2,19.82,19.15,11,95.0,No,Sí,2.0,2.0,1.0,20,2455,No,2020,Sí,47,,10.17
+P0960,Ingeniería de Software,3,10.78,14.19,23,77.0,No,No,3.0,4.0,3.0,19,4568,No,2020,Sí,63,,12.63
+P0961,Ingeniería de Sistemas,2,12.7,16.19,11,100.0,No,Sí,4.0,4.0,2.0,20,2026,No,2019,No,38,Salud u otros,9.12
+P0962,Ingeniería de Software,9,14.37,14.87,136,97.0,No,No,4.0,1.0,2.0,24,1403,No,2018,Sí,41,,11.47
+P0963,Ingeniería de Sistemas,10,14.78,15.7,136,85.0,No,No,5.0,4.0,1.0,23,1183,No,2017,Sí,32,,11.57
+P0964,Ingeniería de Sistemas,8,13.53,14.9,70,88.0,No,Sí,3.0,3.0,5.0,21,2014,No,2018,Sí,30,,10.14
+P0965,Ingeniería de Software,8,15.12,14.99,88,90.0,No,No,4.0,4.0,2.0,22,765,No,2019,Sí,14,,15.451570254529713
+P0966,Ingeniería de Sistemas,2,13.62,16.8,11,100.0,No,Sí,2.0,1.0,2.0,21,611,No,2020,Sí,20,,9.98
+P0967,Ingeniería de Software,10,7.56,12.69,137,100.0,Sí,Sí,2.0,2.0,4.0,20,5128,No,2020,Sí,54,,9.14
+P0968,Ingeniería de Sistemas,10,9.88,16.34,119,100.0,Sí,Sí,3.0,9.0,4.0,20,6787,No,2020,Sí,69,,6.15
+P0969,Ingeniería de Software,6,9.64,15.22,109,80.0,No,Sí,3.0,7.0,2.0,22,2673,No,2021,Sí,48,,8.54
+P0970,Ingeniería de Sistemas,6,8.59,14.98,80,56.0,No,Sí,2.0,2.0,2.0,20,4229,No,2020,No,55,Salud u otros,4.44
+P0971,Ingeniería de Software,1,19.72,20.0,12,100.0,No,Sí,2.0,8.0,2.0,19,2112,No,2020,Sí,39,,10.68
+P0972,Ingeniería de Software,1,-0.0,0.0,0,100.0,No,Sí,4.0,3.0,1.0,19,5703,No,2020,Sí,55,,3.02
+P0973,Ingeniería de Sistemas,8,13.84,14.87,126,90.0,No,No,2.0,3.0,3.0,25,3550,No,2014,Sí,67,,11.75
+P0974,Ingeniería de Software,7,12.03,18.81,104,100.0,No,Sí,5.0,2.0,4.0,20,10000,No,2021,Sí,100,,9.25
+P0975,Ingeniería de Software,5,10.85,16.11,87,100.0,No,Sí,6.0,3.0,2.0,20,4019,No,2021,Sí,77,,8.75
+P0976,Ingeniería de Sistemas,2,18.0,17.59,14,90.0,No,No,5.0,3.0,1.0,20,1358,No,2020,Sí,17,,12.63
+P0977,Ingeniería de Software,7,11.87,12.37,65,80.0,No,Sí,2.0,1.0,1.0,20,1997,No,2019,No,33,Bajo rendimiento,7.27
+P0978,Ingeniería de Sistemas,9,9.66,14.61,100,50.0,No,Sí,1.0,8.0,1.0,22,4112,No,2021,No,49,Exceso de carga laboral,4.53
+P0979,Ingeniería de Sistemas,8,6.46,13.02,136,100.0,No,Sí,2.0,3.0,2.0,20,3834,No,2020,Sí,53,,1.27
+P0980,Ciencia de la Computación,8,13.17,18.19,99,100.0,No,No,4.0,3.0,1.0,20,4760,No,2021,No,60,Problemas económicos,11.3
+P0981,Ingeniería de Sistemas,2,19.53,18.81,11,98.0,No,No,4.0,3.0,3.0,20,3612,No,2020,Sí,62,,14.41
+P0982,Ingeniería de Software,3,19.62,18.01,23,100.0,No,No,4.0,2.0,3.0,21,1759,No,2020,Sí,15,,12.49
+P0983,Ingeniería de Sistemas,9,14.33,16.93,103,95.0,No,Sí,3.0,3.0,2.0,22,2657,No,2018,No,50,Bajo rendimiento,10.39
+P0984,Ingeniería de Sistemas,2,13.89,15.57,12,90.0,No,Sí,2.0,10.0,3.0,20,1568,No,2020,Sí,22,,10.32
+P0985,Ingeniería de Software,4,16.96,18.83,27,90.0,No,Sí,4.0,1.0,2.0,21,2510,No,2019,No,41,Bajo rendimiento,8.74
+P0986,Ingeniería de Sistemas,8,7.17,13.06,143,54.0,Sí,Sí,2.0,3.0,4.0,20,4563,No,2020,Sí,29,,5.59
+P0987,Ingeniería de Sistemas,2,17.61,18.41,13,97.0,No,Sí,3.0,1.0,3.0,21,2145,No,2020,Sí,25,,9.84
+P0988,Ingeniería de Sistemas,6,6.99,13.18,77,100.0,Sí,Sí,3.0,2.0,4.0,21,7705,No,2021,Sí,78,,5.89
+P0989,Ciencia de la Computación,2,15.12,16.47,14,80.0,No,No,4.0,1.0,1.0,21,1213,No,2020,No,18,Problemas económicos,11.65
+P0990,Ingeniería de Sistemas,9,7.07,13.56,107,35.0,Sí,Sí,2.0,2.0,1.0,20,3266,No,2020,Sí,12,,7.67
+P0991,Ingeniería de Software,8,13.36,19.12,136,100.0,No,Sí,2.0,3.0,2.0,20,2554,No,2020,No,49,Salud u otros,9.39
+P0992,Ingeniería de Sistemas,6,15.16,15.66,70,85.0,No,Sí,4.0,4.0,3.0,22,1015,No,2019,Sí,25,,9.07
+P0993,Ingeniería de Software,8,15.65,16.93,140,80.0,No,Sí,4.0,8.0,10.0,24,2042,No,2016,No,42,Exceso de carga laboral,10.73
+P0994,Ingeniería de Sistemas,8,17.15,15.69,114,90.0,No,No,5.0,3.0,2.0,23,1594,No,2018,Sí,32,,12.66
+P0995,Ingeniería de Software,2,15.41,15.3,11,98.0,No,Sí,4.0,2.0,2.0,22,1329,No,2020,Sí,20,,12.615334895596433
+P0996,Ingeniería de Sistemas,2,12.92,16.08,11,80.0,No,Sí,1.0,7.0,2.0,22,1805,No,2020,No,15,Problemas económicos,5.92
+P0997,Ingeniería de Software,6,6.71,12.84,77,100.0,No,Sí,3.0,2.0,4.0,21,7957,No,2021,Sí,85,,5.71
+P0998,Ingeniería de Sistemas,5,13.95,13.6,40,70.0,No,Sí,3.0,10.0,3.0,21,10000,No,2020,Sí,95,,5.205198682680419
+P0999,Ingeniería de Sistemas,2,17.35,16.78,11,100.0,No,No,4.0,2.0,2.0,20,1301,No,2020,No,38,Bajo rendimiento,11.76
+P1000,Ingeniería de Sistemas,8,8.57,12.44,143,81.0,Sí,Sí,4.0,3.0,2.0,25,5481,No,2018,No,45,Falta de motivación,8.16
+P1001,Ingeniería de Sistemas,7,11.25,15.34,111,100.0,No,No,4.0,5.0,2.0,22,2320,No,2021,No,54,Exceso de carga laboral,11.52
+P1002,Ingeniería de Software,8,14.62,15.26,87,90.0,No,No,1.0,1.0,1.0,21,1533,No,2019,Sí,43,,12.04
+P1003,Ingeniería de Sistemas,9,8.18,14.61,116,100.0,Sí,Sí,3.0,3.0,2.0,20,9164,No,2020,Sí,100,,7.71
+P1004,Ingeniería de Software,4,12.97,14.51,36,80.0,No,Sí,2.0,2.0,4.0,20,1942,No,2020,Sí,26,,6.01
+P1005,Ingeniería de Software,10,13.24,14.71,106,80.0,No,Sí,2.0,3.0,5.0,24,4015,No,2017,Sí,50,,9.85
+P1006,Ingeniería de Sistemas,9,14.42,18.44,120,100.0,No,Sí,2.0,3.0,2.0,21,5957,No,2020,Sí,91,,7.1
+P1007,Ingeniería de Sistemas,7,10.92,13.63,103,85.0,No,Sí,4.0,1.0,1.0,24,1150,No,2018,Sí,29,,9.6
+P1008,Ingeniería de Software,4,7.07,15.31,67,85.0,Sí,Sí,3.0,2.0,2.0,20,3337,No,2021,No,31,Bajo rendimiento,1.99
+P1009,Ingeniería de Software,3,10.86,10.98,25,88.0,No,Sí,2.0,1.0,1.0,21,2129,No,2019,No,48,Problemas económicos,9.57
+P1010,Ingeniería de Sistemas,6,15.6,16.57,70,85.0,No,Sí,4.0,4.0,3.0,22,1276,No,2019,Sí,26,,10.96
+P1011,Ingeniería de Software,7,14.23,16.24,136,97.0,No,Sí,4.0,2.0,4.0,23,1021,No,2017,Sí,22,,10.67
+P1012,Ingeniería de Sistemas,3,14.19,14.84,23,100.0,No,Sí,3.0,1.0,1.0,21,3772,No,2020,Sí,75,,9.36
+P1013,Ingeniería de Sistemas,5,10.91,15.78,107,100.0,No,Sí,4.0,8.0,3.0,21,5430,No,2021,Sí,77,,5.46
+P1014,Ciencia de la Computación,2,16.19,17.93,13,97.0,No,No,3.0,1.0,3.0,21,2081,No,2020,Sí,43,,11.32
+P1015,Ingeniería de Sistemas,3,18.52,18.54,25,99.0,No,No,4.0,1.0,2.0,21,1657,No,2019,No,37,Falta de motivación,12.11
+P1016,Ciencia de la Computación,3,8.17,6.83,8,99.0,Sí,Sí,7.0,3.0,1.0,21,3623,No,2021,Sí,36,,7.15
+P1017,Ingeniería de Software,7,13.99,17.27,88,78.0,No,Sí,3.0,2.0,2.0,21,6914,No,2020,Sí,75,,6.7
+P1018,Ingeniería de Software,10,8.04,12.37,143,67.0,Sí,Sí,5.0,3.0,4.0,25,5488,No,2018,Sí,38,,5.09
+P1019,Ingeniería de Sistemas,4,6.11,11.6,59,100.0,No,Sí,2.0,3.0,1.0,20,5474,No,2020,Sí,75,,7.99
+P1020,Ingeniería de Sistemas,3,11.98,12.36,18,80.0,No,No,6.0,3.0,2.0,22,600,No,2020,No,10,Problemas económicos,13.21
+P1021,Ingeniería de Software,7,17.18,18.64,75,98.0,No,No,0.0,2.0,0.0,22,3345,No,2019,Sí,67,,15.33
+P1022,Ciencia de la Computación,6,8.31,13.04,71,100.0,No,Sí,3.0,2.0,2.0,22,5425,No,2021,Sí,74,,7.43
+P1023,Ingeniería de Software,8,17.81,17.38,85,100.0,No,No,6.0,2.0,3.0,21,3972,No,2019,Sí,47,,9.743417039460855
+P1024,Ingeniería de Sistemas,1,0.19,0.26,0,95.0,No,Sí,6.0,2.0,2.0,19,4177,No,2021,Sí,52,,1.97
+P1025,Ingeniería de Sistemas,5,12.64,15.67,50,98.0,No,Sí,3.0,1.0,8.0,20,1120,No,2019,Sí,18,,6.98
+P1026,Ciencia de la Computación,8,19.19,19.0,110,95.0,No,No,4.0,2.0,1.0,21,10000,No,2019,Sí,94,,15.96
+P1027,Ingeniería de Sistemas,7,14.75,15.19,126,70.0,No,Sí,2.0,5.0,4.0,24,1286,No,2016,Sí,20,,14.553594975235496
+P1028,Ingeniería de Sistemas,5,13.19,19.82,80,78.0,No,Sí,1.0,4.0,2.0,19,3092,No,2021,Sí,55,,9.52
+P1029,Ingeniería de Sistemas,10,16.26,18.63,120,95.0,No,No,2.0,1.0,2.0,23,3001,No,2017,Sí,46,,11.4
+P1030,Ciencia de la Computación,2,19.74,20.0,12,70.0,No,No,9.0,6.0,4.0,21,2007,No,2020,No,26,Problemas económicos,11.63
+P1031,Ingeniería de Sistemas,2,18.74,19.91,12,85.0,No,No,1.0,4.0,0.0,21,2849,No,2020,Sí,53,,11.98
+P1032,Ingeniería de Sistemas,7,13.38,18.52,109,100.0,No,Sí,4.0,6.0,1.0,20,5721,No,2019,Sí,79,,8.01
+P1033,Ingeniería de Sistemas,8,20.0,20.0,60,100.0,No,No,0.0,3.0,4.0,21,2765,No,2018,No,52,Exceso de carga laboral,12.32
+P1034,Ingeniería de Sistemas,8,16.04,18.82,95,97.0,No,Sí,3.0,2.0,2.0,20,2552,No,2019,Sí,52,,8.25
+P1035,Ingeniería de Sistemas,9,9.93,16.1,143,80.0,No,No,5.0,11.0,2.0,22,3212,No,2018,Sí,49,,11.06
+P1036,Ingeniería de Software,3,17.58,17.41,21,80.0,No,No,4.0,3.0,2.0,21,1557,No,2019,Sí,35,,11.57
+P1037,Ingeniería de Software,7,6.92,11.81,79,75.0,No,Sí,1.0,1.0,1.0,20,3371,No,2019,Sí,35,,6.94
+P1038,Ingeniería de Sistemas,2,18.76,19.15,11,100.0,No,No,4.0,2.0,12.0,21,2115,No,2020,No,50,Problemas económicos,12.04
+P1039,Ciencia de la Computación,9,13.23,19.39,100,100.0,No,Sí,2.0,2.0,4.0,22,4715,No,2020,Sí,78,,6.54
+P1040,Ingeniería de Sistemas,6,13.18,15.71,65,90.0,No,Sí,2.0,5.0,2.0,20,2387,No,2019,Sí,29,,6.51
+P1041,Ingeniería de Sistemas,9,13.98,15.54,120,90.0,No,Sí,2.0,1.0,2.0,23,1782,No,2017,Sí,30,,5.27
+P1042,Ingeniería de Software,9,17.32,17.04,90,85.0,No,No,1.0,1.0,2.0,24,2245,No,2017,Sí,45,,12.26
+P1043,Ingeniería de Software,2,17.04,11.31,11,100.0,No,No,3.0,4.0,2.0,19,1310,No,2020,No,28,Bajo rendimiento,14.36
+P1044,Ingeniería de Sistemas,5,7.66,12.56,68,54.0,Sí,Sí,2.0,2.0,2.0,21,5867,No,2021,Sí,48,,4.83
+P1045,Ingeniería de Software,1,14.6,15.33,0,95.0,No,Sí,1.0,6.0,1.0,19,2837,No,2020,Sí,63,,9.93
+P1046,Ingeniería de Sistemas,2,1.24,2.91,11,60.0,Sí,Sí,5.0,4.0,1.0,21,600,No,2020,No,0,Exceso de carga laboral,1.64
+P1047,Ciencia de la Computación,8,12.84,18.65,143,43.0,No,No,2.0,2.0,2.0,25,4139,No,2019,Sí,48,,11.09
+P1048,Ciencia de la Computación,7,14.09,16.05,77,85.0,No,Sí,1.0,1.0,1.0,26,2999,No,2012,Sí,42,,10.18
+P1049,Ingeniería de Sistemas,1,0.0,0.0,0,97.0,No,Sí,0.0,3.0,1.0,20,2073,No,2020,No,12,Salud u otros,0.64
+P1050,Ingeniería de Sistemas,10,13.27,18.31,140,65.0,No,No,1.0,3.0,2.0,24,6245,No,2018,Sí,79,,11.3
+P1051,Ingeniería de Software,9,7.16,14.33,139,50.0,Sí,Sí,1.0,2.0,2.0,21,3658,No,2021,Sí,34,,8.17
+P1052,Ingeniería de Sistemas,6,9.96,15.08,60,100.0,Sí,Sí,3.0,1.0,2.0,22,1250,No,2019,Sí,20,,7.48
+P1053,Ciencia de la Computación,2,17.23,17.12,12,90.0,No,No,8.0,8.0,2.0,20,1446,No,2020,Sí,32,,12.87
+P1054,Ingeniería de Sistemas,7,12.54,18.14,143,100.0,No,Sí,2.0,3.0,2.0,22,5760,No,2019,Sí,72,,8.27
+P1055,Ingeniería de Software,1,0.0,0.29,0,100.0,No,Sí,2.0,1.0,1.0,20,10000,No,2020,Sí,92,,2.72
+P1056,Ingeniería de Sistemas,9,9.67,15.77,131,70.0,Sí,Sí,3.0,7.0,1.0,20,2690,No,2020,No,21,Falta de motivación,3.15
+P1057,Ingeniería de Sistemas,8,18.68,17.72,100,90.0,No,No,2.0,3.0,2.0,21,840,No,2018,Sí,37,,14.4
+P1058,Ingeniería de Sistemas,6,14.29,19.32,77,78.0,No,Sí,2.0,3.0,1.0,21,2563,No,2021,No,32,Exceso de carga laboral,9.42
+P1059,Ingeniería de Sistemas,10,14.24,15.79,77,80.0,No,Sí,2.0,3.0,2.0,26,1614,No,2014,Sí,44,,10.18
+P1060,Ingeniería de Sistemas,9,8.65,16.11,137,100.0,No,Sí,3.0,6.0,3.0,22,4269,No,2019,Sí,49,,7.49
+P1061,Ingeniería de Software,1,16.5,17.75,11,88.0,No,Sí,6.0,2.0,2.0,21,2017,No,2019,Sí,31,,10.31
+P1062,Ciencia de la Computación,9,11.96,17.26,103,100.0,No,Sí,2.0,2.0,1.0,20,9926,No,2020,Sí,100,,10.09
+P1063,Ingeniería de Software,1,19.7,19.37,28,90.0,No,No,4.0,1.0,3.0,20,1796,No,2020,Sí,36,,16.44
+P1064,Ingeniería de Software,7,7.5,14.97,99,100.0,No,No,5.0,8.0,2.0,22,5172,No,2020,Sí,75,,11.78
+P1065,Ingeniería de Sistemas,9,15.32,19.44,141,100.0,No,Sí,6.0,7.0,4.0,22,8985,No,2019,Sí,94,,9.39
+P1066,Ingeniería de Sistemas,4,13.13,14.72,36,80.0,No,Sí,3.0,3.0,3.0,22,1485,No,2018,Sí,38,,10.98
+P1067,Ciencia de la Computación,7,14.43,20.0,115,100.0,No,Sí,6.0,3.0,3.0,22,4943,No,2018,Sí,71,,10.61
+P1068,Ingeniería de Software,2,16.27,17.39,13,90.0,No,No,3.0,2.0,2.0,20,2337,No,2020,Sí,31,,13.27
+P1069,Ingeniería de Software,8,20.0,19.75,90,95.0,No,No,2.0,1.0,2.0,21,1789,No,2019,No,28,Salud u otros,15.78
+P1070,Ingeniería de Sistemas,2,17.7,16.51,90,100.0,No,Sí,3.0,2.0,2.0,21,1476,No,2020,Sí,28,,10.73
+P1071,Ingeniería de Sistemas,9,15.43,19.19,102,100.0,No,No,1.0,5.0,1.0,23,5042,No,2019,Sí,76,,7.564939277354699
+P1072,Ingeniería de Sistemas,1,13.72,13.48,12,96.0,No,Sí,4.0,3.0,2.0,20,1251,No,2020,No,34,Bajo rendimiento,6.89
+P1073,Ingeniería de Sistemas,8,6.34,13.71,98,50.0,Sí,Sí,2.0,2.0,2.0,22,3160,No,2020,Sí,18,,4.18
+P1074,Ciencia de la Computación,7,17.87,19.22,127,99.0,No,Sí,4.0,10.0,2.0,22,3610,No,2018,Sí,59,,10.29
+P1075,Ingeniería de Sistemas,7,12.51,14.87,130,90.0,No,No,2.0,2.0,4.0,24,3710,No,2017,Sí,55,,11.1
+P1076,Ciencia de la Computación,4,13.95,15.12,36,88.0,No,Sí,1.0,2.0,1.0,20,3538,No,2020,No,58,Exceso de carga laboral,8.7
+P1077,Ingeniería de Software,10,16.47,14.92,103,100.0,No,No,5.0,1.0,1.0,26,1386,No,2014,Sí,17,,12.86
+P1078,Ingeniería de Sistemas,2,13.25,16.21,11,95.0,No,Sí,5.0,1.0,2.0,21,1841,No,2020,Sí,36,,10.4
+P1079,Ciencia de la Computación,8,15.73,17.06,140,80.0,No,No,4.0,8.0,10.0,24,1963,No,2016,Sí,28,,12.21
+P1080,Ciencia de la Computación,8,12.7,16.23,88,5.0,No,Sí,5.0,2.0,2.0,23,680,No,2018,No,19,Falta de motivación,5.25
+P1081,Ingeniería de Sistemas,8,12.84,13.35,130,90.0,No,Sí,2.0,6.0,4.0,25,3145,No,2017,Sí,62,,7.67
+P1082,Ingeniería de Sistemas,8,7.41,13.44,98,50.0,Sí,Sí,2.0,2.0,2.0,22,3144,No,2020,Sí,22,,3.89
+P1083,Ingeniería de Software,4,18.72,18.25,35,96.0,No,No,2.0,3.0,1.0,21,5441,No,2020,Sí,76,,13.28
+P1084,Ingeniería de Sistemas,4,18.17,16.22,35,70.0,No,No,2.0,4.0,4.0,19,2286,No,2020,Sí,32,,12.98
+P1085,Ingeniería de Software,9,9.98,16.73,132,100.0,No,Sí,5.0,5.0,1.0,20,2733,No,2019,Sí,55,,10.71
+P1086,Ingeniería de Sistemas,5,9.63,14.71,44,96.0,No,Sí,1.0,1.0,1.0,21,1028,No,2019,Sí,19,,7.48
+P1087,Ingeniería de Sistemas,9,8.35,14.0,143,81.0,Sí,Sí,4.0,3.0,2.0,25,5467,No,2018,Sí,51,,5.59
+P1088,Ciencia de la Computación,1,16.05,17.06,14,90.0,No,No,4.0,2.0,1.0,19,1522,No,2020,No,39,Bajo rendimiento,14.97
+P1089,Ingeniería de Software,6,9.03,14.95,74,100.0,No,Sí,3.0,2.0,2.0,21,4540,No,2021,Sí,68,,5.3
+P1090,Ingeniería de Software,2,15.16,13.95,15,80.0,No,No,4.0,3.0,3.0,22,3030,No,2018,Sí,53,,12.76
+P1091,Ingeniería de Sistemas,8,12.77,16.24,77,80.0,No,Sí,2.0,3.0,2.0,26,1785,No,2014,No,40,Falta de motivación,7.37
+P1092,Ingeniería de Sistemas,2,18.3,18.4,11,98.0,No,No,2.0,2.0,3.0,20,2543,No,2020,Sí,56,,14.01
+P1093,Ingeniería de Sistemas,7,10.19,15.11,102,90.0,Sí,Sí,3.0,5.0,2.0,20,4104,No,2020,No,47,Falta de motivación,10.62
+P1094,Ingeniería de Software,8,13.18,15.32,121,90.0,No,Sí,3.0,16.0,1.0,22,3119,No,2018,Sí,54,,9.74
+P1095,Ingeniería de Sistemas,7,17.31,12.41,121,2.0,No,No,6.0,2.0,4.0,25,3419,No,2016,Sí,33,,13.86
+P1096,Ingeniería de Sistemas,8,20.0,18.83,90,90.0,No,No,3.0,3.0,2.0,23,3838,No,2019,Sí,65,,13.49
+P1097,Ingeniería de Software,5,12.97,18.86,39,100.0,No,Sí,1.0,7.0,1.0,22,2968,No,2020,Sí,59,,9.78
+P1098,Ingeniería de Sistemas,2,12.88,15.09,11,90.0,No,Sí,5.0,2.0,1.0,21,2226,No,2021,No,34,Exceso de carga laboral,8.3
+P1099,Ingeniería de Software,7,9.37,14.7,101,60.0,Sí,Sí,3.0,7.0,2.0,20,2336,No,2020,Sí,19,,8.7
+P1100,Ingeniería de Sistemas,10,18.87,18.45,143,90.0,No,No,6.0,4.0,4.0,25,5953,No,2016,Sí,87,,13.8
+P1101,Ingeniería de Sistemas,8,18.69,17.54,128,90.0,No,No,2.0,1.0,2.0,24,746,No,2018,No,3,Exceso de carga laboral,15.09
+P1102,Ingeniería de Software,7,14.1,15.12,58,60.0,No,No,1.0,2.0,1.0,22,4131,No,2016,Sí,49,,12.38
+P1103,Ingeniería de Sistemas,8,18.56,19.68,87,96.0,No,No,3.0,1.0,2.0,21,922,No,2018,No,21,Problemas económicos,13.8
+P1104,Ingeniería de Software,3,15.84,17.61,23,90.0,No,Sí,2.0,3.0,1.0,21,3318,No,2020,No,64,Salud u otros,9.35
+P1105,Ingeniería de Sistemas,6,11.72,16.35,60,100.0,No,Sí,3.0,1.0,2.0,22,1422,No,2019,Sí,20,,10.48
+P1106,Ingeniería de Sistemas,10,14.7,18.39,116,70.0,No,No,2.0,8.0,1.0,20,2020,No,2019,Sí,24,,11.61
+P1107,Ingeniería de Sistemas,9,10.88,16.5,131,70.0,No,Sí,3.0,7.0,1.0,20,3102,No,2020,Sí,40,,7.98
+P1108,Ingeniería de Sistemas,7,13.73,17.32,109,80.0,No,Sí,2.0,4.0,2.0,23,3895,No,2019,No,69,Exceso de carga laboral,10.47
+P1109,Ingeniería de Software,2,18.87,18.25,11,98.0,No,Sí,4.0,3.0,3.0,20,3800,No,2020,No,61,Salud u otros,10.83
+P1110,Ingeniería de Software,2,16.16,18.7,13,90.0,No,Sí,3.0,2.0,2.0,20,2730,No,2020,Sí,51,,9.3
+P1111,Ingeniería de Software,8,16.0,16.12,90,0.0,No,Sí,6.0,2.0,1.0,22,2422,No,2019,No,34,Salud u otros,5.66
+P1112,Ciencia de la Computación,1,0.0,0.2,0,100.0,Sí,Sí,1.0,2.0,0.0,21,4165,No,2020,No,14,Bajo rendimiento,1.66
+P1113,Ingeniería de Sistemas,2,15.16,14.89,12,90.0,No,Sí,2.0,10.0,3.0,20,1875,No,2020,Sí,32,,10.51
+P1114,Ingeniería de Sistemas,5,2.23,11.32,46,97.0,No,Sí,5.0,2.0,4.0,21,2908,No,2020,No,37,Problemas económicos,2.77
+P1115,Ingeniería de Software,9,13.34,19.06,103,100.0,No,Sí,3.0,3.0,4.0,20,7732,No,2020,Sí,93,,6.02
+P1116,Ciencia de la Computación,4,13.42,15.7,36,90.0,No,Sí,1.0,1.0,0.0,22,1156,No,2020,Sí,31,,7.79
+P1117,Ingeniería de Software,2,12.98,19.41,29,100.0,No,No,6.0,4.0,3.0,19,7230,No,2021,Sí,83,,11.09
+P1118,Ingeniería de Software,10,16.89,17.97,117,70.0,No,No,1.0,1.0,6.0,22,1081,No,2018,No,27,Problemas económicos,13.24
+P1119,Ingeniería de Sistemas,4,19.62,18.9,36,99.0,No,No,2.0,3.0,1.0,20,10000,No,2020,Sí,100,,14.48
+P1120,Ingeniería de Sistemas,2,18.97,18.36,12,99.0,No,Sí,5.0,2.0,1.0,21,2142,No,2020,No,43,Salud u otros,10.03
+P1121,Ingeniería de Software,9,12.3,16.24,100,90.0,No,Sí,8.0,3.0,2.0,22,2411,No,2018,No,46,Problemas económicos,10.66
+P1122,Ingeniería de Sistemas,2,15.5,16.68,11,98.0,No,Sí,3.0,2.0,1.0,19,1197,No,2020,Sí,35,,10.83
+P1123,Ingeniería de Sistemas,2,17.99,18.99,10,80.0,No,No,2.0,1.0,1.0,20,1556,No,2020,Sí,21,,12.15
+P1124,Ingeniería de Software,2,16.98,15.02,11,90.0,No,No,2.0,2.0,4.0,21,2518,No,2019,Sí,39,,14.72
+P1125,Ingeniería de Software,5,12.66,20.0,58,100.0,No,Sí,3.0,3.0,4.0,20,3772,No,2021,Sí,69,,9.85
+P1126,Ingeniería de Software,9,13.95,15.95,136,90.0,No,Sí,1.0,1.0,1.0,25,1276,No,2015,No,30,Problemas económicos,10.5
+P1127,Ingeniería de Sistemas,2,19.96,19.82,11,90.0,No,No,1.0,3.0,0.0,23,1590,No,2021,Sí,24,,11.78
+P1128,Ingeniería de Sistemas,7,10.31,15.62,102,90.0,No,Sí,3.0,5.0,2.0,20,3865,No,2020,Sí,60,,8.67
+P1129,Ingeniería de Sistemas,10,12.27,17.84,135,100.0,No,Sí,3.0,1.0,2.0,20,5964,No,2020,Sí,65,,5.23
+P1130,Ingeniería de Sistemas,10,13.75,19.34,143,87.0,No,Sí,4.0,3.0,4.0,21,3656,No,2020,Sí,41,,10.13
+P1131,Ingeniería de Sistemas,8,13.8,20.0,135,80.0,No,No,3.0,2.0,2.0,23,2732,No,2018,No,53,Exceso de carga laboral,11.41
+P1132,Ingeniería de Sistemas,8,12.38,17.42,97,100.0,No,No,3.0,2.0,2.0,21,8137,No,2020,Sí,66,,13.31
+P1133,Ingeniería de Software,6,9.28,14.79,97,42.0,No,Sí,2.0,3.0,3.0,21,2291,No,2021,No,19,Falta de motivación,2.77
+P1134,Ingeniería de Software,7,17.44,16.93,132,70.0,No,No,2.0,4.0,2.0,24,10000,No,2016,Sí,99,,12.96
+P1135,Ingeniería de Software,7,15.47,13.57,140,90.0,No,Sí,4.0,1.0,2.0,25,2916,No,2013,Sí,53,,7.71
+P1136,Ingeniería de Sistemas,8,11.71,17.3,102,100.0,No,Sí,4.0,5.0,1.0,20,6330,No,2021,Sí,89,,9.03
+P1137,Ciencia de la Computación,7,20.0,19.25,75,97.0,No,No,6.0,1.0,1.0,22,2494,No,2019,Sí,32,,14.05
+P1138,Ingeniería de Software,10,10.24,16.35,129,87.0,Sí,Sí,4.0,7.0,3.0,24,3736,No,2019,Sí,37,,4.67
+P1139,Ciencia de la Computación,8,14.55,16.17,88,90.0,No,Sí,4.0,2.0,1.0,23,2839,No,2018,Sí,46,,8.66
+P1140,Ciencia de la Computación,4,10.61,17.6,45,100.0,No,Sí,4.0,8.0,2.0,19,4748,No,2021,Sí,91,,7.08
+P1141,Ingeniería de Software,9,13.62,18.23,129,100.0,No,Sí,2.0,2.0,4.0,20,3737,No,2020,Sí,53,,8.77
+P1142,Ciencia de la Computación,9,9.29,14.63,109,100.0,No,Sí,2.0,3.0,1.0,20,5651,No,2020,Sí,82,,7.42
+P1143,Ciencia de la Computación,3,14.0,18.55,51,100.0,No,No,4.0,3.0,2.0,22,3645,No,2022,Sí,55,,12.37
+P1144,Ingeniería de Sistemas,4,12.89,15.6,36,80.0,No,Sí,2.0,2.0,2.0,21,2840,No,2020,Sí,37,,9.48
+P1145,Ingeniería de Software,2,13.16,14.98,11,100.0,No,Sí,7.0,1.0,3.0,21,1671,No,2020,Sí,36,,10.42
+P1146,Ciencia de la Computación,1,0.0,0.0,0,98.0,No,Sí,3.0,2.0,1.0,20,1836,No,2020,No,11,Falta de motivación,3.66
+P1147,Ingeniería de Sistemas,5,13.12,18.02,68,41.0,No,Sí,2.0,1.0,2.0,20,6868,No,2020,Sí,84,,8.46
+P1148,Ingeniería de Software,10,13.69,18.42,139,79.0,No,Sí,2.0,3.0,1.0,23,5324,No,2019,Sí,79,,9.47
+P1149,Ingeniería de Sistemas,8,11.18,12.03,70,100.0,No,Sí,3.0,3.0,4.0,22,1559,No,2018,Sí,32,,7.96
+P1150,Ciencia de la Computación,3,17.73,15.99,24,90.0,No,No,2.0,2.0,2.0,21,2366,No,2019,Sí,50,,12.35
+P1151,Ingeniería de Software,9,12.41,19.53,100,100.0,No,No,4.0,2.0,2.0,20,4381,No,2020,Sí,76,,11.22
+P1152,Ingeniería de Sistemas,8,11.5,16.89,88,80.0,No,Sí,3.0,2.0,2.0,21,2370,No,2019,Sí,41,,9.01
+P1153,Ingeniería de Sistemas,4,12.61,15.96,36,95.0,No,Sí,6.0,3.0,3.0,21,1553,No,2019,No,25,Falta de motivación,8.98
+P1154,Ciencia de la Computación,9,12.79,17.26,127,54.0,No,Sí,1.0,3.0,3.0,20,2263,No,2020,Sí,34,,7.78
+P1155,Ingeniería de Sistemas,6,9.78,16.4,84,100.0,No,Sí,4.0,8.0,2.0,20,3989,No,2020,Sí,51,,6.46
+P1156,Ciencia de la Computación,7,14.86,17.24,109,80.0,No,Sí,2.0,4.0,2.0,23,3429,No,2019,No,54,Problemas económicos,10.67
+P1157,Ingeniería de Sistemas,10,15.31,20.0,91,100.0,No,Sí,2.0,6.0,1.0,23,5809,No,2019,Sí,74,,8.63
+P1158,Ciencia de la Computación,9,8.2,12.73,101,100.0,No,Sí,2.0,3.0,4.0,20,4837,No,2020,Sí,61,,5.86
+P1159,Ingeniería de Sistemas,8,8.01,12.88,101,100.0,No,Sí,5.0,6.0,1.0,20,6487,No,2020,Sí,97,,5.08
+P1160,Ciencia de la Computación,10,5.88,13.12,137,100.0,Sí,Sí,2.0,2.0,4.0,20,5329,No,2020,Sí,55,,6.28
+P1161,Ingeniería de Software,9,15.72,14.57,79,90.0,No,Sí,1.0,12.0,6.0,21,3757,No,2018,No,64,Exceso de carga laboral,8.63
+P1162,Ciencia de la Computación,8,13.99,19.07,90,68.0,No,Sí,2.0,3.0,4.0,20,2390,No,2020,Sí,40,,9.17
+P1163,Ingeniería de Software,3,7.52,8.12,8,99.0,Sí,Sí,7.0,3.0,1.0,21,3683,No,2021,Sí,31,,6.85
+P1164,Ingeniería de Software,2,17.45,17.03,12,90.0,No,Sí,3.0,2.0,4.0,22,1225,No,2019,Sí,22,,10.94
+P1165,Ingeniería de Sistemas,9,14.45,20.0,145,100.0,No,Sí,5.0,5.0,2.0,23,4538,No,2019,No,72,Falta de motivación,9.17
+P1166,Ingeniería de Sistemas,2,14.95,15.55,11,90.0,No,Sí,3.0,3.0,1.0,19,2323,No,2020,Sí,21,,7.19
+P1167,Ingeniería de Sistemas,8,12.3,13.39,70,100.0,No,Sí,3.0,3.0,4.0,22,1612,No,2018,Sí,47,,9.16
+P1168,Ingeniería de Sistemas,8,8.19,13.87,143,100.0,No,Sí,1.0,3.0,2.0,20,4787,No,2020,Sí,78,,4.5
+P1169,Ingeniería de Sistemas,10,8.24,14.4,134,89.0,No,Sí,2.0,2.0,4.0,21,6315,No,2020,Sí,83,,5.79
+P1170,Ingeniería de Software,8,12.64,18.29,97,100.0,No,Sí,3.0,2.0,2.0,21,8046,No,2020,Sí,93,,9.49
+P1171,Ingeniería de Sistemas,1,0.0,0.0,0,98.0,Sí,Sí,4.0,3.0,2.0,20,2985,No,2020,Sí,5,,5.64
+P1172,Ingeniería de Sistemas,4,13.96,15.12,36,70.0,No,Sí,3.0,2.0,2.0,19,1148,No,2020,Sí,33,,8.52
+P1173,Ingeniería de Software,7,15.18,19.03,102,100.0,No,Sí,5.0,2.0,1.0,20,3420,No,2021,Sí,49,,10.14
+P1174,Ingeniería de Sistemas,8,17.45,15.84,85,100.0,No,No,6.0,2.0,3.0,21,3800,No,2019,Sí,56,,14.92
+P1175,Ingeniería de Sistemas,5,10.51,16.19,63,46.0,No,Sí,2.0,2.0,4.0,21,3695,No,2021,Sí,49,,8.15
+P1176,Ingeniería de Software,6,8.6,15.96,74,100.0,No,Sí,3.0,2.0,2.0,21,4758,No,2021,Sí,82,,8.27
+P1177,Ingeniería de Software,6,6.0,12.34,77,62.0,No,Sí,3.0,3.0,1.0,20,6737,No,2021,Sí,69,,2.37
+P1178,Ciencia de la Computación,10,15.03,18.91,137,68.0,No,Sí,3.0,1.0,4.0,21,10000,No,2020,Sí,97,,8.46
+P1179,Ingeniería de Sistemas,3,12.0,14.08,24,90.0,No,Sí,2.0,3.0,1.0,19,2045,No,2020,Sí,42,,7.53
+P1180,Ingeniería de Sistemas,2,17.76,18.33,11,88.0,No,Sí,8.0,2.0,2.0,20,1668,No,2020,Sí,51,,9.87
+P1181,Ingeniería de Sistemas,5,14.28,14.9,40,70.0,No,Sí,3.0,10.0,3.0,21,10000,No,2020,Sí,91,,10.84
+P1182,Ingeniería de Sistemas,2,12.51,16.59,11,99.0,No,Sí,3.0,1.0,1.0,20,1442,No,2020,Sí,51,,7.89
+P1183,Ingeniería de Sistemas,2,19.24,20.0,12,70.0,No,No,9.0,6.0,4.0,21,1857,No,2020,Sí,24,,11.99
+P1184,Ingeniería de Sistemas,10,17.09,17.62,132,70.0,No,Sí,2.0,4.0,2.0,24,10000,No,2016,Sí,88,,10.52
+P1185,Ingeniería de Sistemas,2,13.47,15.88,11,99.0,No,Sí,2.0,3.0,2.0,21,1574,No,2019,No,36,Bajo rendimiento,4.61
+P1186,Ingeniería de Sistemas,7,14.51,16.84,110,98.0,No,No,6.0,6.0,3.0,23,3012,No,2018,Sí,50,,11.02
+P1187,Ingeniería de Sistemas,1,16.38,15.21,13,99.0,No,Sí,2.0,1.0,2.0,20,1164,No,2019,Sí,28,,9.72
+P1188,Ingeniería de Sistemas,3,18.03,16.5,23,100.0,No,Sí,3.0,2.0,2.0,20,1499,No,2020,Sí,41,,10.29
+P1189,Ciencia de la Computación,8,14.26,20.0,100,100.0,No,Sí,3.0,3.0,4.0,20,10000,No,2020,Sí,100,,8.65
+P1190,Ingeniería de Sistemas,8,15.05,15.14,140,90.0,No,No,4.0,1.0,2.0,25,2414,No,2013,No,50,Exceso de carga laboral,13.2
+P1191,Ingeniería de Software,3,16.94,16.78,25,98.0,No,No,2.0,2.0,1.0,21,1937,No,2019,No,39,Bajo rendimiento,12.38
+P1192,Ingeniería de Software,2,18.89,18.76,11,70.0,No,No,1.0,2.0,1.0,22,10000,No,2019,Sí,91,,11.92
+P1193,Ingeniería de Sistemas,6,10.46,16.25,63,70.0,Sí,Sí,5.0,7.0,3.0,22,2491,No,2020,Sí,26,,7.9
+P1194,Ciencia de la Computación,2,16.17,17.76,11,100.0,No,No,5.0,3.0,4.0,21,2791,No,2020,No,46,Bajo rendimiento,13.08
+P1195,Ingeniería de Sistemas,7,17.56,18.51,119,96.0,No,No,3.0,5.0,3.0,23,1535,No,2017,Sí,23,,15.708923566660223
+P1196,Ingeniería de Software,2,17.69,17.07,11,70.0,No,Sí,3.0,3.0,2.0,20,2184,No,2020,Sí,38,,9.59
+P1197,Ingeniería de Sistemas,9,9.83,13.75,143,67.0,No,Sí,1.0,2.0,4.0,25,4729,No,2019,Sí,63,,7.55
+P1198,Ciencia de la Computación,10,10.45,16.27,144,90.0,Sí,Sí,6.0,3.0,2.0,25,6927,No,2018,Sí,77,,8.17
+P1199,Ciencia de la Computación,8,9.9,14.38,119,86.0,Sí,Sí,3.0,9.0,2.0,20,2778,No,2020,Sí,25,,6.85
+P1200,Ingeniería de Sistemas,9,14.44,16.04,110,95.0,No,Sí,3.0,1.0,6.0,26,1701,No,2014,Sí,39,,6.01
+P1201,Ciencia de la Computación,2,19.08,18.89,12,90.0,No,No,5.0,1.0,2.0,20,816,No,2020,Sí,30,,15.4
+P1202,Ingeniería de Software,2,12.84,19.42,30,100.0,No,Sí,4.0,3.0,2.0,19,5719,No,2021,Sí,90,,7.96
+P1203,Ciencia de la Computación,4,13.52,16.22,36,96.0,No,No,3.0,3.0,2.0,22,5931,No,2020,No,78,Falta de motivación,11.12
+P1204,Ingeniería de Software,1,0.14,0.53,0,62.0,No,Sí,4.0,2.0,2.0,19,1135,No,2021,Sí,14,,0.93
+P1205,Ingeniería de Software,9,15.06,14.03,79,90.0,No,No,1.0,12.0,6.0,21,4241,No,2018,No,65,Salud u otros,11.15
+P1206,Ingeniería de Sistemas,6,13.71,19.55,78,76.0,No,No,5.0,2.0,1.0,20,5675,No,2021,No,81,Falta de motivación,11.61
+P1207,Ingeniería de Software,2,12.85,15.0,11,100.0,No,Sí,2.0,1.0,2.0,21,981,No,2020,Sí,16,,9.97
+P1208,Ingeniería de Sistemas,8,13.52,16.02,88,95.0,No,No,4.0,2.0,2.0,21,1339,No,2019,Sí,26,,12.09
+P1209,Ciencia de la Computación,8,10.62,17.06,109,71.0,No,Sí,3.0,7.0,1.0,21,4730,No,2020,Sí,50,,9.47
+P1210,Ciencia de la Computación,9,13.61,19.41,143,100.0,No,Sí,6.0,2.0,1.0,24,5031,No,2019,Sí,86,,9.17
+P1211,Ingeniería de Sistemas,8,17.2,17.0,75,90.0,No,No,8.0,4.0,5.0,22,2337,No,2018,No,37,Exceso de carga laboral,11.13
+P1212,Ciencia de la Computación,8,13.88,16.7,126,75.0,No,Sí,1.0,2.0,2.0,21,2224,No,2018,Sí,37,,7.79
+P1213,Ingeniería de Sistemas,2,13.16,16.34,11,100.0,No,Sí,4.0,4.0,2.0,20,2195,No,2019,Sí,47,,10.64
+P1214,Ingeniería de Software,9,10.25,14.81,105,70.0,No,Sí,3.0,6.0,2.0,21,3261,No,2021,Sí,48,,9.18
+P1215,Ciencia de la Computación,3,19.77,19.44,23,99.0,No,No,2.0,4.0,2.0,20,3013,No,2020,No,38,Bajo rendimiento,12.68
+P1216,Ingeniería de Software,2,20.0,19.57,11,95.0,No,No,4.0,1.0,2.0,20,2267,No,2020,Sí,49,,14.26
+P1217,Ingeniería de Sistemas,3,9.17,14.88,29,80.0,Sí,Sí,4.0,7.0,1.0,20,8587,No,2020,Sí,83,,5.52
+P1218,Ingeniería de Sistemas,6,6.49,11.31,77,100.0,No,Sí,3.0,2.0,4.0,21,8089,No,2021,Sí,100,,6.25
+P1219,Ciencia de la Computación,3,13.93,19.38,35,95.0,No,Sí,3.0,3.0,1.0,19,3967,No,2022,Sí,41,,7.4
+P1220,Ingeniería de Software,5,14.51,19.16,61,100.0,No,Sí,3.0,3.0,4.0,20,3601,No,2021,Sí,55,,6.71
+P1221,Ciencia de la Computación,8,8.74,12.15,105,65.0,No,Sí,4.0,4.0,2.0,20,5482,No,2020,Sí,72,,9.7
+P1222,Ingeniería de Sistemas,8,19.55,18.49,93,90.0,No,No,4.0,1.0,2.0,22,1891,No,2018,Sí,38,,13.74
+P1223,Ingeniería de Software,9,8.27,14.75,95,50.0,No,Sí,3.0,8.0,1.0,22,10000,No,2019,Sí,82,,4.51
+P1224,Ingeniería de Software,2,13.98,16.65,11,100.0,No,No,4.0,4.0,1.0,20,4918,No,2020,No,90,Problemas económicos,13.2
+P1225,Ingeniería de Sistemas,10,16.17,17.46,95,90.0,No,Sí,1.0,2.0,3.0,23,885,No,2016,Sí,14,,9.8
+P1226,Ingeniería de Sistemas,10,15.38,18.83,139,100.0,No,No,4.0,4.0,2.0,25,7893,No,2019,Sí,96,,14.17
+P1227,Ingeniería de Software,1,0.0,0.0,0,100.0,Sí,Sí,2.0,7.0,0.0,21,3309,No,2019,Sí,16,,0.0
+P1228,Ingeniería de Software,1,0.11,0.08,0,98.0,No,Sí,2.0,3.0,0.0,20,3601,No,2021,Sí,22,,0.35
+P1229,Ciencia de la Computación,9,19.57,16.63,141,70.0,No,No,2.0,3.0,2.0,22,4197,No,2018,Sí,62,,13.36
+P1230,Ciencia de la Computación,3,19.86,19.87,25,75.0,No,No,3.0,1.0,2.0,22,6258,No,2020,Sí,78,,14.71
+P1231,Ingeniería de Software,5,12.25,12.11,40,90.0,No,No,6.0,4.0,5.0,23,2080,No,2020,Sí,38,,13.99
+P1232,Ingeniería de Sistemas,4,8.62,17.15,56,70.0,No,Sí,5.0,7.0,1.0,21,5091,No,2021,Sí,56,,7.63
+P1233,Ingeniería de Software,4,17.79,17.47,25,98.0,No,No,2.0,3.0,2.0,22,2242,No,2020,Sí,36,,14.85
+P1234,Ciencia de la Computación,2,18.08,17.59,11,100.0,No,Sí,4.0,2.0,2.0,20,1210,No,2020,No,26,Salud u otros,10.62
+P1235,Ciencia de la Computación,6,10.46,16.11,79,100.0,No,Sí,4.0,6.0,3.0,21,4226,No,2020,Sí,64,,6.14
+P1236,Ciencia de la Computación,7,14.63,20.0,102,100.0,No,Sí,5.0,2.0,1.0,20,3550,No,2021,Sí,59,,10.64
+P1237,Ingeniería de Sistemas,8,15.82,17.76,84,95.0,No,Sí,3.0,2.0,2.0,22,3072,No,2019,Sí,46,,9.04
+P1238,Ingeniería de Software,7,7.87,11.99,88,50.0,No,Sí,3.0,2.0,4.0,20,5474,No,2021,No,51,Falta de motivación,5.41
+P1239,Ingeniería de Sistemas,2,13.54,14.73,11,100.0,No,Sí,3.0,2.0,5.0,20,2274,No,2020,Sí,42,,9.91
+P1240,Ingeniería de Sistemas,10,16.47,19.32,120,95.0,No,Sí,2.0,1.0,2.0,23,3149,No,2017,Sí,46,,10.46
+P1241,Ciencia de la Computación,3,17.24,17.65,23,85.0,No,No,2.0,2.0,1.0,21,1719,No,2019,Sí,21,,12.35
+P1242,Ingeniería de Software,2,12.85,13.4,12,90.0,No,Sí,3.0,5.0,1.0,20,1833,No,2020,Sí,35,,9.94
+P1243,Ingeniería de Sistemas,3,11.24,10.36,23,85.0,No,Sí,2.0,4.0,2.0,20,1819,No,2020,Sí,24,,7.87
+P1244,Ingeniería de Software,10,14.48,19.03,126,90.0,No,No,4.0,2.0,1.0,22,2449,No,2019,Sí,46,,13.95
+P1245,Ingeniería de Sistemas,1,18.37,19.52,12,100.0,No,No,3.0,3.0,2.0,22,2981,No,2017,No,47,Exceso de carga laboral,14.14
+P1246,Ingeniería de Sistemas,8,14.89,19.99,141,100.0,No,No,6.0,7.0,4.0,22,9511,No,2019,Sí,96,,12.51
+P1247,Ciencia de la Computación,9,9.14,14.07,116,100.0,Sí,Sí,3.0,3.0,2.0,20,9138,No,2020,Sí,85,,7.92
+P1248,Ingeniería de Software,7,19.25,20.0,75,97.0,No,No,6.0,1.0,1.0,22,2570,No,2019,Sí,49,,13.62
+P1249,Ingeniería de Software,9,11.22,19.07,23,90.0,No,No,2.0,6.0,2.0,20,4169,No,2020,Sí,61,,11.01
+P1250,Ingeniería de Sistemas,2,17.84,16.69,23,97.0,No,No,9.0,3.0,5.0,21,2985,No,2020,Sí,39,,13.01
+P1251,Ingeniería de Sistemas,8,20.0,19.35,85,100.0,No,No,6.0,2.0,2.0,20,6057,No,2019,Sí,84,,15.3
+P1252,Ingeniería de Sistemas,9,9.35,15.33,97,44.48142333489815,No,Sí,4.0,2.0,4.0,20,2440,No,2020,No,36,Exceso de carga laboral,6.08
+P1253,Ingeniería de Sistemas,4,13.66,14.83,37,52.0,No,Sí,1.0,6.0,1.0,21,887,No,2020,Sí,37,,6.9
+P1254,Ingeniería de Sistemas,7,14.41,19.05,143,100.0,No,Sí,3.0,3.0,4.0,20,4641,No,2020,Sí,64,,7.71
+P1255,Ingeniería de Sistemas,9,13.89,16.17,100,90.0,No,Sí,8.0,3.0,2.0,22,2554,No,2018,Sí,38,,9.4
+P1256,Ingeniería de Software,4,12.97,15.76,36,88.0,No,Sí,1.0,2.0,1.0,20,4062,No,2020,No,62,Salud u otros,7.61
+P1257,Ingeniería de Sistemas,6,17.29,17.88,72,46.34621097067982,No,Sí,2.0,4.0,2.0,20,2914,No,2019,Sí,51,,9.92
+P1258,Ingeniería de Sistemas,9,18.58,20.0,123,90.0,No,No,3.0,1.0,3.0,23,1561,No,2017,No,26,Falta de motivación,15.34
+P1259,Ciencia de la Computación,8,18.82,17.2,123,70.0,No,Sí,2.0,4.0,2.0,23,2978,No,2017,Sí,31,,10.23
+P1260,Ingeniería de Sistemas,10,17.77,15.29,102,100.0,No,No,1.0,1.0,2.0,22,2548,No,2018,Sí,43,,16.22
+P1261,Ingeniería de Software,7,6.64,13.98,107,80.0,No,Sí,2.0,9.0,2.0,20,7839,No,2019,Sí,85,,1.82
+P1262,Ingeniería de Software,6,8.85,13.02,88,100.0,No,Sí,1.0,2.0,4.0,21,7773,No,2021,Sí,93,,8.24
+P1263,Ingeniería de Sistemas,8,12.23,18.36,139,100.0,No,Sí,6.0,2.0,3.0,21,4446,No,2019,Sí,60,,8.76
+P1264,Ingeniería de Software,8,12.89,16.35,90,70.0,No,Sí,1.0,4.0,3.0,24,1823,No,2017,No,28,Salud u otros,9.11
+P1265,Ingeniería de Sistemas,2,19.41,19.49,11,70.0,No,Sí,1.0,2.0,1.0,22,10000,No,2019,Sí,100,,10.39
+P1266,Ingeniería de Software,9,14.61,19.03,103,100.0,No,Sí,1.0,5.0,1.0,23,600,No,2019,No,28,Falta de motivación,7.83
+P1267,Ciencia de la Computación,10,12.17,19.03,143,79.0,No,Sí,2.0,1.0,2.0,21,5234,No,2020,Sí,78,,9.79
+P1268,Ingeniería de Sistemas,7,12.65,19.29,112,100.0,No,Sí,2.0,6.0,1.0,21,3316,No,2020,Sí,71,,9.55
+P1269,Ingeniería de Sistemas,5,10.74,13.24,42,95.0,No,Sí,4.0,7.0,1.0,21,2916,No,2020,Sí,39,,6.3
+P1270,Ciencia de la Computación,9,14.58,19.65,103,100.0,No,Sí,3.0,3.0,4.0,20,7866,No,2020,Sí,99,,14.345627719971725
+P1271,Ingeniería de Software,10,8.72,15.16,122,84.0,Sí,Sí,2.0,3.0,4.0,20,8169,No,2020,Sí,86,,7.33
+P1272,Ingeniería de Software,10,13.23,19.22,135,100.0,No,Sí,2.0,1.0,1.0,21,3736,No,2020,No,59,Exceso de carga laboral,10.2
+P1273,Ingeniería de Software,6,11.83,17.77,16,80.0,No,Sí,4.0,4.0,1.0,22,6515,No,2019,Sí,74,,7.46
+P1274,Ingeniería de Sistemas,1,0.58,0.0,0,98.0,Sí,Sí,1.0,3.0,2.0,19,1409,No,2020,Sí,0,,1.53
+P1275,Ingeniería de Software,10,7.74,13.42,136,83.0,Sí,Sí,1.0,3.0,2.0,24,7531,No,2019,Sí,55,,2.07
+P1276,Ciencia de la Computación,9,12.63,18.64,143,100.0,No,No,5.0,3.0,4.0,25,4236,No,2019,Sí,68,,12.4
+P1277,Ingeniería de Software,8,14.68,17.54,87,97.0,No,Sí,3.0,3.0,1.0,21,8773,No,2019,Sí,100,,7.9
+P1278,Ciencia de la Computación,9,5.96,12.42,130,56.0,No,Sí,2.0,3.0,4.0,20,5552,No,2020,Sí,62,,1.24
+P1279,Ciencia de la Computación,2,17.02,18.17,11,85.0,No,No,1.0,2.0,1.0,19,1574,No,2020,Sí,32,,14.28
+P1280,Ciencia de la Computación,7,16.18,15.68,140,100.0,No,No,3.0,1.0,1.0,22,2976,No,2018,Sí,58,,14.0
+P1281,Ingeniería de Sistemas,4,13.28,15.43,36,97.0,No,No,5.0,2.0,2.0,21,3007,No,2020,Sí,45,,11.68
+P1282,Ingeniería de Sistemas,8,7.37,13.52,136,100.0,Sí,Sí,2.0,3.0,2.0,20,3675,No,2020,Sí,33,,9.31
+P1283,Ingeniería de Software,2,18.79,19.71,12,70.0,No,No,9.0,6.0,4.0,21,1920,No,2020,Sí,42,,13.35
+P1284,Ingeniería de Sistemas,6,13.32,19.51,78,66.0,No,Sí,3.0,3.0,4.0,20,7318,No,2021,Sí,95,,9.15
+P1285,Ingeniería de Software,9,14.33,14.84,120,90.0,No,Sí,2.0,1.0,2.0,23,1537,No,2017,No,30,Bajo rendimiento,10.8
+P1286,Ingeniería de Sistemas,7,20.0,18.19,130,90.0,No,No,6.0,1.0,3.0,24,2572,No,2017,Sí,30,,14.83
+P1287,Ciencia de la Computación,8,18.01,16.03,77,57.0,No,No,1.0,4.0,3.0,21,2744,No,2019,Sí,44,,11.06
+P1288,Ingeniería de Sistemas,2,13.21,16.99,11,100.0,No,Sí,7.0,1.0,3.0,21,2012,No,2020,Sí,33,,9.74
+P1289,Ingeniería de Sistemas,7,18.03,17.56,131,100.0,No,Sí,6.0,2.0,5.0,22,3694,No,2018,Sí,70,,8.98
+P1290,Ingeniería de Sistemas,3,11.43,17.78,32,98.0,No,Sí,4.0,2.0,5.0,20,1013,No,2020,Sí,33,,8.6
+P1291,Ciencia de la Computación,2,13.92,15.73,11,90.0,No,Sí,4.0,2.0,2.0,19,2390,No,2020,Sí,48,,7.37
+P1292,Ciencia de la Computación,3,12.14,10.32,23,90.0,No,No,1.0,3.0,1.0,20,1792,No,2019,Sí,34,,11.04
+P1293,Ciencia de la Computación,10,12.97,19.26,91,100.0,No,Sí,2.0,6.0,1.0,23,5825,No,2019,No,89,Bajo rendimiento,10.12
+P1294,Ingeniería de Sistemas,8,18.97,17.41,86,100.0,No,No,2.0,1.0,4.0,22,2996,No,2019,Sí,49,,13.76
+P1295,Ingeniería de Sistemas,10,12.61,18.85,135,100.0,No,Sí,2.0,2.0,1.0,20,3683,No,2020,Sí,68,,8.38
+P1296,Ingeniería de Sistemas,4,11.71,18.74,29,100.0,No,Sí,5.0,4.0,2.0,19,5470,No,2021,Sí,86,,8.01
+P1297,Ciencia de la Computación,10,16.01,15.24,103,100.0,No,Sí,5.0,1.0,1.0,26,1623,No,2014,No,33,Falta de motivación,8.62
+P1298,Ingeniería de Sistemas,5,18.49,17.88,49,90.0,No,No,3.0,2.0,1.0,22,1013,No,2017,No,27,Salud u otros,14.29
+P1299,Ingeniería de Sistemas,8,12.12,16.08,136,100.0,No,Sí,2.0,1.0,3.0,23,5250,No,2017,Sí,75,,8.82
+P1300,Ingeniería de Software,2,13.91,15.01,11,90.0,No,No,3.0,3.0,1.0,19,2654,No,2020,Sí,43,,12.12
+P1301,Ingeniería de Sistemas,10,14.77,16.44,132,80.0,No,Sí,1.0,2.0,3.0,22,2206,No,2018,Sí,23,,9.24
+P1302,Ingeniería de Software,8,13.01,14.7,120,70.0,No,Sí,4.0,5.0,2.0,23,5013,No,2018,No,51,Salud u otros,8.72
+P1303,Ingeniería de Software,2,18.65,17.64,12,90.0,No,No,1.0,2.0,1.0,21,2374,No,2019,Sí,48,,14.63
+P1304,Ingeniería de Sistemas,4,13.03,18.02,46,70.0,No,Sí,3.0,9.0,3.0,19,4508,No,2020,Sí,65,,6.81
+P1305,Ingeniería de Sistemas,9,10.98,17.09,103,100.0,No,No,5.0,12.0,2.0,25,4496,No,2018,Sí,65,,12.03
+P1306,Ingeniería de Software,9,18.15,15.28,100,99.0,No,No,3.0,2.0,7.0,22,716,No,2019,Sí,20,,11.9
+P1307,Ingeniería de Software,2,18.24,18.31,11,100.0,No,No,2.0,1.0,1.0,18,807,No,2020,Sí,30,,15.07
+P1308,Ciencia de la Computación,2,20.0,19.16,11,90.0,No,No,3.0,4.0,2.0,20,3376,No,2019,Sí,38,,11.67
+P1309,Ingeniería de Sistemas,10,17.61,17.57,117,70.0,No,No,1.0,1.0,6.0,22,716,No,2018,Sí,21,,13.72
+P1310,Ingeniería de Software,10,9.74,16.46,134,100.0,Sí,Sí,6.0,3.0,1.0,24,3122,No,2019,Sí,41,,10.64
+P1311,Ingeniería de Sistemas,4,13.05,16.24,36,95.0,No,Sí,6.0,3.0,3.0,21,1447,No,2019,Sí,26,,10.84
+P1312,Ingeniería de Sistemas,8,19.24,17.53,90,90.0,No,Sí,3.0,3.0,2.0,23,3723,No,2019,Sí,75,,10.46
+P1313,Ingeniería de Sistemas,3,18.58,18.89,24,90.0,No,No,3.0,1.0,2.0,21,2771,No,2019,Sí,51,,13.73
+P1314,Ingeniería de Sistemas,5,11.58,17.32,63,46.0,No,Sí,2.0,2.0,4.0,21,3820,No,2021,Sí,39,,6.27
+P1315,Ciencia de la Computación,8,14.66,19.87,97,100.0,No,Sí,8.0,2.0,4.0,21,5680,No,2020,Sí,77,,9.3
+P1316,Ciencia de la Computación,3,17.18,14.47,24,95.0,No,No,2.0,3.0,1.0,20,3022,No,2020,No,55,Problemas económicos,11.65
+P1317,Ingeniería de Software,8,16.72,15.79,130,99.0,No,Sí,2.0,2.0,0.0,23,1165,No,2018,Sí,36,,10.65
+P1318,Ingeniería de Sistemas,4,14.06,12.15,25,95.0,No,Sí,10.0,2.0,2.0,21,2370,No,2019,No,42,Exceso de carga laboral,7.77
+P1319,Ingeniería de Sistemas,9,13.88,19.27,116,56.0,No,Sí,3.0,3.0,4.0,21,5882,No,2019,Sí,57,,9.08
+P1320,Ciencia de la Computación,3,13.69,14.88,23,70.0,No,Sí,3.0,3.0,5.0,21,1277,No,2020,Sí,24,,9.14
+P1321,Ingeniería de Software,10,11.99,16.85,144,46.0,No,Sí,3.0,3.0,2.0,24,3651,No,2019,No,46,Exceso de carga laboral,8.93
+P1322,Ingeniería de Software,3,11.19,11.02,25,88.0,No,Sí,2.0,1.0,1.0,21,1943,No,2019,No,46,Exceso de carga laboral,5.75
+P1323,Ingeniería de Sistemas,2,17.25,17.5,11,98.0,No,No,3.0,2.0,1.0,22,5821,No,2020,Sí,85,,12.92
+P1324,Ingeniería de Software,2,18.48,16.99,12,90.0,No,No,3.0,5.0,0.0,21,2363,No,2020,Sí,44,,16.42
+P1325,Ingeniería de Software,5,14.23,18.99,68,47.0,No,Sí,2.0,2.0,2.0,22,2410,No,2021,No,30,Salud u otros,9.82
+P1326,Ingeniería de Sistemas,9,16.33,15.2,130,80.0,No,Sí,1.0,2.0,2.0,23,2448,No,2017,Sí,40,,8.03
+P1327,Ingeniería de Sistemas,2,19.49,19.35,11,100.0,No,No,2.0,1.0,2.0,21,2944,No,2019,Sí,37,,13.21
+P1328,Ingeniería de Sistemas,10,14.68,19.99,125,88.0,No,Sí,3.0,7.0,5.0,22,10000,No,2019,Sí,96,,7.51
+P1329,Ciencia de la Computación,2,19.15,18.68,13,98.0,No,No,6.0,2.0,3.0,21,1435,No,2020,Sí,40,,12.21
+P1330,Ingeniería de Sistemas,8,16.12,18.54,84,95.0,No,No,3.0,2.0,2.0,22,2943,No,2019,Sí,44,,13.32
+P1331,Ingeniería de Sistemas,1,20.0,20.0,10,99.0,No,No,2.0,3.0,0.0,20,1148,No,2020,No,25,Problemas económicos,14.46
+P1332,Ciencia de la Computación,2,20.0,19.73,11,90.0,No,No,4.0,3.0,1.0,20,1404,No,2020,Sí,22,,16.11
+P1333,Ciencia de la Computación,8,14.73,19.78,144,100.0,No,Sí,6.0,2.0,4.0,23,2599,No,2019,No,55,Problemas económicos,6.26
+P1334,Ingeniería de Software,2,17.06,16.68,11,95.0,No,Sí,3.0,1.0,2.0,21,3056,No,2020,Sí,70,,10.66
+P1335,Ciencia de la Computación,2,12.98,15.65,11,80.0,No,Sí,2.0,6.0,2.0,20,4181,No,2020,No,55,Bajo rendimiento,10.19
+P1336,Ingeniería de Sistemas,9,13.63,16.79,144,100.0,No,No,5.0,2.0,1.0,24,9226,No,2019,Sí,84,,12.52
+P1337,Ingeniería de Sistemas,2,15.1,16.14,11,95.0,No,Sí,5.0,3.0,2.0,21,1243,No,2019,Sí,27,,9.11
+P1338,Ingeniería de Sistemas,7,13.03,17.51,66,100.0,No,Sí,2.0,6.0,1.0,23,3999,No,2019,No,68,Bajo rendimiento,6.2
+P1339,Ingeniería de Software,1,0.48,0.29,0,62.0,Sí,Sí,4.0,2.0,2.0,19,1201,No,2021,Sí,0,,5.59
+P1340,Ciencia de la Computación,4,14.38,15.27,36,97.0,No,Sí,2.0,1.0,2.0,21,3954,No,2018,Sí,54,,9.15
+P1341,Ingeniería de Software,9,10.58,15.72,137,70.0,No,Sí,3.0,3.0,2.0,21,2488,No,2019,Sí,38,,8.2
+P1342,Ingeniería de Sistemas,6,10.83,15.98,70,98.0,No,Sí,1.0,4.0,3.0,22,4358,No,2020,Sí,55,,5.11
+P1343,Ingeniería de Software,2,14.96,15.65,11,95.0,No,No,1.0,2.0,1.0,20,2129,No,2020,Sí,46,,11.34
+P1344,Ingeniería de Software,2,16.41,17.07,11,99.0,No,Sí,3.0,3.0,1.0,20,1295,No,2020,Sí,41,,10.22
+P1345,Ingeniería de Sistemas,8,17.71,18.75,87,98.0,No,No,5.0,2.0,2.0,23,2453,No,2018,Sí,29,,11.99
+P1346,Ciencia de la Computación,9,16.11,13.37,90,80.0,No,Sí,3.0,2.0,1.0,22,1622,No,2019,No,41,Falta de motivación,7.9
+P1347,Ciencia de la Computación,7,12.04,12.41,70,40.0,No,Sí,3.0,4.0,2.0,23,3513,No,2018,Sí,42,,8.74
+P1348,Ingeniería de Sistemas,7,7.57,15.27,97,50.0,No,Sí,5.0,5.0,3.0,20,4656,No,2020,No,60,Exceso de carga laboral,4.95
+P1349,Ingeniería de Sistemas,10,14.69,17.74,132,100.0,No,Sí,2.0,2.0,4.0,20,4882,No,2020,Sí,73,,7.7
+P1350,Ingeniería de Software,3,13.82,15.88,23,95.0,No,Sí,2.0,3.0,1.0,19,5776,No,2020,Sí,82,,10.83
+P1351,Ciencia de la Computación,7,13.47,17.56,143,43.0,No,Sí,2.0,2.0,2.0,25,3849,No,2019,Sí,46,,7.55
+P1352,Ingeniería de Software,8,13.72,19.87,125,100.0,No,Sí,7.0,2.0,2.0,21,4209,No,2018,Sí,62,,8.31
+P1353,Ingeniería de Software,9,11.64,20.0,144,77.0,No,Sí,5.0,8.0,2.0,22,6410,No,2018,Sí,86,,9.32
+P1354,Ingeniería de Software,2,19.56,18.99,12,98.0,No,No,2.0,3.0,1.0,21,7483,No,2020,Sí,91,,12.64
+P1355,Ciencia de la Computación,10,12.38,17.66,131,100.0,No,No,4.0,2.0,2.0,20,4539,No,2020,Sí,66,,11.06
+P1356,Ciencia de la Computación,7,13.12,15.81,126,80.0,No,No,1.0,3.0,3.0,22,2694,No,2018,Sí,45,,11.37
+P1357,Ingeniería de Sistemas,6,7.72,12.93,88,100.0,Sí,Sí,7.0,3.0,2.0,21,2182,No,2021,No,23,Falta de motivación,8.02
+P1358,Ingeniería de Sistemas,2,19.47,19.02,11,98.0,No,Sí,4.0,3.0,3.0,20,3962,No,2020,Sí,60,,10.73
+P1359,Ingeniería de Sistemas,9,11.68,17.99,111,100.0,No,Sí,5.0,10.0,1.0,23,3534,No,2019,Sí,61,,9.75
+P1360,Ingeniería de Sistemas,9,12.65,16.07,100,99.0,No,Sí,3.0,1.0,3.0,22,2512,No,2019,Sí,53,,10.42
+P1361,Ingeniería de Sistemas,2,15.78,16.84,12,98.0,No,Sí,5.0,12.0,2.0,21,3517,No,2020,No,56,Salud u otros,7.27
+P1362,Ciencia de la Computación,7,13.67,18.93,143,100.0,No,Sí,3.0,3.0,4.0,20,4374,No,2020,Sí,61,,10.09
+P1363,Ciencia de la Computación,10,15.71,14.47,90,80.0,No,No,3.0,1.0,0.0,24,3041,No,2016,Sí,50,,11.28
+P1364,Ingeniería de Sistemas,8,14.11,15.48,88,100.0,No,Sí,6.0,2.0,1.0,21,1551,No,2018,Sí,28,,8.63
+P1365,Ingeniería de Sistemas,9,8.66,14.96,120,65.0,No,Sí,1.0,2.0,1.0,23,1874,No,2018,No,26,Exceso de carga laboral,6.93
+P1366,Ciencia de la Computación,9,17.09,15.31,140,100.0,No,Sí,3.0,1.0,1.0,22,2315,No,2018,Sí,36,,10.61
+P1367,Ingeniería de Software,8,10.28,18.78,113,100.0,Sí,Sí,2.0,4.0,2.0,22,10000,No,2019,Sí,100,,10.23
+P1368,Ingeniería de Sistemas,9,9.26,14.02,116,100.0,Sí,Sí,3.0,3.0,2.0,20,9515,No,2020,Sí,100,,9.53
+P1369,Ingeniería de Software,10,12.14,16.64,126,75.0,No,Sí,1.0,2.0,2.0,21,2306,No,2018,No,43,Salud u otros,6.1
+P1370,Ingeniería de Sistemas,8,14.06,14.97,88,100.0,No,No,6.0,6.0,2.0,23,3674,No,2020,No,78,Exceso de carga laboral,11.23
+P1371,Ciencia de la Computación,7,12.0,19.27,100,100.0,No,Sí,3.0,5.0,2.0,19,4460,No,2021,Sí,64,,10.39
+P1372,Ingeniería de Sistemas,3,17.54,16.28,23,99.0,No,No,4.0,1.0,3.0,20,3603,No,2020,Sí,54,,13.79
+P1373,Ciencia de la Computación,2,13.23,16.66,11,98.0,No,Sí,3.0,1.0,4.0,21,600,No,2020,No,31,Bajo rendimiento,7.42
+P1374,Ciencia de la Computación,1,17.69,19.15,11,98.0,No,No,3.0,8.0,1.0,21,6001,No,2020,Sí,82,,11.48
+P1375,Ingeniería de Software,7,5.21,13.81,107,80.0,Sí,Sí,2.0,9.0,2.0,20,7989,No,2019,Sí,73,,1.52
+P1376,Ingeniería de Sistemas,8,14.86,15.69,87,90.0,No,Sí,1.0,1.0,1.0,21,1623,No,2019,Sí,30,,8.69
+P1377,Ingeniería de Software,2,19.85,19.94,11,90.0,No,No,4.0,3.0,1.0,20,1274,No,2020,Sí,29,,12.86
+P1378,Ingeniería de Sistemas,9,10.22,15.09,131,70.0,No,Sí,3.0,7.0,1.0,20,2921,No,2020,Sí,45,,7.04
+P1379,Ciencia de la Computación,7,20.0,19.69,76,98.0,No,No,4.0,1.0,3.0,20,1610,No,2019,Sí,45,,12.57
+P1380,Ingeniería de Software,1,0.38,1.66,0,95.0,No,Sí,2.0,2.0,2.0,22,3987,No,2019,Sí,33,,0.0
+P1381,Ciencia de la Computación,1,0.22,0.25,0,97.0,No,Sí,2.0,1.0,2.0,20,2560,No,2019,No,21,Problemas económicos,3.28
+P1382,Ingeniería de Sistemas,8,16.93,17.42,71,80.0,No,No,1.0,5.0,2.0,20,2442,No,2019,Sí,41,,11.17
+P1383,Ingeniería de Software,2,18.46,19.38,12,70.0,No,No,2.0,2.0,1.0,21,1206,No,2020,Sí,20,,11.8
+P1384,Ingeniería de Software,2,16.2,17.63,12,100.0,No,No,7.0,1.0,2.0,21,797,No,2020,Sí,39,,12.13
+P1385,Ingeniería de Sistemas,7,16.25,17.33,14,75.0,No,Sí,4.0,3.0,1.0,19,779,No,2020,Sí,16,,8.98
+P1386,Ingeniería de Software,7,12.33,15.67,32,90.0,No,Sí,2.0,3.0,1.0,23,3626,No,2019,Sí,62,,9.16
+P1387,Ingeniería de Software,3,11.16,11.16,23,85.0,No,Sí,2.0,4.0,2.0,20,1677,No,2020,No,22,Salud u otros,6.66
+P1388,Ingeniería de Sistemas,3,14.51,13.72,25,90.0,No,Sí,1.0,5.0,1.0,21,3341,No,2019,Sí,63,,7.95
+P1389,Ingeniería de Sistemas,10,11.97,14.5,106,80.0,No,Sí,2.0,3.0,5.0,24,3634,No,2017,Sí,55,,9.15
+P1390,Ingeniería de Software,2,12.1,14.08,11,90.0,No,Sí,4.0,2.0,2.0,19,2045,No,2020,Sí,37,,9.49
+P1391,Ingeniería de Sistemas,10,9.4,13.8,104,90.0,No,Sí,4.0,1.0,4.0,22,1192,No,2018,Sí,17,,5.22
+P1392,Ciencia de la Computación,2,18.83,18.7,11,90.0,No,No,3.0,4.0,2.0,20,3555,No,2019,No,71,Problemas económicos,11.08
+P1393,Ciencia de la Computación,2,12.53,16.41,11,99.0,No,Sí,2.0,4.0,2.0,20,1956,No,2020,Sí,32,,8.69
+P1394,Ingeniería de Sistemas,8,19.55,17.03,131,100.0,No,No,6.0,2.0,5.0,22,3493,No,2018,Sí,53,,14.84
+P1395,Ciencia de la Computación,6,14.24,16.16,50,80.0,No,Sí,1.0,3.0,1.0,22,2326,No,2018,Sí,38,,5.48
+P1396,Ingeniería de Software,8,8.6,14.48,144,77.0,No,Sí,2.0,6.0,2.0,20,5158,No,2019,No,80,Bajo rendimiento,8.32
+P1397,Ingeniería de Sistemas,1,18.81,18.84,12,100.0,No,No,2.0,8.0,2.0,19,1915,No,2020,Sí,45,,12.01
+P1398,Ciencia de la Computación,6,11.52,16.33,63,70.0,No,Sí,5.0,7.0,3.0,22,3274,No,2020,No,63,Exceso de carga laboral,8.47
+P1399,Ciencia de la Computación,6,6.86,13.8,92,100.0,Sí,Sí,3.0,5.0,1.0,21,9629,No,2020,Sí,100,,6.53
+P1400,Ciencia de la Computación,6,14.55,19.66,77,100.0,No,No,2.0,5.0,4.0,20,6812,No,2020,Sí,94,,11.27
+P1401,Ciencia de la Computación,7,15.75,14.74,58,60.0,No,Sí,1.0,2.0,1.0,22,3561,No,2016,No,46,Exceso de carga laboral,8.13
+P1402,Ciencia de la Computación,4,20.0,18.55,34,96.0,No,No,3.0,2.0,1.0,21,1971,No,2019,No,37,Problemas económicos,12.2
+P1403,Ingeniería de Sistemas,7,12.52,15.04,130,90.0,No,Sí,2.0,6.0,4.0,25,2868,No,2017,No,32,Salud u otros,10.86
+P1404,Ciencia de la Computación,1,12.94,14.41,12,96.0,No,Sí,4.0,3.0,2.0,20,1419,No,2020,Sí,40,,8.44
+P1405,Ingeniería de Sistemas,9,12.92,18.08,123,100.0,No,Sí,3.0,2.0,2.0,21,4710,No,2021,Sí,72,,7.88
+P1406,Ciencia de la Computación,2,14.66,15.51,11,100.0,No,No,2.0,1.0,2.0,20,2359,No,2020,No,41,Problemas económicos,11.67
+P1407,Ingeniería de Software,2,15.51,16.33,12,90.0,No,No,4.0,3.0,1.0,20,1970,No,2019,Sí,37,,11.95
+P1408,Ciencia de la Computación,9,7.34,14.66,118,70.0,Sí,Sí,1.0,8.0,2.0,24,3705,No,2018,No,28,Salud u otros,6.33
+P1409,Ingeniería de Sistemas,10,12.01,18.39,135,100.0,No,Sí,2.0,1.0,1.0,21,3636,No,2020,Sí,52,,8.44
+P1410,Ingeniería de Software,9,14.43,20.0,125,55.0,No,No,2.0,3.0,1.0,20,2934,No,2020,No,51,Problemas económicos,14.27
+P1411,Ciencia de la Computación,5,9.44,16.13,66,100.0,Sí,Sí,2.0,4.0,2.0,21,3316,No,2021,No,35,Problemas económicos,8.82
+P1412,Ingeniería de Sistemas,8,14.7,15.01,111,70.0,No,Sí,2.0,8.0,1.0,23,4584,No,2016,Sí,59,,10.99
+P1413,Ciencia de la Computación,3,10.21,17.05,20,88.0,Sí,Sí,2.0,3.0,2.0,21,1659,No,2020,Sí,0,,6.1
+P1414,Ciencia de la Computación,2,13.29,16.32,11,90.0,No,Sí,3.0,3.0,1.0,19,2852,No,2020,Sí,50,,7.69
+P1415,Ingeniería de Software,2,15.31,15.95,11,90.0,No,No,3.0,3.0,1.0,19,2247,No,2020,Sí,34,,13.07
+P1416,Ingeniería de Software,5,11.29,16.16,87,88.0,No,Sí,3.0,8.0,3.0,20,4112,No,2021,Sí,77,,5.06
+P1417,Ingeniería de Sistemas,8,18.5,19.79,93,90.0,No,No,4.0,1.0,2.0,22,1783,No,2018,No,33,Falta de motivación,11.18
+P1418,Ingeniería de Software,2,18.58,19.36,11,100.0,No,No,3.0,5.0,2.0,21,1722,No,2021,No,46,Salud u otros,11.2
+P1419,Ingeniería de Sistemas,4,13.6,14.64,25,85.0,No,Sí,3.0,3.0,2.0,20,2119,No,2020,Sí,33,,8.66
+P1420,Ingeniería de Software,7,15.18,20.0,139,100.0,No,No,7.0,2.0,3.0,20,4644,No,2020,Sí,58,,11.23
+P1421,Ingeniería de Software,9,9.93,17.54,138,100.0,No,Sí,4.0,6.0,2.0,20,3437,No,2020,No,46,Problemas económicos,7.28
+P1422,Ingeniería de Software,3,12.95,16.28,24,100.0,No,Sí,2.0,3.0,1.0,22,2920,No,2020,Sí,47,,5.47
+P1423,Ingeniería de Sistemas,2,15.12,16.24,11,90.0,No,Sí,2.0,3.0,2.0,21,1732,No,2020,No,35,Falta de motivación,8.92
+P1424,Ciencia de la Computación,7,7.53,12.57,136,100.0,No,Sí,2.0,3.0,2.0,20,3513,No,2020,Sí,55,,6.09
+P1425,Ingeniería de Software,9,7.01,10.62,40,70.0,Sí,Sí,1.0,3.0,1.0,24,1607,No,2018,Sí,15,,8.57
+P1426,Ingeniería de Sistemas,8,12.79,15.63,126,85.0,No,Sí,3.0,1.0,2.0,23,2840,No,2017,Sí,46,,8.74
+P1427,Ciencia de la Computación,8,7.14,13.11,143,100.0,Sí,Sí,2.0,2.0,2.0,25,5128,No,2018,Sí,39,,5.87
+P1428,Ciencia de la Computación,8,12.5,16.67,88,80.0,No,Sí,3.0,2.0,2.0,21,2140,No,2019,No,32,Exceso de carga laboral,9.03
+P1429,Ingeniería de Software,5,12.5,15.34,66,100.0,No,Sí,2.0,4.0,2.0,21,3742,No,2021,Sí,57,,10.41
+P1430,Ingeniería de Sistemas,2,19.64,18.86,11,100.0,No,No,4.0,2.0,12.0,21,1806,No,2020,Sí,44,,14.5
+P1431,Ingeniería de Sistemas,8,14.82,15.86,88,100.0,No,No,3.0,4.0,2.0,22,3028,No,2019,Sí,52,,11.75
+P1432,Ciencia de la Computación,4,14.74,16.39,36,80.0,No,Sí,2.0,2.0,6.0,22,1452,No,2018,Sí,12,,10.54
+P1433,Ingeniería de Sistemas,2,13.34,15.49,11,80.0,No,Sí,5.0,7.0,2.0,20,3751,No,2019,Sí,34,,10.89
+P1434,Ingeniería de Sistemas,10,9.59,15.86,99,80.0,Sí,Sí,5.0,6.0,3.0,21,10000,No,2020,Sí,89,,6.4
+P1435,Ingeniería de Sistemas,4,8.76,15.06,89,70.0,No,Sí,5.0,6.0,2.0,20,3990,No,2020,Sí,46,,3.2674549926237617
+P1436,Ciencia de la Computación,8,9.42,14.92,143,100.0,Sí,Sí,2.0,3.0,4.0,22,7654,No,2019,Sí,78,,7.13
+P1437,Ingeniería de Sistemas,4,17.7,18.94,35,90.0,No,No,7.0,3.0,1.0,19,3795,No,2020,Sí,52,,14.7
+P1438,Ciencia de la Computación,1,0.0,0.0,0,100.0,Sí,Sí,2.0,1.0,1.0,20,10000,No,2020,Sí,88,,1.75
+P1439,Ingeniería de Sistemas,2,12.74,14.04,12,90.0,No,Sí,2.0,6.0,0.0,20,2275,No,2020,Sí,44,,10.49
+P1440,Ciencia de la Computación,2,16.75,16.13,11,90.0,No,No,4.0,1.0,1.0,19,2522,No,2020,No,55,Salud u otros,12.99
+P1441,Ingeniería de Software,8,13.38,14.22,115,99.0,No,Sí,5.0,5.0,2.0,24,3122,No,2014,No,55,Exceso de carga laboral,10.67
+P1442,Ingeniería de Software,6,13.63,19.44,75,100.0,No,No,5.0,3.0,2.0,21,2568,No,2021,No,62,Falta de motivación,12.08
+P1443,Ingeniería de Sistemas,10,16.01,16.89,110,98.0,No,No,6.0,6.0,3.0,23,3091,No,2018,Sí,48,,13.07
+P1444,Ingeniería de Software,8,18.17,18.4,141,96.0,No,No,3.0,3.0,2.0,23,1117,No,2018,Sí,15,,15.34
+P1445,Ingeniería de Sistemas,8,19.32,18.73,87,97.0,No,No,2.0,3.0,1.0,21,1103,No,2019,Sí,29,,13.6
+P1446,Ingeniería de Software,2,19.33,19.46,12,100.0,No,No,6.0,1.0,2.0,23,1832,No,2020,Sí,46,,15.62
+P1447,Ingeniería de Software,2,15.05,14.33,11,90.0,No,Sí,2.0,5.0,2.0,22,1612,No,2020,No,34,Falta de motivación,10.52
+P1448,Ingeniería de Software,4,15.98,17.41,25,100.0,No,No,4.0,4.0,2.0,20,3666,No,2020,Sí,64,,14.26
+P1449,Ingeniería de Software,3,10.31,11.0,25,88.0,Sí,Sí,2.0,1.0,1.0,21,2064,No,2019,No,26,Exceso de carga laboral,6.69
+P1450,Ciencia de la Computación,10,11.75,19.07,144,77.0,No,Sí,5.0,8.0,2.0,22,6256,No,2018,Sí,82,,10.56
+P1451,Ingeniería de Sistemas,7,11.48,17.41,144,46.0,No,Sí,3.0,3.0,2.0,24,4256,No,2019,Sí,58,,7.02
+P1452,Ingeniería de Sistemas,10,9.16,14.78,79,80.0,Sí,Sí,2.0,1.0,1.0,22,3501,No,2017,Sí,26,,7.55
+P1453,Ingeniería de Software,4,10.69,18.12,45,100.0,No,Sí,4.0,8.0,2.0,19,4623,No,2021,Sí,84,,4.06
+P1454,Ingeniería de Sistemas,4,13.79,16.21,36,85.0,No,Sí,3.0,4.0,2.0,21,2496,No,2020,Sí,48,,7.56
+P1455,Ingeniería de Software,8,7.88,11.18,105,65.0,No,Sí,4.0,4.0,2.0,20,5555,No,2020,Sí,79,,4.98
+P1456,Ciencia de la Computación,7,18.74,17.13,89,95.0,No,Sí,3.0,2.0,1.0,21,3314,No,2019,No,38,Bajo rendimiento,9.81
+P1457,Ingeniería de Software,2,19.53,18.97,11,99.0,No,Sí,1.0,4.0,2.0,20,2190,No,2020,Sí,28,,8.74
+P1458,Ciencia de la Computación,9,7.49,13.86,121,87.0,No,Sí,3.0,2.0,4.0,25,8393,No,2018,Sí,100,,5.95
+P1459,Ingeniería de Sistemas,4,15.71,16.31,25,100.0,No,Sí,4.0,4.0,2.0,20,3517,No,2020,Sí,58,,9.67
+P1460,Ingeniería de Software,2,17.91,18.81,12,98.0,No,No,2.0,3.0,1.0,21,7309,No,2020,Sí,90,,13.55
+P1461,Ingeniería de Software,6,7.28,13.42,71,100.0,Sí,Sí,3.0,2.0,2.0,22,5700,No,2021,Sí,61,,4.35
+P1462,Ingeniería de Sistemas,7,15.33,18.55,66,100.0,No,Sí,1.0,2.0,2.0,23,3555,No,2019,Sí,56,,10.34
+P1463,Ingeniería de Sistemas,4,12.35,17.0,36,80.0,No,Sí,2.0,2.0,6.0,22,998,No,2018,Sí,12,,5.77
+P1464,Ingeniería de Sistemas,7,17.68,18.88,87,60.0,No,Sí,0.0,6.0,0.0,22,2187,No,2019,Sí,17,,9.59
+P1465,Ingeniería de Software,5,8.5,13.9,58,100.0,No,Sí,3.0,2.0,1.0,20,4432,No,2021,Sí,67,,5.43
+P1466,Ingeniería de Software,8,12.81,16.46,75,90.0,No,Sí,3.0,5.0,2.0,24,1499,No,2016,No,35,Salud u otros,8.43
+P1467,Ingeniería de Sistemas,8,14.19,15.77,88,80.0,No,Sí,3.0,2.0,2.0,21,1717,No,2019,No,35,Bajo rendimiento,4.58
+P1468,Ingeniería de Sistemas,4,14.09,15.04,36,100.0,No,No,3.0,2.0,3.0,25,2557,No,2020,Sí,49,,13.41
+P1469,Ingeniería de Sistemas,3,16.84,15.02,23,80.0,No,No,2.0,5.0,2.0,21,2346,No,2020,No,26,Salud u otros,14.19
+P1470,Ciencia de la Computación,10,9.87,15.29,79,80.0,No,Sí,2.0,1.0,1.0,22,3180,No,2017,Sí,39,,5.36
+P1471,Ingeniería de Sistemas,2,10.06,9.0,6,85.0,Sí,Sí,3.0,2.0,1.0,19,10000,No,2020,Sí,78,,5.56
+P1472,Ciencia de la Computación,7,6.2,12.67,97,95.0,No,Sí,2.0,2.0,3.0,20,4996,No,2021,No,56,Exceso de carga laboral,4.01
+P1473,Ingeniería de Sistemas,7,12.33,14.36,115,87.0,No,Sí,2.0,1.0,1.0,21,2192,No,2018,No,34,Exceso de carga laboral,7.52
+P1474,Ingeniería de Software,6,7.03,14.3,61,95.0,No,Sí,2.0,8.0,1.0,22,3508,No,2020,Sí,41,,6.48
+P1475,Ingeniería de Software,9,12.93,15.44,136,100.0,No,Sí,2.0,1.0,3.0,23,5728,No,2017,Sí,78,,9.63
+P1476,Ingeniería de Sistemas,10,12.65,17.68,128,95.0,No,Sí,2.0,3.0,1.0,22,1233,No,2019,Sí,35,,7.96
+P1477,Ingeniería de Sistemas,9,14.66,18.47,143,100.0,No,Sí,5.0,5.0,1.0,22,8141,No,2018,Sí,100,,10.31
+P1478,Ciencia de la Computación,8,19.19,18.8,89,99.0,No,No,5.0,3.0,1.0,21,786,No,2019,No,19,Salud u otros,12.9
+P1479,Ingeniería de Software,7,10.98,15.35,98,86.0,No,Sí,3.0,6.0,3.0,21,4600,No,2019,Sí,65,,9.96
+P1480,Ingeniería de Software,8,10.06,14.16,119,86.0,No,Sí,3.0,9.0,2.0,20,2739,No,2020,Sí,37,,4.61
+P1481,Ingeniería de Software,7,16.04,14.96,80,80.0,No,Sí,2.0,2.0,1.0,22,2136,No,2019,Sí,36,,7.48
+P1482,Ingeniería de Sistemas,9,12.61,18.93,144,100.0,No,Sí,3.0,3.0,2.0,23,5935,No,2019,Sí,79,,7.73
+P1483,Ingeniería de Software,8,12.1,16.49,88,95.0,No,Sí,2.0,3.0,3.0,20,1418,No,2019,No,11,Exceso de carga laboral,7.86
+P1484,Ingeniería de Software,2,18.22,18.54,14,90.0,No,No,5.0,3.0,1.0,20,600,No,2020,Sí,25,,11.31
+P1485,Ingeniería de Sistemas,2,11.77,14.76,11,90.0,No,Sí,1.0,1.0,2.0,19,1218,No,2020,Sí,31,,10.69
+P1486,Ingeniería de Sistemas,10,12.46,17.61,45,80.0,No,Sí,1.0,2.0,1.0,24,5739,No,2019,Sí,82,,9.65
+P1487,Ingeniería de Sistemas,2,19.59,19.12,12,98.0,No,No,2.0,1.0,1.0,20,3200,No,2020,Sí,45,,13.74
+P1488,Ingeniería de Software,9,8.76,12.99,101,100.0,Sí,Sí,2.0,3.0,4.0,20,4800,No,2020,Sí,64,,9.89
+P1489,Ciencia de la Computación,8,12.24,19.08,98,100.0,No,Sí,3.0,3.0,2.0,20,5246,No,2021,Sí,76,,9.96
+P1490,Ingeniería de Sistemas,8,11.79,12.38,126,90.0,No,Sí,1.0,2.0,2.0,25,4757,No,2016,Sí,73,,6.9
+P1491,Ingeniería de Software,8,9.25,13.62,88,34.0,Sí,Sí,2.0,2.0,3.0,20,3925,No,2020,Sí,18,,9.6
+P1492,Ingeniería de Sistemas,10,15.39,17.3,120,95.0,No,Sí,2.0,1.0,2.0,23,3294,No,2017,Sí,44,,9.32
+P1493,Ingeniería de Sistemas,9,12.89,17.11,130,67.0,No,No,3.0,1.0,2.0,20,5475,No,2020,Sí,75,,11.72
+P1494,Ingeniería de Sistemas,3,8.38,15.25,29,80.0,No,Sí,4.0,7.0,1.0,20,8016,No,2020,Sí,84,,7.49
+P1495,Ingeniería de Software,8,11.67,17.21,143,100.0,No,No,3.0,1.0,4.0,24,7993,No,2019,No,92,Falta de motivación,12.63
+P1496,Ingeniería de Software,10,12.44,15.77,136,75.0,No,Sí,2.0,1.0,3.0,23,1896,No,2017,Sí,40,,8.3
+P1497,Ingeniería de Sistemas,1,13.15,16.73,11,100.0,No,Sí,4.0,2.0,2.0,22,1121,No,2020,No,47,Falta de motivación,7.46
+P1498,Ingeniería de Sistemas,3,19.72,18.15,35,90.0,No,No,1.0,2.0,1.0,21,2049,No,2020,Sí,36,,13.13
+P1499,Ciencia de la Computación,1,0.45,0.0,0,100.0,Sí,Sí,1.0,1.0,2.0,20,8943,No,2021,Sí,85,,4.44
+P1500,Ingeniería de Sistemas,1,2.02,0.0,0,98.0,Sí,Sí,1.0,2.0,2.0,20,917,No,2020,No,12,Problemas económicos,3.77
+P1501,Ingeniería de Software,10,8.07,13.38,140,45.0,Sí,Sí,4.0,7.0,2.0,25,3711,No,2019,No,33,Falta de motivación,6.94
+P1502,Ingeniería de Sistemas,10,12.98,17.49,140,96.0,No,No,4.0,3.0,3.0,23,1849,No,2019,Sí,39,,11.07
+P1503,Ciencia de la Computación,9,16.86,17.73,119,96.0,No,Sí,3.0,5.0,3.0,23,1159,No,2017,No,32,Exceso de carga laboral,7.79
+P1504,Ingeniería de Software,9,12.52,15.7,126,85.0,No,Sí,3.0,1.0,2.0,23,2821,No,2017,Sí,41,,7.77
+P1505,Ingeniería de Software,5,9.7,15.08,58,100.0,No,Sí,3.0,2.0,1.0,20,3957,No,2021,No,64,Bajo rendimiento,6.86
+P1506,Ingeniería de Sistemas,8,16.6,16.61,85,100.0,No,Sí,6.0,2.0,3.0,21,3807,No,2019,No,51,Exceso de carga laboral,10.92
+P1507,Ingeniería de Sistemas,7,11.01,15.11,107,100.0,No,Sí,3.0,7.0,3.0,22,10000,No,2020,Sí,96,,7.98
+P1508,Ingeniería de Sistemas,8,12.78,18.81,137,88.0,No,Sí,4.0,7.0,3.0,20,5677,No,2020,Sí,76,,2.4011399190654883
+P1509,Ciencia de la Computación,9,10.86,16.73,113,100.0,No,Sí,2.0,3.0,2.0,20,9679,No,2020,Sí,99,,7.34
+P1510,Ingeniería de Software,4,16.24,18.63,25,100.0,No,Sí,1.0,2.0,0.0,20,4457,No,2020,Sí,65,,9.97
+P1511,Ingeniería de Sistemas,7,8.55,15.38,101,55.0,No,Sí,5.0,4.0,2.0,20,3091,No,2020,Sí,23,,8.6
+P1512,Ingeniería de Sistemas,4,16.49,17.51,33,90.0,No,Sí,7.0,1.0,9.0,20,2362,No,2020,Sí,31,,10.81
+P1513,Ingeniería de Sistemas,10,13.46,14.52,126,100.0,No,No,2.0,1.0,2.0,22,2325,No,2018,Sí,46,,12.75
+P1514,Ingeniería de Software,8,13.16,16.13,88,95.0,No,Sí,3.0,2.0,2.0,21,3631,No,2019,Sí,52,,9.76
+P1515,Ingeniería de Software,3,17.19,15.85,25,95.0,No,No,4.0,5.0,2.0,21,4133,No,2020,Sí,62,,11.06
+P1516,Ingeniería de Software,2,9.44,11.25,14,95.0,No,Sí,2.0,1.0,1.0,22,1731,No,2015,Sí,38,,8.17
+P1517,Ciencia de la Computación,7,11.84,12.17,65,80.0,No,Sí,2.0,1.0,1.0,20,1950,No,2019,Sí,30,,6.33
+P1518,Ciencia de la Computación,3,17.8,18.91,25,98.0,No,No,4.0,2.0,3.0,21,3573,No,2019,No,54,Exceso de carga laboral,11.88
+P1519,Ciencia de la Computación,4,11.1,13.78,35,90.0,No,Sí,4.0,2.0,2.0,22,2343,No,2020,Sí,42,,7.07
+P1520,Ingeniería de Software,7,10.23,18.13,111,100.0,No,Sí,5.0,10.0,1.0,23,3748,No,2019,Sí,60,,7.84
+P1521,Ingeniería de Sistemas,6,6.8,14.11,89,60.0,No,Sí,5.0,9.0,2.0,21,6337,No,2020,Sí,69,,2.29
+P1522,Ingeniería de Sistemas,2,20.0,20.0,28,90.0,No,No,9.0,3.0,2.0,21,2716,No,2020,Sí,47,,14.16
+P1523,Ciencia de la Computación,9,18.27,18.87,130,100.0,No,No,1.0,2.0,2.0,25,10000,No,2016,Sí,99,,15.52
+P1524,Ingeniería de Sistemas,7,6.91,14.7,88,100.0,Sí,Sí,3.0,5.0,1.0,23,10000,No,2017,Sí,100,,6.94
+P1525,Ingeniería de Software,2,20.0,19.79,11,80.0,No,Sí,2.0,1.0,3.0,22,1589,No,2016,Sí,22,,10.35
+P1526,Ciencia de la Computación,8,13.67,16.74,88,95.0,No,Sí,4.0,2.0,2.0,21,1840,No,2019,Sí,40,,10.01
+P1527,Ingeniería de Sistemas,8,13.83,15.24,88,85.0,No,No,3.0,8.0,1.0,21,1127,No,2019,Sí,19,,11.69
+P1528,Ciencia de la Computación,8,13.12,15.99,88,100.0,No,Sí,4.0,1.0,1.0,21,3131,No,2019,Sí,55,,10.75
+P1529,Ciencia de la Computación,9,13.45,19.09,136,100.0,No,No,4.0,2.0,3.0,21,4193,No,2018,Sí,52,,14.41
+P1530,Ingeniería de Sistemas,9,16.71,11.44,90,50.0,No,Sí,5.0,10.0,2.0,20,2956,No,2019,Sí,41,,6.61
+P1531,Ingeniería de Sistemas,8,13.41,14.2,75,98.0,No,Sí,3.0,2.0,2.0,20,10000,No,2018,Sí,88,,10.72
+P1532,Ciencia de la Computación,10,7.56,13.35,107,35.0,Sí,Sí,5.0,11.0,2.0,23,2549,No,2018,Sí,12,,8.02
+P1533,Ingeniería de Sistemas,2,19.78,18.81,11,100.0,No,No,3.0,4.0,2.0,20,2309,No,2020,Sí,46,,11.03
+P1534,Ingeniería de Sistemas,2,10.5,9.92,11,90.0,No,Sí,3.0,4.0,0.0,21,2001,No,2019,Sí,46,,10.46
+P1535,Ingeniería de Software,8,13.32,19.46,140,100.0,No,Sí,1.0,8.0,2.0,24,1979,No,2018,Sí,29,,7.86
+P1536,Ingeniería de Sistemas,8,8.51,13.49,104,89.0,Sí,Sí,3.0,7.0,1.0,23,4409,No,2019,Sí,37,,5.88
+P1537,Ingeniería de Software,2,18.91,18.75,12,100.0,No,No,3.0,2.0,1.0,20,1538,No,2020,Sí,47,,11.84
+P1538,Ingeniería de Software,9,8.51,14.09,97,78.0,Sí,Sí,4.0,2.0,4.0,20,2779,No,2020,No,24,Salud u otros,5.68
+P1539,Ingeniería de Software,9,7.42,12.99,139,50.0,No,Sí,1.0,2.0,2.0,21,3508,No,2021,Sí,42,,6.9
+P1540,Ingeniería de Sistemas,8,17.29,15.92,75,90.0,No,No,8.0,4.0,5.0,22,2260,No,2018,No,60,Salud u otros,11.79
+P1541,Ciencia de la Computación,2,12.44,12.69,12,90.0,No,Sí,3.0,5.0,1.0,20,1242,No,2020,Sí,25,,9.04
+P1542,Ciencia de la Computación,8,13.72,19.58,119,100.0,No,Sí,5.0,4.0,3.0,21,6026,No,2019,Sí,89,,8.84
+P1543,Ingeniería de Sistemas,7,8.58,14.14,97,60.0,No,Sí,2.0,4.0,2.0,22,3803,No,2019,No,53,Salud u otros,9.29
+P1544,Ciencia de la Computación,10,19.8,17.71,128,87.0,No,No,2.0,1.0,3.0,25,2477,No,2017,Sí,46,,13.17
+P1545,Ingeniería de Sistemas,10,12.63,18.99,116,100.0,No,Sí,5.0,2.0,2.0,25,2319,No,2018,Sí,34,,6.36
+P1546,Ingeniería de Sistemas,2,12.75,14.56,11,100.0,No,Sí,4.0,4.0,1.0,20,4830,No,2020,Sí,83,,10.2
+P1547,Ingeniería de Software,5,12.76,18.34,39,100.0,No,Sí,1.0,7.0,1.0,22,2581,No,2020,Sí,52,,7.58
+P1548,Ingeniería de Sistemas,8,7.55,12.34,107,35.0,No,Sí,5.0,11.0,2.0,23,2618,No,2018,Sí,27,,6.33
+P1549,Ingeniería de Sistemas,8,18.2,18.52,85,94.0,No,Sí,3.0,4.0,2.0,21,1876,No,2019,Sí,33,,8.29
+P1550,Ingeniería de Sistemas,7,13.45,18.52,88,100.0,No,Sí,5.0,4.0,1.0,20,4965,No,2019,Sí,85,,8.37
+P1551,Ingeniería de Sistemas,10,13.28,20.0,136,100.0,No,No,4.0,2.0,3.0,21,3998,No,2018,Sí,64,,11.02
+P1552,Ingeniería de Sistemas,6,6.5,12.3,92,100.0,Sí,Sí,3.0,5.0,1.0,21,9950,No,2020,Sí,90,,2.81
+P1553,Ingeniería de Software,10,13.93,18.77,140,86.0,No,Sí,2.0,2.0,2.0,25,7088,No,2019,Sí,91,,8.05
+P1554,Ingeniería de Sistemas,3,17.68,14.81,23,90.0,No,No,2.0,3.0,2.0,20,1093,No,2020,Sí,35,,15.16
+P1555,Ingeniería de Sistemas,8,13.81,19.32,100,100.0,No,Sí,3.0,3.0,4.0,20,10000,No,2020,Sí,100,,7.86
+P1556,Ingeniería de Software,10,16.37,18.17,88,90.0,No,Sí,4.0,1.0,1.0,20,2477,No,2019,No,42,Bajo rendimiento,9.6
+P1557,Ingeniería de Sistemas,5,13.33,19.37,58,100.0,No,No,3.0,3.0,4.0,20,4150,No,2021,Sí,64,,12.38
+P1558,Ciencia de la Computación,2,19.41,17.87,11,100.0,No,No,5.0,2.0,2.0,19,1126,No,2020,No,37,Bajo rendimiento,11.88
+P1559,Ingeniería de Sistemas,8,14.16,17.61,125,90.0,No,No,7.0,2.0,4.0,23,808,No,2017,Sí,12,,11.83
+P1560,Ingeniería de Software,9,13.13,14.3,111,70.0,No,Sí,2.0,8.0,1.0,23,4126,No,2016,Sí,55,,7.96
+P1561,Ingeniería de Software,1,0.0,0.0,11,100.0,Sí,Sí,3.0,6.0,0.0,20,1698,No,2020,No,13,Salud u otros,1.62
+P1562,Ingeniería de Sistemas,2,17.94,16.57,11,2.0,No,Sí,7.0,3.0,0.0,21,2251,No,2020,Sí,13,,7.67
+P1563,Ingeniería de Sistemas,8,14.49,15.86,136,85.0,No,Sí,5.0,4.0,1.0,23,1025,No,2017,No,15,Falta de motivación,8.23
+P1564,Ingeniería de Sistemas,8,19.51,15.7,77,57.0,No,No,1.0,4.0,3.0,21,2693,No,2019,Sí,48,,14.54
+P1565,Ingeniería de Sistemas,8,14.27,14.39,65,98.0,No,Sí,4.0,2.0,2.0,22,1848,No,2018,Sí,35,,10.98
+P1566,Ingeniería de Software,5,13.2,15.31,50,98.0,No,Sí,3.0,1.0,8.0,20,1966,No,2019,Sí,47,,10.02
+P1567,Ingeniería de Software,7,15.9,16.31,120,95.0,No,Sí,3.0,4.0,1.0,22,2314,No,2017,Sí,28,,7.46
+P1568,Ingeniería de Sistemas,7,9.59,14.61,144,56.0,Sí,Sí,2.0,3.0,2.0,20,5326,No,2020,Sí,65,,4.22
+P1569,Ingeniería de Software,4,18.66,18.96,35,90.0,No,No,7.0,3.0,1.0,19,4147,No,2020,Sí,51,,11.87
+P1570,Ingeniería de Software,8,17.44,15.65,90,90.0,No,Sí,1.0,2.0,3.0,20,1653,No,2019,No,29,Falta de motivación,10.55
+P1571,Ingeniería de Software,1,15.83,15.6,11,92.0,No,No,3.0,2.0,1.0,19,2713,No,2021,No,59,Exceso de carga laboral,12.75
+P1572,Ingeniería de Software,3,15.85,13.74,24,90.0,No,Sí,2.0,1.0,1.0,20,2515,No,2020,Sí,50,,6.94
+P1573,Ingeniería de Sistemas,9,8.89,15.18,136,100.0,No,Sí,1.0,7.0,3.0,21,3563,No,2018,Sí,62,,7.21
+P1574,Ciencia de la Computación,4,17.52,18.05,35,90.0,No,No,3.0,2.0,2.0,22,1179,No,2019,Sí,26,,16.4
+P1575,Ingeniería de Sistemas,10,15.54,16.14,104,70.0,No,Sí,4.0,1.0,2.0,26,998,No,2014,Sí,18,,8.38
+P1576,Ingeniería de Sistemas,3,14.76,16.91,23,95.0,No,No,2.0,3.0,1.0,19,5991,No,2020,Sí,77,,12.37
+P1577,Ingeniería de Software,5,5.83,11.23,75,45.0,No,Sí,1.0,10.0,1.0,20,6781,No,2021,Sí,85,,2.64
+P1578,Ciencia de la Computación,3,15.75,14.4,24,90.0,No,No,2.0,1.0,1.0,20,2358,No,2020,No,48,Salud u otros,13.3
+P1579,Ingeniería de Software,10,16.57,15.66,105,80.0,No,No,5.0,3.0,2.0,21,5498,No,2018,Sí,65,,12.46
+P1580,Ingeniería de Software,6,12.55,18.55,35,100.0,No,Sí,6.0,6.0,6.0,21,3910,No,2020,No,55,Bajo rendimiento,7.43
+P1581,Ingeniería de Sistemas,10,8.07,13.19,135,86.0,No,Sí,2.0,2.0,4.0,21,5669,No,2020,Sí,77,,3.51
+P1582,Ingeniería de Sistemas,10,14.35,20.0,144,43.0,No,Sí,2.0,3.0,4.0,20,2832,No,2020,Sí,33,,7.73
+P1583,Ingeniería de Sistemas,10,5.34,11.32,143,76.0,Sí,Sí,2.0,3.0,4.0,24,3335,No,2019,No,29,Exceso de carga laboral,5.06
+P1584,Ingeniería de Software,3,19.04,20.0,23,95.0,No,No,5.0,2.0,3.0,22,2419,No,2020,Sí,33,,19.089956464264883
+P1585,Ciencia de la Computación,3,18.3,18.85,23,95.0,No,No,5.0,2.0,1.0,21,3763,No,2019,Sí,55,,12.57
+P1586,Ingeniería de Software,7,14.22,18.23,66,100.0,No,Sí,2.0,6.0,1.0,23,3708,No,2019,Sí,61,,6.91
+P1587,Ingeniería de Sistemas,8,12.94,17.58,125,99.0,No,Sí,2.0,4.0,1.0,22,4690,No,2019,Sí,67,,9.58
+P1588,Ingeniería de Software,2,16.13,15.75,11,98.0,No,No,4.0,2.0,2.0,22,1297,No,2020,Sí,28,,12.09
+P1589,Ingeniería de Sistemas,4,13.17,15.77,36,95.0,No,Sí,6.0,3.0,3.0,21,1230,No,2019,Sí,35,,7.0
+P1590,Ingeniería de Sistemas,2,17.53,17.84,11,98.0,No,Sí,2.0,2.0,3.0,20,2651,No,2020,Sí,46,,9.97
+P1591,Ciencia de la Computación,8,12.52,17.75,95,100.0,No,No,3.0,3.0,2.0,20,4361,No,2020,Sí,66,,11.13
+P1592,Ingeniería de Software,7,14.76,14.99,114,90.0,No,Sí,5.0,3.0,2.0,23,1626,No,2018,No,30,Salud u otros,8.46
+P1593,Ingeniería de Software,2,18.84,15.87,23,97.0,No,No,9.0,3.0,5.0,21,3302,No,2020,Sí,70,,15.19
+P1594,Ciencia de la Computación,3,16.16,17.98,23,90.0,No,Sí,1.0,5.0,1.0,20,1962,No,2018,No,38,Exceso de carga laboral,9.13
+P1595,Ingeniería de Sistemas,6,8.01,13.26,88,100.0,Sí,Sí,7.0,3.0,2.0,21,1803,No,2021,Sí,12,,9.16
+P1596,Ingeniería de Software,7,9.51,12.92,126,90.0,Sí,Sí,1.0,2.0,2.0,25,4615,No,2016,Sí,53,,8.7
+P1597,Ingeniería de Software,8,14.25,15.54,126,99.0,No,Sí,8.0,4.0,4.0,22,1199,No,2018,Sí,44,,10.81
+P1598,Ingeniería de Sistemas,1,0.18,0.0,11,100.0,No,Sí,3.0,6.0,0.0,20,1370,No,2020,Sí,15,,2.82
+P1599,Ingeniería de Software,7,8.54,14.54,133,80.0,Sí,Sí,6.0,6.0,3.0,25,5323,No,2018,Sí,52,,9.85
+P1600,Ingeniería de Software,4,5.03,9.95,32,90.0,No,Sí,3.0,2.0,4.0,22,3527,No,2020,Sí,40,,6.67
+P1601,Ingeniería de Software,2,11.95,15.73,11,80.0,No,Sí,3.0,1.0,2.0,20,2777,No,2020,Sí,46,,9.93
+P1602,Ingeniería de Sistemas,2,12.62,15.91,11,100.0,No,Sí,1.0,2.0,1.0,20,1739,No,2020,No,37,Exceso de carga laboral,5.69
+P1603,Ingeniería de Sistemas,9,19.46,18.96,99,90.0,No,Sí,6.0,3.0,1.0,22,3276,No,2019,No,58,Exceso de carga laboral,10.34
+P1604,Ingeniería de Software,8,16.32,16.75,90,98.0,No,Sí,2.0,2.0,0.0,22,3426,No,2018,No,64,Salud u otros,10.47
+P1605,Ciencia de la Computación,10,9.16,15.43,79,80.0,Sí,Sí,2.0,1.0,1.0,22,3386,No,2017,Sí,22,,7.73
+P1606,Ciencia de la Computación,7,14.31,19.63,95,67.0,No,Sí,2.0,3.0,3.0,20,4741,No,2021,Sí,51,,9.49
+P1607,Ingeniería de Sistemas,10,7.78,13.35,133,70.0,No,Sí,3.0,3.0,3.0,21,4725,No,2018,Sí,54,,6.73
+P1608,Ciencia de la Computación,10,16.14,17.27,126,90.0,No,Sí,2.0,1.0,2.0,22,1432,No,2018,Sí,21,,9.86
+P1609,Ciencia de la Computación,2,17.92,17.95,11,100.0,No,No,2.0,1.0,1.0,18,721,No,2020,Sí,26,,11.38
+P1610,Ingeniería de Sistemas,9,10.48,17.15,132,100.0,No,Sí,3.0,5.0,2.0,24,3590,No,2018,No,57,Exceso de carga laboral,7.46
+P1611,Ingeniería de Sistemas,6,7.66,12.11,77,100.0,Sí,Sí,3.0,2.0,4.0,21,7706,No,2021,Sí,70,,7.77
+P1612,Ingeniería de Sistemas,1,16.68,17.55,11,90.0,No,No,5.0,7.0,3.0,19,2244,No,2020,Sí,48,,12.37
+P1613,Ingeniería de Sistemas,8,7.87,13.69,77,90.0,No,No,5.0,6.0,2.0,20,3958,No,2020,No,60,Bajo rendimiento,11.22
+P1614,Ingeniería de Sistemas,1,0.0,1.05,11,90.0,Sí,Sí,6.0,4.0,1.0,21,3929,No,2022,No,21,Bajo rendimiento,4.46
+P1615,Ingeniería de Sistemas,9,10.9,11.63,77,80.0,No,Sí,3.0,5.0,3.0,22,600,No,2018,Sí,10,,8.78
+P1616,Ingeniería de Sistemas,6,7.67,13.69,88,100.0,Sí,Sí,1.0,2.0,4.0,21,7633,No,2021,Sí,78,,2.75
+P1617,Ingeniería de Software,5,12.12,17.35,67,87.0,No,Sí,4.0,3.0,2.0,22,2333,No,2021,Sí,41,,8.82
+P1618,Ingeniería de Sistemas,9,13.53,14.71,76,70.0,No,Sí,1.0,1.0,1.0,23,1086,No,2018,Sí,15,,10.22
+P1619,Ingeniería de Software,2,12.57,16.07,11,90.0,No,No,7.0,5.0,2.0,20,2083,No,2020,Sí,52,,11.96
+P1620,Ingeniería de Software,10,12.84,14.76,106,80.0,No,Sí,2.0,3.0,5.0,24,3760,No,2017,Sí,60,,10.06
+P1621,Ingeniería de Software,5,10.34,16.51,79,100.0,Sí,Sí,3.0,5.0,2.0,20,3101,No,2021,Sí,34,,7.67
+P1622,Ingeniería de Sistemas,3,19.03,15.56,23,90.0,No,No,2.0,3.0,2.0,20,705,No,2020,Sí,23,,15.68
+P1623,Ingeniería de Software,9,13.56,19.0,143,43.0,No,Sí,2.0,2.0,2.0,25,4278,No,2019,Sí,55,,6.49
+P1624,Ciencia de la Computación,4,12.09,15.74,36,70.0,No,Sí,3.0,2.0,2.0,19,1548,No,2020,Sí,14,,5.55
+P1625,Ingeniería de Sistemas,2,18.39,18.84,12,99.0,No,No,1.0,4.0,1.0,19,1824,No,2020,Sí,30,,13.9
+P1626,Ingeniería de Software,8,18.74,18.4,126,90.0,No,No,3.0,5.0,2.0,22,1467,No,2017,No,30,Exceso de carga laboral,16.23
+P1627,Ingeniería de Software,1,18.44,17.05,11,90.0,No,No,1.0,1.0,1.0,19,600,No,2020,Sí,18,,12.22
+P1628,Ingeniería de Sistemas,2,14.4,12.44,23,90.0,No,Sí,3.0,6.0,2.0,20,1073,No,2020,Sí,19,,9.91
+P1629,Ingeniería de Sistemas,1,17.27,15.84,13,99.0,No,No,2.0,1.0,2.0,20,1148,No,2019,Sí,31,,11.52
+P1630,Ingeniería de Software,9,12.36,18.45,123,87.0,No,Sí,1.0,3.0,4.0,20,4387,No,2021,No,66,Bajo rendimiento,6.89
+P1631,Ciencia de la Computación,5,9.83,13.32,62,100.0,No,Sí,4.0,3.0,1.0,20,4033,No,2021,Sí,60,,8.0
+P1632,Ciencia de la Computación,10,6.82,12.1,134,100.0,Sí,Sí,2.0,9.0,4.0,22,4076,No,2019,Sí,41,,8.17
+P1633,Ingeniería de Sistemas,9,12.9,18.01,127,54.0,No,Sí,1.0,3.0,3.0,20,2170,No,2020,No,36,Exceso de carga laboral,7.06
+P1634,Ingeniería de Software,3,19.73,18.7,23,98.0,No,Sí,8.0,2.0,2.0,20,1501,No,2020,Sí,33,,10.16
+P1635,Ingeniería de Sistemas,3,18.83,18.71,23,99.0,No,No,2.0,4.0,2.0,20,3031,No,2020,Sí,67,,12.17
+P1636,Ingeniería de Sistemas,2,10.45,13.69,35,77.0,No,Sí,2.0,10.0,2.0,19,3968,No,2021,Sí,58,,5.6
+P1637,Ingeniería de Software,5,13.47,18.05,84,90.0,No,Sí,2.0,7.0,2.0,23,6052,No,2019,No,89,Falta de motivación,10.14
+P1638,Ingeniería de Sistemas,9,19.17,18.58,129,100.0,No,No,4.0,3.0,2.0,25,3617,No,2016,Sí,78,,14.11
+P1639,Ingeniería de Sistemas,7,12.04,9.18,80,100.0,No,Sí,3.0,1.0,5.0,26,1658,No,2014,Sí,37,,7.42
+P1640,Ciencia de la Computación,1,1.01,0.13,0,98.0,No,Sí,2.0,3.0,0.0,20,3596,No,2021,Sí,37,,-0.0
+P1641,Ingeniería de Sistemas,8,6.3,15.13,104,95.0,Sí,Sí,4.0,5.0,5.0,23,3881,No,2019,Sí,34,,4.21
+P1642,Ingeniería de Software,10,10.26,17.93,135,87.0,No,Sí,1.0,2.0,1.0,20,4238,No,2020,No,60,Bajo rendimiento,6.84
+P1643,Ciencia de la Computación,8,14.47,20.0,100,100.0,No,Sí,3.0,3.0,4.0,20,10000,No,2020,Sí,86,,9.88
+P1644,Ingeniería de Sistemas,2,13.09,15.74,11,90.0,No,Sí,1.0,1.0,2.0,19,1267,No,2020,Sí,33,,9.01
+P1645,Ingeniería de Software,9,13.8,15.44,125,41.417184203854184,No,No,7.0,2.0,4.0,23,1255,No,2017,Sí,27,,11.02
+P1646,Ciencia de la Computación,3,15.45,17.79,25,98.0,No,No,2.0,2.0,1.0,21,1946,No,2019,Sí,43,,11.84
+P1647,Ingeniería de Software,8,12.12,15.08,130,80.0,No,Sí,2.0,3.0,1.0,25,3486,No,2015,Sí,51,,5.91
+P1648,Ciencia de la Computación,2,16.95,15.74,11,99.0,No,No,3.0,1.0,3.0,21,3555,No,2020,Sí,73,,13.82
+P1649,Ingeniería de Sistemas,4,12.62,15.25,36,90.0,No,Sí,1.0,1.0,0.0,22,1211,No,2020,Sí,37,,5.58
+P1650,Ingeniería de Software,3,16.84,18.13,24,90.0,No,Sí,2.0,2.0,1.0,21,2203,No,2019,No,41,Problemas económicos,6.84
+P1651,Ingeniería de Sistemas,7,7.59,13.58,143,66.0,No,Sí,1.0,4.0,4.0,25,3483,No,2018,Sí,35,,8.56
+P1652,Ingeniería de Software,4,18.34,18.05,35,100.0,No,No,2.0,2.0,1.0,22,1696,No,2019,Sí,35,,11.42
+P1653,Ingeniería de Software,4,14.38,15.75,37,52.0,No,Sí,1.0,6.0,1.0,21,1483,No,2020,Sí,28,,6.98
+P1654,Ingeniería de Sistemas,8,14.82,16.09,88,90.0,No,Sí,3.0,4.0,2.0,22,3186,No,2019,Sí,51,,9.17
+P1655,Ingeniería de Software,8,10.34,15.27,85,95.0,No,No,1.0,2.0,2.0,22,2440,No,2019,Sí,43,,11.38
+P1656,Ciencia de la Computación,2,13.31,17.61,27,100.0,No,Sí,3.0,5.0,1.0,19,4817,No,2022,Sí,70,,9.55
+P1657,Ciencia de la Computación,1,0.0,0.68,0,100.0,Sí,Sí,2.0,8.0,1.0,23,2436,No,2019,Sí,20,,4.18
+P1658,Ingeniería de Software,7,13.44,15.23,126,70.0,No,Sí,2.0,5.0,4.0,24,1557,No,2016,Sí,24,,7.82
+P1659,Ingeniería de Sistemas,4,11.13,18.27,46,100.0,No,Sí,3.0,4.0,1.0,24,2785,No,2019,Sí,55,,9.13
+P1660,Ingeniería de Sistemas,9,8.1,14.37,143,100.0,No,Sí,1.0,3.0,2.0,20,5044,No,2020,Sí,68,,6.7
+P1661,Ciencia de la Computación,2,13.25,16.21,11,92.0,No,Sí,3.0,0.0,3.0,22,6099,No,2019,Sí,77,,9.76
+P1662,Ingeniería de Sistemas,10,14.38,17.45,126,90.0,No,No,4.0,2.0,1.0,22,2524,No,2019,Sí,29,,12.04
+P1663,Ciencia de la Computación,9,9.26,15.33,95,50.0,No,Sí,3.0,8.0,1.0,22,10000,No,2019,No,87,Falta de motivación,9.09
+P1664,Ingeniería de Sistemas,8,8.9,11.84,105,65.0,No,No,4.0,4.0,2.0,20,5390,No,2020,Sí,62,,11.02
+P1665,Ciencia de la Computación,2,19.54,20.0,12,90.0,No,Sí,2.0,2.0,3.0,22,3467,No,2020,Sí,49,,10.85
+P1666,Ingeniería de Sistemas,2,17.24,17.75,11,98.0,No,No,6.0,1.0,5.0,20,2447,No,2020,Sí,45,,12.78
+P1667,Ciencia de la Computación,8,16.7,17.2,125,86.0,No,No,1.0,6.0,2.0,22,10000,No,2018,Sí,84,,12.53
+P1668,Ingeniería de Software,5,13.87,12.13,36,90.0,No,No,3.0,3.0,2.0,22,3682,No,2020,Sí,59,,11.26
+P1669,Ingeniería de Software,7,7.36,12.65,143,35.0,No,Sí,3.0,1.0,2.0,25,10000,No,2019,Sí,78,,6.14
+P1670,Ciencia de la Computación,2,19.4,18.69,12,70.0,No,No,2.0,2.0,1.0,21,1507,No,2020,Sí,36,,14.58
+P1671,Ciencia de la Computación,5,17.52,19.3,54,98.0,No,No,2.0,1.0,6.0,21,3801,No,2019,No,51,Problemas económicos,14.11
+P1672,Ingeniería de Software,10,18.45,14.66,140,90.0,No,No,2.0,1.0,2.0,24,3883,No,2016,Sí,64,,11.98
+P1673,Ingeniería de Software,9,7.16,12.33,117,45.0,Sí,Sí,2.0,3.0,2.0,20,4151,No,2020,No,12,Salud u otros,3.38
+P1674,Ingeniería de Software,2,15.58,16.81,10,100.0,No,Sí,3.0,3.0,1.0,19,3667,No,2020,Sí,62,,8.55
+P1675,Ingeniería de Sistemas,5,8.29,14.66,62,100.0,Sí,Sí,4.0,3.0,1.0,20,3768,No,2021,No,25,Bajo rendimiento,6.63
+P1676,Ingeniería de Software,10,7.97,13.93,139,79.0,Sí,Sí,2.0,3.0,2.0,21,2644,No,2020,No,16,Exceso de carga laboral,5.79
+P1677,Ingeniería de Sistemas,8,14.12,16.13,88,95.0,No,Sí,1.0,2.0,2.0,21,2610,No,2019,No,41,Falta de motivación,8.3
+P1678,Ingeniería de Sistemas,8,15.31,16.41,88,90.0,No,Sí,4.0,2.0,1.0,23,2971,No,2018,Sí,52,,10.6
+P1679,Ingeniería de Sistemas,10,13.85,15.78,113,80.0,No,Sí,3.0,3.0,4.0,24,10000,No,2017,Sí,99,,10.78
+P1680,Ingeniería de Sistemas,4,19.46,19.47,34,90.0,No,No,3.0,2.0,2.0,24,2351,No,2017,Sí,32,,12.37
+P1681,Ingeniería de Software,9,8.57,14.62,97,78.0,Sí,Sí,4.0,2.0,4.0,20,2650,No,2020,Sí,9,,7.53
+P1682,Ingeniería de Sistemas,4,13.71,15.43,36,97.0,No,Sí,5.0,2.0,2.0,21,3159,No,2020,Sí,62,,9.39
+P1683,Ingeniería de Software,8,19.44,18.2,83,95.0,No,No,3.0,1.0,1.0,21,6078,No,2019,No,73,Falta de motivación,14.77
+P1684,Ingeniería de Sistemas,6,14.28,18.03,75,100.0,No,Sí,5.0,3.0,2.0,21,2970,No,2021,Sí,63,,7.26
+P1685,Ingeniería de Software,2,12.7,16.23,11,75.0,No,Sí,1.0,4.0,1.0,20,2286,No,2020,Sí,36,,7.41
+P1686,Ingeniería de Sistemas,2,20.0,20.0,12,95.0,No,Sí,1.0,2.0,1.0,20,2643,No,2020,No,43,Salud u otros,10.84
+P1687,Ingeniería de Sistemas,8,7.87,12.71,64,80.0,No,Sí,1.0,4.0,1.0,20,2034,No,2019,Sí,32,,2.7
+P1688,Ciencia de la Computación,8,13.7,16.53,88,80.0,No,Sí,3.0,2.0,2.0,21,1976,No,2019,Sí,40,,9.85
+P1689,Ingeniería de Sistemas,8,12.59,15.98,88,95.0,No,Sí,4.0,2.0,2.0,21,1238,No,2019,Sí,24,,9.48
+P1690,Ciencia de la Computación,6,20.0,19.91,58,90.0,No,No,5.0,3.0,3.0,22,4177,No,2018,Sí,59,,11.01
+P1691,Ingeniería de Sistemas,10,6.63,13.11,135,73.0,No,Sí,2.0,3.0,2.0,20,8496,No,2020,Sí,79,,4.84
+P1692,Ciencia de la Computación,8,14.79,17.51,87,90.0,No,No,3.0,5.0,2.0,22,3276,No,2018,Sí,47,,7.478860608615334
+P1693,Ingeniería de Sistemas,2,0.78,0.97,11,95.0,Sí,Sí,4.0,2.0,4.0,21,1511,No,2020,Sí,6,,3.44
+P1694,Ingeniería de Sistemas,3,15.64,15.08,23,100.0,No,Sí,2.0,5.0,3.0,20,3199,No,2019,No,57,Problemas económicos,10.62
+P1695,Ingeniería de Software,2,17.76,18.8,11,100.0,No,Sí,3.0,1.0,2.0,20,3192,No,2020,No,54,Exceso de carga laboral,10.87
+P1696,Ciencia de la Computación,3,17.83,19.76,23,100.0,No,No,4.0,2.0,6.0,23,832,No,2020,Sí,25,,13.57
+P1697,Ingeniería de Sistemas,1,18.67,19.63,12,100.0,No,No,2.0,8.0,2.0,19,2328,No,2020,Sí,45,,15.01
+P1698,Ciencia de la Computación,1,18.43,19.42,28,90.0,No,No,4.0,1.0,3.0,20,1297,No,2020,Sí,31,,11.94
+P1699,Ingeniería de Software,5,13.14,19.24,72,90.0,No,Sí,5.0,9.0,1.0,20,4440,No,2020,Sí,66,,9.57
+P1700,Ingeniería de Software,2,20.0,20.0,11,95.0,No,Sí,1.0,4.0,2.0,21,1810,No,2020,Sí,42,,10.45
+P1701,Ciencia de la Computación,7,14.92,15.14,126,70.0,No,Sí,2.0,5.0,4.0,24,1122,No,2016,No,26,Bajo rendimiento,10.9
+P1702,Ingeniería de Sistemas,8,16.91,15.55,130,99.0,No,Sí,2.0,2.0,0.0,23,793,No,2018,No,14,Problemas económicos,9.93
+P1703,Ingeniería de Sistemas,1,0.31,1.22,0,95.0,No,Sí,2.0,2.0,2.0,22,3480,No,2019,Sí,37,,0.0
+P1704,Ingeniería de Software,9,11.32,17.91,123,100.0,No,Sí,5.0,7.0,2.0,21,7826,No,2018,Sí,100,,9.87
+P1705,Ingeniería de Software,6,8.05,13.58,78,63.0,Sí,Sí,3.0,2.0,2.0,21,7289,No,2021,Sí,80,,7.77
+P1706,Ingeniería de Sistemas,9,8.75,13.97,101,100.0,Sí,Sí,2.0,3.0,4.0,20,4784,No,2020,Sí,46,,3.22
+P1707,Ingeniería de Software,2,17.34,17.94,11,88.0,No,Sí,1.0,4.0,3.0,20,3720,No,2020,Sí,63,,10.82
+P1708,Ingeniería de Sistemas,2,14.8,14.88,11,97.0,No,Sí,3.0,2.0,2.0,21,600,No,2020,No,25,Falta de motivación,9.13
+P1709,Ingeniería de Sistemas,2,18.72,17.08,11,2.0,No,No,7.0,3.0,0.0,21,2440,No,2020,No,24,Bajo rendimiento,11.79
+P1710,Ingeniería de Sistemas,4,15.11,16.97,36,90.0,No,No,3.0,3.0,1.0,22,3107,No,2019,No,53,Falta de motivación,13.66
+P1711,Ingeniería de Software,9,12.14,18.53,132,100.0,No,No,1.0,2.0,3.0,23,2939,No,2018,Sí,48,,11.09
+P1712,Ciencia de la Computación,2,19.34,18.82,12,98.0,No,No,2.0,1.0,1.0,20,3251,No,2020,Sí,48,,14.3
+P1713,Ingeniería de Software,7,10.68,16.16,32,90.0,No,No,2.0,3.0,1.0,23,3629,No,2019,Sí,47,,14.33
+P1714,Ingeniería de Sistemas,8,15.52,18.38,87,97.0,No,Sí,3.0,3.0,1.0,21,8908,No,2019,Sí,95,,7.94
+P1715,Ingeniería de Sistemas,2,18.32,18.76,11,100.0,No,No,3.0,5.0,2.0,21,1676,No,2021,Sí,44,,13.78
+P1716,Ingeniería de Software,8,15.27,18.87,84,95.0,No,Sí,3.0,2.0,2.0,22,3041,No,2019,Sí,46,,10.03
+P1717,Ingeniería de Sistemas,8,5.54,13.55,101,100.0,No,Sí,4.0,2.0,2.0,21,4590,No,2020,Sí,59,,3.44
+P1718,Ingeniería de Sistemas,7,10.1,18.18,103,100.0,Sí,Sí,6.0,2.0,2.0,21,2178,No,2019,Sí,20,,8.07
+P1719,Ingeniería de Sistemas,5,11.72,15.13,49,100.0,No,Sí,0.0,3.0,6.0,22,1891,No,2019,Sí,39,,10.44
+P1720,Ingeniería de Software,8,15.43,14.86,123,80.0,No,No,2.0,1.0,4.0,24,4007,No,2018,Sí,55,,11.41
+P1721,Ciencia de la Computación,2,17.82,17.08,12,95.0,No,No,6.0,2.0,2.0,18,1436,No,2020,Sí,37,,15.09
+P1722,Ingeniería de Sistemas,2,17.15,17.84,12,100.0,No,Sí,3.0,1.0,1.0,19,1935,No,2019,Sí,25,,10.78
+P1723,Ingeniería de Software,8,15.28,16.37,88,90.0,No,Sí,4.0,3.0,1.0,21,2294,No,2019,Sí,37,,4.95
+P1724,Ingeniería de Software,8,19.41,18.23,110,95.0,No,No,4.0,2.0,1.0,21,10000,No,2019,Sí,100,,13.6
+P1725,Ingeniería de Sistemas,8,12.48,19.15,135,68.0,No,Sí,5.0,3.0,2.0,20,3005,No,2020,Sí,48,,10.0
+P1726,Ingeniería de Sistemas,5,6.21,13.27,96,100.0,Sí,Sí,6.0,4.0,2.0,21,5885,No,2019,Sí,66,,6.98
+P1727,Ingeniería de Software,3,15.74,17.29,23,85.0,No,Sí,2.0,2.0,1.0,20,4643,No,2020,Sí,64,,8.44
+P1728,Ciencia de la Computación,10,16.92,16.83,132,80.0,No,No,1.0,2.0,3.0,22,2565,No,2018,Sí,41,,11.08
+P1729,Ingeniería de Sistemas,2,14.76,15.1,11,95.0,No,Sí,5.0,1.0,2.0,21,1867,No,2020,No,54,Bajo rendimiento,10.34
+P1730,Ciencia de la Computación,8,16.57,18.11,100,87.0,No,No,2.0,3.0,1.0,22,6001,No,2019,Sí,89,,13.79
+P1731,Ciencia de la Computación,10,16.89,17.45,106,95.0,No,Sí,4.0,3.0,2.0,24,1294,No,2016,Sí,30,,10.39
+P1732,Ingeniería de Sistemas,8,14.88,18.37,144,43.0,No,Sí,2.0,3.0,4.0,20,2383,No,2020,Sí,24,,8.01
+P1733,Ciencia de la Computación,1,18.77,18.22,12,100.0,No,No,3.0,3.0,2.0,22,3298,No,2017,Sí,69,,13.07
+P1734,Ciencia de la Computación,9,17.47,17.46,122,100.0,No,Sí,5.0,3.0,2.0,22,2219,No,2017,Sí,39,,10.74
+P1735,Ingeniería de Sistemas,8,18.93,18.48,110,95.0,No,No,4.0,2.0,1.0,21,10000,No,2019,Sí,99,,13.65
+P1736,Ingeniería de Sistemas,3,15.22,13.36,20,97.0,No,No,4.0,1.0,2.0,21,1895,No,2020,Sí,46,,11.48
+P1737,Ingeniería de Sistemas,8,8.39,13.64,101,100.0,Sí,Sí,5.0,6.0,1.0,20,6955,No,2020,No,64,Salud u otros,9.09
+P1738,Ciencia de la Computación,8,12.93,16.46,88,100.0,No,Sí,6.0,6.0,2.0,23,3692,No,2020,Sí,70,,10.5
+P1739,Ingeniería de Software,2,19.55,16.95,11,100.0,No,No,4.0,1.0,1.0,21,2012,No,2020,Sí,43,,11.29
+P1740,Ingeniería de Software,8,14.34,15.64,77,80.0,No,Sí,2.0,3.0,2.0,26,1853,No,2014,No,29,Bajo rendimiento,10.61
+P1741,Ingeniería de Sistemas,10,10.0,14.37,79,80.0,No,Sí,2.0,1.0,1.0,22,3154,No,2017,No,37,Bajo rendimiento,6.74
+P1742,Ingeniería de Software,5,5.7,12.17,96,100.0,No,Sí,6.0,4.0,2.0,21,5789,No,2019,Sí,78,,5.66
+P1743,Ciencia de la Computación,8,15.49,13.51,65,98.0,No,No,4.0,2.0,2.0,22,1771,No,2018,Sí,33,,11.39
+P1744,Ciencia de la Computación,2,13.65,15.9,11,88.0,No,No,4.0,2.0,2.0,21,5985,No,2020,Sí,86,,12.5
+P1745,Ingeniería de Software,8,10.71,9.95,80,100.0,No,Sí,3.0,1.0,5.0,26,1643,No,2014,No,24,Exceso de carga laboral,8.49
+P1746,Ciencia de la Computación,5,13.93,18.78,72,90.0,No,Sí,5.0,9.0,1.0,20,4685,No,2020,Sí,59,,9.02
+P1747,Ciencia de la Computación,1,0.0,0.0,0,95.0,No,Sí,6.0,2.0,2.0,19,4334,No,2021,No,38,Exceso de carga laboral,0.0
+P1748,Ingeniería de Sistemas,10,18.29,20.0,130,99.0,No,Sí,8.0,2.0,3.0,23,1422,No,2018,Sí,27,,10.72
+P1749,Ingeniería de Software,5,0.0,11.57,46,97.0,No,Sí,5.0,2.0,4.0,21,3082,No,2020,Sí,44,,2.82
+P1750,Ingeniería de Sistemas,10,17.16,19.12,117,98.0,No,Sí,4.0,10.0,2.0,23,921,No,2017,Sí,26,,9.56
+P1751,Ingeniería de Software,1,0.37,0.0,0,85.0,Sí,Sí,4.0,2.0,2.0,20,1813,No,2018,Sí,23,,4.42
+P1752,Ciencia de la Computación,9,18.37,19.06,130,90.0,No,Sí,6.0,1.0,3.0,24,2447,No,2017,Sí,46,,9.76
+P1753,Ingeniería de Software,6,8.22,14.48,88,100.0,No,Sí,1.0,2.0,4.0,21,7602,No,2021,Sí,86,,3.7
+P1754,Ciencia de la Computación,7,10.62,16.82,103,100.0,No,Sí,6.0,2.0,2.0,21,2230,No,2019,No,42,Problemas económicos,8.61
+P1755,Ingeniería de Sistemas,8,13.15,14.78,65,98.0,No,No,4.0,2.0,2.0,22,1357,No,2018,Sí,22,,12.41
+P1756,Ciencia de la Computación,4,18.66,19.19,34,90.0,No,No,1.0,3.0,2.0,20,2424,No,2020,No,53,Exceso de carga laboral,13.56
+P1757,Ciencia de la Computación,2,13.5,15.48,11,90.0,No,Sí,3.0,4.0,2.0,20,1798,No,2020,Sí,20,,10.36
+P1758,Ingeniería de Sistemas,9,8.9,13.81,124,77.0,No,Sí,2.0,3.0,2.0,25,6426,No,2018,Sí,94,,3.44
+P1759,Ingeniería de Software,8,13.63,19.63,125,100.0,No,Sí,7.0,2.0,2.0,21,4142,No,2018,Sí,81,,8.7
+P1760,Ciencia de la Computación,8,12.94,14.49,120,95.0,No,Sí,3.0,3.0,0.0,22,9200,No,2018,Sí,94,,9.48
+P1761,Ingeniería de Sistemas,8,18.8,19.69,60,100.0,No,No,0.0,3.0,4.0,21,3146,No,2018,No,44,Exceso de carga laboral,9.22681627225911
+P1762,Ingeniería de Sistemas,4,13.11,16.97,36,97.0,No,Sí,2.0,1.0,2.0,21,4292,No,2018,Sí,64,,8.49
+P1763,Ingeniería de Sistemas,9,13.66,19.59,119,86.0,No,Sí,2.0,3.0,1.0,21,4100,No,2020,Sí,59,,10.3
+P1764,Ingeniería de Software,8,9.28,13.7,144,100.0,Sí,Sí,2.0,7.0,3.0,25,6214,No,2018,Sí,69,,7.72
+P1765,Ingeniería de Sistemas,8,15.0,12.32,96,80.0,No,Sí,4.0,3.0,1.0,21,6182,No,2018,Sí,78,,7.07
+P1766,Ingeniería de Sistemas,4,11.08,18.22,46,70.0,No,Sí,3.0,9.0,3.0,19,4386,No,2020,Sí,57,,5.56
+P1767,Ingeniería de Sistemas,6,13.23,20.0,35,100.0,No,Sí,6.0,6.0,6.0,21,3970,No,2020,Sí,65,,9.34
+P1768,Ingeniería de Sistemas,9,15.26,17.29,126,75.0,No,Sí,1.0,2.0,2.0,21,2427,No,2018,Sí,29,,10.77
+P1769,Ingeniería de Sistemas,2,14.25,14.22,11,95.0,No,Sí,3.0,2.0,4.0,20,1316,No,2020,Sí,42,,15.55716743368502
+P1770,Ingeniería de Software,8,8.0,12.42,143,67.0,No,Sí,5.0,3.0,4.0,25,5907,No,2018,Sí,70,,2.1
+P1771,Ingeniería de Sistemas,2,15.12,13.99,11,80.0,No,No,1.0,6.0,1.0,20,1554,No,2020,Sí,39,,11.67
+P1772,Ingeniería de Sistemas,2,14.66,12.94,11,95.0,No,Sí,3.0,2.0,4.0,20,1033,No,2020,Sí,13,,6.76
+P1773,Ciencia de la Computación,7,16.28,16.95,89,64.66938031857556,No,No,3.0,2.0,1.0,21,3243,No,2019,Sí,57,,11.97
+P1774,Ingeniería de Sistemas,8,13.06,14.31,88,69.40160812688418,No,No,3.0,4.0,2.0,22,3067,No,2019,Sí,48,,13.13
+P1775,Ingeniería de Sistemas,1,15.26,16.09,11,92.0,No,Sí,3.0,2.0,1.0,19,2888,No,2021,Sí,60,,10.27
+P1776,Ingeniería de Software,5,4.73,13.63,18,95.0,Sí,Sí,2.0,1.0,4.0,21,2390,No,2021,Sí,22,,4.33
+P1777,Ciencia de la Computación,2,15.04,14.47,12,90.0,No,No,2.0,6.0,0.0,20,2120,No,2020,No,33,Falta de motivación,11.92
+P1778,Ingeniería de Software,2,15.66,15.5,11,98.0,No,No,4.0,2.0,2.0,22,1389,No,2020,Sí,14,,12.72
+P1779,Ingeniería de Sistemas,10,15.24,20.0,138,98.0,No,Sí,4.0,3.0,2.0,23,1561,No,2019,Sí,38,,8.41
+P1780,Ingeniería de Sistemas,7,18.04,17.37,87,60.0,No,Sí,0.0,6.0,0.0,22,2457,No,2019,Sí,31,,10.2
+P1781,Ingeniería de Sistemas,9,15.55,18.45,116,56.0,No,No,3.0,3.0,4.0,21,5994,No,2019,Sí,72,,13.19
+P1782,Ciencia de la Computación,8,16.69,18.32,87,98.0,No,No,5.0,2.0,2.0,23,1968,No,2018,No,38,Salud u otros,12.54
+P1783,Ingeniería de Sistemas,10,7.66,13.41,123,90.0,Sí,Sí,3.0,8.0,2.0,22,2495,No,2017,Sí,17,,3.26
+P1784,Ingeniería de Sistemas,3,15.5,18.0,25,98.0,No,Sí,2.0,2.0,1.0,21,1598,No,2019,Sí,43,,8.21
+P1785,Ingeniería de Software,7,11.97,18.84,100,100.0,No,Sí,3.0,5.0,2.0,19,4591,No,2021,Sí,62,,8.11
+P1786,Ingeniería de Software,2,14.08,12.42,12,90.0,No,Sí,2.0,3.0,2.0,20,1722,No,2020,Sí,28,,7.9
+P1787,Ingeniería de Sistemas,7,8.42,14.44,143,100.0,No,Sí,5.0,3.0,2.0,24,3940,No,2018,No,57,Bajo rendimiento,10.69
+P1788,Ingeniería de Sistemas,3,17.42,18.02,24,90.0,No,Sí,2.0,2.0,1.0,21,2705,No,2019,Sí,53,,9.11
+P1789,Ingeniería de Sistemas,5,10.73,14.47,66,90.0,No,Sí,4.0,6.0,2.0,20,2626,No,2020,Sí,50,,7.2
+P1790,Ingeniería de Software,8,15.28,15.58,123,90.0,No,No,6.0,6.0,5.0,23,2586,No,2018,Sí,55,,16.535624677548544
+P1791,Ingeniería de Sistemas,2,20.0,19.95,11,80.0,No,No,2.0,1.0,3.0,22,1696,No,2016,Sí,21,,14.75
+P1792,Ingeniería de Sistemas,8,9.75,11.63,71,90.0,Sí,Sí,4.0,1.0,2.0,21,2128,No,2018,Sí,11,,7.26
+P1793,Ingeniería de Software,8,5.03,11.31,95,89.0,Sí,Sí,3.0,8.0,1.0,24,3449,No,2016,No,15,Bajo rendimiento,3.15
+P1794,Ciencia de la Computación,9,12.69,16.17,126,99.0,No,No,8.0,4.0,4.0,22,1058,No,2018,Sí,33,,12.19
+P1795,Ciencia de la Computación,9,12.57,18.24,136,100.0,No,Sí,2.0,2.0,2.0,20,3757,No,2020,Sí,65,,6.01
+P1796,Ingeniería de Sistemas,10,7.29,13.5,123,90.0,Sí,Sí,3.0,8.0,2.0,22,2203,No,2017,Sí,14,,2.77
+P1797,Ingeniería de Sistemas,3,19.04,19.76,23,98.0,No,No,8.0,2.0,2.0,20,1411,No,2020,Sí,29,,14.62
+P1798,Ingeniería de Software,2,19.02,17.74,13,98.0,No,No,6.0,2.0,3.0,21,1560,No,2020,Sí,23,,13.92
+P1799,Ingeniería de Software,8,13.81,19.53,141,100.0,No,No,6.0,7.0,4.0,22,9323,No,2019,Sí,91,,11.13
+P1800,Ciencia de la Computación,2,13.85,16.26,11,88.0,No,Sí,4.0,2.0,2.0,21,5457,No,2020,Sí,77,,9.99

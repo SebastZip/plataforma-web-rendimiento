@@ -1,115 +1,162 @@
-import { useState } from 'react';
-import styles from './PrediccionForm.module.css';
-import { supabase } from '../supabaseClient';
-import PrediccionModal from './PrediccionModal';
+import { useState } from "react";
+import styles from "./PrediccionForm.module.css";
+import { supabase } from "../supabaseClient";
+import PrediccionModal from "./PrediccionModal";
 
-const camposTexto = [
-  ['previous_sgpa', '📊 SGPA previo'],
-  ['credit_completed', '✅ Créditos completados'],
-  ['current_semester', '📘 Semestre actual'],
-  ['monthly_income', '💰 Ingreso familiar mensual (S/.)'],
-  ['average_attendance', '📊 Asistencia promedio (%)'],
-  ['social_media_time', '📱 Horas diarias en redes'],
-  ['hsc_year', '🎓 Año de egreso de secundaria'],
-  ['skill_time', '💻 Horas diarias en habilidades'],
-  ['age', '📅 Edad'],
-  ['study_time', '📘 Horas de estudio diarias']
+const API_BASE = import.meta.env.VITE_API_BASE || "https://TU-FASTAPI.onrender.com";
+
+/** ---- Campos (coinciden con tu tabla nueva) ---- **/
+const camposNumero = [
+  ["sgpa_previo", "📊 Promedio ponderado PREVIO (0–20)", { min: 0, max: 20, step: "0.01" }],
+  ["cgpa_actual", "📊 Promedio ponderado ACTUAL (0–20)", { min: 0, max: 20, step: "0.01" }],
+  ["creditos_completados", "✅ Créditos completados (SUG: del SUM)", { min: 0, max: 300, step: "1" }],
+  ["semestre_actual", "📘 Semestre actual (1–10)", { min: 1, max: 10, step: "1" }],
+  ["asistencia_promedio_pct", "📊 Asistencia promedio (%)", { min: 0, max: 100, step: "0.1" }],
+  ["horas_estudio_diarias", "📘 Horas de estudio diarias", { min: 0, max: 24, step: "0.1" }],
+  ["horas_redes_diarias", "📱 Horas diarias en redes sociales", { min: 0, max: 24, step: "0.1" }],
+  ["horas_habilidades_diarias", "💻 Horas diarias en habilidades/actividades (cursos, talleres…)", { min: 0, max: 24, step: "0.1" }],
+  ["ingreso_familiar_mensual_soles", "💰 Ingreso familiar mensual (S/.)", { min: 0, step: "1" }],
+  ["edad", "📅 Edad", { min: 15, max: 80, step: "1" }],
+  ["anio_egreso_secundaria", "🎓 Año de egreso de secundaria", { min: 2000, max: 2035, step: "1" }],
 ];
 
-const camposSelect = [
-  ['ever_probation', '⚠️ ¿Estuviste en probation?', ['Sí', 'No']],
-  ['scholarship', '🏅 ¿Tienes beca?', ['Sí', 'No']]
+const camposSiNo = [
+  ["estado_observado", "⚠️ ¿Alumno observado? (desaprobaste un curso más de dos veces)", ["Sí", "No"]],
+  ["beca_subvencion_economica", "🏅 ¿Cuentas con beca o subvención económica?", ["Sí", "No"]],
+  ["planea_matricularse_prox_ciclo", "🧭 ¿Planeas matricularte el próximo ciclo académico?", ["Sí", "No"]],
+  // Si luego modelas HE01:
+  // ["desaprobo_alguna_asignatura", "❌ ¿Desaprobaste alguna asignatura el ciclo anterior?", ["Sí","No"]],
 ];
 
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+/** Utilidad para pausar */
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const PrediccionForm = ({ usuario }) => {
   const [formData, setFormData] = useState({ codigo_estudiante: usuario.codigo });
-  const [resultado, setResultado] = useState(null);
+  const [resultadoReg, setResultadoReg] = useState(null);
+  const [resultadoCls, setResultadoCls] = useState(null);
   const [cicloObjetivo, setCicloObjetivo] = useState(null);
   const [mostrarModal, setMostrarModal] = useState(false);
   const [cargando, setCargando] = useState(false);
 
-  const handleChange = (e) => {
+  const onChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    // para mantener números realmente numéricos
+    const num = Number(value);
+    setFormData((s) => ({
+      ...s,
+      [name]: Number.isFinite(num) ? num : value,
+    }));
   };
 
-  const transformarDatosParaEnvio = () => {
-    const mapeo = { 'Sí': 1, 'No': 0 };
-    const datos = { ...formData };
-    Object.keys(datos).forEach(k => {
-      if (mapeo.hasOwnProperty(datos[k])) datos[k] = mapeo[datos[k]];
+  const onChangeSiNo = (e) => {
+    const { name, value } = e.target;
+    setFormData((s) => ({ ...s, [name]: value })); // guardamos "Sí"/"No", mapeamos antes de insertar
+  };
+
+  /** Convierte "Sí/No" → boolean para Supabase */
+  const mapSiNoABool = (v) => (v === "Sí" ? true : v === "No" ? false : v);
+
+  /** Prepara payload para Supabase (coincide con columnas) */
+  const construirFilaSupabase = () => {
+    const fila = { ...formData, codigo_estudiante: usuario.codigo };
+
+    camposSiNo.forEach(([name]) => {
+      if (name in fila) fila[name] = mapSiNoABool(fila[name]);
     });
-    return datos;
+
+    // asegúrate de que numéricos queden como números
+    camposNumero.forEach(([name]) => {
+      if (name in fila) fila[name] = Number(fila[name]);
+    });
+
+    return fila;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setCargando(true);
-    setResultado(null);
+    setResultadoReg(null);
+    setResultadoCls(null);
     setMostrarModal(true);
 
-    const datosFinales = transformarDatosParaEnvio();
-
     try {
-      // 1. Verificar si ya existe
-      const yaExiste = await supabase
-        .from('predicciones_estudiantes')
-        .select('id')
-        .eq('codigo_estudiante', usuario.codigo)
-        .eq('current_semester', datosFinales.current_semester);
+      const fila = construirFilaSupabase();
 
-      if (yaExiste.data.length > 0) {
+      // Validación mínima
+      if (!fila.semestre_actual) throw new Error("Debes ingresar el semestre actual.");
+      if (!fila.sgpa_previo && fila.sgpa_previo !== 0) throw new Error("Falta SGPA previo.");
+
+      // 1) ¿Ya existe fila para (codigo, semestre_actual)?
+      const { data: existentes, error: errSel } = await supabase
+        .from("predicciones_estudiantes")
+        .select("id")
+        .eq("codigo_estudiante", usuario.codigo)
+        .eq("semestre_actual", fila.semestre_actual);
+
+      if (errSel) throw errSel;
+
+      if (existentes && existentes.length > 0) {
         const confirmar = window.confirm(
-          `⚠️ Ya existe una predicción para el semestre ${datosFinales.current_semester}. ¿Deseas sobreescribirla?`
+          `⚠️ Ya existe un registro para el semestre ${fila.semestre_actual}. ¿Deseas sobreescribirlo?`
         );
         if (!confirmar) {
           setCargando(false);
           return;
         }
-
         await supabase
-          .from('predicciones_estudiantes')
+          .from("predicciones_estudiantes")
           .delete()
-          .eq('codigo_estudiante', usuario.codigo)
-          .eq('current_semester', datosFinales.current_semester);
+          .eq("codigo_estudiante", usuario.codigo)
+          .eq("semestre_actual", fila.semestre_actual);
       }
 
-      // 2. Insertar
-      await supabase.from('predicciones_estudiantes').insert([datosFinales]);
+      // 2) Insertar nueva fila
+      const { error: errIns } = await supabase.from("predicciones_estudiantes").insert([fila]);
+      if (errIns) throw errIns;
 
-      // 3. Esperar para asegurar persistencia
-      await sleep(700);
+      await sleep(400);
 
-      const { data: filaReciente } = await supabase
-        .from('predicciones_estudiantes')
-        .select('semestre_a_predecir')
-        .eq('codigo_estudiante', usuario.codigo)
-        .eq('current_semester', datosFinales.current_semester)
+      // 3) Recuperar semestre proyectado
+      const { data: filaRec, error: errRec } = await supabase
+        .from("predicciones_estudiantes")
+        .select("semestre_proyectado")
+        .eq("codigo_estudiante", usuario.codigo)
+        .eq("semestre_actual", fila.semestre_actual)
         .single();
+      if (errRec) throw errRec;
+      setCicloObjetivo(filaRec?.semestre_proyectado || fila.semestre_actual + 1);
 
-      setCicloObjetivo(filaReciente?.semestre_a_predecir);
+      // 4) Llamar a ambas APIs (y que guarden en la fila con save=true)
+      const [resR, resC] = await Promise.all([
+        fetch(`${API_BASE}/predict/regresion/${usuario.codigo}?save=true`),
+        fetch(`${API_BASE}/predict/continuidad/${usuario.codigo}?save=true`),
+      ]);
 
-      // 4. Llamar API
-      const res = await fetch(`https://plataforma-web-rendimiento.onrender.com/predecir/${usuario.codigo}`);
-      const json = await res.json();
-      if (!res.ok) throw new Error(json.detail);
+      const jsonR = await resR.json();
+      const jsonC = await resC.json();
 
-      const cgpa = json.cgpa_predicho;
-      setResultado(cgpa);
-      setCicloObjetivo(parseInt(datosFinales.current_semester) + 1);
-      setMostrarModal(true);
+      if (!resR.ok) throw new Error(jsonR.detail || "Error regresión");
+      if (!resC.ok) throw new Error(jsonC.detail || "Error continuidad");
 
-      // 5. Actualizar
-      await supabase
-        .from('predicciones_estudiantes')
-        .update({ ponderado_predecido: cgpa })
-        .eq('codigo_estudiante', usuario.codigo)
-        .eq('current_semester', datosFinales.current_semester);
+      const promedio = jsonR.promedio_predicho;
+      const prob = jsonC.prob_riesgo;
+      const riesgo = jsonC.riesgo;
+
+      setResultadoReg(promedio);
+      setResultadoCls({ prob, riesgo });
+
+      // (Opcional) Fallback: si no usas save=true, actualiza aquí:
+      // await supabase.from("predicciones_estudiantes").update({
+      //   promedio_predicho: promedio,
+      //   prob_riesgo_no_continuar: prob,
+      //   riesgo_no_continuar: riesgo
+      // }).eq("codigo_estudiante", usuario.codigo)
+      //   .eq("semestre_actual", fila.semestre_actual);
+
     } catch (err) {
-      alert('❌ Error durante la predicción o guardado.');
       console.error(err);
+      alert("❌ Error durante el registro o la predicción.");
     } finally {
       setCargando(false);
     }
@@ -118,41 +165,61 @@ const PrediccionForm = ({ usuario }) => {
   return (
     <div className={styles.wrapper}>
       <h2 className={styles.subtitulo}>🧠 Cuestionario de Predicción</h2>
+
       <form className={styles.formulario} onSubmit={handleSubmit}>
         <div className={styles.gridInputs}>
-          {camposTexto.map(([name, label]) => (
+          {camposNumero.map(([name, label, extra]) => (
             <div key={name} className={styles.inputCard}>
-              <label>{label}</label>
+              <label htmlFor={name}>{label}</label>
               <input
+                id={name}
                 type="number"
                 name={name}
-                value={formData[name] || ''}
-                onChange={handleChange}
+                value={formData[name] ?? ""}
+                onChange={onChange}
                 required
-                min="0"
-                onWheel={(e) => e.target.blur()}
+                {...extra}
+                onWheel={(e) => e.currentTarget.blur()}
               />
             </div>
           ))}
-          {camposSelect.map(([name, label, options]) => (
+
+          {camposSiNo.map(([name, label, options]) => (
             <div key={name} className={styles.inputCard}>
-              <label>{label}</label>
-              <select name={name} value={formData[name] || ''} onChange={handleChange} required>
-                <option hidden value="">Selecciona una opción</option>
-                {options.map(opt => <option key={opt}>{opt}</option>)}
+              <label htmlFor={name}>{label}</label>
+              <select
+                id={name}
+                name={name}
+                value={formData[name] ?? ""}
+                onChange={onChangeSiNo}
+                required
+              >
+                <option hidden value="">
+                  Selecciona una opción
+                </option>
+                {options.map((opt) => (
+                  <option key={opt} value={opt}>
+                    {opt}
+                  </option>
+                ))}
               </select>
             </div>
           ))}
         </div>
-        <button className={styles.botonVerde} type="submit">✅ Finalizar cuestionario</button>
+
+        <button className={styles.botonVerde} type="submit" disabled={cargando}>
+          {cargando ? "Procesando..." : "✅ Finalizar cuestionario"}
+        </button>
       </form>
 
       <PrediccionModal
         mostrar={mostrarModal}
         onClose={() => setMostrarModal(false)}
-        cgpa={resultado}
+        cgpa={resultadoReg}
         ciclo={cicloObjetivo}
         formData={formData}
+        // Si tu modal puede mostrar continuidad:
+        continuidad={resultadoCls} // {prob, riesgo}
       />
     </div>
   );

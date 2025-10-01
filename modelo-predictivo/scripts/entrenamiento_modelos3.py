@@ -13,7 +13,7 @@ from catboost import CatBoostRegressor
 from deap import base, creator, tools, algorithms
 
 # 1. Cargar dataset
-df = pd.read_csv("../dataset/dataset_regresion.csv")
+df = pd.read_csv("modelo-predictivo\dataset\dataset_regresion.csv")
 
 # 2. Preprocesamiento
 target = 'What is your current CGPA?'
@@ -110,9 +110,9 @@ best_preds = results[best_model_name]['preds']
 print(f"✅ Mejor modelo: {best_model_name} con R² = {results[best_model_name]['r2']:.4f}")
 
 # 11. Guardar el mejor modelo, scaler y top features
-joblib.dump(best_model, '../../fastapi-backend/modelos/modelo_entrenado.pkl')
-joblib.dump(scaler, '../../fastapi-backend/modelos/scaler.pkl')
-joblib.dump(top_12_features, '../../fastapi-backend/modelos/top_12_features.pkl')   
+joblib.dump(best_model, 'fastapi-backend/modelos/modelo_entrenado.pkl')
+joblib.dump(scaler, 'fastapi-backend/modelos/scaler.pkl')
+joblib.dump(top_12_features, 'fastapi-backend/modelos/top_12_features.pkl')   
 
 # 12. Mostrar y graficar comparación
 comparison_df = pd.DataFrame({

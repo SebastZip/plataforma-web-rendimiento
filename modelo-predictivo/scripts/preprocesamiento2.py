@@ -13,8 +13,7 @@ def cargar_y_preparar_datos(ruta_excel='C:\\Users\\Sebas 2\\Desktop\\plataforma-
     df['What was your previous SGPA?'] *= 5
 
     # Eliminar columnas irrelevantes
-    columnas_a_eliminar = [
-        'University Admission year',  
+    columnas_a_eliminar = [ 
         'Program',  
         'What are the skills do you have ?',  
         'What is you interested area?'      
