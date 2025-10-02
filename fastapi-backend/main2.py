@@ -10,6 +10,11 @@ import pandas as pd
 import joblib
 import os
 
+ALLOWED_ORIGINS = os.getenv(
+    "ALLOWED_ORIGINS",
+    "https://plataforma-web-rendimiento.vercel.app,http://localhost:5173,http://localhost:3000"
+).split(",")
+
 # ---------- Supabase ----------
 from supabase import create_client, Client
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://ghpihkczhzoaydrceflm.supabase.co")
@@ -49,10 +54,15 @@ except Exception as e:
 
 # ---------- App ----------
 app = FastAPI(title="API Rendimiento Académico (Regresión + Continuidad)", version="1.0.0")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], allow_credentials=True,
-    allow_methods=["*"], allow_headers=["*"],
+    allow_origins=[o.strip() for o in ALLOWED_ORIGINS],
+    allow_credentials=True,                 # si usas cookies/headers de credencial
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["*"],
+    expose_headers=["Content-Type"],        # opcional: headers que expones al front
+    max_age=86400                           # cache del preflight (opcional)
 )
 
 # ---------- Mapeo Supabase → columnas de entrenamiento ----------
