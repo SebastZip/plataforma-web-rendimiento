@@ -4,7 +4,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import styles from './PrediccionModal.module.css';
 
-const PrediccionModal = ({ mostrar, onClose, cgpa, ciclo, formData }) => {
+const PrediccionModal = ({ mostrar, onClose, cgpa, ciclo, formData, continuidad }) => {
   const [porcentaje, setPorcentaje] = useState(0);
   const [mostrarResultado, setMostrarResultado] = useState(false);
   const [activarAnimacion, setActivarAnimacion] = useState(false);
@@ -26,9 +26,7 @@ const PrediccionModal = ({ mostrar, onClose, cgpa, ciclo, formData }) => {
             setMostrarResultado(true);
             setTimeout(() => {
               setActivarAnimacion(true);
-              setTimeout(() => {
-                setMostrarRecomendaciones(true);
-              }, 800);
+              setTimeout(() => setMostrarRecomendaciones(true), 800);
             }, 1000);
           }, 300);
           return 100;
@@ -45,30 +43,54 @@ const PrediccionModal = ({ mostrar, onClose, cgpa, ciclo, formData }) => {
     setMostrarResultado(false);
     setActivarAnimacion(false);
     setMostrarRecomendaciones(false);
-    onClose(); // ejecutar cierre real desde el padre
+    onClose();
   };
+
+  // ---- NUEVOS nombres de campos ----
+  const getNum = (v) => (v === undefined || v === null || v === '' ? NaN : Number(v));
 
   const generarRecomendaciones = () => {
     const recomendaciones = [];
-    const asistencia = parseFloat(formData.average_attendance);
-    const redes = parseFloat(formData.social_media_time);
-    const skill = parseFloat(formData.skill_time);
-    const study = parseFloat(formData.study_time);
+    const asistencia = getNum(formData?.asistencia_promedio_pct);
+    const redes = getNum(formData?.horas_redes_diarias);
+    const skill = getNum(formData?.horas_habilidades_diarias);
+    const study = getNum(formData?.horas_estudio_diarias);
 
-    if (asistencia < 70) recomendaciones.push("📚 Mejora tu asistencia a clases (menos del 70%)");
-    if (redes > 5) recomendaciones.push("🚫 Reduce el tiempo en redes sociales (más de 5 h)");
-    if (skill < 2) recomendaciones.push("🧠 Dedica más tiempo al desarrollo de habilidades (menos de 2 h)");
-    if (study < 2) recomendaciones.push("📘 Aumenta tus horas de estudio diario (menos de 2 h)");
+    if (Number.isFinite(asistencia) && asistencia < 70) recomendaciones.push("📚 Mejora tu asistencia (menos del 70%).");
+    if (Number.isFinite(redes) && redes > 5) recomendaciones.push("🚫 Reduce el tiempo en redes sociales (más de 5 h).");
+    if (Number.isFinite(skill) && skill < 2) recomendaciones.push("🧠 Suma tiempo a habilidades (menos de 2 h).");
+    if (Number.isFinite(study) && study < 2) recomendaciones.push("📘 Aumenta horas de estudio (menos de 2 h).");
 
-    return recomendaciones;
+    return recomendaciones.length ? recomendaciones : ["✅ ¡Sigue así! Mantén tus hábitos actuales."];
   };
 
   const compararPonderados = () => {
-    const prev = parseFloat(formData.previous_sgpa);
-    const pred = parseFloat(cgpa);
-    if (pred > prev) return "📈 Tu ponderado ha aumentado respecto al ciclo anterior.";
-    if (pred < prev) return "📉 Tu ponderado ha disminuido respecto al ciclo anterior.";
-    return "⚖️ Tu ponderado se mantiene estable.";
+    const prev = getNum(formData?.sgpa_previo);
+    const pred = getNum(cgpa);
+    if (!Number.isFinite(prev) || !Number.isFinite(pred)) return "";
+    if (pred > prev) return "📈 Tu ponderado proyectado supera al ciclo anterior.";
+    if (pred < prev) return "📉 Tu ponderado proyectado queda por debajo del ciclo anterior.";
+    return "⚖️ Tu ponderado proyectado se mantiene estable vs. el ciclo anterior.";
+  };
+
+  const renderContinuidad = () => {
+    if (!continuidad) return null;
+    const prob = continuidad?.prob ?? null;  // 0..1
+    const riesgo = continuidad?.riesgo === 1; // bool
+    return (
+      <div className={styles.continuidadCard}>
+        <h3>🧭 Continuidad académica (proyección)</h3>
+        {prob !== null && (
+          <p>
+            Prob. de <strong>no continuar</strong>: <b>{(prob * 100).toFixed(1)}%</b>
+            {" "}
+            {riesgo ? <span className={styles.badgeAlto}>Riesgo alto</span>
+                    : <span className={styles.badgeBajo}>Riesgo bajo</span>}
+          </p>
+        )}
+        <small>Interpretación: si el riesgo es alto, refuerza hábitos y busca consejería académica.</small>
+      </div>
+    );
   };
 
   return (
@@ -112,14 +134,16 @@ const PrediccionModal = ({ mostrar, onClose, cgpa, ciclo, formData }) => {
                     transition={{ duration: 0.8, ease: 'easeInOut' }}
                   >
                     <h2 className={styles.tituloFinal}>
-                      🎯 El ponderado predicho para el ciclo {ciclo} es:
+                      🎯 Ponderado predicho para el ciclo {ciclo}:
                     </h2>
                     <p className={styles.valorCgpa}>
-                      {cgpa !== null ? cgpa.toFixed(2) : '--'}
+                      {cgpa !== null ? Number(cgpa).toFixed(2) : '--'}
                     </p>
                     <p className={styles.comparacion}>{compararPonderados()}</p>
                   </motion.div>
                 </motion.div>
+
+                {renderContinuidad()}
 
                 <div
                   className={styles.recomendaciones}

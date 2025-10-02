@@ -3,7 +3,7 @@ import styles from "./PrediccionForm.module.css";
 import { supabase } from "../supabaseClient";
 import PrediccionModal from "./PrediccionModal";
 
-const API_BASE = import.meta.env.VITE_API_BASE || "https://TU-FASTAPI.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE || "https://plataforma-web-rendimiento-i2x4.onrender.com";
 
 /** ---- Campos (coinciden con tu tabla nueva) ---- **/
 const camposNumero = [
