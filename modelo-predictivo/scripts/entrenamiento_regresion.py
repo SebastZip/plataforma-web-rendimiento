@@ -11,16 +11,17 @@ from catboost import CatBoostRegressor
 from deap import base, creator, tools, algorithms
 from sklearn.model_selection import KFold
 from sklearn.linear_model import LinearRegression
+from sklearn.impute import SimpleImputer   # <-- NUEVO
 import matplotlib.pyplot as plt
 
-from preprocesamiento3  import cargar_y_preparar_datos
+from preprocesamiento3 import preparar_regresion
 
-# 1) Obtener splits limpios desde el preprocesamiento
-X_train, X_test, y_train, y_test, feature_names = cargar_y_preparar_datos(
+# 1) Datos
+X_train, X_test, y_train, y_test, feature_names = preparar_regresion(
     ruta_excel="C:\\Users\\Sebas 2\\Desktop\\plataforma-web-rendimiento\\modelo-predictivo\\dataset\\datos_estudiantes_FISI_peru_sinteticos_1800.xlsx"
 )
 
-# 2) GA para selección de features en TRAIN (sin tocar TEST)
+# 2) GA selección de features (igual que antes) ...
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMin)
 toolbox = base.Toolbox()
@@ -28,7 +29,6 @@ toolbox.register("attr_bool", np.random.randint, 0, 2)
 toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.attr_bool, n=X_train.shape[1])
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
-# Escalado para la eval interna del GA
 scaler_all = StandardScaler().fit(X_train.values)
 Xtr_scaled_all = scaler_all.transform(X_train.values)
 
@@ -58,19 +58,25 @@ sel_idx = [i for i, bit in enumerate(best) if bit == 1]
 sel_names = [feature_names[i] for i in sel_idx]
 print("\n🧬 Features GA:", sel_names)
 
-# 3) CatBoost para ranking e ir a TOP-12
+# 3) Ranking CatBoost → TOP-12
 cat = CatBoostRegressor(verbose=0, random_state=42)
 cat.fit(X_train[sel_names], y_train)
 imp = cat.feature_importances_
 top_12 = [n for n, _ in sorted(zip(sel_names, imp), key=lambda x: x[1], reverse=True)[:12]]
 print("🏆 TOP-12:", top_12)
 
-# 4) Escalador FINAL para los TOP-12 (fit en TRAIN, transform en TEST)
-scaler = StandardScaler().fit(X_train[top_12])
-Xtr = scaler.transform(X_train[top_12])
-Xte = scaler.transform(X_test[top_12])
+# === NUEVO: imputador ajustado en TRAIN con las TOP-12 ===
+imputer = SimpleImputer(strategy="median").fit(X_train[top_12])
 
-# 5) Modelos y evaluación en TEST
+# 4) Escalador FINAL (fit en TRAIN, transform en TEST) — aplica IMPUTADOR antes de escalar
+Xtr_imputed = imputer.transform(X_train[top_12])   # <-- NUEVO
+Xte_imputed = imputer.transform(X_test[top_12])    # <-- NUEVO
+
+scaler = StandardScaler().fit(Xtr_imputed)
+Xtr = scaler.transform(Xtr_imputed)
+Xte = scaler.transform(Xte_imputed)
+
+# 5) Modelos
 models = {
     "RandomForest": RandomForestRegressor(random_state=42),
     "GradientBoost": GradientBoostingRegressor(random_state=42),
@@ -92,15 +98,15 @@ for name, mdl in models.items():
 
 print(f"\n✅ Mejor modelo TEST: {best_name} | R²={best_r2:.3f}")
 
-# 6) Guardar artefactos (para FastAPI)
+# 6) Guardar artefactos (incluye IMPUTADOR)
 joblib.dump(best_model, "fastapi-backend/modelos/modelo_entrenado2.pkl")
-joblib.dump(scaler, "fastapi-backend/modelos/scaler2.pkl")
-joblib.dump(top_12, "fastapi-backend/modelos/top_12_features2.pkl")
+joblib.dump(scaler,      "fastapi-backend/modelos/scaler2.pkl")
+joblib.dump(imputer,     "fastapi-backend/modelos/reg_imputer.pkl")         # <-- NUEVO
+joblib.dump(top_12,      "fastapi-backend/modelos/top_12_features2.pkl")
 
-# 7) Gráfico real vs predicho (TEST)
+# 7) Plot
 cmp = pd.DataFrame({"Real": y_test.values, "Predicho": best_preds}).reset_index(drop=True)
 print("\nMuestras TEST:\n", cmp.head(20))
-import matplotlib.pyplot as plt
 plt.figure(figsize=(10,6))
 plt.plot(cmp["Real"][:100].values, label="Real")
 plt.plot(cmp["Predicho"][:100].values, label="Predicho")
