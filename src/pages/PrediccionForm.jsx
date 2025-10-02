@@ -22,6 +22,7 @@ const camposNumero = [
 
 const camposSiNo = [
   ["estado_observado", "⚠️ ¿Alumno observado? (desaprobaste un curso más de dos veces)", ["Sí", "No"]],
+   ["desaprobo_alguna_asignatura", "❌ ¿Desaprobaste alguna asignatura el ciclo anterior?", ["Sí", "No"]], // ← NUEVO
   ["beca_subvencion_economica", "🏅 ¿Cuentas con beca o subvención económica?", ["Sí", "No"]],
   ["planea_matricularse_prox_ciclo", "🧭 ¿Planeas matricularte el próximo ciclo académico?", ["Sí", "No"]],
   // Si luego modelas HE01:
