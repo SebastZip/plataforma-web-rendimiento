@@ -15,7 +15,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 base_path = os.path.join(os.path.dirname(__file__), "modelos")
 modelo = joblib.load(os.path.join(base_path, "modelo_entrenado.pkl"))
 scaler = joblib.load(os.path.join(base_path, "scaler.pkl"))
-columnas_seleccionadas = joblib.load(os.path.join(base_path, "top_12_features.pkl"))
+columnas_seleccionadas = joblib.load(os.path.join(base_path, "top_12_features2.pkl"))
 
 print("Columnas utilizadas por el modelo:")
 print(columnas_seleccionadas)

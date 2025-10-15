@@ -1,0 +1,205 @@
+# scripts/preprocesamiento_final_min.py
+import pandas as pd
+import numpy as np
+from pathlib import Path
+import hashlib
+import re
+
+# =========================
+# Config
+# =========================
+BASE_DIR = Path(__file__).resolve().parent.parent
+IN_PATH  = BASE_DIR / "dataset" / "SUM_FISI_10_21_merged.csv"
+OUT_PATH = BASE_DIR / "dataset" / "SUM_FISI_10_21_clean.csv"
+
+# Sal para hashing (puedes moverla a .env en prod)
+SALT = "FISI-PRIV-2025"
+
+# PII a hashear (derivar antes y luego borrar/hashear)
+SENSITIVE_COLS = [
+    "nombres",
+    "apellido_paterno",
+    "apellido_materno",
+    "dni",
+    "fecha_nacimiento",          # derivamos birth_year/edad y luego hasheamos/quitamos
+    "lugar_nacimiento",
+    "telefono",
+    "telefono_personal",
+    "correo_electronico",
+    "correo_electronico_personal",
+    "domicilio",
+    "codigo_alumno",             # usamos para anio_ingreso y luego hasheamos
+]
+
+# Campos críticos sin los que NO seguimos
+CRITICAL_COLS = [
+    "año_ciclo_estudio",
+    "promedio_ponderado",
+    "promedio_ultima_matricula",  # tratamos 0 como faltante
+]
+
+# Rango razonable de birth_year (ajusta si hace falta)
+BIRTH_YEAR_MIN, BIRTH_YEAR_MAX = 1975, 2010
+
+# =========================
+# Helpers
+# =========================
+def read_csv_robust(path: Path) -> pd.DataFrame:
+    """Lee CSV probando encodings comunes y detectando separador."""
+    encodings = ["utf-8", "utf-8-sig", "cp1252", "latin1"]
+    last_err = None
+    for enc in encodings:
+        try:
+            return pd.read_csv(path, engine="python", sep=None, encoding=enc)
+        except Exception as e:
+            last_err = e
+            continue
+    # último recurso: ignorar errores de codificación
+    return pd.read_csv(path, engine="python", sep=None, encoding="latin1", encoding_errors="ignore")
+
+def norm_cols(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    df.columns = (
+        df.columns
+        .str.strip()
+        .str.lower()
+        .str.replace(" ", "_")
+        .str.replace(r"[^\w]+", "_", regex=True)
+        .str.replace("__+", "_", regex=True)
+        .str.strip("_")
+    )
+    return df
+
+def sha256_series(s: pd.Series, salt: str = "") -> pd.Series:
+    def h(x):
+        if pd.isna(x): return np.nan
+        return hashlib.sha256(f"{salt}|{x}".encode("utf-8")).hexdigest()
+    return s.astype(str).map(h)
+
+def extract_year_from_codigo(cod: str):
+    """Dos primeros dígitos → año; 15→2015, 11→2011, 99→1999."""
+    if not isinstance(cod, str):
+        return np.nan
+    cod = cod.strip()
+    m = re.search(r"(\d{2})", cod)
+    if not m:
+        return np.nan
+    yy = int(m.group(1))
+    if 0 <= yy <= 29:
+        return 2000 + yy
+    return 1900 + yy
+
+FMT_LIST = ["%d/%m/%Y", "%Y-%m-%d", "%m/%d/%Y", "%d-%m-%Y", "%Y/%m/%d"]
+
+def clean_date_str(s: str) -> str:
+    if pd.isna(s):
+        return np.nan
+    s = str(s).strip()
+    s = re.sub(r"[.\-]", "/", s)  # normaliza separadores a "/"
+    s = re.sub(r"\s+", " ", s)
+    return s
+
+def parse_birth_year_strict(s: str):
+    if pd.isna(s):
+        return np.nan
+    s = clean_date_str(s)
+
+    # Si empieza con YYYY/.. parsea sin dayfirst
+    if re.match(r"^\s*\d{4}/\d{1,2}/\d{1,2}", s or ""):
+        try:
+            return pd.to_datetime(s, format="%Y/%m/%d", errors="raise").year
+        except Exception:
+            pass
+
+    # Intentos explícitos
+    for fmt in FMT_LIST:
+        try:
+            return pd.to_datetime(s, format=fmt, errors="raise").year
+        except Exception:
+            continue
+
+    # Fallback: dd/mm/yyyy
+    return pd.to_datetime(s, errors="coerce", dayfirst=True).year
+
+def sanitize_birth_year(y):
+    if pd.isna(y):
+        return np.nan
+    y = int(y)
+    if BIRTH_YEAR_MIN <= y <= BIRTH_YEAR_MAX:
+        return y
+    return np.nan
+
+# =========================
+# Main
+# =========================
+def main():
+    # 1) Cargar y normalizar
+    df = read_csv_robust(IN_PATH)
+    df = norm_cols(df)
+    original_rows = len(df)
+
+    # 2) Derivar anio_ingreso desde codigo_alumno
+    if "codigo_alumno" in df.columns:
+        df["anio_ingreso"] = df["codigo_alumno"].astype(str).map(extract_year_from_codigo)
+    else:
+        df["anio_ingreso"] = np.nan
+
+    # 3) Eliminar año_ingreso original si existiera
+    for bad in ["año_ingreso", "anio_ingreso_original"]:
+        if bad in df.columns and bad != "anio_ingreso":
+            df.drop(columns=[bad], inplace=True)
+
+    # 4) Derivar birth_year y edad_en_ingreso
+    if "fecha_nacimiento" in df.columns:
+        fecha_clean = df["fecha_nacimiento"].map(clean_date_str)
+        birth_year = fecha_clean.map(parse_birth_year_strict).map(sanitize_birth_year)
+    else:
+        birth_year = pd.Series(np.nan, index=df.index)
+    df["edad_en_ingreso"] = df["anio_ingreso"] - birth_year
+
+    # 5) Cast numéricos
+    for col in ["promedio_ponderado", "promedio_ultima_matricula"]:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    # 6) promedio_ultima_matricula == 0 → faltante
+    if "promedio_ultima_matricula" in df.columns:
+        df.loc[df["promedio_ultima_matricula"] == 0, "promedio_ultima_matricula"] = np.nan
+
+    # Limpieza de strings vacíos en críticos
+    for c in ["año_ciclo_estudio"]:
+        if c in df.columns and df[c].dtype == object:
+            df[c] = df[c].replace(r"^\s*$", np.nan, regex=True)
+
+    # 7) Drop por críticos
+    present_crit = [c for c in CRITICAL_COLS if c in df.columns]
+    before_dropna = len(df)
+    df = df.dropna(subset=present_crit, how="any").copy()
+    after_dropna = len(df)
+
+    # 8) Hash PII y borrar originales
+    present_sensitive = [c for c in SENSITIVE_COLS if c in df.columns]
+    for c in present_sensitive:
+        df[c + "_hash"] = sha256_series(df[c].astype(str), salt=SALT)
+        df.drop(columns=[c], inplace=True)
+
+    # 9) Guardar
+    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(OUT_PATH, index=False, encoding="utf-8")
+
+    # 10) Reporte
+    print("====================================")
+    print(" Preprocesamiento final — RESUMEN ")
+    print("====================================")
+    print(f"Entrada:         {IN_PATH}")
+    print(f"Salida:          {OUT_PATH}")
+    print(f"Filas originales:{original_rows}")
+    print(f"Antes dropna:    {before_dropna}")
+    print(f"Después dropna:  {after_dropna}")
+    print(f"Columnas finales:{df.shape[1]}")
+    print(f"Hasheados:       {', '.join(present_sensitive) if present_sensitive else '—'}")
+    na_age = df["edad_en_ingreso"].isna().sum() if "edad_en_ingreso" in df.columns else -1
+    print(f"edad_en_ingreso NaN: {na_age}")
+
+if __name__ == "__main__":
+    main()

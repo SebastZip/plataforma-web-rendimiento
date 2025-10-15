@@ -1,0 +1,8 @@
+feature,importance_model,rank_model
+desaprobo_alguna_asignatura,0.6634501833203031,1
+sgpa_previo,0.27158683266238237,2
+cgpa_actual,0.025380751706000078,3
+ingreso_familiar_mensual_soles,0.01828286410544073,4
+horas_estudio_diarias,0.008314518881159793,5
+asistencia_promedio_pct,0.007726215931443962,6
+horas_redes_diarias,0.005258633393269907,7

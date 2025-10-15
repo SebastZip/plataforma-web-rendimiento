@@ -1,0 +1,8 @@
+feature,catboost_importance,rank_catboost_ga
+desaprobo_alguna_asignatura,39.84001312420696,1
+sgpa_previo,25.918726445823754,2
+cgpa_actual,11.375567546699042,3
+ingreso_familiar_mensual_soles,8.928669519163495,4
+asistencia_promedio_pct,5.556718339398376,5
+horas_estudio_diarias,4.286511840043481,6
+horas_redes_diarias,4.093793184664894,7
