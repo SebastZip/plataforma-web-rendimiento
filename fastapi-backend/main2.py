@@ -24,8 +24,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 # Artefactos de modelos (pipelines completos)
 # =========================================================
 BASE = Path(__file__).parent
-MODELS_DIR = BASE / "models"
-
+MODELS_DIR = BASE.parent / "modelo-predictivo" / "models"
 REG_PIPE_PATH = MODELS_DIR / "best_regressor.joblib"
 CLS_PIPE_PATH = MODELS_DIR / "best_classifier.joblib"
 
