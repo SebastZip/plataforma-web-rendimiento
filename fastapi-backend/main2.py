@@ -8,6 +8,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import joblib
+import json
 import os
 
 from supabase import create_client, Client
@@ -16,27 +17,51 @@ from supabase import create_client, Client
 # Supabase (usa variables de entorno en prod)
 # =========================================================
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://ghpihkczhzoaydrceflm.supabase.co")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdocGloa2N6aHpvYXlkcmNlZmxtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwNTMzNjIsImV4cCI6MjA2MDYyOTM2Mn0.RUo6qktKAQcmgBYWLa0Lq_pE1UdLB2KS1nWLxr-HaIM")
+SUPABASE_KEY = os.getenv(
+    "SUPABASE_KEY",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdocGloa2N6aHpvYXlkcmNlZmxtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwNTMzNjIsImV4cCI6MjA2MDYyOTM2Mn0.RUo6qktKAQcmgBYWLa0Lq_pE1UdLB2KS1nWLxr-HaIM",
+)
 SUPABASE_TABLE = "predicciones_estudiantes"
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # =========================================================
-# Artefactos de modelos (pipelines completos)
+# Artefactos de modelos (pipelines completos) + metadatos
 # =========================================================
 BASE = Path(__file__).parent
-MODELS_DIR = BASE.parent / "modelo-predictivo" / "models"
+MODELS_DIR = (BASE.parent / "modelo-predictivo" / "models").resolve()
+
 REG_PIPE_PATH = MODELS_DIR / "best_regressor.joblib"
 CLS_PIPE_PATH = MODELS_DIR / "best_classifier.joblib"
+REG_META_PATH = MODELS_DIR / "used_features_reg.json"
+CLS_META_PATH = MODELS_DIR / "used_features_clf.json"
+
+if not REG_PIPE_PATH.exists() or not REG_META_PATH.exists():
+    raise RuntimeError(f"[Regresión] Faltan artefactos: {REG_PIPE_PATH} o {REG_META_PATH}")
+if not CLS_PIPE_PATH.exists() or not CLS_META_PATH.exists():
+    raise RuntimeError(f"[Clasificación] Faltan artefactos: {CLS_PIPE_PATH} o {CLS_META_PATH}")
 
 try:
-    reg_pipe = joblib.load(REG_PIPE_PATH)  # Pipeline sklearn completo
+    reg_pipe = joblib.load(REG_PIPE_PATH)
 except Exception as e:
     raise RuntimeError(f"[Regresión] No pude cargar {REG_PIPE_PATH.name}: {e}")
 
 try:
-    cls_pipe = joblib.load(CLS_PIPE_PATH)  # Pipeline sklearn completo
+    cls_pipe = joblib.load(CLS_PIPE_PATH)
 except Exception as e:
     raise RuntimeError(f"[Clasificación] No pude cargar {CLS_PIPE_PATH.name}: {e}")
+
+meta_reg = json.loads(REG_META_PATH.read_text(encoding="utf-8"))
+meta_clf = json.loads(CLS_META_PATH.read_text(encoding="utf-8"))
+
+REG_COLS = list(meta_reg.get("selected_columns", []))
+CLF_COLS = list(meta_clf.get("selected_columns", []))
+REG_NUM  = set(meta_reg.get("selected_num", []))
+REG_CAT  = set(meta_reg.get("selected_cat", []))
+CLF_NUM  = set(meta_clf.get("selected_num", []))
+CLF_CAT  = set(meta_clf.get("selected_cat", []))
+
+if not REG_COLS or not CLF_COLS:
+    raise RuntimeError("Metadatos sin 'selected_columns'. Reentrena con el script actualizado.")
 
 # Si tu clasificador no trae umbral, define uno por defecto (ej. 0.5)
 DEFAULT_CLS_THRESHOLD = float(os.getenv("CLS_THRESHOLD", "0.5"))
@@ -44,22 +69,17 @@ DEFAULT_CLS_THRESHOLD = float(os.getenv("CLS_THRESHOLD", "0.5"))
 # =========================================================
 # FastAPI
 # =========================================================
-
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-
-app = FastAPI(title="API Rendimiento Académico", version="2.0")
+app = FastAPI(title="API Rendimiento Académico", version="3.2")
 
 ALLOWED_ORIGINS = [
-    "https://plataforma-web-rendimiento.vercel.app",  # tu frontend
-    "http://localhost:5173",                           # dev vite (si lo usas)
+    "https://plataforma-web-rendimiento.vercel.app",  # frontend
+    "http://localhost:5173",                           # dev vite
 ]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,                    # lista fija
-    allow_origin_regex=r"https://.*\.vercel\.app",    # previews de Vercel
-    allow_credentials=True,                           # ahora sí
+    allow_origins=ALLOWED_ORIGINS,
+    allow_origin_regex=r"https://.*\.vercel\.app",
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
     max_age=86400,
@@ -67,38 +87,38 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"ok": True, "msg": "API viva", "endpoints": ["/health", "/predict/..."]}
+    return {"ok": True, "msg": "API viva", "endpoints": ["/health", "/meta/features", "/predict/..."]}
 
 # =========================================================
-# Mapeo Supabase → features del modelo (nombres del form)
+# Helpers de preprocesamiento (inferencias)
 # =========================================================
-# Requeridos + opcionales que acordamos (se pueden mandar NA, el pipeline imputa)
-SUPABASE_TO_MODEL: Dict[str, str] = {
-    # Requeridos (modelo regresión)
-    "promedio_ultima_matricula": "promedio_ultima_matricula",
-    "semestre_actual": "semestre_actual",
-    "num_periodo_acad_matric": "num_periodo_acad_matric",
-    "ultimo_periodo_matriculado": "ultimo_periodo_matriculado",
-    "anio_ingreso": "anio_ingreso",
-    # Otros que quizá use tu pipeline (si los tenía al entrenar)
-    "edad": "edad",
-
-    # Opcionales (investigación / futuro retrain)
-    "asistencia_promedio_pct": "asistencia_promedio_pct",
-    "horas_estudio_diarias": "horas_estudio_diarias",
-    "horas_redes_diarias": "horas_redes_diarias",
-    "horas_habilidades_diarias": "horas_habilidades_diarias",
-    "ingreso_familiar_mensual_soles": "ingreso_familiar_mensual_soles",
-
-    # Binarios
-    "estado_observado": "estado_observado",
-    "desaprobo_alguna_asignatura": "desaprobo_alguna_asignatura",
-    "beca_subvencion_economica": "beca_subvencion_economica",
-    "planea_matricularse_prox_ciclo": "planea_matricularse_prox_ciclo",
-}
+CAT_PLACEHOLDER = "DESCONOCIDO"
 
 BIN_MAP = {"Sí": 1, "Si": 1, "SÍ": 1, "sí": 1, "si": 1, True: 1,
            "No": 0, "NO": 0, "no": 0, False: 0}
+
+PROGRAMAS_VALIDOS = {
+    "e.p. de ingenieria de sistemas": "E.P. de Ingenieria de Sistemas",
+    "e.p. de ingeniería de sistemas": "E.P. de Ingenieria de Sistemas",
+    "e.p. de ingenieria de software": "E.P. de Ingenieria de Software",
+    "e.p. de ingeniería de software": "E.P. de Ingenieria de Software",
+}
+
+def canonicalize_programa(v: Any) -> str:
+    if v is None:
+        return CAT_PLACEHOLDER
+    s = str(v).strip().lower()
+    return PROGRAMAS_VALIDOS.get(s, CAT_PLACEHOLDER)
+
+def canonicalize_sexo(v: Any) -> str:
+    if v is None:
+        return CAT_PLACEHOLDER
+    s = str(v).strip().lower()
+    if s in {"m", "masculino"}:
+        return "M"
+    if s in {"f", "femenino"}:
+        return "F"
+    return CAT_PLACEHOLDER
 
 def normalize_bools(df: pd.DataFrame) -> pd.DataFrame:
     for c in df.columns:
@@ -106,34 +126,89 @@ def normalize_bools(df: pd.DataFrame) -> pd.DataFrame:
             df[c] = df[c].map(BIN_MAP).where(df[c].isin(BIN_MAP), df[c])
     return df
 
-def to_numeric(df: pd.DataFrame) -> pd.DataFrame:
-    for c in df.columns:
-        df[c] = pd.to_numeric(df[c], errors="coerce")
+def to_numeric_cols(df: pd.DataFrame, numeric_cols: set[str]) -> pd.DataFrame:
+    for c in numeric_cols:
+        if c in df.columns:
+            df[c] = pd.to_numeric(df[c], errors="coerce")
     return df
 
-def frame_from_payload(payload: Dict[str, Any], feature_names: list[str] | None = None) -> pd.DataFrame:
-    """Construye un DF con columnas del mapeo. Si feature_names se pasa, reordena a ese orden."""
-    # map supabase keys -> model keys
-    mapped = {model_key: payload.get(supa_key, None) for supa_key, model_key in SUPABASE_TO_MODEL.items()}
-    df = pd.DataFrame([mapped], dtype=object)
-    df = normalize_bools(df)
-    df = to_numeric(df)
-    # Asegurar columnas esperadas si nos dan la lista
-    if feature_names:
-        for col in feature_names:
-            if col not in df.columns:
+def to_categorical_cols(df: pd.DataFrame, categorical_cols: set[str]) -> pd.DataFrame:
+    for c in categorical_cols:
+        if c in df.columns:
+            df[c] = (
+                df[c].astype(str)
+                    .str.strip()
+                    .replace({"": CAT_PLACEHOLDER, "None": CAT_PLACEHOLDER, "nan": CAT_PLACEHOLDER})
+            )
+    return df
+
+def _ensure_required_columns(df: pd.DataFrame, required_cols: list[str],
+                             numeric_cols: set[str], categorical_cols: set[str]) -> pd.DataFrame:
+    df = df.copy()
+    for col in required_cols:
+        if col not in df.columns:
+            if col in numeric_cols:
                 df[col] = np.nan
-        df = df[feature_names]
+            elif col in categorical_cols:
+                df[col] = CAT_PLACEHOLDER
+            else:
+                df[col] = np.nan
+    return df[required_cols]
+
+def enrich_and_align(payload: Dict[str, Any],
+                     required_cols: list[str],
+                     numeric_cols: set[str],
+                     categorical_cols: set[str]) -> pd.DataFrame:
+    """
+    - Deriva anio_ciclo_est desde semestre_actual si hace falta
+    - Normaliza programa (2 opciones) y sexo (M/F)
+    - Crea edad_en_ingreso si falta (NaN -> se imputará)
+    - Tipifica y ordena exactamente como el modelo espera
+    """
+    data = dict(payload) if payload else {}
+
+    # Derivado: anio_ciclo_est <- semestre_actual
+    if "anio_ciclo_est" not in data and "semestre_actual" in data and data["semestre_actual"] is not None:
+        data["anio_ciclo_est"] = data["semestre_actual"]
+
+    # Categóricas clave: programa y sexo (normalizadas)
+    data["programa"] = canonicalize_programa(data.get("programa"))
+    data["sexo"]     = canonicalize_sexo(data.get("sexo"))
+
+    # Num opcional: edad_en_ingreso (si falta, se imputará)
+    if "edad_en_ingreso" not in data:
+        data["edad_en_ingreso"] = None
+
+    df = pd.DataFrame([data], dtype=object)
+    df = normalize_bools(df)
+    df = to_numeric_cols(df, numeric_cols)
+    df = to_categorical_cols(df, categorical_cols)
+    df = _ensure_required_columns(df, required_cols, numeric_cols, categorical_cols)
     return df
 
-def payload_from_row(row: Dict[str, Any]) -> Dict[str, Any]:
-    """Extrae del row de Supabase solo las columnas que mapeamos a features."""
-    out = {}
-    for supa_key, model_key in SUPABASE_TO_MODEL.items():
-        if supa_key in row:
-            out[supa_key] = row[supa_key]
-    return out
+def validate_required_if_present(model_cols: list[str], df: pd.DataFrame):
+    """
+    Valida campos que definiste como obligatorios si están en selected_columns del modelo.
+    """
+    # edad_en_ingreso obligatorio si el modelo la requiere
+    if "edad_en_ingreso" in model_cols and pd.isna(df.loc[0, "edad_en_ingreso"]):
+        raise HTTPException(status_code=400, detail="Falta el campo obligatorio: edad_en_ingreso")
 
+    # programa obligatorio/restringido (si el modelo lo usa)
+    if "programa" in model_cols:
+        val = df.loc[0, "programa"]
+        if val not in PROGRAMAS_VALIDOS.values() and val != CAT_PLACEHOLDER:
+            raise HTTPException(status_code=400, detail="Programa inválido. Use 'E.P. de Ingenieria de Sistemas' o 'E.P. de Ingenieria de Software'.")
+
+    # sexo obligatorio M/F (si el modelo lo usa)
+    if "sexo" in model_cols:
+        val = df.loc[0, "sexo"]
+        if val not in {"M", "F", CAT_PLACEHOLDER}:
+            raise HTTPException(status_code=400, detail="Sexo inválido. Solo se admite 'M' o 'F'.")
+
+# =========================================================
+# Supabase helpers
+# =========================================================
 def upsert_regresion(codigo: str, sem_act: int, yhat: float):
     supabase.table(SUPABASE_TABLE).update({
         "promedio_predicho": round(float(yhat), 2)
@@ -145,105 +220,129 @@ def upsert_continuidad(codigo: str, sem_act: int, prob: float, riesgo: int):
         "riesgo_no_continuar": int(riesgo)
     }).eq("codigo_estudiante", codigo).eq("semestre_actual", sem_act).execute()
 
+def get_last_row_by_codigo(codigo: str) -> Dict[str, Any]:
+    res = supabase.table(SUPABASE_TABLE).select("*") \
+        .eq("codigo_estudiante", codigo) \
+        .order("fecha_prediccion", desc=True).limit(1).execute()
+    if not res.data:
+        raise HTTPException(status_code=404, detail="Estudiante no encontrado")
+    return res.data[0]
+
 # =========================================================
-# Schemas (solo los campos que realmente usaremos)
+# Schemas (solo lo necesario; el backend completa lo demás)
 # =========================================================
 class Input(BaseModel):
+    # Obligatorios del formulario (nombres exactos)
     promedio_ultima_matricula: Optional[float] = Field(None)
-    semestre_actual: Optional[int] = Field(None)
+    anio_ciclo_est: Optional[int] = Field(None)              # UI: "Semestre actual"
+    programa: Optional[str] = Field(None)                    # Solo 2 opciones
     num_periodo_acad_matric: Optional[int] = Field(None)
-    ultimo_periodo_matriculado: Optional[int] = Field(None)  # AAAAT
+    edad_en_ingreso: Optional[float] = Field(None)           # Obligatorio (modelo la usa)
     anio_ingreso: Optional[int] = Field(None)
-    edad: Optional[int] = Field(None)
+    sexo: Optional[str] = Field(None)                        # "M" o "F"
 
+    # Compat DB: seguimos aceptando/guardando semestre_actual
+    semestre_actual: Optional[int] = Field(None)
+    # Otros campos opcionales que puedes guardar (no usados por el modelo actual)
     asistencia_promedio_pct: Optional[float] = Field(None)
     horas_estudio_diarias: Optional[float] = Field(None)
-    horas_redes_diarias: Optional[float] = Field(None)
     horas_habilidades_diarias: Optional[float] = Field(None)
     ingreso_familiar_mensual_soles: Optional[float] = Field(None)
-
-    estado_observado: Optional[bool | str] = Field(None)
-    desaprobo_alguna_asignatura: Optional[bool | str] = Field(None)
-    beca_subvencion_economica: Optional[bool | str] = Field(None)
-    planea_matricularse_prox_ciclo: Optional[bool | str] = Field(None)
+    ultimo_periodo_matriculado: Optional[int] = Field(None)  # AAAAT (opcional para tu BD)
 
 # =========================================================
-# Health
+# Health + Meta
 # =========================================================
-def get_pipe_feature_names(pipe) -> list[str] | None:
-    try:
-        # Si el preprocessor es ColumnTransformer / OneHot con get_feature_names_out
-        pre = pipe.named_steps.get("pre") or pipe.named_steps.get("columntransformer")
-        if pre is not None and hasattr(pre, "get_feature_names_out"):
-            # En muchos casos devuelve nombres transformados; igual nos sirve de referencia
-            return list(pre.get_feature_names_out())
-    except Exception:
-        pass
-    return None
-
 @app.get("/health")
 def health():
     return {
         "status": "ok",
         "regressor_loaded": REG_PIPE_PATH.name,
         "classifier_loaded": CLS_PIPE_PATH.name,
-        "reg_pre_features": get_pipe_feature_names(reg_pipe),
-        "cls_pre_features": get_pipe_feature_names(cls_pipe),
-        "classification_threshold": DEFAULT_CLS_THRESHOLD
+        "reg_columns": REG_COLS,
+        "clf_columns": CLF_COLS,
+        "classification_threshold": DEFAULT_CLS_THRESHOLD,
+    }
+
+@app.get("/meta/features")
+def get_features_meta():
+    return {
+        "regression": meta_reg,
+        "classification": meta_clf,
     }
 
 # =========================================================
-# Predicción JSON (payload)
+# Predicción JSON (payload directo del form)
 # =========================================================
 @app.post("/predict/regresion")
 def predict_regresion(inp: Input):
     try:
-        df = frame_from_payload(inp.model_dump())
-        y  = float(reg_pipe.predict(df)[0])
-        y  = float(np.clip(y, 0.0, 20.0))
-        return {"promedio_predicho": round(y, 2)}
+        payload = inp.model_dump()
+        # Compat: si recibimos anio_ciclo_est del form, duplicamos en semestre_actual para tu BD
+        if payload.get("anio_ciclo_est") is not None and payload.get("semestre_actual") is None:
+            payload["semestre_actual"] = payload["anio_ciclo_est"]
+
+        df = enrich_and_align(payload, REG_COLS, REG_NUM, REG_CAT)
+        validate_required_if_present(REG_COLS, df)
+
+        y = float(reg_pipe.predict(df)[0])
+        y = float(np.clip(y, 0.0, 20.0))
+
+        faltantes = [c for c in REG_COLS if c not in payload.keys()]
+        sobrantes = [c for c in payload.keys() if c not in REG_COLS]
+        return {
+            "promedio_predicho": round(y, 2),
+            "info_columnas": {"faltantes_rellenadas": faltantes, "ignoradas_por_modelo": sobrantes},
+        }
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Error regresión: {e}")
 
 @app.post("/predict/continuidad")
 def predict_continuidad(inp: Input, thr: Optional[float] = Query(None)):
     try:
-        df = frame_from_payload(inp.model_dump())
-        # Probabilidad de clase positiva (riesgo)
+        payload = inp.model_dump()
+        if payload.get("anio_ciclo_est") is not None and payload.get("semestre_actual") is None:
+            payload["semestre_actual"] = payload["anio_ciclo_est"]
+
+        df = enrich_and_align(payload, CLF_COLS, CLF_NUM, CLF_CAT)
+        validate_required_if_present(CLF_COLS, df)
+
         if hasattr(cls_pipe, "predict_proba"):
             p = float(cls_pipe.predict_proba(df)[0, 1])
+        elif hasattr(cls_pipe, "decision_function"):
+            score = float(cls_pipe.decision_function(df)[0])
+            p = 1.0 / (1.0 + np.exp(-score))
         else:
-            # Fallback para modelos sin predict_proba (ej. SVM sin probas)
-            if hasattr(cls_pipe, "decision_function"):
-                from sklearn.metrics import roc_auc_score
-                score = float(cls_pipe.decision_function(df)[0])
-                # Normalización simple a [0,1] (no calibrada)
-                p = 1.0 / (1.0 + np.exp(-score))
-            else:
-                pred = int(cls_pipe.predict(df)[0])
-                p = 0.75 if pred == 1 else 0.25
-        threshold = float(thr) if thr is not None else DEFAULT_CLS_THRESHOLD
-        riesgo = int(p >= threshold)
-        return {"prob_riesgo": round(p, 5), "umbral": round(threshold, 3), "riesgo": riesgo}
+            pred = int(cls_pipe.predict(df)[0])
+            p = 0.75 if pred == 1 else 0.25
+
+        thr_final = float(thr) if thr is not None else DEFAULT_CLS_THRESHOLD
+        riesgo = int(p >= thr_final)
+
+        faltantes = [c for c in CLF_COLS if c not in payload.keys()]
+        sobrantes = [c for c in payload.keys() if c not in CLF_COLS]
+        return {
+            "prob_riesgo": round(p, 5),
+            "umbral": round(thr_final, 3),
+            "riesgo": riesgo,
+            "info_columnas": {"faltantes_rellenadas": faltantes, "ignoradas_por_modelo": sobrantes},
+        }
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Error clasificación: {e}")
 
 # =========================================================
-# Predicción POR CÓDIGO (lee supabase, predice, y opcionalmente guarda)
+# Predicción POR CÓDIGO (lee supabase, deriva campos, predice y opcionalmente guarda)
 # =========================================================
-def get_last_row_by_codigo(codigo: str) -> Dict[str, Any]:
-    res = supabase.table(SUPABASE_TABLE).select("*") \
-          .eq("codigo_estudiante", codigo) \
-          .order("fecha_prediccion", desc=True).limit(1).execute()
-    if not res.data:
-        raise HTTPException(status_code=404, detail="Estudiante no encontrado")
-    return res.data[0]
-
 @app.get("/predict/regresion/{codigo}")
 def predict_regresion_codigo(codigo: str, save: bool = Query(False)):
     row = get_last_row_by_codigo(codigo)
-    payload = payload_from_row(row)
-    df = frame_from_payload(payload)
+    df = enrich_and_align(row, REG_COLS, REG_NUM, REG_CAT)
+    validate_required_if_present(REG_COLS, df)
+
     y = float(reg_pipe.predict(df)[0])
     y = float(np.clip(y, 0.0, 20.0))
     if save and row.get("semestre_actual") is not None:
@@ -253,21 +352,20 @@ def predict_regresion_codigo(codigo: str, save: bool = Query(False)):
 @app.get("/predict/continuidad/{codigo}")
 def predict_continuidad_codigo(codigo: str, save: bool = Query(False), thr: Optional[float] = Query(None)):
     row = get_last_row_by_codigo(codigo)
-    payload = payload_from_row(row)
-    df = frame_from_payload(payload)
+    df = enrich_and_align(row, CLF_COLS, CLF_NUM, CLF_CAT)
+    validate_required_if_present(CLF_COLS, df)
 
     if hasattr(cls_pipe, "predict_proba"):
         p = float(cls_pipe.predict_proba(df)[0, 1])
+    elif hasattr(cls_pipe, "decision_function"):
+        score = float(cls_pipe.decision_function(df)[0])
+        p = 1.0 / (1.0 + np.exp(-score))
     else:
-        if hasattr(cls_pipe, "decision_function"):
-            score = float(cls_pipe.decision_function(df)[0])
-            p = 1.0 / (1.0 + np.exp(-score))
-        else:
-            pred = int(cls_pipe.predict(df)[0])
-            p = 0.75 if pred == 1 else 0.25
+        pred = int(cls_pipe.predict(df)[0])
+        p = 0.75 if pred == 1 else 0.25
 
-    threshold = float(thr) if thr is not None else DEFAULT_CLS_THRESHOLD
-    riesgo = int(p >= threshold)
+    thr_final = float(thr) if thr is not None else DEFAULT_CLS_THRESHOLD
+    riesgo = int(p >= thr_final)
 
     if save and row.get("semestre_actual") is not None:
         upsert_continuidad(codigo, int(row["semestre_actual"]), p, riesgo)
@@ -275,6 +373,6 @@ def predict_continuidad_codigo(codigo: str, save: bool = Query(False), thr: Opti
     return {
         "codigo_estudiante": codigo,
         "prob_riesgo": round(p, 5),
-        "umbral": round(threshold, 3),
-        "riesgo": riesgo
+        "umbral": round(thr_final, 3),
+        "riesgo": riesgo,
     }

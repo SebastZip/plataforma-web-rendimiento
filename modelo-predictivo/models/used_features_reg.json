@@ -1,0 +1,28 @@
+{
+  "model_name": "CatBoostRegressor",
+  "selected_columns": [
+    "anio_ingreso",
+    "num_periodo_acad_matric",
+    "promedio_ultima_matricula",
+    "programa",
+    "sexo",
+    "edad_en_ingreso",
+    "anio_ciclo_est"
+  ],
+  "selected_num": [
+    "anio_ingreso",
+    "num_periodo_acad_matric",
+    "promedio_ultima_matricula",
+    "edad_en_ingreso",
+    "anio_ciclo_est"
+  ],
+  "selected_cat": [
+    "programa",
+    "sexo"
+  ],
+  "cv_metrics": {
+    "MAE": 0.3658069656861683,
+    "RMSE": 0.5062769886035178,
+    "R2": 0.6078721377632506
+  }
+}

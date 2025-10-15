@@ -6,45 +6,43 @@ import PrediccionModal from "./PrediccionModal";
 const API_BASE =
   import.meta.env.VITE_API_BASE || "https://plataforma-web-rendimiento-i2x4.onrender.com";
 
-/** ===== Campos del formulario =====
- * Requeridos (alimentan directamente al modelo actual)
- */
-const camposRequeridos = [
+/** ===== Catálogos restringidos ===== */
+const programas = [
+  "E.P. de Ingenieria de Sistemas",
+  "E.P. de Ingenieria de Software",
+];
+
+const sexos = [
+  { label: "Femenino", value: "F" },
+  { label: "Masculino", value: "M" },
+];
+
+/** ===== Campos del formulario (OBLIGATORIOS, nombres exactos) ===== */
+const camposObligatorios = [
   ["promedio_ultima_matricula", "📊 Promedio ponderado ÚLTIMO ciclo (0–20)", { min: 0, max: 20, step: "0.01", required: true }],
-  ["semestre_actual", "📘 Semestre actual (1–10)", { min: 1, max: 10, step: "1", required: true }],
+  ["anio_ciclo_est", "📘 Semestre actual (1–10)", { min: 1, max: 10, step: "1", required: true }],
   ["num_periodo_acad_matric", "🧾 Nº de matrículas cursadas", { min: 0, max: 30, step: "1", required: true }],
-  ["ultimo_periodo_matriculado", "🗓️ Último periodo matriculado (AAAAT)", { min: 20101, max: 20999, step: "1", required: true, inputMode: "numeric", pattern: "[0-9]*" }],
+  ["edad_en_ingreso", "🎯 Edad al ingresar a la FISI", { min: 15, max: 70, step: "1", required: true }],
   ["anio_ingreso", "🎓 Año de ingreso a la FISI", { min: 2005, max: 2035, step: "1", required: true }],
 ];
 
-/** Opcionales (para investigación / futuro reentrenamiento) */
+/** ===== Opcionales (se guardan si el usuario los completa) ===== */
 const camposOpcionales = [
   ["asistencia_promedio_pct", "📊 Asistencia promedio (%) — opcional", { min: 0, max: 100, step: "0.1" }],
   ["horas_estudio_diarias", "📘 Horas de estudio diarias — opcional", { min: 0, max: 24, step: "0.1" }],
-  ["horas_redes_diarias", "📱 Horas en redes diarias — opcional", { min: 0, max: 24, step: "0.1" }],
   ["horas_habilidades_diarias", "💻 Horas en habilidades/actividades — opcional", { min: 0, max: 24, step: "0.1" }],
   ["ingreso_familiar_mensual_soles", "💰 Ingreso familiar mensual (S/.) — opcional", { min: 0, step: "1" }],
 ];
 
-/** Binarios (opcionales) */
-const camposSiNo = [
-  ["estado_observado", "⚠️ ¿Alumno observado? (desaprobaste un curso más de dos veces)", ["Sí", "No"]],
-  ["desaprobo_alguna_asignatura", "❌ ¿Desaprobaste alguna asignatura el ciclo anterior?", ["Sí", "No"]],
-  ["beca_subvencion_economica", "🏅 ¿Cuentas con beca o subvención económica?", ["Sí", "No"]],
-  ["planea_matricularse_prox_ciclo", "🧭 ¿Planeas matricularte el próximo ciclo académico?", ["Sí", "No"]],
-];
-
 /** Utilidades */
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-const validarPeriodo = (v) => {
-  const n = Number(v);
-  const year = Math.floor(n / 10);
-  const term = n % 10;
-  return year >= 2010 && year <= 2099 && [0, 1, 2].includes(term);
-};
+const validarRango = (v, min, max) => Number.isFinite(v) && v >= min && v <= max;
 
 const PrediccionForm = ({ usuario }) => {
-  const [formData, setFormData] = useState({ codigo_estudiante: usuario.codigo });
+  const [formData, setFormData] = useState({
+    codigo_estudiante: usuario.codigo,
+    programa: "", // requerido por el modelo: restringido al catálogo
+    sexo: "",     // requerido por el modelo: solo "M" o "F"
+  });
   const [resultadoReg, setResultadoReg] = useState(null);
   const [resultadoCls, setResultadoCls] = useState(null);
   const [cicloObjetivo, setCicloObjetivo] = useState(null);
@@ -60,31 +58,43 @@ const PrediccionForm = ({ usuario }) => {
     }));
   };
 
-  const onChangeSiNo = (e) => {
-    const { name, value } = e.target;
-    setFormData((s) => ({ ...s, [name]: value })); // "Sí"/"No" → se mapea antes de insertar
+  const onSelectPrograma = (e) => {
+    setFormData((s) => ({ ...s, programa: e.target.value }));
   };
 
-  /** "Sí/No" → boolean */
-  const mapSiNoABool = (v) => (v === "Sí" ? true : v === "No" ? false : v);
+  const onSelectSexo = (e) => {
+    setFormData((s) => ({ ...s, sexo: e.target.value })); // "M" o "F"
+  };
 
-  /** Construye la fila para Supabase */
+  /** Construye la fila para Supabase (y predicción) */
   const construirFilaSupabase = () => {
-    const fila = { ...formData, codigo_estudiante: String(usuario.codigo).trim() };
+    const fila = {
+      ...formData,
+      codigo_estudiante: String(usuario.codigo).trim(),
+    };
 
-    // mapear binarios
-    camposSiNo.forEach(([name]) => {
-      if (name in fila && fila[name] !== "") fila[name] = mapSiNoABool(fila[name]);
+    // Garantizar numéricos en obligatorios/opcionales
+    [...camposObligatorios, ...camposOpcionales].forEach(([name]) => {
+      if (fila[name] !== undefined && fila[name] !== "") {
+        const num = Number(fila[name]);
+        fila[name] = Number.isFinite(num) ? num : fila[name];
+      }
     });
 
-    // garantizar numéricos
-    [...camposRequeridos, ...camposOpcionales].forEach(([name]) => {
-      if (name in fila && fila[name] !== "") fila[name] = Number(fila[name]);
-    });
+    // Compat: tu backend aún usa `semestre_actual` para guardar/consultar; lo igualamos:
+    if (fila.anio_ciclo_est != null) {
+      fila.semestre_actual = Number(fila.anio_ciclo_est);
+    }
 
-    // tipos clave
-    if (fila.semestre_actual !== undefined) fila.semestre_actual = Number(fila.semestre_actual);
-    if (fila.ultimo_periodo_matriculado !== undefined) fila.ultimo_periodo_matriculado = Number(fila.ultimo_periodo_matriculado);
+    // Validar que programa esté en el catálogo
+    if (!programas.includes(fila.programa)) {
+      throw new Error("Programa inválido. Debe ser 'E.P. de Ingenieria de Sistemas' o 'E.P. de Ingenieria de Software'.");
+    }
+
+    // Validar sexo M/F
+    if (!["M", "F"].includes(fila.sexo)) {
+      throw new Error("Sexo inválido. Solo se admite 'M' o 'F'.");
+    }
 
     return fila;
   };
@@ -99,17 +109,24 @@ const PrediccionForm = ({ usuario }) => {
     try {
       const fila = construirFilaSupabase();
 
-      // Validación mínima (solo requeridos)
-      if (!fila.semestre_actual) throw new Error("Debes ingresar el semestre actual.");
-      if (fila.promedio_ultima_matricula == null) throw new Error("Falta el promedio del último ciclo.");
-      if (!validarPeriodo(fila.ultimo_periodo_matriculado)) {
-        throw new Error("Último periodo matriculado inválido (usa AAAAT con T ∈ {0,1,2}).");
+      // Validación mínima de obligatorios
+      if (!validarRango(fila.promedio_ultima_matricula, 0, 20)) {
+        throw new Error("Promedio del último ciclo fuera de rango (0–20).");
       }
-      if (fila.anio_ingreso < 2005 || fila.anio_ingreso > 2035) {
+      if (!validarRango(fila.anio_ciclo_est, 1, 10)) {
+        throw new Error("Semestre actual (anio_ciclo_est) fuera de rango (1–10).");
+      }
+      if (!Number.isInteger(fila.num_periodo_acad_matric) || fila.num_periodo_acad_matric < 0) {
+        throw new Error("Número de matrículas inválido.");
+      }
+      if (!validarRango(fila.edad_en_ingreso, 15, 70)) {
+        throw new Error("Edad al ingresar inválida (15–70).");
+      }
+      if (!validarRango(fila.anio_ingreso, 2005, 2035)) {
         throw new Error("Año de ingreso fuera de rango (2005–2035).");
       }
 
-      // ✅ UPSERT para no chocar con la unique constraint
+      // ✅ UPSERT (clave única: codigo_estudiante + semestre_actual)
       const { data: upserted, error: errUp } = await supabase
         .from("predicciones_estudiantes")
         .upsert(fila, { onConflict: "codigo_estudiante,semestre_actual" })
@@ -117,11 +134,10 @@ const PrediccionForm = ({ usuario }) => {
 
       if (errUp) throw errUp;
 
-      // Si tu BD setea semestre_proyectado por trigger/función, intenta leerlo del upsert
       const rec = Array.isArray(upserted) ? upserted[0] : null;
-      setCicloObjetivo(rec?.semestre_proyectado ?? fila.semestre_actual + 1);
+      setCicloObjetivo(rec?.semestre_proyectado ?? fila.anio_ciclo_est + 1);
 
-      // Llamar a ambas APIs (guardan en la fila con save=true)
+      // Predicción y guardado
       const [resR, resC] = await Promise.all([
         fetch(`${API_BASE}/predict/regresion/${fila.codigo_estudiante}?save=true`),
         fetch(`${API_BASE}/predict/continuidad/${fila.codigo_estudiante}?save=true`),
@@ -149,8 +165,8 @@ const PrediccionForm = ({ usuario }) => {
 
       <form className={styles.formulario} onSubmit={handleSubmit}>
         <div className={styles.gridInputs}>
-          {/* Requeridos */}
-          {camposRequeridos.map(([name, label, extra]) => (
+          {/* Obligatorios (nombres exactos) */}
+          {camposObligatorios.map(([name, label, extra]) => (
             <div key={name} className={styles.inputCard}>
               <label htmlFor={name}>{label}</label>
               <input
@@ -164,6 +180,40 @@ const PrediccionForm = ({ usuario }) => {
               />
             </div>
           ))}
+
+          {/* Programa (solo 2 opciones) */}
+          <div className={styles.inputCard}>
+            <label htmlFor="programa">🏫 Programa académico</label>
+            <select
+              id="programa"
+              name="programa"
+              value={formData.programa ?? ""}
+              onChange={onSelectPrograma}
+              required
+            >
+              <option hidden value="">Selecciona tu programa</option>
+              {programas.map((p) => (
+                <option key={p} value={p}>{p}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Sexo (solo M/F) */}
+          <div className={styles.inputCard}>
+            <label htmlFor="sexo">🧑 Sexo</label>
+            <select
+              id="sexo"
+              name="sexo"
+              value={formData.sexo ?? ""}
+              onChange={onSelectSexo}
+              required
+            >
+              <option hidden value="">Selecciona</option>
+              {sexos.map((sx) => (
+                <option key={sx.value} value={sx.value}>{sx.label}</option>
+              ))}
+            </select>
+          </div>
 
           {/* Opcionales */}
           {camposOpcionales.map(([name, label, extra]) => (
@@ -178,28 +228,6 @@ const PrediccionForm = ({ usuario }) => {
                 {...extra}
                 onWheel={(e) => e.currentTarget.blur()}
               />
-            </div>
-          ))}
-
-          {/* Sí/No (opcionales) */}
-          {camposSiNo.map(([name, label, options]) => (
-            <div key={name} className={styles.inputCard}>
-              <label htmlFor={name}>{label}</label>
-              <select
-                id={name}
-                name={name}
-                value={formData[name] ?? ""}
-                onChange={onChangeSiNo}
-              >
-                <option hidden value="">
-                  Selecciona una opción
-                </option>
-                {options.map((opt) => (
-                  <option key={opt} value={opt}>
-                    {opt}
-                  </option>
-                ))}
-              </select>
             </div>
           ))}
         </div>

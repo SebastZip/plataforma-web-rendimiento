@@ -1,0 +1,28 @@
+{
+  "model_name": "CatBoostClassifier",
+  "selected_columns": [
+    "promedio_ultima_matricula",
+    "anio_ciclo_est",
+    "programa",
+    "num_periodo_acad_matric",
+    "edad_en_ingreso",
+    "anio_ingreso",
+    "sexo"
+  ],
+  "selected_num": [
+    "promedio_ultima_matricula",
+    "anio_ciclo_est",
+    "num_periodo_acad_matric",
+    "edad_en_ingreso",
+    "anio_ingreso"
+  ],
+  "selected_cat": [
+    "programa",
+    "sexo"
+  ],
+  "cv_metrics": {
+    "F1_pos": 0.6368868450390189,
+    "Recall_pos": 0.6666666666666666,
+    "ROC_AUC": 0.9420409070698088
+  }
+}
