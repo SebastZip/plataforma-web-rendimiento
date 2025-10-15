@@ -13,20 +13,20 @@ const camposRequeridos = [
   ["promedio_ultima_matricula", "📊 Promedio ponderado ÚLTIMO ciclo (0–20)", { min: 0, max: 20, step: "0.01", required: true }],
   ["semestre_actual", "📘 Semestre actual (1–10)", { min: 1, max: 10, step: "1", required: true }],
   ["num_periodo_acad_matric", "🧾 Nº de matrículas cursadas", { min: 0, max: 30, step: "1", required: true }],
-  ["ultimo_periodo_matriculado", "🗓️ Último periodo matriculado (AAAA T)", { min: 20101, max: 20999, step: "1", required: true, inputMode: "numeric", pattern: "[0-9]*" }],
+  ["ultimo_periodo_matriculado", "🗓️ Último periodo matriculado (AAAAT)", { min: 20101, max: 20999, step: "1", required: true, inputMode: "numeric", pattern: "[0-9]*" }],
   ["anio_ingreso", "🎓 Año de ingreso a la FISI", { min: 2005, max: 2035, step: "1", required: true }],
 ];
 
 /** Opcionales (para investigación / futuro reentrenamiento) */
 const camposOpcionales = [
-  ["asistencia_promedio_pct", "📊 Asistencia promedio (%) — opcional", { min: 0, max: 100, step: "0.1", required: false }],
-  ["horas_estudio_diarias", "📘 Horas de estudio diarias — opcional", { min: 0, max: 24, step: "0.1", required: false }],
-  ["horas_redes_diarias", "📱 Horas en redes diarias — opcional", { min: 0, max: 24, step: "0.1", required: false }],
-  ["horas_habilidades_diarias", "💻 Horas en habilidades/actividades — opcional", { min: 0, max: 24, step: "0.1", required: false }],
-  ["ingreso_familiar_mensual_soles", "💰 Ingreso familiar mensual (S/.) — opcional", { min: 0, step: "1", required: false }],
+  ["asistencia_promedio_pct", "📊 Asistencia promedio (%) — opcional", { min: 0, max: 100, step: "0.1" }],
+  ["horas_estudio_diarias", "📘 Horas de estudio diarias — opcional", { min: 0, max: 24, step: "0.1" }],
+  ["horas_redes_diarias", "📱 Horas en redes diarias — opcional", { min: 0, max: 24, step: "0.1" }],
+  ["horas_habilidades_diarias", "💻 Horas en habilidades/actividades — opcional", { min: 0, max: 24, step: "0.1" }],
+  ["ingreso_familiar_mensual_soles", "💰 Ingreso familiar mensual (S/.) — opcional", { min: 0, step: "1" }],
 ];
 
-/** Binarios */
+/** Binarios (opcionales) */
 const camposSiNo = [
   ["estado_observado", "⚠️ ¿Alumno observado? (desaprobaste un curso más de dos veces)", ["Sí", "No"]],
   ["desaprobo_alguna_asignatura", "❌ ¿Desaprobaste alguna asignatura el ciclo anterior?", ["Sí", "No"]],
@@ -70,15 +70,21 @@ const PrediccionForm = ({ usuario }) => {
 
   /** Construye la fila para Supabase */
   const construirFilaSupabase = () => {
-    const fila = { ...formData, codigo_estudiante: usuario.codigo };
+    const fila = { ...formData, codigo_estudiante: String(usuario.codigo).trim() };
 
+    // mapear binarios
     camposSiNo.forEach(([name]) => {
-      if (name in fila) fila[name] = mapSiNoABool(fila[name]);
+      if (name in fila && fila[name] !== "") fila[name] = mapSiNoABool(fila[name]);
     });
 
+    // garantizar numéricos
     [...camposRequeridos, ...camposOpcionales].forEach(([name]) => {
-      if (name in fila) fila[name] = Number(fila[name]);
+      if (name in fila && fila[name] !== "") fila[name] = Number(fila[name]);
     });
+
+    // tipos clave
+    if (fila.semestre_actual !== undefined) fila.semestre_actual = Number(fila.semestre_actual);
+    if (fila.ultimo_periodo_matriculado !== undefined) fila.ultimo_periodo_matriculado = Number(fila.ultimo_periodo_matriculado);
 
     return fila;
   };
@@ -103,50 +109,22 @@ const PrediccionForm = ({ usuario }) => {
         throw new Error("Año de ingreso fuera de rango (2005–2035).");
       }
 
-      // 1) ¿Ya existe fila (codigo, semestre_actual)?
-      const { data: existentes, error: errSel } = await supabase
+      // ✅ UPSERT para no chocar con la unique constraint
+      const { data: upserted, error: errUp } = await supabase
         .from("predicciones_estudiantes")
-        .select("id")
-        .eq("codigo_estudiante", usuario.codigo)
-        .eq("semestre_actual", fila.semestre_actual);
+        .upsert(fila, { onConflict: "codigo_estudiante,semestre_actual" })
+        .select();
 
-      if (errSel) throw errSel;
+      if (errUp) throw errUp;
 
-      if (existentes && existentes.length > 0) {
-        const confirmar = window.confirm(
-          `⚠️ Ya existe un registro para el semestre ${fila.semestre_actual}. ¿Deseas sobreescribirlo?`
-        );
-        if (!confirmar) {
-          setCargando(false);
-          return;
-        }
-        await supabase
-          .from("predicciones_estudiantes")
-          .delete()
-          .eq("codigo_estudiante", usuario.codigo)
-          .eq("semestre_actual", fila.semestre_actual);
-      }
+      // Si tu BD setea semestre_proyectado por trigger/función, intenta leerlo del upsert
+      const rec = Array.isArray(upserted) ? upserted[0] : null;
+      setCicloObjetivo(rec?.semestre_proyectado ?? fila.semestre_actual + 1);
 
-      // 2) Insertar nueva fila
-      const { error: errIns } = await supabase.from("predicciones_estudiantes").insert([fila]);
-      if (errIns) throw errIns;
-
-      await sleep(400);
-
-      // 3) Recuperar semestre proyectado
-      const { data: filaRec, error: errRec } = await supabase
-        .from("predicciones_estudiantes")
-        .select("semestre_proyectado")
-        .eq("codigo_estudiante", usuario.codigo)
-        .eq("semestre_actual", fila.semestre_actual)
-        .single();
-      if (errRec) throw errRec;
-      setCicloObjetivo(filaRec?.semestre_proyectado || fila.semestre_actual + 1);
-
-      // 4) Llamar a ambas APIs (guardan en la fila con save=true)
+      // Llamar a ambas APIs (guardan en la fila con save=true)
       const [resR, resC] = await Promise.all([
-        fetch(`${API_BASE}/predict/regresion/${usuario.codigo}?save=true`),
-        fetch(`${API_BASE}/predict/continuidad/${usuario.codigo}?save=true`),
+        fetch(`${API_BASE}/predict/regresion/${fila.codigo_estudiante}?save=true`),
+        fetch(`${API_BASE}/predict/continuidad/${fila.codigo_estudiante}?save=true`),
       ]);
 
       const jsonR = await resR.json();
@@ -171,7 +149,6 @@ const PrediccionForm = ({ usuario }) => {
 
       <form className={styles.formulario} onSubmit={handleSubmit}>
         <div className={styles.gridInputs}>
-
           {/* Requeridos */}
           {camposRequeridos.map(([name, label, extra]) => (
             <div key={name} className={styles.inputCard}>
@@ -204,7 +181,7 @@ const PrediccionForm = ({ usuario }) => {
             </div>
           ))}
 
-          {/* Sí/No */}
+          {/* Sí/No (opcionales) */}
           {camposSiNo.map(([name, label, options]) => (
             <div key={name} className={styles.inputCard}>
               <label htmlFor={name}>{label}</label>
@@ -213,7 +190,6 @@ const PrediccionForm = ({ usuario }) => {
                 name={name}
                 value={formData[name] ?? ""}
                 onChange={onChangeSiNo}
-                required
               >
                 <option hidden value="">
                   Selecciona una opción
@@ -226,7 +202,6 @@ const PrediccionForm = ({ usuario }) => {
               </select>
             </div>
           ))}
-
         </div>
 
         <button className={styles.botonVerde} type="submit" disabled={cargando}>
