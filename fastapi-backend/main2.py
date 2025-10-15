@@ -44,11 +44,25 @@ DEFAULT_CLS_THRESHOLD = float(os.getenv("CLS_THRESHOLD", "0.5"))
 # =========================================================
 # FastAPI
 # =========================================================
-app = FastAPI(title="API Rendimiento Académico", version="3.0")
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI(title="API Rendimiento Académico", version="2.0")
+
+ALLOWED_ORIGINS = [
+    "https://plataforma-web-rendimiento.vercel.app",  # tu frontend
+    "http://localhost:5173",                           # dev vite (si lo usas)
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], allow_credentials=True,
-    allow_methods=["*"], allow_headers=["*"],
+    allow_origins=ALLOWED_ORIGINS,                    # lista fija
+    allow_origin_regex=r"https://.*\.vercel\.app",    # previews de Vercel
+    allow_credentials=True,                           # ahora sí
+    allow_methods=["*"],
+    allow_headers=["*"],
+    max_age=86400,
 )
 
 @app.get("/")
