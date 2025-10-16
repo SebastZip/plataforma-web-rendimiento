@@ -22,11 +22,13 @@ const camposObligatorios = [
   ["promedio_ultima_matricula", "📊 Promedio ponderado ÚLTIMO ciclo (0–20)", { min: 0, max: 20, step: "0.01", required: true }],
   ["anio_ciclo_est", "📘 Semestre actual (1–10)", { min: 1, max: 10, step: "1", required: true }],
   ["num_periodo_acad_matric", "🧾 Nº de matrículas cursadas", { min: 0, max: 30, step: "1", required: true }],
+  // 👇 Requerido por tu BD (NOT NULL, formato AAAAT con T∈{0,1,2})
+  ["ultimo_periodo_matriculado", "🗓️ Último periodo matriculado (AAAAT)", { min: 20101, max: 20999, step: "1", required: true, inputMode: "numeric", pattern: "[0-9]*" }],
   ["edad_en_ingreso", "🎯 Edad al ingresar a la FISI", { min: 15, max: 70, step: "1", required: true }],
   ["anio_ingreso", "🎓 Año de ingreso a la FISI", { min: 2005, max: 2035, step: "1", required: true }],
 ];
 
-/** ===== Opcionales (se guardan si el usuario los completa) ===== */
+/** ===== Opcionales ===== */
 const camposOpcionales = [
   ["asistencia_promedio_pct", "📊 Asistencia promedio (%) — opcional", { min: 0, max: 100, step: "0.1" }],
   ["horas_estudio_diarias", "📘 Horas de estudio diarias — opcional", { min: 0, max: 24, step: "0.1" }],
@@ -36,12 +38,18 @@ const camposOpcionales = [
 
 /** Utilidades */
 const validarRango = (v, min, max) => Number.isFinite(v) && v >= min && v <= max;
+const validarPeriodoAAAAT = (v) => {
+  const n = Number(v);
+  const year = Math.floor(n / 10);
+  const term = n % 10;
+  return year >= 2010 && year <= 2099 && [0, 1, 2].includes(term);
+};
 
 const PrediccionForm = ({ usuario }) => {
   const [formData, setFormData] = useState({
     codigo_estudiante: usuario.codigo,
-    programa: "", // requerido por el modelo: restringido al catálogo
-    sexo: "",     // requerido por el modelo: solo "M" o "F"
+    programa: "", // requerido por el modelo (2 opciones)
+    sexo: "",     // requerido por el modelo ("M" o "F")
   });
   const [resultadoReg, setResultadoReg] = useState(null);
   const [resultadoCls, setResultadoCls] = useState(null);
@@ -81,12 +89,13 @@ const PrediccionForm = ({ usuario }) => {
       }
     });
 
-    // Compat: tu backend aún usa `semestre_actual` para guardar/consultar; lo igualamos:
+    // Mapear anio_ciclo_est -> semestre_actual para la BD (y eliminar anio_ciclo_est del payload)
     if (fila.anio_ciclo_est != null) {
       fila.semestre_actual = Number(fila.anio_ciclo_est);
+      delete fila.anio_ciclo_est; // 👈 evita el error de Supabase
     }
 
-    // Validar que programa esté en el catálogo
+    // Validar programa dentro del catálogo
     if (!programas.includes(fila.programa)) {
       throw new Error("Programa inválido. Debe ser 'E.P. de Ingenieria de Sistemas' o 'E.P. de Ingenieria de Software'.");
     }
@@ -95,6 +104,10 @@ const PrediccionForm = ({ usuario }) => {
     if (!["M", "F"].includes(fila.sexo)) {
       throw new Error("Sexo inválido. Solo se admite 'M' o 'F'.");
     }
+
+    // Tipos clave
+    if (fila.semestre_actual !== undefined) fila.semestre_actual = Number(fila.semestre_actual);
+    if (fila.ultimo_periodo_matriculado !== undefined) fila.ultimo_periodo_matriculado = Number(fila.ultimo_periodo_matriculado);
 
     return fila;
   };
@@ -113,11 +126,14 @@ const PrediccionForm = ({ usuario }) => {
       if (!validarRango(fila.promedio_ultima_matricula, 0, 20)) {
         throw new Error("Promedio del último ciclo fuera de rango (0–20).");
       }
-      if (!validarRango(fila.anio_ciclo_est, 1, 10)) {
-        throw new Error("Semestre actual (anio_ciclo_est) fuera de rango (1–10).");
+      if (!validarRango(fila.semestre_actual, 1, 10)) {
+        throw new Error("Semestre actual fuera de rango (1–10).");
       }
       if (!Number.isInteger(fila.num_periodo_acad_matric) || fila.num_periodo_acad_matric < 0) {
         throw new Error("Número de matrículas inválido.");
+      }
+      if (!validarPeriodoAAAAT(fila.ultimo_periodo_matriculado)) {
+        throw new Error("Último periodo matriculado inválido (usa AAAAT con T ∈ {0,1,2}).");
       }
       if (!validarRango(fila.edad_en_ingreso, 15, 70)) {
         throw new Error("Edad al ingresar inválida (15–70).");
@@ -135,7 +151,7 @@ const PrediccionForm = ({ usuario }) => {
       if (errUp) throw errUp;
 
       const rec = Array.isArray(upserted) ? upserted[0] : null;
-      setCicloObjetivo(rec?.semestre_proyectado ?? fila.anio_ciclo_est + 1);
+      setCicloObjetivo(rec?.semestre_proyectado ?? fila.semestre_actual + 1);
 
       // Predicción y guardado
       const [resR, resC] = await Promise.all([
