@@ -11,7 +11,7 @@ const Historial = ({ usuario }) => {
   const [historial, setHistorial] = useState([]);
   const [editandoId, setEditandoId] = useState(null);
   const [notasEditables, setNotasEditables] = useState({});
-  const codigo = usuario?.codigo_estudiante || usuario?.codigo; // por si tu prop viene como 'codigo'
+  const codigo = usuario?.codigo_estudiante || usuario?.codigo;
 
   useEffect(() => {
     if (!codigo) return;
@@ -21,8 +21,7 @@ const Historial = ({ usuario }) => {
         .from('predicciones_estudiantes')
         .select(`
           id,
-          semestre_actual,
-          semestre_proyectado,
+          anio_ciclo_est,
           fecha_prediccion,
           promedio_predicho,
           nota_real,
@@ -30,7 +29,7 @@ const Historial = ({ usuario }) => {
           riesgo_no_continuar
         `)
         .eq('codigo_estudiante', codigo)
-        .order('semestre_actual', { ascending: true });
+        .order('anio_ciclo_est', { ascending: true });
 
       if (error) {
         console.error('❌ Error al traer historial:', error);
@@ -129,10 +128,12 @@ const Historial = ({ usuario }) => {
                 ? `${(prob * 100).toFixed(1)}%`
                 : '-';
 
+              const proyectado = (item.anio_ciclo_est ?? 0) + 1;
+
               return (
                 <tr key={item.id}>
-                  <td>{item.semestre_actual}</td>
-                  <td>{item.semestre_proyectado}</td>
+                  <td>{item.anio_ciclo_est}</td>
+                  <td>{proyectado}</td>
                   <td>{new Date(item.fecha_prediccion).toLocaleDateString()}</td>
                   <td>
                     <span className={`${styles.nota} ${getColorClase(notaProjTxt)}`}>{notaProjTxt}</span>
