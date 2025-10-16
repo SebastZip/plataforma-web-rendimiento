@@ -22,7 +22,7 @@ const camposObligatorios = [
   ["promedio_ultima_matricula", "📊 Promedio ponderado ÚLTIMO ciclo (0–20)", { min: 0, max: 20, step: "0.01", required: true }],
   ["anio_ciclo_est", "📘 Semestre actual (1–10)", { min: 1, max: 10, step: "1", required: true }],
   ["num_periodo_acad_matric", "🧾 Nº de matrículas cursadas", { min: 0, max: 30, step: "1", required: true }],
-  // 👇 Requerido por tu BD (NOT NULL, formato AAAAT con T∈{0,1,2})
+  // BD: NOT NULL (AAAAT con T∈{0,1,2})
   ["ultimo_periodo_matriculado", "🗓️ Último periodo matriculado (AAAAT)", { min: 20101, max: 20999, step: "1", required: true, inputMode: "numeric", pattern: "[0-9]*" }],
   ["edad_en_ingreso", "🎯 Edad al ingresar a la FISI", { min: 15, max: 70, step: "1", required: true }],
   ["anio_ingreso", "🎓 Año de ingreso a la FISI", { min: 2005, max: 2035, step: "1", required: true }],
@@ -89,12 +89,6 @@ const PrediccionForm = ({ usuario }) => {
       }
     });
 
-    // Mapear anio_ciclo_est -> semestre_actual para la BD (y eliminar anio_ciclo_est del payload)
-    if (fila.anio_ciclo_est != null) {
-      fila.semestre_actual = Number(fila.anio_ciclo_est);
-      delete fila.anio_ciclo_est; // 👈 evita el error de Supabase
-    }
-
     // Validar programa dentro del catálogo
     if (!programas.includes(fila.programa)) {
       throw new Error("Programa inválido. Debe ser 'E.P. de Ingenieria de Sistemas' o 'E.P. de Ingenieria de Software'.");
@@ -106,8 +100,9 @@ const PrediccionForm = ({ usuario }) => {
     }
 
     // Tipos clave
-    if (fila.semestre_actual !== undefined) fila.semestre_actual = Number(fila.semestre_actual);
-    if (fila.ultimo_periodo_matriculado !== undefined) fila.ultimo_periodo_matriculado = Number(fila.ultimo_periodo_matriculado);
+    if (fila.ultimo_periodo_matriculado !== undefined) {
+      fila.ultimo_periodo_matriculado = Number(fila.ultimo_periodo_matriculado);
+    }
 
     return fila;
   };
@@ -126,8 +121,8 @@ const PrediccionForm = ({ usuario }) => {
       if (!validarRango(fila.promedio_ultima_matricula, 0, 20)) {
         throw new Error("Promedio del último ciclo fuera de rango (0–20).");
       }
-      if (!validarRango(fila.semestre_actual, 1, 10)) {
-        throw new Error("Semestre actual fuera de rango (1–10).");
+      if (!validarRango(fila.anio_ciclo_est, 1, 10)) {
+        throw new Error("Semestre actual (anio_ciclo_est) fuera de rango (1–10).");
       }
       if (!Number.isInteger(fila.num_periodo_acad_matric) || fila.num_periodo_acad_matric < 0) {
         throw new Error("Número de matrículas inválido.");
@@ -142,18 +137,18 @@ const PrediccionForm = ({ usuario }) => {
         throw new Error("Año de ingreso fuera de rango (2005–2035).");
       }
 
-      // ✅ UPSERT (clave única: codigo_estudiante + semestre_actual)
+      // ✅ UPSERT (clave única: codigo_estudiante + anio_ciclo_est)
       const { data: upserted, error: errUp } = await supabase
         .from("predicciones_estudiantes")
-        .upsert(fila, { onConflict: "codigo_estudiante,semestre_actual" })
+        .upsert(fila, { onConflict: "codigo_estudiante,anio_ciclo_est" })
         .select();
 
       if (errUp) throw errUp;
 
       const rec = Array.isArray(upserted) ? upserted[0] : null;
-      setCicloObjetivo(rec?.semestre_proyectado ?? fila.semestre_actual + 1);
+      setCicloObjetivo((rec?.anio_ciclo_est ?? fila.anio_ciclo_est) + 1);
 
-      // Predicción y guardado
+      // Predicción y guardado (por código; el backend usa los campos guardados)
       const [resR, resC] = await Promise.all([
         fetch(`${API_BASE}/predict/regresion/${fila.codigo_estudiante}?save=true`),
         fetch(`${API_BASE}/predict/continuidad/${fila.codigo_estudiante}?save=true`),

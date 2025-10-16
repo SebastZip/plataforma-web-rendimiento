@@ -63,17 +63,17 @@ CLF_CAT  = set(meta_clf.get("selected_cat", []))
 if not REG_COLS or not CLF_COLS:
     raise RuntimeError("Metadatos sin 'selected_columns'. Reentrena con el script actualizado.")
 
-# Si tu clasificador no trae umbral, define uno por defecto (ej. 0.5)
+# Umbral por defecto para clasificación
 DEFAULT_CLS_THRESHOLD = float(os.getenv("CLS_THRESHOLD", "0.5"))
 
 # =========================================================
 # FastAPI
 # =========================================================
-app = FastAPI(title="API Rendimiento Académico", version="3.2")
+app = FastAPI(title="API Rendimiento Académico", version="3.3")
 
 ALLOWED_ORIGINS = [
-    "https://plataforma-web-rendimiento.vercel.app",  # frontend
-    "http://localhost:5173",                           # dev vite
+    "https://plataforma-web-rendimiento.vercel.app",
+    "http://localhost:5173",
 ]
 app.add_middleware(
     CORSMiddleware,
@@ -160,16 +160,12 @@ def enrich_and_align(payload: Dict[str, Any],
                      numeric_cols: set[str],
                      categorical_cols: set[str]) -> pd.DataFrame:
     """
-    - Deriva anio_ciclo_est desde semestre_actual si hace falta
+    - NO usa 'semestre_actual'. Se trabaja solo con 'anio_ciclo_est'
     - Normaliza programa (2 opciones) y sexo (M/F)
     - Crea edad_en_ingreso si falta (NaN -> se imputará)
     - Tipifica y ordena exactamente como el modelo espera
     """
     data = dict(payload) if payload else {}
-
-    # Derivado: anio_ciclo_est <- semestre_actual
-    if "anio_ciclo_est" not in data and "semestre_actual" in data and data["semestre_actual"] is not None:
-        data["anio_ciclo_est"] = data["semestre_actual"]
 
     # Categóricas clave: programa y sexo (normalizadas)
     data["programa"] = canonicalize_programa(data.get("programa"))
@@ -207,18 +203,18 @@ def validate_required_if_present(model_cols: list[str], df: pd.DataFrame):
             raise HTTPException(status_code=400, detail="Sexo inválido. Solo se admite 'M' o 'F'.")
 
 # =========================================================
-# Supabase helpers
+# Supabase helpers (solo con anio_ciclo_est)
 # =========================================================
-def upsert_regresion(codigo: str, sem_act: int, yhat: float):
+def upsert_regresion(codigo: str, ciclo_est: int, yhat: float):
     supabase.table(SUPABASE_TABLE).update({
         "promedio_predicho": round(float(yhat), 2)
-    }).eq("codigo_estudiante", codigo).eq("semestre_actual", sem_act).execute()
+    }).eq("codigo_estudiante", codigo).eq("anio_ciclo_est", ciclo_est).execute()
 
-def upsert_continuidad(codigo: str, sem_act: int, prob: float, riesgo: int):
+def upsert_continuidad(codigo: str, ciclo_est: int, prob: float, riesgo: int):
     supabase.table(SUPABASE_TABLE).update({
         "prob_riesgo_no_continuar": round(float(prob), 5),
         "riesgo_no_continuar": int(riesgo)
-    }).eq("codigo_estudiante", codigo).eq("semestre_actual", sem_act).execute()
+    }).eq("codigo_estudiante", codigo).eq("anio_ciclo_est", ciclo_est).execute()
 
 def get_last_row_by_codigo(codigo: str) -> Dict[str, Any]:
     res = supabase.table(SUPABASE_TABLE).select("*") \
@@ -241,14 +237,12 @@ class Input(BaseModel):
     anio_ingreso: Optional[int] = Field(None)
     sexo: Optional[str] = Field(None)                        # "M" o "F"
 
-    # Compat DB: seguimos aceptando/guardando semestre_actual
-    semestre_actual: Optional[int] = Field(None)
     # Otros campos opcionales que puedes guardar (no usados por el modelo actual)
     asistencia_promedio_pct: Optional[float] = Field(None)
     horas_estudio_diarias: Optional[float] = Field(None)
     horas_habilidades_diarias: Optional[float] = Field(None)
     ingreso_familiar_mensual_soles: Optional[float] = Field(None)
-    ultimo_periodo_matriculado: Optional[int] = Field(None)  # AAAAT (opcional para tu BD)
+    ultimo_periodo_matriculado: Optional[int] = Field(None)  # AAAAT (opcional/BD)
 
 # =========================================================
 # Health + Meta
@@ -278,10 +272,6 @@ def get_features_meta():
 def predict_regresion(inp: Input):
     try:
         payload = inp.model_dump()
-        # Compat: si recibimos anio_ciclo_est del form, duplicamos en semestre_actual para tu BD
-        if payload.get("anio_ciclo_est") is not None and payload.get("semestre_actual") is None:
-            payload["semestre_actual"] = payload["anio_ciclo_est"]
-
         df = enrich_and_align(payload, REG_COLS, REG_NUM, REG_CAT)
         validate_required_if_present(REG_COLS, df)
 
@@ -303,9 +293,6 @@ def predict_regresion(inp: Input):
 def predict_continuidad(inp: Input, thr: Optional[float] = Query(None)):
     try:
         payload = inp.model_dump()
-        if payload.get("anio_ciclo_est") is not None and payload.get("semestre_actual") is None:
-            payload["semestre_actual"] = payload["anio_ciclo_est"]
-
         df = enrich_and_align(payload, CLF_COLS, CLF_NUM, CLF_CAT)
         validate_required_if_present(CLF_COLS, df)
 
@@ -335,7 +322,7 @@ def predict_continuidad(inp: Input, thr: Optional[float] = Query(None)):
         raise HTTPException(status_code=400, detail=f"Error clasificación: {e}")
 
 # =========================================================
-# Predicción POR CÓDIGO (lee supabase, deriva campos, predice y opcionalmente guarda)
+# Predicción POR CÓDIGO (lee supabase, predice y opcionalmente guarda)
 # =========================================================
 @app.get("/predict/regresion/{codigo}")
 def predict_regresion_codigo(codigo: str, save: bool = Query(False)):
@@ -345,8 +332,8 @@ def predict_regresion_codigo(codigo: str, save: bool = Query(False)):
 
     y = float(reg_pipe.predict(df)[0])
     y = float(np.clip(y, 0.0, 20.0))
-    if save and row.get("semestre_actual") is not None:
-        upsert_regresion(codigo, int(row["semestre_actual"]), y)
+    if save and row.get("anio_ciclo_est") is not None:
+        upsert_regresion(codigo, int(row["anio_ciclo_est"]), y)
     return {"codigo_estudiante": codigo, "promedio_predicho": round(y, 2)}
 
 @app.get("/predict/continuidad/{codigo}")
@@ -367,8 +354,8 @@ def predict_continuidad_codigo(codigo: str, save: bool = Query(False), thr: Opti
     thr_final = float(thr) if thr is not None else DEFAULT_CLS_THRESHOLD
     riesgo = int(p >= thr_final)
 
-    if save and row.get("semestre_actual") is not None:
-        upsert_continuidad(codigo, int(row["semestre_actual"]), p, riesgo)
+    if save and row.get("anio_ciclo_est") is not None:
+        upsert_continuidad(codigo, int(row["anio_ciclo_est"]), p, riesgo)
 
     return {
         "codigo_estudiante": codigo,
